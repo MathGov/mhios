@@ -60,3 +60,10 @@ See `LICENSE` and `NOTICE`.
 ## Computational Context Declaration
 
 For material computational systems, MHIOS v0.8 presents a compact derived view of the computational problem/object, exact architecture and configuration, demonstrated capability, assigned task, deployment domain, required evidence standard, consequence interface, and separate legitimate authority basis. **Consequence Interface is not Legitimate Authority.** The view does not create a new gate or new authority source.
+## Related MathGov Repositories
+
+- **MathGov / RippleLogic Core**  
+  The canonical ethical decision architecture that MHIOS operationalizes around.  
+  https://github.com/MathGov/ripple-logic
+
+MHIOS preserves the MathGov Core decision architecture and does not redefine its gates, rights floor, tail-risk constraints, CSV semantics, RippleLogic scoring, Union Scopes, or Welfare Dimensions.
