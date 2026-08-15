@@ -1,0 +1,156 @@
+standard: MHIOS
+version: '0.8'
+patterns:
+- id: AT-01
+  name: Generic rationale repetition
+  signal: Near-identical rationales appear across materially different options or
+    objects.
+  action: Raise a review challenge; require option-specific explanation or justified
+    reuse.
+- id: AT-02
+  name: Universal low uncertainty
+  signal: All material uncertainty fields are marked low despite contested, sparse,
+    or extrapolated evidence.
+  action: Request evidence basis and route unsupported fields to review.
+- id: AT-03
+  name: Monitoring presented as prevention
+  signal: Controls describe observation or reporting but no preventive, limiting,
+    shutdown, rollback, or recovery function.
+  action: Classify as monitoring-only and require a true control or explicit residual-risk
+    acceptance.
+- id: AT-04
+  name: Unexplained NOT_MATERIAL
+  signal: Repeated NOT_MATERIAL declarations lack trigger-specific rationale.
+  action: Require rationale and reviewer sign-off; escalate if gate material.
+- id: AT-05
+  name: Insider-only stakeholder set
+  signal: Stakeholder map contains only decision owners, operators, or institutional
+    insiders.
+  action: Reopen stakeholder discovery and challenge omission risk.
+- id: AT-06
+  name: Human oversight without power
+  signal: Human oversight is named without a person, intervention right, response
+    time, competence, or shutdown authority.
+  action: Do not count as a binding control until fields are complete.
+- id: AT-07
+  name: Evidence without claim linkage
+  signal: Evidence items exist but support or challenge no material claim.
+  action: Require linkage or classify as background/non-decision-material.
+- id: AT-08
+  name: Unknown disappearance
+  signal: A material unknown is present in RG but absent downstream without explicit
+    resolution.
+  action: Block claim strengthening and require disposition.
+- id: AT-09
+  name: AI self-certification
+  signal: AI-generated content is marked authoritative without named human review
+    or independent evidence.
+  action: Revert to advisory status and require human judgment.
+- id: AT-10
+  name: Tier downgrade pattern
+  signal: Operators repeatedly select a lower tier despite triggered higher-tier conditions.
+  action: Require divergence record, independent approval, and trend review.
+- id: AT-11
+  name: Routine emergency mode
+  signal: Emergency-provisional status is repeatedly renewed or used as ordinary operation.
+  action: Escalate, require redesign or normal authorization, and review emergency
+    capture.
+- id: AT-12
+  name: All-pass improbability
+  signal: Every status passes despite contested evidence, unresolved unknowns, or
+    adverse scenarios.
+  action: Challenge evidence and reviewer independence; do not automatically fail.
+- id: AT-13
+  name: No adverse scenarios
+  signal: TRC contains no adverse or failure scenarios for a consequential option.
+  action: Reopen scenario discovery and challenger review.
+- id: AT-14
+  name: Control owner missing
+  signal: A required control has no accountable owner or activation condition.
+  action: Control cannot support CSV or execution authorization.
+- id: AT-15
+  name: Copied subgroup values
+  signal: Subgroup values or thresholds are reused without identity, evidence, or
+    derivation.
+  action: Require derivation and affected-group trace.
+- id: AT-16
+  name: Policy as physical warrant
+  signal: Approval, certification, or policy is used as sole evidence of physical
+    or causal admissibility.
+  action: Trigger PC-AEP and domain-warrant review.
+- id: AT-17
+  name: Stale evidence continuity
+  signal: Expired or materially changed evidence remains linked to current claims
+    without requalification.
+  action: Activate requalification.
+- id: AT-18
+  name: Post-result parameter editing
+  signal: Weights, assumptions, scope, scenarios, or thresholds change after the result
+    without a revision branch.
+  action: Create a new run or branch and mark the prior result superseded.
+- id: AT-19
+  name: AI suggestion rubber-stamping
+  signal: Near-universal acceptance of gate-material AI suggestions with little modification,
+    source inspection, or independent first-pass divergence.
+  response: Sample for independent review; compare AI-off judgments; inspect task
+    difficulty and reviewer incentives.
+  boundary: A high acceptance rate is a review signal, not proof of misconduct or
+    AI error.
+- id: AT-20
+  name: Warning-disposition boilerplate
+  signal: Repeated identical explanations or dismissals across materially different
+    anti-theater warnings.
+  response: Review alarm fatigue, warning precision, reviewer workload, and substantive
+    adequacy of dispositions.
+  boundary: Repeated language may reflect a shared legitimate cause; context review
+    is required.
+- id: AT-21
+  name: Pattern-aware evasion
+  signal: Formally varied rationales, token stakeholders, nominal controls, or uncertainty
+    distributions satisfy literal patterns while remaining substantively hollow.
+  response: Route to adversarial human sampling and semantic evidence review; include
+    in precision/recall corpus.
+  boundary: Pattern similarity is not proof of intentional evasion.
+- id: AT-22
+  name: Permission-currency theater
+  signal: An approved execution record cites a permission label or generic mandate
+    but omits source identity, version, scope, effective interval, revocation, supersession,
+    trust evidence, source hash, or frozen evaluation time.
+  response: Block approval, require a complete ExecutionMandateRecord, bind it to
+    the exact configuration, and rerun authorization.
+  boundary: Structural completeness does not establish that the authority or legal
+    interpretation is valid.
+- id: AT-23
+  name: Factor-collapse sufficiency collapse
+  signal: Physical or causal admissibility and execution mandate are presented as
+    sufficient execution authority while legitimate delegated authority, evidence
+    currency, control integrity, configuration binding, or unresolved conflict is
+    omitted.
+  response: Restore the complete conjunctive execution dependency and identify every
+    missing warrant or authority surface.
+  boundary: The pattern identifies an incomplete assurance representation; it does
+    not establish that the proposed action is impermissible or physically inadmissible.
+- id: AAT-24
+  name: Successor authority inheritance
+  signal: A candidate or materially modified configuration retains parent permissions
+    without fresh qualification.
+  required_response: Block authority transfer; create SuccessorRequalificationRecord
+    and fresh Action Binding.
+- id: AAT-25
+  name: Recursive generation-depth bypass
+  signal: A candidate produces or activates descendants beyond the declared unreviewed
+    generation depth.
+  required_response: Halt recursive activation and escalate.
+- id: AAT-26
+  name: Stale evaluation continuity
+  signal: Parent evaluations are treated as current despite material candidate changes.
+  required_response: Expire unsupported evidence and reopen affected stages.
+- id: AAT-27
+  name: Automated self-certification
+  signal: The parent, candidate, descendant, or its automated evaluator is the sole
+    source of approval.
+  required_response: Require independent review and external authority.
+- id: AAT-28
+  name: Oversight-removal performance laundering
+  signal: Oversight removal is justified solely by increased performance.
+  required_response: Treat as a material action change and requalify.

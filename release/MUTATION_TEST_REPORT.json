@@ -1,0 +1,235 @@
+{
+  "suite": "MHIOS v0.8 seeded mutation suite",
+  "mutants": 45,
+  "killed": 45,
+  "survived": 0,
+  "mutation_score": 1.0,
+  "results": [
+    {
+      "mutation": "duplicate_object_id",
+      "killed": true,
+      "message": "duplicate object_id"
+    },
+    {
+      "mutation": "silent_tier_downgrade",
+      "killed": true,
+      "message": "tier divergence record required"
+    },
+    {
+      "mutation": "ai_self_authorization",
+      "killed": true,
+      "message": "AI suggestion cannot self-authorize"
+    },
+    {
+      "mutation": "ai_material_unreviewed",
+      "killed": true,
+      "message": "material AI object requires human review before authority"
+    },
+    {
+      "mutation": "control_without_owner",
+      "killed": true,
+      "message": "control owner required"
+    },
+    {
+      "mutation": "decision_state_contradiction",
+      "killed": true,
+      "message": "non-decisive result cannot claim deterministic framework selection"
+    },
+    {
+      "mutation": "rls_before_selectable_set",
+      "killed": true,
+      "message": "RLS state requires selectable-set formation evidence"
+    },
+    {
+      "mutation": "unknown_disappears",
+      "killed": true,
+      "message": "unknown resolution requires disposition evidence"
+    },
+    {
+      "mutation": "unresolved_conflict_at_authority",
+      "killed": true,
+      "message": "unresolved material conflict blocks authority/execution state"
+    },
+    {
+      "mutation": "ai_no_independent_first_pass",
+      "killed": true,
+      "message": "gate-material AI assistance requires independent first pass or recorded exception"
+    },
+    {
+      "mutation": "stale_gate_evidence",
+      "killed": true,
+      "message": "stale gate-material evidence requires documented disposition"
+    },
+    {
+      "mutation": "current_view_source_mismatch",
+      "killed": true,
+      "message": "generated view cannot be current after source-version mismatch"
+    },
+    {
+      "mutation": "public_view_no_inference_review",
+      "killed": true,
+      "message": "public redacted view requires graph-aware inference-risk review"
+    },
+    {
+      "mutation": "c2_no_institutional_preconditions",
+      "killed": true,
+      "message": "C2/C3 claim requires declared institutional preconditions"
+    },
+    {
+      "mutation": "missing_reality_surface",
+      "killed": true,
+      "message": "schema: '' should be non-empty"
+    },
+    {
+      "mutation": "rg_role_collapse",
+      "killed": true,
+      "message": "GateRecord role collapses RG and option-rejecting gate semantics"
+    },
+    {
+      "mutation": "unlinked_constitutive_controls",
+      "killed": true,
+      "message": "selectable CSV_PASS_WITH_CONTROLS requires constitutive_control_ids"
+    },
+    {
+      "mutation": "material_obligation_silent_field",
+      "killed": true,
+      "message": "MaterialObligationRecord has a silent required field"
+    },
+    {
+      "mutation": "bare_control_as_constitutive",
+      "killed": true,
+      "message": "constitutive_control_ids must resolve to MaterialObligationRecord objects"
+    },
+    {
+      "mutation": "missing_computational_closure",
+      "killed": true,
+      "message": "Tier 2/3 requires ComputationalClosureRecord"
+    },
+    {
+      "mutation": "pilot_without_preregistration",
+      "killed": true,
+      "message": "Tier 3 and pilot runs require ProjectionPreRegistrationRecord"
+    },
+    {
+      "mutation": "refusal_without_record",
+      "killed": true,
+      "message": "Refusal-state run requires RefusalRecord"
+    },
+    {
+      "mutation": "high_stakes_l2_without_tempo",
+      "killed": true,
+      "message": "triggered consequence tempo requires ConsequenceTempoRecord"
+    },
+    {
+      "mutation": "material_human_compensation_missing",
+      "killed": true,
+      "message": "material human compensation load requires HumanCompensationLoadRecord"
+    },
+    {
+      "mutation": "unvalidated_attachment",
+      "killed": true,
+      "message": "CoreRecordAttachment cannot satisfy coverage without pinned validation"
+    },
+    {
+      "mutation": "authorization_expired",
+      "killed": true,
+      "message": "approved execution is outside its effective interval"
+    },
+    {
+      "mutation": "authorization_not_yet_effective",
+      "killed": true,
+      "message": "approved execution is outside its effective interval"
+    },
+    {
+      "mutation": "execution_mandate_expired",
+      "killed": true,
+      "message": "approved execution uses mandate outside its effective interval"
+    },
+    {
+      "mutation": "execution_mandate_not_yet_effective",
+      "killed": true,
+      "message": "approved execution uses mandate outside its effective interval"
+    },
+    {
+      "mutation": "execution_mandate_revoked",
+      "killed": true,
+      "message": "approved execution requires currently applicable mandate"
+    },
+    {
+      "mutation": "mandate_snapshot_mismatch",
+      "killed": true,
+      "message": "approved execution mandate_snapshot_hash mismatch"
+    },
+    {
+      "mutation": "action_instance_missing",
+      "killed": true,
+      "message": "schema: '' should be non-empty"
+    },
+    {
+      "mutation": "action_specification_hash_invalid",
+      "killed": true,
+      "message": "schema: 'bad' does not match '^[0-9a-fA-F]{64}$'"
+    },
+    {
+      "mutation": "qualification_snapshot_hash_invalid",
+      "killed": true,
+      "message": "schema: 'bad' does not match '^[0-9a-fA-F]{64}$'"
+    },
+    {
+      "mutation": "execution_configuration_unbound",
+      "killed": true,
+      "message": "approved execution requires exact ConfigurationRecord binding"
+    },
+    {
+      "mutation": "required_control_inactive",
+      "killed": true,
+      "message": "approved execution requires every required control to be active"
+    },
+    {
+      "mutation": "precondition_unsatisfied",
+      "killed": true,
+      "message": "approved execution requires every precondition to be satisfied"
+    },
+    {
+      "mutation": "authorization_basis_blank",
+      "killed": true,
+      "message": "schema: '' should be non-empty"
+    },
+    {
+      "mutation": "required_controls_silently_empty",
+      "killed": true,
+      "message": "empty required_controls requires explicit not-applicable rationale"
+    },
+    {
+      "mutation": "preconditions_silently_empty",
+      "killed": true,
+      "message": "empty preconditions requires explicit not-applicable rationale"
+    },
+    {
+      "mutation": "successor_authority_inheritance",
+      "killed": true,
+      "message": "successor authority inheritance is prohibited"
+    },
+    {
+      "mutation": "successor_generation_depth",
+      "killed": true,
+      "message": "successor generation depth exceeds declared bound"
+    },
+    {
+      "mutation": "successor_self_review",
+      "killed": true,
+      "message": "successor requalification requires independent non-AI review"
+    },
+    {
+      "mutation": "successor_unlock_without_authorization",
+      "killed": true,
+      "message": "unqualified successor must remain candidate-locked"
+    },
+    {
+      "mutation": "computational_context_missing",
+      "killed": true,
+      "message": "schema: [] does not contain items matching the given schema"
+    }
+  ],
+  "boundary": "Seeded mutation performance does not establish complete normative coverage, legal validity, physical safety, control effectiveness, or construct validity."
+}

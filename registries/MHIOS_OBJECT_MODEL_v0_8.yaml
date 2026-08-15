@@ -1,0 +1,1038 @@
+standard: MHIOS
+version: '0.8'
+status: candidate_experimental
+architecture: RG -> RF/NCRC -> TRC -> CSV -> RLS
+universal_fields:
+- object_id
+- object_type
+- run_id
+- version
+- status
+- title
+- description
+- created_at
+- created_by
+- updated_at
+- updated_by
+- entry_origin
+- review_status
+- responsible_role
+- validity_start
+- validity_end
+- configuration_binding
+- source_links
+- dependency_links
+- challenge_links
+- supersedes
+- superseded_by
+- sensitivity_class
+- visibility_class
+- retention_class
+- content_hash
+- revision_number
+- base_revision
+- branch_id
+- conflict_status
+- freshness_policy_id
+- last_verified_at
+- next_review_at
+- staleness_status
+- legal_handling_class
+objects:
+  DecisionRun:
+    purpose: One bounded MathGov evaluation and its complete lifecycle.
+    fields:
+    - run_id
+    - run_title
+    - decision_question
+    - purpose
+    - decision_owner
+    - authority_boundary
+    - configuration_id
+    - environment_id
+    - time_horizon
+    - geographic_scope
+    - legal_context
+    - declared_tier
+    - recommended_tier
+    - run_state
+    - transition_or_action_boundary
+    - reality_surface
+    - consequence_pathways
+    - claim_boundary
+    - freeze_timestamp
+    - branch_parent
+    - branch_id
+    - branch_status
+    - governing_branch_id
+    - merge_parent_ids
+    - institutional_preconditions_status
+    relations:
+    - contains Options, Claims, Stakeholders and gate records
+    - links tier, decision, authority, execution, monitoring and generated-view records
+    implementation_class: MVS_CORE
+  Option:
+    purpose: Candidate action, policy, design, delay, redesign, refusal, or baseline
+      path.
+    fields:
+    - option_id
+    - name
+    - description
+    - option_type
+    - baseline_or_comparator
+    - current_state
+    - proposed_transition
+    - post_state
+    - implementation_path
+    - configuration_effect
+    - reversibility
+    relations:
+    - belongs to DecisionRun
+    - links Claims, GateRecords and RLSCellRecords
+    implementation_class: MVS_CORE
+  ConfigurationRecord:
+    purpose: Exact system configuration and validity envelope to which qualification
+      and claims apply.
+    fields:
+    - configuration_id
+    - system_name
+    - software_version
+    - model_version
+    - hardware_version
+    - control_stack
+    - execution_mandate_record_ids
+    - tools
+    - data_sources
+    - operating_environment
+    - authority_state
+    - validity_envelope
+    - known_limitations
+    - qualification_status
+    relations:
+    - binds DecisionRun and Claims
+    - material change activates RequalificationTrigger
+    implementation_class: MVS_CORE
+  TierAssessmentRecord:
+    purpose: Trigger-derived recommended tier and any justified divergence.
+    fields:
+    - tier_assessment_id
+    - system_recommended_tier
+    - operator_selected_tier
+    - trigger_results
+    - tier_divergence
+    - divergence_rationale
+    - approving_reviewer
+    - review_status
+    - reopen_trigger
+    relations:
+    - belongs to DecisionRun
+    - may create Challenge
+    implementation_class: CONDITIONAL
+  Claim:
+    purpose: A proposition used to support, qualify, rank, authorize, or communicate
+      the run.
+    fields:
+    - claim_id
+    - claim_text
+    - claim_type
+    - claim_domain
+    - warrant_domains
+    - claim_strength
+    - claim_owner
+    - validity_domain
+    - claim_boundary
+    - evidence_status
+    - methodological_integrity_status
+    - falsification_or_revision_trigger
+    - downstream_uses
+    relations:
+    - supported or challenged by EvidenceItems
+    - depends on Assumptions and Unknowns
+    - links MFDI and SourceCoupling records
+    implementation_class: MVS_CORE
+  EvidenceItem:
+    purpose: Traceable evidence, counterevidence, measurement, testimony, model result,
+      source, or warrant.
+    fields:
+    - evidence_id
+    - evidence_type
+    - source_title
+    - source_author
+    - source_date
+    - source_location
+    - content_summary
+    - original_content_reference
+    - reliability_status
+    - relevance_status
+    - freshness_status
+    - validity_domain
+    - supports_claims
+    - challenges_claims
+    - known_limitations
+    - freshness_policy_id
+    - last_verified_at
+    - next_review_at
+    - staleness_status
+    - staleness_rationale
+    relations:
+    - links Claims, ReviewerJudgments and GeneratedViews
+    implementation_class: MVS_CORE
+  Assumption:
+    purpose: Explicit assumption whose failure may alter claims, gates, ranking, or
+      authority.
+    fields:
+    - assumption_id
+    - assumption_text
+    - necessity
+    - basis
+    - uncertainty
+    - affected_claims
+    - affected_gates
+    - failure_consequence
+    - sensitivity_test
+    - revision_trigger
+    relations:
+    - links Claim, CalculationRecord and RequalificationTrigger
+    implementation_class: CONDITIONAL
+  MaterialUnknown:
+    purpose: Unknown condition material to rights, ruin, viability, ranking, authority,
+      or claim strength.
+    fields:
+    - unknown_id
+    - unknown_description
+    - why_unknown
+    - materiality
+    - potential_rights_effect
+    - potential_tail_effect
+    - potential_csv_effect
+    - potential_ranking_effect
+    - resolution_path
+    - deadline
+    - responsible_role
+    - claim_action
+    relations:
+    - links Claim, GateRecord and Challenge
+    implementation_class: MVS_CORE
+  CategoryGroundingRecord:
+    purpose: Grounds a material category and prevents term or category authority laundering.
+    fields:
+    - category_id
+    - material_category
+    - definition
+    - category_discriminator
+    - primitive_basis
+    - inclusion_boundary
+    - exclusion_boundary
+    - noncollapse_pairs
+    - reference_structure
+    - evidence_surface
+    - category_maturity_status
+    - semantic_debt_flag
+    - refusal_condition
+    relations:
+    - links Claim and RG GateRecord
+    implementation_class: CONDITIONAL
+  StakeholderInstance:
+    purpose: Stakeholder-in-role-in-context with a declared exposure pathway.
+    fields:
+    - stakeholder_instance_id
+    - stakeholder_type
+    - role
+    - context
+    - exposure_path
+    - vulnerability
+    - representation_method
+    - voice_or_proxy
+    - scope_mappings
+    - rights_exposures
+    relations:
+    - links ScopeMappings, RightsExposures and Challenges
+    implementation_class: MVS_CORE
+  ScopeMapping:
+    purpose: Maps a stakeholder instance to one or more Union Scopes with redundancy
+      controls.
+    fields:
+    - scope_mapping_id
+    - stakeholder_instance_id
+    - union_scope
+    - mapping_rationale
+    - redundancy_method
+    - effect_token
+    - allocation_coefficient
+    - review_status
+    relations:
+    - belongs to StakeholderInstance
+    - feeds RLSCellRecords
+    implementation_class: CONDITIONAL
+  RightsExposure:
+    purpose: Option-specific rights exposure through floor, categorical, and severe-hazard
+      channels.
+    fields:
+    - rights_exposure_id
+    - stakeholder_instance_id
+    - right_id
+    - option_id
+    - exposure_path
+    - floor_channel
+    - categorical_channel
+    - severe_hazard_channel
+    - subgroup
+    - uncertainty
+    - evidence_links
+    - rf_status
+    relations:
+    - links RF GateRecord, EvidenceItems and StakeholderInstance
+    implementation_class: CONDITIONAL
+  Scenario:
+    purpose: Option-specific scenario with probability bounds, severity, irreversibility,
+      dependencies and evidence.
+    fields:
+    - scenario_id
+    - option_id
+    - scenario_family
+    - description
+    - probability_lower
+    - probability_central
+    - probability_upper
+    - severity_class
+    - catastrophe_cells
+    - irreversibility
+    - dependencies
+    - evidence_links
+    - scenario_status
+    relations:
+    - feeds TRC GateRecord and CalculationRecord
+    implementation_class: CONDITIONAL
+  Control:
+    purpose: Preventive, limiting, monitoring, detection, shutdown, rollback, recovery,
+      legal, or procedural control.
+    fields:
+    - control_id
+    - control_name
+    - control_type
+    - control_owner
+    - target_risk
+    - preventive_function
+    - limiting_function
+    - detection_function
+    - shutdown_function
+    - rollback_function
+    - recovery_function
+    - verification_method
+    - activation_condition
+    - failure_mode
+    - residual_risk
+    relations:
+    - links CSV GateRecord, ExecutionAuthorization and MonitoringSignals
+    implementation_class: CONDITIONAL
+  Dependency:
+    purpose: External or internal dependency whose failure can alter viability or
+      qualification.
+    fields:
+    - dependency_id
+    - dependency_name
+    - dependency_type
+    - provider
+    - required_for
+    - failure_effect
+    - substitutability
+    - concentration_risk
+    - verification_status
+    - monitoring_status
+    - requalification_trigger
+    relations:
+    - links CSV, SourceCoupling and Requalification records
+    implementation_class: CONDITIONAL
+  PhysicalCausalAdmissibilityEvidenceProfile:
+    purpose: MHIOS representation of PC-AEP without replacing the governing PC-AEP
+      standard.
+    fields:
+    - pcaep_id
+    - option_id
+    - candidate_generation_source
+    - physical_or_causal_model
+    - validity_domain
+    - boundary_conditions
+    - uncertainty_range
+    - failure_modes
+    - reversibility_boundary
+    - verification_simulation_empirical_test_or_expert_warrant
+    - admissibility_warrant_source
+    - monitoring_and_shutoff
+    - residual_unknowns
+    - required_claim_action
+    - pcae_status
+    relations:
+    - links RG, CSV and EvidenceItems
+    implementation_class: CONDITIONAL
+  MethodologicalIntegrityRecord:
+    purpose: MHIOS representation of MFDI for a material claim.
+    fields:
+    - mdi_id
+    - claim_id
+    - claim_type
+    - claim_domain
+    - warrant_domains
+    - cross_domain_bridges
+    - legal_regulatory_context
+    - dependency_position
+    - starting_assumptions
+    - definition_or_operator
+    - necessity_or_alternative_check
+    - alternative_explanations
+    - test_surface
+    - revision_trigger
+    - uncertainty_method
+    - downstream_dependencies
+    - re_derivation_scope
+    - required_claim_action
+    - method_status
+    relations:
+    - links Claim, GateRecord and RequalificationTrigger
+    implementation_class: CONDITIONAL
+  CapabilityAuthorityDecompositionRecord:
+    purpose: Decomposes material automation, autonomy, agentic, reasoning, intent,
+      capability, and execution-authority claims without relying on a scalar label.
+    fields:
+    - capability_decomposition_id
+    - subject_system_or_configuration_id
+    - triggering_terms
+    - candidate_generation_method
+    - reference_source
+    - constraint_sources
+    - objective_source
+    - objective_change_authority
+    - admissibility_warrant_sources
+    - execution_interface
+    - execution_scope
+    - execution_authority_source
+    - revocation_authority
+    - safe_state_or_shutdown_path
+    - requalification_trigger
+    - reviewer_status
+    - required_claim_action
+    relations:
+    - links Claim, ConfigurationRecord, PhysicalCausalAdmissibilityEvidenceProfile,
+      AuthoritySelectionRecord, ExecutionAuthorization and RequalificationTrigger
+    implementation_class: CONDITIONAL
+  SourceCouplingRecord:
+    purpose: Connects a claimed capability to enabling and boundary conditions.
+    fields:
+    - source_coupling_id
+    - claim_id
+    - claimed_capability
+    - enabling_conditions
+    - boundary_conditions
+    - source_evidence
+    - generator_output_distinction
+    - inherited_assumptions
+    - downstream_compensations
+    - source_debt_flag
+    - recheck_trigger
+    - source_coupling_status
+    - required_claim_action
+    relations:
+    - links Claim, RG and CSV
+    implementation_class: CONDITIONAL
+  SGPEvidenceNarrative:
+    purpose: Preserved qualitative SGP evidence, context, ambiguity, and alternatives.
+    fields:
+    - sgp_narrative_id
+    - subject_configuration
+    - source_observation
+    - context
+    - alternative_interpretations
+    - uncertainty
+    - original_source
+    - reviewer_comments
+    relations:
+    - links SGPTypedInterpretation and EvidenceItem
+    implementation_class: ADVANCED_RESEARCH
+  SGPTypedInterpretation:
+    purpose: Typed SGP interpretation traceable to preserved narrative evidence.
+    fields:
+    - sgp_interpretation_id
+    - sgp_narrative_id
+    - register
+    - status
+    - evidence_strength
+    - what_follows
+    - what_does_not_follow
+    - reviewer
+    - challenge_status
+    - revision_trigger
+    relations:
+    - links SGP narrative, ReviewerJudgment and Challenge
+    implementation_class: ADVANCED_RESEARCH
+  GateRecord:
+    purpose: Base record for the RG claim-authority precondition and RF/NCRC, TRC,
+      and CSV option-rejecting gates without collapsing their roles.
+    fields:
+    - gate_record_id
+    - gate_type
+    - record_role
+    - option_id
+    - status
+    - controlling_rule
+    - inputs
+    - evidence_links
+    - unknown_links
+    - reviewer
+    - review_timestamp
+    - constraint_reasons
+    - canon_audit_flags
+    - constitutive_control_ids
+    - required_actions
+    - reopen_triggers
+    relations:
+    - belongs to Option
+    - links DecisionStateRecord and ReviewerJudgment
+    implementation_class: MVS_CORE
+  RLSCellRecord:
+    purpose: One Union Scope x Welfare Dimension cell for one option.
+    fields:
+    - rls_cell_id
+    - option_id
+    - union_scope
+    - welfare_dimension
+    - impact_instances
+    - base_impact
+    - confidence
+    - temporal_weight
+    - cell_multiplier
+    - uncertainty
+    - effective_weight
+    - nonmaskable_status
+    - evidence_links
+    relations:
+    - links WeightRecord, CalculationRecord and EvidenceItems
+    implementation_class: CONDITIONAL
+  WeightRecord:
+    purpose: Constitutional floor, democratic tuning, PLSS adjustment, final weight
+      and sensitivity.
+    fields:
+    - weight_record_id
+    - weight_type
+    - constitutional_floor
+    - democratic_tuning
+    - plss_adjustment
+    - final_weight
+    - authority_source
+    - approval_status
+    - sensitivity_result
+    relations:
+    - feeds RLSCellRecords and CalculationRecords
+    implementation_class: CONDITIONAL
+  CalculationRecord:
+    purpose: Reproducible calculation trace with inputs, engine, formula version,
+      output and hash.
+    fields:
+    - calculation_id
+    - calculation_type
+    - formula_version
+    - input_object_ids
+    - input_values
+    - output_value
+    - units
+    - engine
+    - engine_version
+    - timestamp
+    - rounding_rule
+    - validation_status
+    - content_hash
+    relations:
+    - links Claims, GateRecords and DecisionStateRecord
+    implementation_class: CONDITIONAL
+  ReviewerJudgment:
+    purpose: Named human interpretation, review, agreement, disagreement, or adoption
+      of assistance.
+    fields:
+    - judgment_id
+    - subject_object_id
+    - reviewer
+    - reviewer_role
+    - judgment
+    - rationale
+    - evidence_considered
+    - uncertainty
+    - conflict_of_interest
+    - review_status
+    relations:
+    - links any reviewable object
+    - may create Challenge
+    implementation_class: MVS_CORE
+  Challenge:
+    purpose: Formal challenge, disagreement, appeal, or missing-stakeholder claim.
+    fields:
+    - challenge_id
+    - target_object_id
+    - challenger
+    - challenge_type
+    - challenge_text
+    - evidence_links
+    - severity
+    - status
+    - assigned_reviewer
+    - resolution
+    - resolution_rationale
+    - appeal_path
+    relations:
+    - links target object, ReviewerJudgment and GeneratedView
+    implementation_class: CONDITIONAL
+  DecisionStateRecord:
+    purpose: Single source for selectable set, framework verdict, decisiveness and
+      authority-selection need.
+    fields:
+    - decision_state_id
+    - selectable_options
+    - framework_verdict
+    - framework_selected_option
+    - decisiveness
+    - gap
+    - threshold
+    - authority_selection_required
+    - run_decision_state
+    - controlling_calculation_ids
+    relations:
+    - links GateRecords, CalculationRecords and AuthoritySelectionRecord
+    implementation_class: MVS_CORE
+  EmergencyOrderRecord:
+    purpose: Reconstructs the Canon emergency rights comparison when no option passes
+      RF/NCRC; it does not create an ordinary pass or selection.
+    fields:
+    - emergency_order_id
+    - emergency_declaration
+    - candidate_option_ids
+    - right_priority_order
+    - component_priority_order
+    - violation_tuples_by_option
+    - comparison_trace
+    - resolving_coordinate
+    - unresolved_unknown_fields
+    - challenger_attestation
+    - mitigation_and_remediation_plan
+    - monitoring_and_appeal_path
+    - exit_and_review_cadence
+    - return_to_normal_triggers
+    relations:
+    - links RightsExposure, GateRecords, DecisionStateRecord, Challenge and AuthoritySelectionRecord
+    implementation_class: CONDITIONAL
+  AuthoritySelectionRecord:
+    purpose: Lawful or institutional selection where authority judgment remains necessary.
+    fields:
+    - authority_selection_id
+    - decision_authority
+    - legal_or_institutional_mandate
+    - options_available
+    - framework_result
+    - selected_option
+    - selection_basis
+    - departure_from_framework_result
+    - departure_rationale
+    - conflicts_declared
+    - conditions
+    - review_status
+    relations:
+    - links DecisionStateRecord and ExecutionAuthorization
+    implementation_class: CONDITIONAL
+  ExecutionMandateRecord:
+    purpose: Versioned, scoped and time-bound human-defined mandate source that remains
+      separate from physical or causal admissibility and from legitimate execution
+      authority.
+    fields:
+    - mandate_record_id
+    - authority_source
+    - authority_scope
+    - jurisdiction_or_applicability_scope
+    - instrument_id
+    - instrument_version
+    - action_scope
+    - subject_scope
+    - applicability_conditions
+    - effective_from
+    - effective_until
+    - revocation_authority
+    - revocation_status
+    - supersession_status
+    - trust_status
+    - source_hash
+    - signature_or_verification_evidence
+    - last_verified_at
+    - mandate_status
+    - conflict_ids
+    - requalification_trigger
+    - reviewer_status
+    relations:
+    - binds ConfigurationRecord and ExecutionAuthorization
+    - material change or invalidation activates RequalificationTrigger
+    implementation_class: CONDITIONAL
+  ExecutionAuthorization:
+    purpose: Separates selection from current mandate and legitimate authority to
+      execute.
+    fields:
+    - execution_authorization_id
+    - action_instance_id
+    - action_specification_hash
+    - qualification_snapshot_hash
+    - selected_option
+    - execution_authority
+    - authorization_basis
+    - authorization_basis_refs
+    - configuration_binding
+    - authorization_evaluated_at
+    - mandate_snapshot_hash
+    - mandate_currency_disposition
+    - required_controls
+    - required_control_checks
+    - preconditions
+    - precondition_checks
+    - evidence_currency_status
+    - effective_time
+    - expiry
+    - rollback_authority
+    - shutdown_authority
+    - execution_status
+    - execution_disposition
+    relations:
+    - links ExecutionMandateRecords, ConfigurationRecord, ActionQualificationRecord,
+      Controls, MonitoringSignals and RequalificationTriggers
+    implementation_class: CONDITIONAL
+  MonitoringSignal:
+    purpose: Observed signal that may confirm, challenge, or reopen qualification.
+    fields:
+    - signal_id
+    - target_object_id
+    - metric
+    - source
+    - expected_range
+    - observed_value
+    - timestamp
+    - materiality
+    - control_response
+    - requalification_effect
+    relations:
+    - links Control, OutcomeObservation and RequalificationTrigger
+    implementation_class: ADVANCED_RESEARCH
+  RequalificationTrigger:
+    purpose: Condition requiring reopening after material change, incident, drift,
+      or new evidence.
+    fields:
+    - trigger_id
+    - trigger_type
+    - description
+    - affected_objects
+    - activation_condition
+    - activated_at
+    - required_reopen_scope
+    - responsible_role
+    - resolution_status
+    relations:
+    - links ConfigurationRecord, GateRecord and DecisionRun
+    implementation_class: CONDITIONAL
+  OutcomeObservation:
+    purpose: Observed outcome for learning, accountability, and model revision.
+    fields:
+    - outcome_id
+    - option_id
+    - observed_effect
+    - affected_stakeholders
+    - expected_or_unexpected
+    - severity
+    - evidence_links
+    - comparison_to_prediction
+    - model_update_required
+    - requalification_required
+    relations:
+    - links MonitoringSignal, Claim and RequalificationTrigger
+    implementation_class: ADVANCED_RESEARCH
+  GeneratedView:
+    purpose: Human- or machine-readable report generated from shared source objects.
+    fields:
+    - view_id
+    - view_type
+    - source_object_ids
+    - template_version
+    - generated_at
+    - generator_version
+    - content_hash
+    - redaction_profile
+    - stale_status
+    - source_revision_map
+    - inference_risk_review
+    - suppressed_edges
+    - residual_disclosure_risk
+    - computational_context
+    - source_record_refs
+    - context_status
+    - material_mismatch_fields
+    relations:
+    - derived from source objects and never a conflicting normative source
+    - may instantiate the Computational Context Declaration as a derived view without
+      duplicating authoritative records
+    implementation_class: MVS_CORE
+  InteractionEvent:
+    purpose: Append-only event for creation, edit, review, challenge, override, calculation,
+      export, or authorization.
+    fields:
+    - event_id
+    - run_id
+    - event_type
+    - actor_id
+    - actor_role
+    - timestamp
+    - target_object_id
+    - previous_hash
+    - new_hash
+    - reason
+    - metadata
+    - base_revision
+    - proposed_revision
+    - conflict_status
+    - merge_disposition
+    relations:
+    - belongs to DecisionRun and supports audit replay
+    implementation_class: MVS_CORE
+  BurdenObservation:
+    purpose: Empirical usability and burden measurement; never a gate result.
+    fields:
+    - burden_observation_id
+    - run_id
+    - stage
+    - metric
+    - value
+    - unit
+    - observer
+    - timestamp
+    - notes
+    relations:
+    - feeds Governance Burden Profile
+    implementation_class: ADVANCED_RESEARCH
+  MaterialObligationRecord:
+    purpose: Carries every obligation material to selectability, execution, monitoring,
+      repair, or requalification without reducing it to a named owner.
+    fields:
+    - material_obligation_id
+    - obligation
+    - accountable_authority
+    - operational_carrier_or_execution_path
+    - authority_and_capacity_basis
+    - activation_trigger
+    - scope
+    - required_action
+    - response_deadline_or_window
+    - evidence_of_discharge
+    - review_or_expiry
+    - challenge_route
+    - delegation_acceptance
+    - backup_or_successor
+    - nonperformance_trigger
+    - missed_duty_escalation
+    - amendment_waiver_suspension_retirement_authority
+    - change_control_rule
+    - residual_responsibility
+    - control_effectiveness_status
+    - obligation_status
+    - linked_control_ids
+    relations:
+    - may carry one or more Controls
+    - is referenced by GateRecord constitutive_control_ids, ResponsibilityContinuityRecord,
+      and ExecutionAuthorization
+    implementation_class: CONDITIONAL
+  ConsequenceTempoRecord:
+    purpose: Compares credible action and control timing with the earliest unacceptable
+      escalation or irreversible stop-loss boundary.
+    fields:
+    - consequence_tempo_id
+    - episode_id
+    - option_id
+    - action_initiation_mode
+    - expected_propagation_rate
+    - earliest_material_harm_boundary
+    - timing_elements
+    - declared_safety_margin
+    - constitutional_latency_required
+    - constitutional_latency_duration
+    - harm_of_delay
+    - emergency_override_ref
+    - tempo_disposition
+    - evidence_refs
+    - reviewer_status
+    - reopen_trigger
+    relations:
+    - links option, controls, material obligations, execution authorization, and requalification
+    implementation_class: CONDITIONAL
+  ResponsibilityContinuityRecord:
+    purpose: Preserves typed responsibility and accepted handoffs from evidence and
+      selection through execution, appeal, communication, and repair.
+    fields:
+    - responsibility_continuity_id
+    - episode_id
+    - decision_authority
+    - evidence_accountability
+    - model_analytical_responsibility
+    - operational_responsibility
+    - execution_authority
+    - intervention_authority
+    - appeal_owner
+    - communication_owner
+    - remedy_owner
+    - residual_responsibility
+    - candidate_generation_source
+    - handoffs
+    - material_obligation_ids
+    - human_compensation_load_record_ids
+    - reconstructability_status
+    - reviewer_status
+    - reopen_trigger
+    relations:
+    - links MaterialObligationRecords, HumanCompensationLoadRecords, authority, execution,
+      and challenge objects
+    implementation_class: CONDITIONAL
+  HumanCompensationLoadRecord:
+    purpose: Makes hidden human exception-handling, memory, relationship work, recovery,
+      and weak-signal detection visible before automation, scaling, outsourcing, or
+      role removal.
+    fields:
+    - human_compensation_load_id
+    - carrier_role_classes
+    - hidden_work_performed
+    - formal_workflow_gap
+    - frequency_or_burden_indicators
+    - single_person_dependency
+    - recovery_and_capacity_effects
+    - consequence_if_compensation_stops
+    - evidence_sources
+    - privacy_and_non_retaliation_protections
+    - preservation_or_redesign_action
+    - review_trigger
+    - status
+    relations:
+    - links CSV, ResponsibilityContinuityRecord, affected stakeholders, and redesign
+      or escalation actions
+    implementation_class: CONDITIONAL
+  ProjectionPreRegistrationRecord:
+    purpose: Freezes the Tier-3 or pilot projection map before outcome-sensitive computation
+      and makes post-observation change auditable.
+    fields:
+    - projection_preregistration_id
+    - decision_boundary
+    - time_horizon
+    - option_set
+    - stakeholder_discovery_record
+    - rights_coverage_and_thresholds
+    - catastrophe_scenario_and_trc_parameters
+    - csv_trigger_conditions_and_scopes
+    - weight_floors_and_nondefault_weights
+    - sgp_bindings
+    - subgroup_uplift
+    - kernel_mode_and_quality
+    - sensitivity_sweep
+    - falsification_refusal_escalation_and_rerun_conditions
+    - projection_freeze_hash
+    - freeze_timestamp_utc
+    - signature
+    - post_observation_modification
+    - modification_disposition
+    relations:
+    - hash-pins precomputed run objects and is referenced by PCC and GeneratedView
+    implementation_class: CONDITIONAL
+  RefusalRecord:
+    purpose: Preserves the Canon Refusal state as an uncommitted evidence or specification
+      failure rather than silently converting it to gate pass or failure.
+    fields:
+    - refusal_id
+    - trigger_code
+    - trigger_description
+    - options_affected
+    - scopes_affected
+    - dimensions_affected
+    - rights_cells_affected
+    - catastrophe_cells_affected
+    - containment_indicators_affected
+    - evidence_basis
+    - provenance_links
+    - no_action_baseline_status
+    - escalation_route
+    - provisional_action_status
+    - re_run_conditions
+    - reviewer_signature_or_role
+    relations:
+    - links DecisionStateRecord, GateRecords, EvidenceItems, MaterialUnknowns, and
+      RequalificationTrigger
+    implementation_class: CONDITIONAL
+  ComputationalClosureRecord:
+    purpose: Declares what the run computed and what remains outside its scopes, horizons,
+      externalities, and propagation modes.
+    fields:
+    - computational_closure_id
+    - scopes_evaluated
+    - scopes_guardrail_only
+    - scopes_outside_computation
+    - time_horizon_evaluated
+    - time_horizon_outside_computation
+    - kernel_mode
+    - propagation_edges_included
+    - propagation_edges_excluded
+    - externalities_excluded
+    - claim_boundary
+    relations:
+    - constrains DecisionRun, GeneratedViews, and every public or conformance claim
+    implementation_class: CONDITIONAL
+  CoreRecordAttachment:
+    purpose: References a triggered Core or companion record that MHIOS intentionally
+      does not duplicate, while preserving schema identity, hash, validation status,
+      and claim effect.
+    fields:
+    - core_record_attachment_id
+    - record_type
+    - governing_source
+    - governing_version
+    - trigger_basis
+    - tier_or_claim_scope
+    - artifact_ref
+    - schema_ref
+    - content_hash
+    - validation_status
+    - validation_evidence_ref
+    - reviewer_status
+    - claim_effect_if_missing_or_invalid
+    relations:
+    - satisfies a coverage-matrix slot only when validated against the pinned governing
+      schema or record contract
+    implementation_class: CONDITIONAL
+  SuccessorRequalificationRecord:
+    purpose: Preserves technical lineage and material deltas while preventing a candidate
+      successor from inheriting execution authority.
+    fields:
+    - parent_configuration_id
+    - candidate_configuration_id
+    - parent_system_or_agent_id
+    - candidate_system_or_agent_id
+    - lineage_relation
+    - generation_depth_from_last_independent_qualification
+    - maximum_unreviewed_generation_depth
+    - material_change_dimensions
+    - capability_delta
+    - autonomy_delta
+    - tool_and_infrastructure_delta
+    - objective_or_policy_delta
+    - evaluation_validity_delta
+    - control_assumption_delta
+    - risk_pathway_delta
+    - requested_authority_delta
+    - reused_evidence_refs
+    - reused_evidence_validity_basis
+    - creator_or_parent_agent_id
+    - independent_reviewer
+    - inherited_authority
+    - authority_inheritance_disposition
+    - candidate_lock_status
+    - fresh_qualification_status
+    - execution_authorization_id
+    - rollback_boundary
+    - requalification_disposition
+    - reopen_triggers
+    relations:
+    - links parent and candidate ConfigurationRecords, EvidenceItems, RequalificationTriggers
+      and candidate-bound ExecutionAuthorization
+    implementation_class: CONDITIONAL

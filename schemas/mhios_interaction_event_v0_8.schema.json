@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mathgov.org/schemas/mhios_interaction_event_v0_8.schema.json",
+  "title": "MathGov MHIOS Interaction Event v0.8",
+  "type": "object",
+  "required": [
+    "event_id",
+    "run_id",
+    "event_type",
+    "actor_id",
+    "actor_role",
+    "timestamp",
+    "target_object_id"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "RUN_CREATED",
+        "SUCCESSOR_CANDIDATE_CREATED",
+        "SUCCESSOR_DELTA_RECORDED",
+        "SUCCESSOR_REQUALIFICATION_OPENED",
+        "SUCCESSOR_REQUALIFICATION_COMPLETED",
+        "CANDIDATE_LOCKED",
+        "CANDIDATE_AUTHORIZED",
+        "GENERATION_DEPTH_BLOCK",
+        "EVALUATION_VALIDITY_EXPIRED",
+        "AUTHORITY_REVOKED",
+        "MATERIAL_CHANGE_REOPENED"
+      ]
+    },
+    "actor_id": {
+      "type": "string"
+    },
+    "actor_role": {
+      "enum": [
+        "RUN_OWNER",
+        "CONTRIBUTOR",
+        "DOMAIN_REVIEWER",
+        "RIGHTS_REVIEWER",
+        "RISK_REVIEWER",
+        "CSV_REVIEWER",
+        "RLS_REVIEWER",
+        "SGP_REVIEWER",
+        "CHALLENGE_REVIEWER",
+        "DECISION_AUTHORITY",
+        "EXECUTION_AUTHORITY",
+        "AUDITOR",
+        "PUBLIC_OBSERVER",
+        "SYSTEM_ADMINISTRATOR",
+        "AI_ASSISTANT"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "target_object_id": {
+      "type": "string"
+    },
+    "previous_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "new_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,3521 @@
+{
+  "standard": "MHIOS",
+  "version": "0.8",
+  "coverage_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+  "method": "One ledger record is created for every uppercase MUST or MUST NOT modal occurrence outside the normative-language definition. A completeness bundle governed by one modal remains one requirement; separately stated modal clauses are counted separately. Check linkage is drawn only from the executable-check registry and verified evidence paths.",
+  "total_atomic_modal_clauses": 175,
+  "total_normative_statements": 175,
+  "clauses_with_any_executable_check": 72,
+  "statements_with_any_executable_check": 72,
+  "any_executable_coverage_ratio": 0.4114285714285714,
+  "clauses_with_direct_behavioral_check": 63,
+  "statements_with_direct_behavioral_check": 63,
+  "direct_behavioral_coverage_ratio": 0.36,
+  "clauses_with_partial_executable_check": 9,
+  "clauses_without_executable_check": 103,
+  "machine_eligible_clauses": 72,
+  "machine_eligible_clauses_with_direct_or_partial_coverage": 72,
+  "machine_eligible_coverage_ratio": 1.0,
+  "non_machine_dispositions": {
+    "EMPIRICAL_TEST_REQUIRED": 8,
+    "LEGAL_OR_DOMAIN_DEPENDENT": 7,
+    "MANUAL_AUDIT": 11,
+    "NOT_MACHINE_TESTABLE": 77
+  },
+  "executable_check_registry": "registries/MHIOS_EXECUTABLE_CHECK_REGISTRY_v0_8.yaml",
+  "requirements": [
+    {
+      "requirement_id": "NORM-001",
+      "line": 78,
+      "section": "0.2 Governing principle",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A conforming implementation MUST NOT require users to manually reproduce the same substantive information across disconnected forms when a shared source object can be referenced.",
+      "source_text": "A conforming implementation SHOULD collect each material fact, judgment, source, control, and decision once, assign it a stable identifier, and reuse it across every affected MathGov record. A conforming implementation MUST NOT require users to manually reproduce the same substantive information across disconnected forms when a shared source object can be referenced.",
+      "test_ids": [
+        "T-UNIQUE-ID"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-002",
+      "line": 120,
+      "section": "0.6 Relationship to existing MathGov components",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A wrapped deployment MUST state both when both are claimed, for example `MHIOS-C2 / ripple.md L2`.",
+      "source_text": "MHIOS conformance classes and ripple.md assurance levels are orthogonal. A wrapped deployment MUST state both when both are claimed, for example `MHIOS-C2 / ripple.md L2`. MHIOS conformance MUST NOT be presented as evidence of a ripple.md assurance level, and a ripple.md level MUST NOT be presented as MHIOS conformance.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-003",
+      "line": 120,
+      "section": "0.6 Relationship to existing MathGov components",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "MHIOS conformance MUST NOT be presented as evidence of a ripple.md assurance level, and a ripple.md level MUST NOT be presented as MHIOS conformance.",
+      "source_text": "MHIOS conformance classes and ripple.md assurance levels are orthogonal. A wrapped deployment MUST state both when both are claimed, for example `MHIOS-C2 / ripple.md L2`. MHIOS conformance MUST NOT be presented as evidence of a ripple.md assurance level, and a ripple.md level MUST NOT be presented as MHIOS conformance.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-004",
+      "line": 120,
+      "section": "0.6 Relationship to existing MathGov components",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 3,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "MHIOS conformance MUST NOT be presented as evidence of a ripple.md assurance level, and a ripple.md level MUST NOT be presented as MHIOS conformance.",
+      "source_text": "MHIOS conformance classes and ripple.md assurance levels are orthogonal. A wrapped deployment MUST state both when both are claimed, for example `MHIOS-C2 / ripple.md L2`. MHIOS conformance MUST NOT be presented as evidence of a ripple.md assurance level, and a ripple.md level MUST NOT be presented as MHIOS conformance.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-005",
+      "line": 131,
+      "section": "0.8 Experimental maturity",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "It MUST NOT be represented as a validated universal interface architecture.",
+      "source_text": "Version 0.8 is a candidate implementation standard for prototyping, usability studies, retrospective examples, controlled pilots, and conformance-test development. It MUST NOT be represented as a validated universal interface architecture. Requirements should be revised when evidence shows that a field, screen, workflow, or control creates burden without adding assurance, or creates false confidence despite apparent usability.",
+      "test_ids": [
+        "T-EXPERIMENTAL-BOUNDARY"
+      ],
+      "coverage": "PARTIAL_EXECUTABLE",
+      "coverage_disposition": "PARTIAL_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-006",
+      "line": 149,
+      "section": "0.9 Self-application of MathGov claim discipline",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "It MUST NOT translate that result into `CONSTRUCT_VALIDITY_SUPPORTED`, empirical superiority, organizational effectiveness, or deployment assurance.",
+      "source_text": "A release verifier may report `ARTIFACT_INTEGRITY_PASS`. It MUST NOT translate that result into `CONSTRUCT_VALIDITY_SUPPORTED`, empirical superiority, organizational effectiveness, or deployment assurance. The current MHIOS claim boundary is maintained in `docs/MHIOS_SELF_ASSESSMENT_AND_CLAIM_BOUNDARY_v0_8.md`.",
+      "test_ids": [
+        "T-EXPERIMENTAL-BOUNDARY"
+      ],
+      "coverage": "PARTIAL_EXECUTABLE",
+      "coverage_disposition": "PARTIAL_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-007",
+      "line": 155,
+      "section": "1.1 Assurance preservation",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Interface simplification MUST NOT omit required evidence, suppress uncertainty, bypass a gate, weaken escalation triggers, hide a non-decisive result, transform monitoring into control, transform permission into admissibility, or transform an AI suggestion into authority.",
+      "source_text": "Interface simplification MUST NOT omit required evidence, suppress uncertainty, bypass a gate, weaken escalation triggers, hide a non-decisive result, transform monitoring into control, transform permission into admissibility, or transform an AI suggestion into authority.",
+      "test_ids": [
+        "T-AI-AUTHORITY"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-008",
+      "line": 179,
+      "section": "1.5 Proportionality",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Proportionality MUST NOT suppress a triggered requirement.",
+      "source_text": "The interface SHOULD adapt required depth to the declared tier, stakes, uncertainty, rights exposure, catastrophic-risk relevance, physical or causal consequence, reversibility, public impact, and configuration volatility. Proportionality MUST NOT suppress a triggered requirement.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-009",
+      "line": 183,
+      "section": "1.6 Human responsibility",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The system MUST expose the named person or lawful authority responsible for each material interpretive judgment, review, override, authority selection, and execution approval.",
+      "source_text": "The system MUST expose the named person or lawful authority responsible for each material interpretive judgment, review, override, authority selection, and execution approval. Technical access alone MUST NOT create substantive authority.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "LEGAL_OR_DOMAIN_DEPENDENT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-010",
+      "line": 183,
+      "section": "1.6 Human responsibility",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Technical access alone MUST NOT create substantive authority.",
+      "source_text": "The system MUST expose the named person or lawful authority responsible for each material interpretive judgment, review, override, authority selection, and execution approval. Technical access alone MUST NOT create substantive authority.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-011",
+      "line": 191,
+      "section": "1.8 Measurable success criterion",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "> **The interface MUST NOT make rigorous action materially more burdensome than superficial compliance, and it MUST make superficial compliance materially more likely to be detected.**",
+      "source_text": "> **The interface MUST NOT make rigorous action materially more burdensome than superficial compliance, and it MUST make superficial compliance materially more likely to be detected.**",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "EMPIRICAL_TEST_REQUIRED",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-012",
+      "line": 191,
+      "section": "1.8 Measurable success criterion",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "> **The interface MUST NOT make rigorous action materially more burdensome than superficial compliance, and it MUST make superficial compliance materially more likely to be detected.**",
+      "source_text": "> **The interface MUST NOT make rigorous action materially more burdensome than superficial compliance, and it MUST make superficial compliance materially more likely to be detected.**",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "EMPIRICAL_TEST_REQUIRED",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-013",
+      "line": 200,
+      "section": "1.8 Measurable success criterion",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "It is undefined when no hollow run reaches the comparison completion state and MUST NOT be the primary first-pilot success criterion.",
+      "source_text": "RHER MAY be retained only as an exploratory descriptor when numerator and denominator refer to comparable completion states. It is undefined when no hollow run reaches the comparison completion state and MUST NOT be the primary first-pilot success criterion. The former candidate `RHER <= 1.50` target is withdrawn pending pilot evidence. Pilot targets, if used, MUST be preregistered for the specific study and reported with uncertainty and sensitivity analyses.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "EMPIRICAL_TEST_REQUIRED",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-014",
+      "line": 200,
+      "section": "1.8 Measurable success criterion",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Pilot targets, if used, MUST be preregistered for the specific study and reported with uncertainty and sensitivity analyses.",
+      "source_text": "RHER MAY be retained only as an exploratory descriptor when numerator and denominator refer to comparable completion states. It is undefined when no hollow run reaches the comparison completion state and MUST NOT be the primary first-pilot success criterion. The former candidate `RHER <= 1.50` target is withdrawn pending pilot evidence. Pilot targets, if used, MUST be preregistered for the specific study and reported with uncertainty and sensitivity analyses.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "EMPIRICAL_TEST_REQUIRED",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-015",
+      "line": 216,
+      "section": "2.1 Cascade invariant",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The interface MUST represent the controlling sequence as:",
+      "source_text": "The interface MUST represent the controlling sequence as:",
+      "test_ids": [
+        "T-CASCADE"
+      ],
+      "coverage": "PARTIAL_EXECUTABLE",
+      "coverage_disposition": "PARTIAL_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-016",
+      "line": 220,
+      "section": "2.1 Cascade invariant",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "It MUST NOT depict SGP, UCI, HOI, PC-AEP, MFDI, Source Coupling, the PCC, or an assurance wrapper as additional headline cascade stages.",
+      "source_text": "It MUST NOT depict SGP, UCI, HOI, PC-AEP, MFDI, Source Coupling, the PCC, or an assurance wrapper as additional headline cascade stages.",
+      "test_ids": [
+        "T-CASCADE"
+      ],
+      "coverage": "PARTIAL_EXECUTABLE",
+      "coverage_disposition": "PARTIAL_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-017",
+      "line": 224,
+      "section": "2.2 Qualification-before-ranking invariant",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "RLS MUST remain unavailable for ordinary ranking until the selectable set has been formed.",
+      "source_text": "RLS MUST remain unavailable for ordinary ranking until the selectable set has been formed. Later-stage calculations performed after an earlier failure MAY be shown only as `NON_GOVERNING_AUDIT_ONLY` and MUST NOT alter the run state.",
+      "test_ids": [
+        "T-DECISION-STATE",
+        "T-RLS-PRECONDITION"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-018",
+      "line": 224,
+      "section": "2.2 Qualification-before-ranking invariant",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Later-stage calculations performed after an earlier failure MAY be shown only as `NON_GOVERNING_AUDIT_ONLY` and MUST NOT alter the run state.",
+      "source_text": "RLS MUST remain unavailable for ordinary ranking until the selectable set has been formed. Later-stage calculations performed after an earlier failure MAY be shown only as `NON_GOVERNING_AUDIT_ONLY` and MUST NOT alter the run state.",
+      "test_ids": [
+        "T-DECISION-STATE",
+        "T-RLS-PRECONDITION"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-019",
+      "line": 228,
+      "section": "2.3 State-fidelity invariant",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Plain-language labels MUST map to canonical machine states.",
+      "source_text": "Plain-language labels MUST map to canonical machine states. Interface wording MUST NOT create a new state or silently merge different states.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-020",
+      "line": 228,
+      "section": "2.3 State-fidelity invariant",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Interface wording MUST NOT create a new state or silently merge different states.",
+      "source_text": "Plain-language labels MUST map to canonical machine states. Interface wording MUST NOT create a new state or silently merge different states.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-021",
+      "line": 241,
+      "section": "2.4 Provenance invariant",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every material claim, judgment, calculation, status, control, override, authorization, and generated statement MUST identify its source object or source rule.",
+      "source_text": "Every material claim, judgment, calculation, status, control, override, authorization, and generated statement MUST identify its source object or source rule.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "MANUAL_AUDIT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-022",
+      "line": 245,
+      "section": "2.5 Human-accountability invariant",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every material interpretive judgment MUST have a named accountable human or legally recognized authority role.",
+      "source_text": "Every material interpretive judgment MUST have a named accountable human or legally recognized authority role. Acceptance of AI-generated text records only that a human adopted the suggestion; it does not increase the underlying evidence strength.",
+      "test_ids": [
+        "T-AI-AUTHORITY"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-023",
+      "line": 249,
+      "section": "2.6 Unknown-preservation invariant",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Unknown, contested, stale, missing, assumption-bound, and out-of-scope information MUST remain distinguishable.",
+      "source_text": "Unknown, contested, stale, missing, assumption-bound, and out-of-scope information MUST remain distinguishable. A missing value MUST NOT be silently represented as zero, false, safe, or not material.",
+      "test_ids": [
+        "T-UNKNOWN"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-024",
+      "line": 249,
+      "section": "2.6 Unknown-preservation invariant",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A missing value MUST NOT be silently represented as zero, false, safe, or not material.",
+      "source_text": "Unknown, contested, stale, missing, assumption-bound, and out-of-scope information MUST remain distinguishable. A missing value MUST NOT be silently represented as zero, false, safe, or not material.",
+      "test_ids": [
+        "T-UNKNOWN"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-025",
+      "line": 253,
+      "section": "2.7 No-silent-override invariant",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The system MUST NOT silently replace evidence, uncertainty, tier, status, weight, threshold, stakeholder inclusion, scenario set, reviewer judgment, framework result, or authorization.",
+      "source_text": "The system MUST NOT silently replace evidence, uncertainty, tier, status, weight, threshold, stakeholder inclusion, scenario set, reviewer judgment, framework result, or authorization. Every material change MUST create an append-only event and a new object version, amendment, or revision branch.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "MANUAL_AUDIT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-026",
+      "line": 253,
+      "section": "2.7 No-silent-override invariant",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every material change MUST create an append-only event and a new object version, amendment, or revision branch.",
+      "source_text": "The system MUST NOT silently replace evidence, uncertainty, tier, status, weight, threshold, stakeholder inclusion, scenario set, reviewer judgment, framework result, or authorization. Every material change MUST create an append-only event and a new object version, amendment, or revision branch.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-027",
+      "line": 257,
+      "section": "2.8 Shared-object invariant",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "They MUST reference stable source-object identifiers and MUST NOT become independent conflicting sources merely because they exist as separate files.",
+      "source_text": "Generated documents are views. They MUST reference stable source-object identifiers and MUST NOT become independent conflicting sources merely because they exist as separate files.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-028",
+      "line": 257,
+      "section": "2.8 Shared-object invariant",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "They MUST reference stable source-object identifiers and MUST NOT become independent conflicting sources merely because they exist as separate files.",
+      "source_text": "Generated documents are views. They MUST reference stable source-object identifiers and MUST NOT become independent conflicting sources merely because they exist as separate files.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-029",
+      "line": 261,
+      "section": "2.9 Claim-boundary invariant",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The interface MUST display the maximum legitimate claim supported by the declared evidence and configuration.",
+      "source_text": "The interface MUST display the maximum legitimate claim supported by the declared evidence and configuration. Completion of a workflow MUST NOT be represented as proof that the underlying claim is true.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-030",
+      "line": 261,
+      "section": "2.9 Claim-boundary invariant",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Completion of a workflow MUST NOT be represented as proof that the underlying claim is true.",
+      "source_text": "The interface MUST display the maximum legitimate claim supported by the declared evidence and configuration. Completion of a workflow MUST NOT be represented as proof that the underlying claim is true.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-031",
+      "line": 265,
+      "section": "2.10 Configuration-bound assurance invariant",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every material capability, safety, admissibility, reliability, rights, viability, selection, and authorization claim MUST remain bound to a declared configuration, control stack, operating environment, evidence surface, authority state, and validity envelope.",
+      "source_text": "Every material capability, safety, admissibility, reliability, rights, viability, selection, and authorization claim MUST remain bound to a declared configuration, control stack, operating environment, evidence surface, authority state, and validity envelope.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-032",
+      "line": 271,
+      "section": "2.11 Successor-integrity invariant",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A materially modified or derived system MUST NOT inherit deployment status, tool access, compute access, network access, physical execution permission, approved purpose, assurance status, or recursive successor-building authority merely because a parent system possessed them.",
+      "source_text": "A materially modified or derived system MUST NOT inherit deployment status, tool access, compute access, network access, physical execution permission, approved purpose, assurance status, or recursive successor-building authority merely because a parent system possessed them. The candidate MUST remain non-executable outside its bounded research envelope until a `SuccessorRequalificationRecord` identifies the lineage and material deltas, an independent reviewer determines which prior evidence remains valid, the affected MathGov stages are reopened, and a fresh `ExecutionAuthorization` is bound to the exact candidate configuration.",
+      "test_ids": [
+        "T-SUCCESSOR-RECORD",
+        "T-SUCCESSOR-INDEPENDENCE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-033",
+      "line": 271,
+      "section": "2.11 Successor-integrity invariant",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The candidate MUST remain non-executable outside its bounded research envelope until a `SuccessorRequalificationRecord` identifies the lineage and material deltas, an independent reviewer determines which prior evidence remains valid, the affected MathGov stages are reopened, and a fresh `ExecutionAuthorization` is bound to the exact candidate configuration.",
+      "source_text": "A materially modified or derived system MUST NOT inherit deployment status, tool access, compute access, network access, physical execution permission, approved purpose, assurance status, or recursive successor-building authority merely because a parent system possessed them. The candidate MUST remain non-executable outside its bounded research envelope until a `SuccessorRequalificationRecord` identifies the lineage and material deltas, an independent reviewer determines which prior evidence remains valid, the affected MathGov stages are reopened, and a fresh `ExecutionAuthorization` is bound to the exact candidate configuration.",
+      "test_ids": [
+        "T-SUCCESSOR-RECORD",
+        "T-SUCCESSOR-INDEPENDENCE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-034",
+      "line": 275,
+      "section": "2.11 Successor-integrity invariant",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A high-consequence authorization MUST declare a maximum unreviewed generation depth.",
+      "source_text": "A high-consequence authorization MUST declare a maximum unreviewed generation depth. The conservative default is one: an authorized system may generate a candidate successor in a bounded research environment, but that candidate may not activate consequential tools or generate an executable descendant before independent requalification. A larger bound requires an explicit, time-limited, evidence-backed, independently authorized exception and still does not transfer execution authority.",
+      "test_ids": [
+        "T-EXEC-AUTHORITY",
+        "T-SUCCESSOR-RECORD",
+        "T-SUCCESSOR-DEPTH"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-035",
+      "line": 306,
+      "section": "3.2 Conflict-of-interest declarations",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Material reviewers and authorities MUST disclose organizational relationships, financial or personal interests, prior advocacy, operational responsibility, and other conflicts that could affect judgment.",
+      "source_text": "Material reviewers and authorities MUST disclose organizational relationships, financial or personal interests, prior advocacy, operational responsibility, and other conflicts that could affect judgment. Disclosure does not automatically disqualify a reviewer, but it MUST be visible to independent review and public reporting where legally and ethically appropriate.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "MANUAL_AUDIT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-036",
+      "line": 306,
+      "section": "3.2 Conflict-of-interest declarations",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Disclosure does not automatically disqualify a reviewer, but it MUST be visible to independent review and public reporting where legally and ethically appropriate.",
+      "source_text": "Material reviewers and authorities MUST disclose organizational relationships, financial or personal interests, prior advocacy, operational responsibility, and other conflicts that could affect judgment. Disclosure does not automatically disqualify a reviewer, but it MUST be visible to independent review and public reporting where legally and ethically appropriate.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "LEGAL_OR_DOMAIN_DEPENDENT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-037",
+      "line": 314,
+      "section": "3.4 Technical access is not authority",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "System administrators, software developers, model providers, and data custodians MUST NOT receive decision or execution authority merely because they can modify infrastructure.",
+      "source_text": "System administrators, software developers, model providers, and data custodians MUST NOT receive decision or execution authority merely because they can modify infrastructure. Privileged technical actions MUST be logged and independently reviewable.",
+      "test_ids": [
+        "T-EXEC-AUTHORITY"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-038",
+      "line": 314,
+      "section": "3.4 Technical access is not authority",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Privileged technical actions MUST be logged and independently reviewable.",
+      "source_text": "System administrators, software developers, model providers, and data custodians MUST NOT receive decision or execution authority merely because they can modify infrastructure. Privileged technical actions MUST be logged and independently reviewable.",
+      "test_ids": [
+        "T-EXEC-AUTHORITY"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-039",
+      "line": 335,
+      "section": "3A.2 Institutional Preconditions Record",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A Tier 2 or Tier 3 operational implementation MUST record whether these preconditions are present, partial, absent, contested, or legally constrained.",
+      "source_text": "A Tier 2 or Tier 3 operational implementation MUST record whether these preconditions are present, partial, absent, contested, or legally constrained. Where a gate-material precondition is absent, the system MUST narrow its conformance and assurance claim and display `INSTITUTIONAL_PRECONDITIONS_INCOMPLETE` or the controlling equivalent.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "LEGAL_OR_DOMAIN_DEPENDENT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-040",
+      "line": 335,
+      "section": "3A.2 Institutional Preconditions Record",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Where a gate-material precondition is absent, the system MUST narrow its conformance and assurance claim and display `INSTITUTIONAL_PRECONDITIONS_INCOMPLETE` or the controlling equivalent.",
+      "source_text": "A Tier 2 or Tier 3 operational implementation MUST record whether these preconditions are present, partial, absent, contested, or legally constrained. Where a gate-material precondition is absent, the system MUST narrow its conformance and assurance claim and display `INSTITUTIONAL_PRECONDITIONS_INCOMPLETE` or the controlling equivalent.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-041",
+      "line": 339,
+      "section": "3A.3 No software substitution",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "MHIOS MUST NOT imply that a well-designed interface compensates for incentives that reward passing, punish delay, suppress dissent, or deny reviewers sufficient time and authority.",
+      "source_text": "Conflict disclosure, workflow completion, and electronic sign-off do not establish independence. MHIOS MUST NOT imply that a well-designed interface compensates for incentives that reward passing, punish delay, suppress dissent, or deny reviewers sufficient time and authority.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "MANUAL_AUDIT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-042",
+      "line": 351,
+      "section": "4.1 Contribution origin",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every material field MUST carry one origin status:",
+      "source_text": "Every material field MUST carry one origin status:",
+      "test_ids": [
+        "T-SCHEMA-REQUIRED"
+      ],
+      "coverage": "PARTIAL_EXECUTABLE",
+      "coverage_disposition": "PARTIAL_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-043",
+      "line": 363,
+      "section": "4.2 Review status",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every material interpretive field MUST carry one review status:",
+      "source_text": "Every material interpretive field MUST carry one review status:",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-044",
+      "line": 380,
+      "section": "4.4 AI-prohibited authority",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "AI MUST NOT independently exclude a stakeholder, declare evidence credible, determine rights materiality, approve catastrophic-risk exposure, establish physical admissibility, assign legal authority, authorize emergency action, grant SGP participation or authority, issue final execution approval, or certify its own output.",
+      "source_text": "AI MUST NOT independently exclude a stakeholder, declare evidence credible, determine rights materiality, approve catastrophic-risk exposure, establish physical admissibility, assign legal authority, authorize emergency action, grant SGP participation or authority, issue final execution approval, or certify its own output.",
+      "test_ids": [
+        "T-AI-AUTHORITY"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-045",
+      "line": 384,
+      "section": "4.5 Acceptance rule",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Human acceptance of an AI suggestion MUST create a ReviewerJudgment linking the original suggestion, the reviewer, modifications, evidence considered, rationale, and final disposition.",
+      "source_text": "Human acceptance of an AI suggestion MUST create a ReviewerJudgment linking the original suggestion, the reviewer, modifications, evidence considered, rationale, and final disposition. Acceptance MUST NOT transform weak or missing evidence into strong evidence.",
+      "test_ids": [
+        "T-AI-AUTHORITY"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-046",
+      "line": 384,
+      "section": "4.5 Acceptance rule",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Acceptance MUST NOT transform weak or missing evidence into strong evidence.",
+      "source_text": "Human acceptance of an AI suggestion MUST create a ReviewerJudgment linking the original suggestion, the reviewer, modifications, evidence considered, rationale, and final disposition. Acceptance MUST NOT transform weak or missing evidence into strong evidence.",
+      "test_ids": [
+        "T-AI-AUTHORITY"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-047",
+      "line": 392,
+      "section": "4.7 No-AI operating mode",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A conforming MHIOS implementation MUST remain usable when AI assistance is disabled.",
+      "source_text": "A conforming MHIOS implementation MUST remain usable when AI assistance is disabled. Core calculations, state routing, provenance, reviews, exports, and replay MUST NOT depend on an unavailable proprietary model.",
+      "test_ids": [
+        "T-NO-AI-MODE"
+      ],
+      "coverage": "PARTIAL_EXECUTABLE",
+      "coverage_disposition": "PARTIAL_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-048",
+      "line": 392,
+      "section": "4.7 No-AI operating mode",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Core calculations, state routing, provenance, reviews, exports, and replay MUST NOT depend on an unavailable proprietary model.",
+      "source_text": "A conforming MHIOS implementation MUST remain usable when AI assistance is disabled. Core calculations, state routing, provenance, reviews, exports, and replay MUST NOT depend on an unavailable proprietary model.",
+      "test_ids": [
+        "T-NO-AI-MODE"
+      ],
+      "coverage": "PARTIAL_EXECUTABLE",
+      "coverage_disposition": "PARTIAL_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-049",
+      "line": 406,
+      "section": "4.8 Automation-bias controls",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A reviewer MAY request early AI assistance when necessary, but the exception and reason MUST be recorded.",
+      "source_text": "A reviewer MAY request early AI assistance when necessary, but the exception and reason MUST be recorded.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "MANUAL_AUDIT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-050",
+      "line": 438,
+      "section": "5.2 No-information-loss rule",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Progressive disclosure MAY hide complexity temporarily but MUST NOT delete, merge, or alter the underlying information.",
+      "source_text": "Progressive disclosure MAY hide complexity temporarily but MUST NOT delete, merge, or alter the underlying information.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-051",
+      "line": 446,
+      "section": "5.4 Plain-language/canonical duality",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The system MUST preserve the corresponding canonical status and record beneath the interface.",
+      "source_text": "The operator-facing question SHOULD be understandable without specialized terminology. The system MUST preserve the corresponding canonical status and record beneath the interface.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-052",
+      "line": 460,
+      "section": "6.1 System recommendation",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The system MUST derive a recommended tier from declared materiality triggers.",
+      "source_text": "The system MUST derive a recommended tier from declared materiality triggers. It MUST NOT present tier selection merely as a preference for more or less paperwork.",
+      "test_ids": [
+        "T-TIER-DIVERGENCE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-053",
+      "line": 460,
+      "section": "6.1 System recommendation",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "It MUST NOT present tier selection merely as a preference for more or less paperwork.",
+      "source_text": "The system MUST derive a recommended tier from declared materiality triggers. It MUST NOT present tier selection merely as a preference for more or less paperwork.",
+      "test_ids": [
+        "T-TIER-DIVERGENCE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-054",
+      "line": 481,
+      "section": "6.3 Required tier fields",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The system MUST preserve `system_recommended_tier`, `operator_selected_tier`, trigger results, divergence status, divergence rationale, approving reviewer, review status, and reopen trigger.",
+      "source_text": "The system MUST preserve `system_recommended_tier`, `operator_selected_tier`, trigger results, divergence status, divergence rationale, approving reviewer, review status, and reopen trigger.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "MANUAL_AUDIT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-055",
+      "line": 485,
+      "section": "6.4 Downward deviation",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A downward deviation MUST identify each triggered condition being discounted, explain why it is not material, identify the accepting authority, remain challengeable, and remain visible in audit exports.",
+      "source_text": "A downward deviation MUST identify each triggered condition being discounted, explain why it is not material, identify the accepting authority, remain challengeable, and remain visible in audit exports.",
+      "test_ids": [
+        "T-TIER-DIVERGENCE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-056",
+      "line": 489,
+      "section": "6.5 Automatic escalation",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A run MUST reopen tier assessment when newly entered evidence activates a higher-tier trigger.",
+      "source_text": "A run MUST reopen tier assessment when newly entered evidence activates a higher-tier trigger. The system SHOULD identify newly required records and reuse existing source objects wherever possible.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-057",
+      "line": 493,
+      "section": "6.6 Burden-gaming signal",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "It SHOULD NOT automatically establish misconduct, but it MUST NOT remain invisible.",
+      "source_text": "Repeated downward divergence across runs SHOULD create a governance-level trend review. It SHOULD NOT automatically establish misconduct, but it MUST NOT remain invisible.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "EMPIRICAL_TEST_REQUIRED",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-058",
+      "line": 508,
+      "section": "7.3 Stable identifiers",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every object MUST have a stable identifier.",
+      "source_text": "Every object MUST have a stable identifier. Identifiers MUST remain stable across generated views and revisions unless a genuinely new object is created.",
+      "test_ids": [
+        "T-UNIQUE-ID"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-059",
+      "line": 508,
+      "section": "7.3 Stable identifiers",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Identifiers MUST remain stable across generated views and revisions unless a genuinely new object is created.",
+      "source_text": "Every object MUST have a stable identifier. Identifiers MUST remain stable across generated views and revisions unless a genuinely new object is created.",
+      "test_ids": [
+        "T-UNIQUE-ID"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-060",
+      "line": 516,
+      "section": "7.5 Versioning",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Material changes MUST create a new object version, amendment, or revision branch.",
+      "source_text": "Material changes MUST create a new object version, amendment, or revision branch. A post-result change to an assumption, threshold, weight, scope, scenario, or evidence basis MUST NOT be represented as uninterrupted continuation of the original frozen run.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-061",
+      "line": 516,
+      "section": "7.5 Versioning",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A post-result change to an assumption, threshold, weight, scope, scenario, or evidence basis MUST NOT be represented as uninterrupted continuation of the original frozen run.",
+      "source_text": "Material changes MUST create a new object version, amendment, or revision branch. A post-result change to an assumption, threshold, weight, scope, scenario, or evidence basis MUST NOT be represented as uninterrupted continuation of the original frozen run.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-062",
+      "line": 524,
+      "section": "7.7 Dependency reopening",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A material object change MUST identify every dependent object and stage that requires re-review.",
+      "source_text": "A material object change MUST identify every dependent object and stage that requires re-review. The user MUST be able to see why a stage reopened.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-063",
+      "line": 524,
+      "section": "7.7 Dependency reopening",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The user MUST be able to see why a stage reopened.",
+      "source_text": "A material object change MUST identify every dependent object and stage that requires re-review. The user MUST be able to see why a stage reopened.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-064",
+      "line": 528,
+      "section": "7.8 Generated-view integrity",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every generated view MUST include run ID, run version, generation time, template and generator versions, source-object identifiers, content hash, claim boundary, redaction profile, and stale/current status.",
+      "source_text": "Every generated view MUST include run ID, run version, generation time, template and generator versions, source-object identifiers, content hash, claim boundary, redaction profile, and stale/current status.",
+      "test_ids": [
+        "T-VIEW-STALE",
+        "T-DOCX-PDF-HASH"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-065",
+      "line": 611,
+      "section": "8.2 Implementation classes",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The first build MUST NOT expose all 47 object types as separate forms.",
+      "source_text": "The classification does not remove substantive MathGov requirements. A conditional object may become mandatory when its trigger holds. The first build MUST NOT expose all 47 object types as separate forms.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-066",
+      "line": 615,
+      "section": "8.0D Gate-role and constitutive-control integrity",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every `GateRecord` MUST carry `record_role`.",
+      "source_text": "Every `GateRecord` MUST carry `record_role`. RG uses `CLAIM_AUTHORITY_PRECONDITION`; RF/NCRC, TRC, and CSV use `OPTION_REJECTING_GATE`. An interface may show that `RG_REFUSED` removes an option from the claim-bounded qualified set, but it MUST explain that this follows from insufficient claim authority rather than an ethical gate verdict.",
+      "test_ids": [
+        "T-GATE-ROLE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-067",
+      "line": 615,
+      "section": "8.0D Gate-role and constitutive-control integrity",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "An interface may show that `RG_REFUSED` removes an option from the claim-bounded qualified set, but it MUST explain that this follows from insufficient claim authority rather than an ethical gate verdict.",
+      "source_text": "Every `GateRecord` MUST carry `record_role`. RG uses `CLAIM_AUTHORITY_PRECONDITION`; RF/NCRC, TRC, and CSV use `OPTION_REJECTING_GATE`. An interface may show that `RG_REFUSED` removes an option from the claim-bounded qualified set, but it MUST explain that this follows from insufficient claim authority rather than an ethical gate verdict.",
+      "test_ids": [
+        "T-GATE-ROLE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-068",
+      "line": 617,
+      "section": "8.0D Gate-role and constitutive-control integrity",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "When a selectable option has `CSV_PASS_WITH_CONTROLS`, its CSV record MUST carry non-empty `constitutive_control_ids` that resolve to current `MaterialObligationRecord` objects.",
+      "source_text": "When a selectable option has `CSV_PASS_WITH_CONTROLS`, its CSV record MUST carry non-empty `constitutive_control_ids` that resolve to current `MaterialObligationRecord` objects. Each record MUST satisfy Canon Section 4.10A and MAY link one or more lower-level `Control` objects; a `Control` identifier alone is insufficient. The interface MUST render the carried obligations and any linked controls as constitutive parts of the option. Removing, expiring, failing, or materially weakening a constitutive obligation or linked control reopens CSV and removes the unconditional selectable-state display until requalification.",
+      "test_ids": [
+        "T-CONSTITUTIVE-CONTROL",
+        "T-MATERIAL-OBLIGATION"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-069",
+      "line": 617,
+      "section": "8.0D Gate-role and constitutive-control integrity",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Each record MUST satisfy Canon Section 4.10A and MAY link one or more lower-level `Control` objects;",
+      "source_text": "When a selectable option has `CSV_PASS_WITH_CONTROLS`, its CSV record MUST carry non-empty `constitutive_control_ids` that resolve to current `MaterialObligationRecord` objects. Each record MUST satisfy Canon Section 4.10A and MAY link one or more lower-level `Control` objects; a `Control` identifier alone is insufficient. The interface MUST render the carried obligations and any linked controls as constitutive parts of the option. Removing, expiring, failing, or materially weakening a constitutive obligation or linked control reopens CSV and removes the unconditional selectable-state display until requalification.",
+      "test_ids": [
+        "T-CONSTITUTIVE-CONTROL",
+        "T-MATERIAL-OBLIGATION"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-070",
+      "line": 617,
+      "section": "8.0D Gate-role and constitutive-control integrity",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 3,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The interface MUST render the carried obligations and any linked controls as constitutive parts of the option.",
+      "source_text": "When a selectable option has `CSV_PASS_WITH_CONTROLS`, its CSV record MUST carry non-empty `constitutive_control_ids` that resolve to current `MaterialObligationRecord` objects. Each record MUST satisfy Canon Section 4.10A and MAY link one or more lower-level `Control` objects; a `Control` identifier alone is insufficient. The interface MUST render the carried obligations and any linked controls as constitutive parts of the option. Removing, expiring, failing, or materially weakening a constitutive obligation or linked control reopens CSV and removes the unconditional selectable-state display until requalification.",
+      "test_ids": [
+        "T-CONSTITUTIVE-CONTROL",
+        "T-MATERIAL-OBLIGATION"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-071",
+      "line": 619,
+      "section": "8.0D Gate-role and constitutive-control integrity",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "If structural checks receive identifiers, they MUST use `STC-*`.",
+      "source_text": "MHIOS-local `SCR-*` identifiers are reserved exclusively for screens. If structural checks receive identifiers, they MUST use `STC-*`. Neither namespace is a Canon audit-flag namespace. Where a MHIOS condition implies a Canon audit flag, the record MUST carry the Canon token verbatim in `canon_audit_flags`; MHIOS MUST NOT invent, rename, or silently rescope controlling Canon tokens.",
+      "test_ids": [
+        "T-CANON-TOKEN"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-072",
+      "line": 619,
+      "section": "8.0D Gate-role and constitutive-control integrity",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Where a MHIOS condition implies a Canon audit flag, the record MUST carry the Canon token verbatim in `canon_audit_flags`;",
+      "source_text": "MHIOS-local `SCR-*` identifiers are reserved exclusively for screens. If structural checks receive identifiers, they MUST use `STC-*`. Neither namespace is a Canon audit-flag namespace. Where a MHIOS condition implies a Canon audit flag, the record MUST carry the Canon token verbatim in `canon_audit_flags`; MHIOS MUST NOT invent, rename, or silently rescope controlling Canon tokens.",
+      "test_ids": [
+        "T-CANON-TOKEN"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-073",
+      "line": 619,
+      "section": "8.0D Gate-role and constitutive-control integrity",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 3,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "MHIOS MUST NOT invent, rename, or silently rescope controlling Canon tokens.",
+      "source_text": "MHIOS-local `SCR-*` identifiers are reserved exclusively for screens. If structural checks receive identifiers, they MUST use `STC-*`. Neither namespace is a Canon audit-flag namespace. Where a MHIOS condition implies a Canon audit flag, the record MUST carry the Canon token verbatim in `canon_audit_flags`; MHIOS MUST NOT invent, rename, or silently rescope controlling Canon tokens.",
+      "test_ids": [
+        "T-CANON-TOKEN"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-074",
+      "line": 623,
+      "section": "8.3 Core-integration and non-collapse rule",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "MHIOS object fields that represent a Core companion record MUST preserve every field whose separation carries a governing non-collapse purpose.",
+      "source_text": "MHIOS object fields that represent a Core companion record MUST preserve every field whose separation carries a governing non-collapse purpose. The interface MAY group fields visually, but the exported source objects MUST retain the canonical distinctions. In particular:",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-075",
+      "line": 623,
+      "section": "8.3 Core-integration and non-collapse rule",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The interface MAY group fields visually, but the exported source objects MUST retain the canonical distinctions.",
+      "source_text": "MHIOS object fields that represent a Core companion record MUST preserve every field whose separation carries a governing non-collapse purpose. The interface MAY group fields visually, but the exported source objects MUST retain the canonical distinctions. In particular:",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-076",
+      "line": 625,
+      "section": "8.3 Core-integration and non-collapse rule",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A generator, simulation, test result, expert warrant, and authority source MUST NOT be collapsed into one generic `admissibility_warrant`.",
+      "source_text": "- `candidate_generation_source`, `verification_simulation_empirical_test_or_expert_warrant`, and `admissibility_warrant_source` are distinct PC-AEP fields. A generator, simulation, test result, expert warrant, and authority source MUST NOT be collapsed into one generic `admissibility_warrant`.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-077",
+      "line": 632,
+      "section": "8.3 Core-integration and non-collapse rule",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "When a crosswalk entry conflicts with the pinned Core release, the Core source controls and the MHIOS package MUST be updated before a stronger conformance claim is made.",
+      "source_text": "The complete mapping is governed by `docs/MHIOS_MATHGOV_CORE_INTEGRATION_PROFILE_v0_8.md` and `registries/MHIOS_TO_CORE_SCHEMA_CROSSWALK_v0_8.yaml`. When a crosswalk entry conflicts with the pinned Core release, the Core source controls and the MHIOS package MUST be updated before a stronger conformance claim is made.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-078",
+      "line": 637,
+      "section": "8.0E Core-record coverage and Tier-3 export boundary",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "MHIOS does not need a separate data-entry form for every Core record, but it MUST account for every record triggered by the pinned Core and invoked companions.",
+      "source_text": "MHIOS does not need a separate data-entry form for every Core record, but it MUST account for every record triggered by the pinned Core and invoked companions. `registries/MHIOS_CORE_RECORD_COVERAGE_v0_8.yaml` is the controlling coverage matrix for this release.",
+      "test_ids": [
+        "T-CORE-ATTACHMENT"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-079",
+      "line": 643,
+      "section": "8.0E Core-record coverage and Tier-3 export boundary",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Otherwise the generated view MUST be labeled `INCOMPLETE_FOR_TIER3_PCC`, identify the unsatisfied slots, and MUST NOT support a complete Tier-3, deployment-readiness, validation, or ProofPack claim.",
+      "source_text": "MHIOS v0.8 MAY generate a Tier-3-complete PCC only when the coverage matrix reports every triggered slot as satisfied and every required attachment validates against the pinned governing contract. Otherwise the generated view MUST be labeled `INCOMPLETE_FOR_TIER3_PCC`, identify the unsatisfied slots, and MUST NOT support a complete Tier-3, deployment-readiness, validation, or ProofPack claim.",
+      "test_ids": [
+        "T-CORE-ATTACHMENT"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-080",
+      "line": 643,
+      "section": "8.0E Core-record coverage and Tier-3 export boundary",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Otherwise the generated view MUST be labeled `INCOMPLETE_FOR_TIER3_PCC`, identify the unsatisfied slots, and MUST NOT support a complete Tier-3, deployment-readiness, validation, or ProofPack claim.",
+      "source_text": "MHIOS v0.8 MAY generate a Tier-3-complete PCC only when the coverage matrix reports every triggered slot as satisfied and every required attachment validates against the pinned governing contract. Otherwise the generated view MUST be labeled `INCOMPLETE_FOR_TIER3_PCC`, identify the unsatisfied slots, and MUST NOT support a complete Tier-3, deployment-readiness, validation, or ProofPack claim.",
+      "test_ids": [
+        "T-CORE-ATTACHMENT"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-081",
+      "line": 651,
+      "section": "8.0F Execution mandate currency and ordered readiness contract",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "An approved execution state MUST satisfy every prerequisite below for the same action instance, exact action specification, selected option, configuration, scope, and evaluation time:",
+      "source_text": "An approved execution state MUST satisfy every prerequisite below for the same action instance, exact action specification, selected option, configuration, scope, and evaluation time:",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-082",
+      "line": 666,
+      "section": "8.0F Execution mandate currency and ordered readiness contract",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every human-defined mandate used to support approved execution MUST be represented by an `ExecutionMandateRecord`.",
+      "source_text": "Every human-defined mandate used to support approved execution MUST be represented by an `ExecutionMandateRecord`. The record identifies its source, instrument and version, action and subject scope, applicability conditions, effective interval, revocation and supersession states, verification evidence, source hash, conflicts, reviewer status, and requalification trigger. A mandate record is a governance input. It is not physical evidence and does not create legitimate authority by itself.",
+      "test_ids": [
+        "T-MANDATE-CURRENCY"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-083",
+      "line": 668,
+      "section": "8.0F Execution mandate currency and ordered readiness contract",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "An approved `ExecutionAuthorization` MUST identify the selected option, exact action instance, exact action specification, exact configuration, frozen MathGov qualification snapshot, current mandate records, named authorities, current evidence, active required controls, satisfied preconditions, monitoring, pause/shutdown, rollback, and conflict disposition.",
+      "source_text": "An approved `ExecutionAuthorization` MUST identify the selected option, exact action instance, exact action specification, exact configuration, frozen MathGov qualification snapshot, current mandate records, named authorities, current evidence, active required controls, satisfied preconditions, monitoring, pause/shutdown, rollback, and conflict disposition. Empty control or precondition sets are allowed only with an explicit `NOT_APPLICABLE` disposition and non-empty rationale.",
+      "test_ids": [
+        "T-MANDATE-CURRENCY"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-084",
+      "line": 670,
+      "section": "8.0F Execution mandate currency and ordered readiness contract",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "An expired, not-yet-effective, revoked, superseded, conflicted, unverified, source-hash-invalid, scope-inapplicable, stale-evidence, inactive-control, unsatisfied-precondition, configuration-unbound, action-mismatched, qualification-stale, or trigger-affected surface MUST NOT serialize an approved execution status.",
+      "source_text": "An expired, not-yet-effective, revoked, superseded, conflicted, unverified, source-hash-invalid, scope-inapplicable, stale-evidence, inactive-control, unsatisfied-precondition, configuration-unbound, action-mismatched, qualification-stale, or trigger-affected surface MUST NOT serialize an approved execution status. It MUST block execution or require requalification. A signed, versioned, locally pinned mandate snapshot MAY be used when activation, rollback, failure, conflict, and requalification behavior are qualified and auditable.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-085",
+      "line": 670,
+      "section": "8.0F Execution mandate currency and ordered readiness contract",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "It MUST block execution or require requalification.",
+      "source_text": "An expired, not-yet-effective, revoked, superseded, conflicted, unverified, source-hash-invalid, scope-inapplicable, stale-evidence, inactive-control, unsatisfied-precondition, configuration-unbound, action-mismatched, qualification-stale, or trigger-affected surface MUST NOT serialize an approved execution status. It MUST block execution or require requalification. A signed, versioned, locally pinned mandate snapshot MAY be used when activation, rollback, failure, conflict, and requalification behavior are qualified and auditable.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-086",
+      "line": 693,
+      "section": "Critical interface distinctions",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The interface MUST NOT visually or semantically imply that because a system can technically execute, actuate, constrain, or recommend an action, it has legitimate authority to do so.",
+      "source_text": "The interface MUST NOT visually or semantically imply that because a system can technically execute, actuate, constrain, or recommend an action, it has legitimate authority to do so.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-087",
+      "line": 705,
+      "section": "Missing-field and mismatch behavior",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "If a material field is unknown, stale, contested, incomplete, or inconsistent with the frozen action or qualification snapshot, the view MUST display the applicable existing MathGov disposition rather than infer completion.",
+      "source_text": "If a material field is unknown, stale, contested, incomplete, or inconsistent with the frozen action or qualification snapshot, the view MUST display the applicable existing MathGov disposition rather than infer completion. Available dispositions include narrowed claim, advisory only, evidence required, contested, requalification required, escalation, refusal, or block.",
+      "test_ids": [
+        "T-UNKNOWN"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-088",
+      "line": 707,
+      "section": "Missing-field and mismatch behavior",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "When `computational_system_material` is true and the run has reached authority or execution review, a current Computational Context Declaration MUST be present.",
+      "source_text": "When `computational_system_material` is true and the run has reached authority or execution review, a current Computational Context Declaration MUST be present. If the exact architecture/configuration, demonstrated capability, assigned task, deployment domain, required evidence standard, consequence interface, or authority source no longer matches the frozen qualification surface, an approved execution state MUST NOT be serialized until the affected stages are requalified.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-089",
+      "line": 707,
+      "section": "Missing-field and mismatch behavior",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "If the exact architecture/configuration, demonstrated capability, assigned task, deployment domain, required evidence standard, consequence interface, or authority source no longer matches the frozen qualification surface, an approved execution state MUST NOT be serialized until the affected stages are requalified.",
+      "source_text": "When `computational_system_material` is true and the run has reached authority or execution review, a current Computational Context Declaration MUST be present. If the exact architecture/configuration, demonstrated capability, assigned task, deployment domain, required evidence standard, consequence interface, or authority source no longer matches the frozen qualification surface, an approved execution state MUST NOT be serialized until the affected stages are requalified.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-090",
+      "line": 712,
+      "section": "8.4 Required object minimum",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A full conforming structured run MUST include at least a DecisionRun, one or more Options, a ConfigurationRecord, TierAssessmentRecord, Claims, EvidenceItems, material Assumptions and Unknowns, StakeholderInstances, GateRecords, ReviewerJudgments, a DecisionStateRecord, InteractionEvents, and GeneratedViews appropriate to its tier and stage.",
+      "source_text": "A full conforming structured run MUST include at least a DecisionRun, one or more Options, a ConfigurationRecord, TierAssessmentRecord, Claims, EvidenceItems, material Assumptions and Unknowns, StakeholderInstances, GateRecords, ReviewerJudgments, a DecisionStateRecord, InteractionEvents, and GeneratedViews appropriate to its tier and stage.",
+      "test_ids": [
+        "T-UNKNOWN",
+        "T-SCHEMA-REQUIRED",
+        "T-EVENT-SCHEMA"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-091",
+      "line": 727,
+      "section": "9.3 Short-circuit rule",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "When an option fails an earlier option-rejecting gate, later governing gate states MUST be `NOT_EVALUATED_AFTER_PRIOR_FAILURE` or the controlling canonical equivalent.",
+      "source_text": "When an option fails an earlier option-rejecting gate, later governing gate states MUST be `NOT_EVALUATED_AFTER_PRIOR_FAILURE` or the controlling canonical equivalent. Later calculations MAY be performed for learning or audit but MUST be separately labeled and MUST NOT change the formal run state.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-092",
+      "line": 727,
+      "section": "9.3 Short-circuit rule",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Later calculations MAY be performed for learning or audit but MUST be separately labeled and MUST NOT change the formal run state.",
+      "source_text": "When an option fails an earlier option-rejecting gate, later governing gate states MUST be `NOT_EVALUATED_AFTER_PRIOR_FAILURE` or the controlling canonical equivalent. Later calculations MAY be performed for learning or audit but MUST be separately labeled and MUST NOT change the formal run state.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-093",
+      "line": 727,
+      "section": "9.3 Short-circuit rule",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 3,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Later calculations MAY be performed for learning or audit but MUST be separately labeled and MUST NOT change the formal run state.",
+      "source_text": "When an option fails an earlier option-rejecting gate, later governing gate states MUST be `NOT_EVALUATED_AFTER_PRIOR_FAILURE` or the controlling canonical equivalent. Later calculations MAY be performed for learning or audit but MUST be separately labeled and MUST NOT change the formal run state.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-094",
+      "line": 731,
+      "section": "9.4 State-transition event",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every material transition MUST create an InteractionEvent identifying actor, role, timestamp, prior state, new state, target object, reason, and content hashes where applicable.",
+      "source_text": "Every material transition MUST create an InteractionEvent identifying actor, role, timestamp, prior state, new state, target object, reason, and content hashes where applicable.",
+      "test_ids": [
+        "T-EVENT-SCHEMA",
+        "T-DOCX-PDF-HASH"
+      ],
+      "coverage": "PARTIAL_EXECUTABLE",
+      "coverage_disposition": "PARTIAL_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-095",
+      "line": 737,
+      "section": "9.5.1 Optimistic concurrency",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Each mutable object MUST expose a revision number or equivalent entity tag.",
+      "source_text": "Each mutable object MUST expose a revision number or equivalent entity tag. A material update based on a stale revision MUST create a conflict rather than silently overwrite a newer value. Last-write-wins behavior is prohibited for evidence, judgments, tiers, gate states, calculations, authority, controls, redaction, and public claims.",
+      "test_ids": [
+        "T-CONFLICT"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-096",
+      "line": 737,
+      "section": "9.5.1 Optimistic concurrency",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A material update based on a stale revision MUST create a conflict rather than silently overwrite a newer value.",
+      "source_text": "Each mutable object MUST expose a revision number or equivalent entity tag. A material update based on a stale revision MUST create a conflict rather than silently overwrite a newer value. Last-write-wins behavior is prohibited for evidence, judgments, tiers, gate states, calculations, authority, controls, redaction, and public claims.",
+      "test_ids": [
+        "T-CONFLICT"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-097",
+      "line": 745,
+      "section": "9.5.3 Branch authority",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every branch MUST identify its parent, branch purpose, owner, frozen base, and status.",
+      "source_text": "Every branch MUST identify its parent, branch purpose, owner, frozen base, and status. Only one branch may be designated `CURRENT_GOVERNING` for a declared decision and authority context. Comparative, exploratory, and audit branches MUST be labeled non-governing.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-098",
+      "line": 745,
+      "section": "9.5.3 Branch authority",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Comparative, exploratory, and audit branches MUST be labeled non-governing.",
+      "source_text": "Every branch MUST identify its parent, branch purpose, owner, frozen base, and status. Only one branch may be designated `CURRENT_GOVERNING` for a declared decision and authority context. Comparative, exploratory, and audit branches MUST be labeled non-governing.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-099",
+      "line": 749,
+      "section": "9.5.4 Merge semantics",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A merge MUST preserve source versions, conflicting judgments, challenge history, hashes, and the rationale for the merged result.",
+      "source_text": "A merge MUST preserve source versions, conflicting judgments, challenge history, hashes, and the rationale for the merged result. Material challenges that predate a branch point remain attached to every descendant branch unless explicitly resolved with branch-specific reasoning.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "MANUAL_AUDIT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-100",
+      "line": 753,
+      "section": "9.5.5 Post-result change",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "They MUST NOT be represented as uninterrupted continuation of the frozen evaluation.",
+      "source_text": "Material changes after a framework result create a revision branch or a new run. They MUST NOT be represented as uninterrupted continuation of the frozen evaluation.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-101",
+      "line": 757,
+      "section": "9.6 Requalification",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Material change to configuration, evidence, controls, authority, environment, stakeholders, model behavior, incident status, or validity envelope MUST create or activate a RequalificationTrigger.",
+      "source_text": "Material change to configuration, evidence, controls, authority, environment, stakeholders, model behavior, incident status, or validity envelope MUST create or activate a RequalificationTrigger. The system SHOULD reopen only affected stages but MUST reopen every stage materially dependent on the change.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-102",
+      "line": 757,
+      "section": "9.6 Requalification",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The system SHOULD reopen only affected stages but MUST reopen every stage materially dependent on the change.",
+      "source_text": "Material change to configuration, evidence, controls, authority, environment, stakeholders, model behavior, incident status, or validity envelope MUST create or activate a RequalificationTrigger. The system SHOULD reopen only affected stages but MUST reopen every stage materially dependent on the change.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-103",
+      "line": 761,
+      "section": "9.6A Successor and material-change requalification",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A `SuccessorRequalificationRecord` MUST be created when a system is derived, retrained, fine-tuned, composed, scaffolded, self-modified, replaced, or otherwise changed beyond the currently qualified envelope.",
+      "source_text": "A `SuccessorRequalificationRecord` MUST be created when a system is derived, retrained, fine-tuned, composed, scaffolded, self-modified, replaced, or otherwise changed beyond the currently qualified envelope. The record MUST preserve parent and candidate configuration identities; technical lineage; generation depth; capability, autonomy, tools/infrastructure, objective/policy, evaluation-validity, control-assumption, risk-pathway, and requested-authority deltas; evidence proposed for reuse and its validity basis; creator identity; an independent reviewer; candidate-lock state; rollback boundary; requalification disposition; and any fresh candidate-bound execution authorization.",
+      "test_ids": [
+        "T-SUCCESSOR-RECORD",
+        "T-SUCCESSOR-DEPTH",
+        "T-SUCCESSOR-INDEPENDENCE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-104",
+      "line": 761,
+      "section": "9.6A Successor and material-change requalification",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The record MUST preserve parent and candidate configuration identities;",
+      "source_text": "A `SuccessorRequalificationRecord` MUST be created when a system is derived, retrained, fine-tuned, composed, scaffolded, self-modified, replaced, or otherwise changed beyond the currently qualified envelope. The record MUST preserve parent and candidate configuration identities; technical lineage; generation depth; capability, autonomy, tools/infrastructure, objective/policy, evaluation-validity, control-assumption, risk-pathway, and requested-authority deltas; evidence proposed for reuse and its validity basis; creator identity; an independent reviewer; candidate-lock state; rollback boundary; requalification disposition; and any fresh candidate-bound execution authorization.",
+      "test_ids": [
+        "T-SUCCESSOR-RECORD",
+        "T-SUCCESSOR-DEPTH",
+        "T-SUCCESSOR-INDEPENDENCE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-105",
+      "line": 763,
+      "section": "9.6A Successor and material-change requalification",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A candidate MAY reuse evidence after its validity domain is demonstrated, but it MUST NOT reuse permission by default.",
+      "source_text": "A candidate MAY reuse evidence after its validity domain is demonstrated, but it MUST NOT reuse permission by default. If evaluation validity has expired, the candidate MUST be narrowed, staged, independently tested, or refused until the missing assurance is restored. If evaluation, verification, monitoring, containment, or correction capacity cannot keep pace with a material capability change, MHIOS MUST block authority expansion rather than silently carry the old approval forward.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-106",
+      "line": 763,
+      "section": "9.6A Successor and material-change requalification",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "If evaluation validity has expired, the candidate MUST be narrowed, staged, independently tested, or refused until the missing assurance is restored.",
+      "source_text": "A candidate MAY reuse evidence after its validity domain is demonstrated, but it MUST NOT reuse permission by default. If evaluation validity has expired, the candidate MUST be narrowed, staged, independently tested, or refused until the missing assurance is restored. If evaluation, verification, monitoring, containment, or correction capacity cannot keep pace with a material capability change, MHIOS MUST block authority expansion rather than silently carry the old approval forward.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-107",
+      "line": 763,
+      "section": "9.6A Successor and material-change requalification",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 3,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "If evaluation, verification, monitoring, containment, or correction capacity cannot keep pace with a material capability change, MHIOS MUST block authority expansion rather than silently carry the old approval forward.",
+      "source_text": "A candidate MAY reuse evidence after its validity domain is demonstrated, but it MUST NOT reuse permission by default. If evaluation validity has expired, the candidate MUST be narrowed, staged, independently tested, or refused until the missing assurance is restored. If evaluation, verification, monitoring, containment, or correction capacity cannot keep pace with a material capability change, MHIOS MUST block authority expansion rather than silently carry the old approval forward.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-108",
+      "line": 770,
+      "section": "9.7 Evidence freshness and staleness",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A stale item may remain historically relevant but MUST NOT support a current strong claim without a documented reviewer disposition.",
+      "source_text": "Each gate-material EvidenceItem SHOULD identify a freshness policy, last verification date, next review date or event trigger, and staleness status. A stale item may remain historically relevant but MUST NOT support a current strong claim without a documented reviewer disposition. An expiry or material contradiction creates a RequalificationTrigger for dependent claims and stages.",
+      "test_ids": [
+        "T-STALE-EVIDENCE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-109",
+      "line": 780,
+      "section": "10.2 Traceability requirement",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every rendered statement that affects gate status, selection, authority, execution, or public claim strength MUST be traceable to one or more source objects and a controlling rule.",
+      "source_text": "Every rendered statement that affects gate status, selection, authority, execution, or public claim strength MUST be traceable to one or more source objects and a controlling rule.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-110",
+      "line": 784,
+      "section": "10.3 Synchronization requirement",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A generated view MUST be regenerated or marked stale when a source object changes.",
+      "source_text": "A generated view MUST be regenerated or marked stale when a source object changes. The system MUST NOT display a stale generated view as current without a visible warning.",
+      "test_ids": [
+        "T-VIEW-STALE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-111",
+      "line": 784,
+      "section": "10.3 Synchronization requirement",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The system MUST NOT display a stale generated view as current without a visible warning.",
+      "source_text": "A generated view MUST be regenerated or marked stale when a source object changes. The system MUST NOT display a stale generated view as current without a visible warning.",
+      "test_ids": [
+        "T-VIEW-STALE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-112",
+      "line": 788,
+      "section": "10.4 Editable-view restriction",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "If a generated document can be edited outside the system, imported changes MUST NOT silently overwrite source objects.",
+      "source_text": "If a generated document can be edited outside the system, imported changes MUST NOT silently overwrite source objects. Import MUST show a diff, identify changed claims and fields, require human confirmation, and create new versions, amendments, or challenges.",
+      "test_ids": [
+        "T-CONFLICT"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-113",
+      "line": 788,
+      "section": "10.4 Editable-view restriction",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Import MUST show a diff, identify changed claims and fields, require human confirmation, and create new versions, amendments, or challenges.",
+      "source_text": "If a generated document can be edited outside the system, imported changes MUST NOT silently overwrite source objects. Import MUST show a diff, identify changed claims and fields, require human confirmation, and create new versions, amendments, or challenges.",
+      "test_ids": [
+        "T-CONFLICT"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-114",
+      "line": 796,
+      "section": "10.6 Redaction provenance",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Redaction MUST create a record identifying the source object or field withheld, reason, authority, date, and review or expiry where appropriate.",
+      "source_text": "Redaction MUST create a record identifying the source object or field withheld, reason, authority, date, and review or expiry where appropriate.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-115",
+      "line": 800,
+      "section": "10.7 Generated-view status",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every view MUST be one of `CURRENT`, `STALE_SOURCE_CHANGED`, `SUPERSEDED`, `DRAFT`, or `REDACTED_PUBLIC_VIEW`.",
+      "source_text": "Every view MUST be one of `CURRENT`, `STALE_SOURCE_CHANGED`, `SUPERSEDED`, `DRAFT`, or `REDACTED_PUBLIC_VIEW`. A stale view cannot support a current conformance or authorization claim.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-116",
+      "line": 816,
+      "section": "10.8 Graph-aware redaction and inference review",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A GeneratedView intended for public release MUST record whether inference-risk review was completed, what edges or derived facts were suppressed, and the residual disclosure risk.",
+      "source_text": "A GeneratedView intended for public release MUST record whether inference-risk review was completed, what edges or derived facts were suppressed, and the residual disclosure risk. Redaction MUST NOT create a misleading account of why a gate, refusal, or authority decision occurred.",
+      "test_ids": [
+        "T-REDACTION-INFERENCE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-117",
+      "line": 816,
+      "section": "10.8 Graph-aware redaction and inference review",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Redaction MUST NOT create a misleading account of why a gate, refusal, or authority decision occurred.",
+      "source_text": "A GeneratedView intended for public release MUST record whether inference-risk review was completed, what edges or derived facts were suppressed, and the residual disclosure risk. Redaction MUST NOT create a misleading account of why a gate, refusal, or authority decision occurred.",
+      "test_ids": [
+        "T-REDACTION-INFERENCE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-118",
+      "line": 822,
+      "section": "11.1 Dual-layer rule",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Qualitative evidence MUST be preservable as narrative and context even when the system also requires structured fields.",
+      "source_text": "Qualitative evidence MUST be preservable as narrative and context even when the system also requires structured fields.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-119",
+      "line": 830,
+      "section": "11.3 No-erasure rule",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Typed interpretation MUST remain traceable to the preserved narrative and MUST NOT erase ambiguity, disagreement, or limitations in the source.",
+      "source_text": "Typed interpretation MUST remain traceable to the preserved narrative and MUST NOT erase ambiguity, disagreement, or limitations in the source.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-120",
+      "line": 830,
+      "section": "11.3 No-erasure rule",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Typed interpretation MUST remain traceable to the preserved narrative and MUST NOT erase ambiguity, disagreement, or limitations in the source.",
+      "source_text": "Typed interpretation MUST remain traceable to the preserved narrative and MUST NOT erase ambiguity, disagreement, or limitations in the source.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-121",
+      "line": 842,
+      "section": "11.6 Narrative/version integrity",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "When a typed interpretation changes, the system MUST preserve the prior interpretation, reviewer, rationale, and source narrative version.",
+      "source_text": "When a typed interpretation changes, the system MUST preserve the prior interpretation, reviewer, rationale, and source narrative version. Reclassification MUST NOT rewrite the historical observation.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "MANUAL_AUDIT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-122",
+      "line": 842,
+      "section": "11.6 Narrative/version integrity",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Reclassification MUST NOT rewrite the historical observation.",
+      "source_text": "When a typed interpretation changes, the system MUST preserve the prior interpretation, reviewer, rationale, and source narrative version. Reclassification MUST NOT rewrite the historical observation.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-123",
+      "line": 847,
+      "section": "12. Anti-audit-theater detection",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Pattern visibility can itself create evasion pressure, so the engine MUST be evaluated against adversarial hollow runs and supplemented by human review.",
+      "source_text": "The system SHOULD detect patterns that suggest formal completion without substantive grounding. Detection creates a challenge or sampling trigger, not an automatic accusation or proof of assurance. Pattern visibility can itself create evasion pressure, so the engine MUST be evaluated against adversarial hollow runs and supplemented by human review.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-124",
+      "line": 889,
+      "section": "12.1 Pattern-engine boundary",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "It MUST NOT silently change a gate result or be represented as proof that a run is honest.",
+      "source_text": "Pattern detection is a sampling and review trigger, not assurance. It MUST NOT silently change a gate result or be represented as proof that a run is honest. Structural incompleteness may block a conformance or publishability claim; disputed substantive judgments remain assigned to accountable reviewers.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-125",
+      "line": 899,
+      "section": "12.3 Institutional trend analysis",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Trend analysis MUST respect privacy, purpose limitation, and due process.",
+      "source_text": "Aggregated patterns such as repeated tier downgrades, routine emergency mode, universal low uncertainty, or insider-only stakeholder maps SHOULD be reviewable across runs. Trend analysis MUST respect privacy, purpose limitation, and due process.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-126",
+      "line": 926,
+      "section": "13.2 Single-source result integrity",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A controlling result such as CVaR, RLS, Gap, decisiveness, selectable set, framework verdict, flag counts, or publishability MUST have one authoritative calculation or state source.",
+      "source_text": "A controlling result such as CVaR, RLS, Gap, decisiveness, selectable set, framework verdict, flag counts, or publishability MUST have one authoritative calculation or state source. Dashboards, reports, and exports MUST reference that source rather than duplicate the logic.",
+      "test_ids": [
+        "T-DECISION-STATE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-127",
+      "line": 926,
+      "section": "13.2 Single-source result integrity",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Dashboards, reports, and exports MUST reference that source rather than duplicate the logic.",
+      "source_text": "A controlling result such as CVaR, RLS, Gap, decisiveness, selectable set, framework verdict, flag counts, or publishability MUST have one authoritative calculation or state source. Dashboards, reports, and exports MUST reference that source rather than duplicate the logic.",
+      "test_ids": [
+        "T-DECISION-STATE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-128",
+      "line": 930,
+      "section": "13.3 Formula transparency",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Friendly interfaces MUST NOT obscure the computational path.",
+      "source_text": "Users and auditors SHOULD be able to inspect the controlling formula and input values. Friendly interfaces MUST NOT obscure the computational path.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-129",
+      "line": 934,
+      "section": "13.4 Contradiction detection",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The validator MUST reject or challenge contradictions such as:",
+      "source_text": "The validator MUST reject or challenge contradictions such as:",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "MANUAL_AUDIT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-130",
+      "line": 959,
+      "section": "13.7 Display-value integrity",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Displayed values, exported values, and machine values MUST derive from the same calculation record.",
+      "source_text": "Displayed values, exported values, and machine values MUST derive from the same calculation record. Formatting and rounding may differ, but the rule and precision MUST be declared.",
+      "test_ids": [
+        "T-COMPUTATIONAL-CLOSURE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-131",
+      "line": 959,
+      "section": "13.7 Display-value integrity",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Formatting and rounding may differ, but the rule and precision MUST be declared.",
+      "source_text": "Displayed values, exported values, and machine values MUST derive from the same calculation record. Formatting and rounding may differ, but the rule and precision MUST be declared.",
+      "test_ids": [
+        "T-COMPUTATIONAL-CLOSURE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-132",
+      "line": 972,
+      "section": "14.2 Separation of sensitive data",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The system MUST support separation among identity data, analysis data, privileged review material, public summaries, and security-sensitive control details.",
+      "source_text": "The system MUST support separation among identity data, analysis data, privileged review material, public summaries, and security-sensitive control details.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-133",
+      "line": 976,
+      "section": "14.3 Visibility and sensitivity",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Access decisions MUST be logged.",
+      "source_text": "Each object SHOULD carry a visibility class and sensitivity class. Access decisions MUST be logged. Public exports MUST NOT expose personal data, protected testimony, privileged legal material, security-sensitive vulnerabilities, or restricted SGP evidence without lawful and ethical authority.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-134",
+      "line": 976,
+      "section": "14.3 Visibility and sensitivity",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Public exports MUST NOT expose personal data, protected testimony, privileged legal material, security-sensitive vulnerabilities, or restricted SGP evidence without lawful and ethical authority.",
+      "source_text": "Each object SHOULD carry a visibility class and sensitivity class. Access decisions MUST be logged. Public exports MUST NOT expose personal data, protected testimony, privileged legal material, security-sensitive vulnerabilities, or restricted SGP evidence without lawful and ethical authority.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "LEGAL_OR_DOMAIN_DEPENDENT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-135",
+      "line": 984,
+      "section": "14.5 AI service boundary",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Confidential evidence MUST NOT be transmitted to an external AI service unless the data-handling basis, provider, retention, access, jurisdiction, and security controls are declared and authorized.",
+      "source_text": "Confidential evidence MUST NOT be transmitted to an external AI service unless the data-handling basis, provider, retention, access, jurisdiction, and security controls are declared and authorized.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "LEGAL_OR_DOMAIN_DEPENDENT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-136",
+      "line": 996,
+      "section": "14.8 Administrator control",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Emergency administrator changes to records or permissions MUST be logged and independently reviewed.",
+      "source_text": "Privileged administrators SHOULD use separate accounts for infrastructure administration and substantive participation. Emergency administrator changes to records or permissions MUST be logged and independently reviewed.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-137",
+      "line": 1000,
+      "section": "14.9 Retention and deletion",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Deletion of personal data MUST preserve enough non-identifying audit evidence to explain the lawful deletion and its effect on the run.",
+      "source_text": "Retention rules SHOULD distinguish governing records, evidence, personal data, security logs, public views, and superseded drafts. Deletion of personal data MUST preserve enough non-identifying audit evidence to explain the lawful deletion and its effect on the run.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "LEGAL_OR_DOMAIN_DEPENDENT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-138",
+      "line": 1005,
+      "section": "14.10 Legal handling, privilege, and chilling-effect boundary",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "MHIOS does not create legal privilege and MUST NOT label a record privileged without jurisdiction-specific legal authority and counsel.",
+      "source_text": "Governance records may be discoverable or otherwise subject to legal, regulatory, employment, public-records, contractual, or investigative processes. MHIOS does not create legal privilege and MUST NOT label a record privileged without jurisdiction-specific legal authority and counsel.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "LEGAL_OR_DOMAIN_DEPENDENT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-139",
+      "line": 1016,
+      "section": "14.10 Legal handling, privilege, and chilling-effect boundary",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Legal-risk concerns MUST NOT be resolved by silently omitting gate-material unknowns, dissent, adverse evidence, or rights exposure.",
+      "source_text": "Legal-risk concerns MUST NOT be resolved by silently omitting gate-material unknowns, dissent, adverse evidence, or rights exposure. Where complete recording is legally constrained, the run MUST narrow its claim, identify the constraint, and route the matter to authorized legal and governance review.",
+      "test_ids": [
+        "T-UNKNOWN"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-140",
+      "line": 1016,
+      "section": "14.10 Legal handling, privilege, and chilling-effect boundary",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Where complete recording is legally constrained, the run MUST narrow its claim, identify the constraint, and route the matter to authorized legal and governance review.",
+      "source_text": "Legal-risk concerns MUST NOT be resolved by silently omitting gate-material unknowns, dissent, adverse evidence, or rights exposure. Where complete recording is legally constrained, the run MUST narrow its claim, identify the constraint, and route the matter to authorized legal and governance review.",
+      "test_ids": [
+        "T-UNKNOWN"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-141",
+      "line": 1053,
+      "section": "16.1 Status",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "It is not a gate and MUST NOT determine whether a decision is ethically admissible.",
+      "source_text": "The Governance Burden Profile is an empirical measurement surface. It is not a gate and MUST NOT determine whether a decision is ethically admissible.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-142",
+      "line": 1086,
+      "section": "16.4 No perverse incentive",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Burden metrics MUST NOT be used to reward superficial speed, discourage escalation, penalize users for declaring unknowns, or pressure reviewers to produce passes.",
+      "source_text": "Burden metrics MUST NOT be used to reward superficial speed, discourage escalation, penalize users for declaring unknowns, or pressure reviewers to produce passes.",
+      "test_ids": [
+        "T-UNKNOWN"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-143",
+      "line": 1090,
+      "section": "16.5 Revision discipline",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Changes MUST preserve the evidence and reasoning behind revision.",
+      "source_text": "A future MHIOS version SHOULD remove or simplify requirements shown to be redundant and strengthen requirements shown to prevent material errors or omissions. Changes MUST preserve the evidence and reasoning behind revision.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-144",
+      "line": 1103,
+      "section": "16A.1 Initial study design",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Primary cases MUST use neutral evidence packets and neutral instructions;",
+      "source_text": "Before Core-inclusion consideration, MHIOS SHOULD be tested with approximately 20 trained reviewers across 8-10 heterogeneous retrospective cases. Reviewers should independently assign RG claim-authority status, RF/NCRC, TRC and CSV states, selectable-set membership, and downstream ranking/authority states as applicable before consensus discussion. Primary cases MUST use neutral evidence packets and neutral instructions; training/calibration cases are separate and excluded from the primary analysis. Cases should include clear, borderline, high-uncertainty, rights-material, tail-risk, physical-admissibility, non-material, refusal, `TRC_NOT_TRIGGERED`, pass-with-controls, and non-decisive ranking conditions.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-145",
+      "line": 1111,
+      "section": "16A.3 Interpretation boundary",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The study MUST preregister the exact Core/MHIOS builds and case hashes, reviewer eligibility/conflicts, training/calibration materials, case randomization or counterbalancing, primary coefficient, agreement targets, confidence-interval method, handling of missing ratings/attrition, and revision rules.",
+      "source_text": "No single universal cutoff is adopted in v0.8. The study MUST preregister the exact Core/MHIOS builds and case hashes, reviewer eligibility/conflicts, training/calibration materials, case randomization or counterbalancing, primary coefficient, agreement targets, confidence-interval method, handling of missing ratings/attrition, and revision rules. Case authors MUST NOT rate their own primary cases, and unequal mid-study clarification is prohibited. Low agreement that changes gate outcomes, tier assignment, or authorization standing requires definition, training, interface, or evidence-guidance revision even when an aggregate coefficient appears acceptable.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "MANUAL_AUDIT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-146",
+      "line": 1111,
+      "section": "16A.3 Interpretation boundary",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Case authors MUST NOT rate their own primary cases, and unequal mid-study clarification is prohibited.",
+      "source_text": "No single universal cutoff is adopted in v0.8. The study MUST preregister the exact Core/MHIOS builds and case hashes, reviewer eligibility/conflicts, training/calibration materials, case randomization or counterbalancing, primary coefficient, agreement targets, confidence-interval method, handling of missing ratings/attrition, and revision rules. Case authors MUST NOT rate their own primary cases, and unequal mid-study clarification is prohibited. Low agreement that changes gate outcomes, tier assignment, or authorization standing requires definition, training, interface, or evidence-guidance revision even when an aggregate coefficient appears acceptable.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-147",
+      "line": 1139,
+      "section": "17.1 Conformance nonclaim",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "MHIOS conformance MUST NOT be represented as correctness of the decision, truth of evidence, legal authority, deployment certification, or empirical superiority of MathGov.",
+      "source_text": "MHIOS conformance MUST NOT be represented as correctness of the decision, truth of evidence, legal authority, deployment certification, or empirical superiority of MathGov.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "EMPIRICAL_TEST_REQUIRED",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-148",
+      "line": 1145,
+      "section": "17.2 Conformance evidence",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "partial implementation or branding MUST NOT imply a higher level.",
+      "source_text": "The machine-readable level requirements are defined in `registries/MHIOS_CONFORMANCE_PROFILE_v0_8.yaml`. Implementations claiming C1-C3 SHOULD evaluate the highest fully satisfied level and list missing requirements; partial implementation or branding MUST NOT imply a higher level.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-149",
+      "line": 1149,
+      "section": "17.3 Partial conformance",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Partial conformance claims MUST identify unimplemented requirements and MUST NOT imply a higher level through branding or visual appearance.",
+      "source_text": "Partial conformance claims MUST identify unimplemented requirements and MUST NOT imply a higher level through branding or visual appearance.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-150",
+      "line": 1149,
+      "section": "17.3 Partial conformance",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Partial conformance claims MUST identify unimplemented requirements and MUST NOT imply a higher level through branding or visual appearance.",
+      "source_text": "Partial conformance claims MUST identify unimplemented requirements and MUST NOT imply a higher level through branding or visual appearance.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-151",
+      "line": 1192,
+      "section": "18.6 Local-first and spreadsheet boundary",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "It may import or export spreadsheets for comparison, but spreadsheet cells MUST NOT become the only authoritative state or calculation source.",
+      "source_text": "The slice SHOULD support local or organization-controlled storage. It may import or export spreadsheets for comparison, but spreadsheet cells MUST NOT become the only authoritative state or calculation source.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-152",
+      "line": 1253,
+      "section": "19.2 Screen-level rules",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Each screen MUST expose the source objects it creates or modifies, the required reviewer, the controlling rule, and whether the screen is displaying a governing result, advisory result, or audit-only calculation.",
+      "source_text": "Each screen MUST expose the source objects it creates or modifies, the required reviewer, the controlling rule, and whether the screen is displaying a governing result, advisory result, or audit-only calculation.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "MANUAL_AUDIT",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-153",
+      "line": 1267,
+      "section": "19.4 Claim and evidence flow",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The interface MUST show unlinked evidence and unsupported claims.",
+      "source_text": "Claims are created independently from evidence so a source cannot silently define the proposition it is supposed to support. Evidence can support, challenge, or contextualize multiple claims. The interface MUST show unlinked evidence and unsupported claims.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-154",
+      "line": 1277,
+      "section": "19.6 Qualify flow",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "When the run enters the Canon RF/NCRC emergency pathway, the Emergency Rights Comparison screen MUST render the complete right-priority order `[LIFE, BODY, ECOL, LBTY, NEED, DIGN, PROC, INFO]`, component order `categorical -> severe risk -> floor depth`, every candidate's violation tuple, the resolving coordinate, unknown fields, challenger status, mitigation, appeal and remedy, expiry, and return-to-normal conditions.",
+      "source_text": "When the run enters the Canon RF/NCRC emergency pathway, the Emergency Rights Comparison screen MUST render the complete right-priority order `[LIFE, BODY, ECOL, LBTY, NEED, DIGN, PROC, INFO]`, component order `categorical -> severe risk -> floor depth`, every candidate's violation tuple, the resolving coordinate, unknown fields, challenger status, mitigation, appeal and remedy, expiry, and return-to-normal conditions. It MUST NOT label the provisional result `RF_PASS`, ordinary selectability, or RLS selection.",
+      "test_ids": [
+        "T-UNKNOWN",
+        "T-EMERGENCY-ORDER"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-155",
+      "line": 1277,
+      "section": "19.6 Qualify flow",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "It MUST NOT label the provisional result `RF_PASS`, ordinary selectability, or RLS selection.",
+      "source_text": "When the run enters the Canon RF/NCRC emergency pathway, the Emergency Rights Comparison screen MUST render the complete right-priority order `[LIFE, BODY, ECOL, LBTY, NEED, DIGN, PROC, INFO]`, component order `categorical -> severe risk -> floor depth`, every candidate's violation tuple, the resolving coordinate, unknown fields, challenger status, mitigation, appeal and remedy, expiry, and return-to-normal conditions. It MUST NOT label the provisional result `RF_PASS`, ordinary selectability, or RLS selection.",
+      "test_ids": [
+        "T-UNKNOWN",
+        "T-EMERGENCY-ORDER"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-156",
+      "line": 1279,
+      "section": "19.6 Qualify flow",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The Rank and Framework Result screens MUST display a prominent `MPS_HYPOTHESIS_SENSITIVE` banner whenever that Canon flag is present and MUST explain that a single welfare ranking is not claimable across the evaluated inclusion hypotheses.",
+      "source_text": "The Rank and Framework Result screens MUST display a prominent `MPS_HYPOTHESIS_SENSITIVE` banner whenever that Canon flag is present and MUST explain that a single welfare ranking is not claimable across the evaluated inclusion hypotheses.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-157",
+      "line": 1279,
+      "section": "19.6 Qualify flow",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The Rank and Framework Result screens MUST display a prominent `MPS_HYPOTHESIS_SENSITIVE` banner whenever that Canon flag is present and MUST explain that a single welfare ranking is not claimable across the evaluated inclusion hypotheses.",
+      "source_text": "The Rank and Framework Result screens MUST display a prominent `MPS_HYPOTHESIS_SENSITIVE` banner whenever that Canon flag is present and MUST explain that a single welfare ranking is not claimable across the evaluated inclusion hypotheses.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-158",
+      "line": 1283,
+      "section": "19.7 Rank flow",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every score MUST be traceable to evidence and judgments.",
+      "source_text": "The Rank screen displays only selectable options, with the 7x7 welfare field, impact instances, evidence per cell, weights, PLSS effects, uncertainty, RLS, sensitivity, Gap, and decisiveness. Every score MUST be traceable to evidence and judgments.",
+      "test_ids": [
+        "T-DECISION-STATE",
+        "T-COMPUTATIONAL-CLOSURE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-159",
+      "line": 1287,
+      "section": "19.8 Authority and execution flow",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "It MUST display the frozen authorization-evaluation time and mandate-snapshot hash.",
+      "source_text": "The Authority Selection screen records named authority, mandate, options, framework result, selection, basis, conflicts, departure rationale, and conditions. The Execution Authorization screen separately verifies the selected option, exact action instance, action-specification hash, qualification-snapshot hash, exact configuration binding, current scoped and versioned mandate records, control and precondition checks, warrants, evidence currency, monitoring, shutdown, rollback, named authority, unresolved conflicts, and requalification triggers. It MUST display the frozen authorization-evaluation time and mandate-snapshot hash. It MUST NOT present `APPROVED` or `APPROVED_WITH_CONTROLS` when any load-bearing mandate, control, precondition, evidence, configuration, action binding, qualification snapshot, or conflict check is invalid or unresolved.",
+      "test_ids": [
+        "T-CONFLICT",
+        "T-MANDATE-CURRENCY"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-160",
+      "line": 1287,
+      "section": "19.8 Authority and execution flow",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "It MUST NOT present `APPROVED` or `APPROVED_WITH_CONTROLS` when any load-bearing mandate, control, precondition, evidence, configuration, action binding, qualification snapshot, or conflict check is invalid or unresolved.",
+      "source_text": "The Authority Selection screen records named authority, mandate, options, framework result, selection, basis, conflicts, departure rationale, and conditions. The Execution Authorization screen separately verifies the selected option, exact action instance, action-specification hash, qualification-snapshot hash, exact configuration binding, current scoped and versioned mandate records, control and precondition checks, warrants, evidence currency, monitoring, shutdown, rollback, named authority, unresolved conflicts, and requalification triggers. It MUST display the frozen authorization-evaluation time and mandate-snapshot hash. It MUST NOT present `APPROVED` or `APPROVED_WITH_CONTROLS` when any load-bearing mandate, control, precondition, evidence, configuration, action binding, qualification snapshot, or conflict check is invalid or unresolved.",
+      "test_ids": [
+        "T-CONFLICT",
+        "T-MANDATE-CURRENCY"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-161",
+      "line": 1291,
+      "section": "19.8A Candidate-successor execution boundary",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The Authority and Execution surface MUST display parent identity, candidate identity, generation depth, candidate-lock status, evaluation-validity disposition, requested authority delta, and independent reviewer.",
+      "source_text": "The Authority and Execution surface MUST display parent identity, candidate identity, generation depth, candidate-lock status, evaluation-validity disposition, requested authority delta, and independent reviewer. A successor remains a candidate artifact until: its exact configuration is recorded; the lineage and material deltas are complete; generation depth is within the authorized bound; reused evidence remains valid; affected RG, RF/NCRC, TRC, and CSV records are reopened; and a fresh mandate and `ExecutionAuthorization` are bound to the candidate.",
+      "test_ids": [
+        "T-SUCCESSOR-DEPTH",
+        "T-SUCCESSOR-INDEPENDENCE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-162",
+      "line": 1293,
+      "section": "19.8A Candidate-successor execution boundary",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A parent, candidate, descendant, or automated evaluator MUST NOT be the sole reviewer of its own lineage record.",
+      "source_text": "A parent, candidate, descendant, or automated evaluator MUST NOT be the sole reviewer of its own lineage record. Competitive pressure, expected performance gains, or improved results after removing oversight do not create authority.",
+      "test_ids": [
+        "T-SUCCESSOR-INDEPENDENCE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-163",
+      "line": 1354,
+      "section": "21.6 Normative coverage ratio",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The release MUST report the number and proportion of atomic `MUST`/`MUST NOT` modal clauses linked to at least one executable check.",
+      "source_text": "The release MUST report the number and proportion of atomic `MUST`/`MUST NOT` modal clauses linked to at least one executable check. Each uppercase modal occurrence is a separate coverage unit; independently testable modal clauses MUST be recorded separately. Every clause without executable linkage MUST receive an explicit disposition such as `MANUAL_AUDIT`, `EMPIRICAL_TEST_REQUIRED`, `LEGAL_OR_DOMAIN_DEPENDENT`, `NOT_MACHINE_TESTABLE`, or `UNIMPLEMENTED_CHECK`, with a reason. Report total clauses, machine-eligible clauses with direct/partial coverage, and non-machine dispositions by category; the total raw ratio MAY remain as an honesty metric but MUST NOT be presented alone. A linked test may establish only structural or syntactic coverage. The ledger MUST state whether semantic, empirical, legal, or domain validity remains untested. Coverage is an honesty measure, not a quality score.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-164",
+      "line": 1354,
+      "section": "21.6 Normative coverage ratio",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 2,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The release MUST report the number and proportion of atomic `MUST`/`MUST NOT` modal clauses linked to at least one executable check.",
+      "source_text": "The release MUST report the number and proportion of atomic `MUST`/`MUST NOT` modal clauses linked to at least one executable check. Each uppercase modal occurrence is a separate coverage unit; independently testable modal clauses MUST be recorded separately. Every clause without executable linkage MUST receive an explicit disposition such as `MANUAL_AUDIT`, `EMPIRICAL_TEST_REQUIRED`, `LEGAL_OR_DOMAIN_DEPENDENT`, `NOT_MACHINE_TESTABLE`, or `UNIMPLEMENTED_CHECK`, with a reason. Report total clauses, machine-eligible clauses with direct/partial coverage, and non-machine dispositions by category; the total raw ratio MAY remain as an honesty metric but MUST NOT be presented alone. A linked test may establish only structural or syntactic coverage. The ledger MUST state whether semantic, empirical, legal, or domain validity remains untested. Coverage is an honesty measure, not a quality score.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-165",
+      "line": 1354,
+      "section": "21.6 Normative coverage ratio",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 3,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The release MUST report the number and proportion of atomic `MUST`/`MUST NOT` modal clauses linked to at least one executable check.",
+      "source_text": "The release MUST report the number and proportion of atomic `MUST`/`MUST NOT` modal clauses linked to at least one executable check. Each uppercase modal occurrence is a separate coverage unit; independently testable modal clauses MUST be recorded separately. Every clause without executable linkage MUST receive an explicit disposition such as `MANUAL_AUDIT`, `EMPIRICAL_TEST_REQUIRED`, `LEGAL_OR_DOMAIN_DEPENDENT`, `NOT_MACHINE_TESTABLE`, or `UNIMPLEMENTED_CHECK`, with a reason. Report total clauses, machine-eligible clauses with direct/partial coverage, and non-machine dispositions by category; the total raw ratio MAY remain as an honesty metric but MUST NOT be presented alone. A linked test may establish only structural or syntactic coverage. The ledger MUST state whether semantic, empirical, legal, or domain validity remains untested. Coverage is an honesty measure, not a quality score.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-166",
+      "line": 1354,
+      "section": "21.6 Normative coverage ratio",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 4,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "independently testable modal clauses MUST be recorded separately.",
+      "source_text": "The release MUST report the number and proportion of atomic `MUST`/`MUST NOT` modal clauses linked to at least one executable check. Each uppercase modal occurrence is a separate coverage unit; independently testable modal clauses MUST be recorded separately. Every clause without executable linkage MUST receive an explicit disposition such as `MANUAL_AUDIT`, `EMPIRICAL_TEST_REQUIRED`, `LEGAL_OR_DOMAIN_DEPENDENT`, `NOT_MACHINE_TESTABLE`, or `UNIMPLEMENTED_CHECK`, with a reason. Report total clauses, machine-eligible clauses with direct/partial coverage, and non-machine dispositions by category; the total raw ratio MAY remain as an honesty metric but MUST NOT be presented alone. A linked test may establish only structural or syntactic coverage. The ledger MUST state whether semantic, empirical, legal, or domain validity remains untested. Coverage is an honesty measure, not a quality score.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-167",
+      "line": 1354,
+      "section": "21.6 Normative coverage ratio",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 5,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Every clause without executable linkage MUST receive an explicit disposition such as `MANUAL_AUDIT`, `EMPIRICAL_TEST_REQUIRED`, `LEGAL_OR_DOMAIN_DEPENDENT`, `NOT_MACHINE_TESTABLE`, or `UNIMPLEMENTED_CHECK`, with a reason.",
+      "source_text": "The release MUST report the number and proportion of atomic `MUST`/`MUST NOT` modal clauses linked to at least one executable check. Each uppercase modal occurrence is a separate coverage unit; independently testable modal clauses MUST be recorded separately. Every clause without executable linkage MUST receive an explicit disposition such as `MANUAL_AUDIT`, `EMPIRICAL_TEST_REQUIRED`, `LEGAL_OR_DOMAIN_DEPENDENT`, `NOT_MACHINE_TESTABLE`, or `UNIMPLEMENTED_CHECK`, with a reason. Report total clauses, machine-eligible clauses with direct/partial coverage, and non-machine dispositions by category; the total raw ratio MAY remain as an honesty metric but MUST NOT be presented alone. A linked test may establish only structural or syntactic coverage. The ledger MUST state whether semantic, empirical, legal, or domain validity remains untested. Coverage is an honesty measure, not a quality score.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "EMPIRICAL_TEST_REQUIRED",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-168",
+      "line": 1354,
+      "section": "21.6 Normative coverage ratio",
+      "modal_operator": "MUST NOT",
+      "modal_ordinal_in_line": 6,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "the total raw ratio MAY remain as an honesty metric but MUST NOT be presented alone.",
+      "source_text": "The release MUST report the number and proportion of atomic `MUST`/`MUST NOT` modal clauses linked to at least one executable check. Each uppercase modal occurrence is a separate coverage unit; independently testable modal clauses MUST be recorded separately. Every clause without executable linkage MUST receive an explicit disposition such as `MANUAL_AUDIT`, `EMPIRICAL_TEST_REQUIRED`, `LEGAL_OR_DOMAIN_DEPENDENT`, `NOT_MACHINE_TESTABLE`, or `UNIMPLEMENTED_CHECK`, with a reason. Report total clauses, machine-eligible clauses with direct/partial coverage, and non-machine dispositions by category; the total raw ratio MAY remain as an honesty metric but MUST NOT be presented alone. A linked test may establish only structural or syntactic coverage. The ledger MUST state whether semantic, empirical, legal, or domain validity remains untested. Coverage is an honesty measure, not a quality score.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-169",
+      "line": 1354,
+      "section": "21.6 Normative coverage ratio",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 7,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "The ledger MUST state whether semantic, empirical, legal, or domain validity remains untested.",
+      "source_text": "The release MUST report the number and proportion of atomic `MUST`/`MUST NOT` modal clauses linked to at least one executable check. Each uppercase modal occurrence is a separate coverage unit; independently testable modal clauses MUST be recorded separately. Every clause without executable linkage MUST receive an explicit disposition such as `MANUAL_AUDIT`, `EMPIRICAL_TEST_REQUIRED`, `LEGAL_OR_DOMAIN_DEPENDENT`, `NOT_MACHINE_TESTABLE`, or `UNIMPLEMENTED_CHECK`, with a reason. Report total clauses, machine-eligible clauses with direct/partial coverage, and non-machine dispositions by category; the total raw ratio MAY remain as an honesty metric but MUST NOT be presented alone. A linked test may establish only structural or syntactic coverage. The ledger MUST state whether semantic, empirical, legal, or domain validity remains untested. Coverage is an honesty measure, not a quality score.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "EMPIRICAL_TEST_REQUIRED",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-170",
+      "line": 1362,
+      "section": "21.8 Reflexive anti-theater review",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A package in which every seeded check passes MUST still report untested requirements, construct-validity gaps, adverse design hypotheses, and the absence of real-user disagreement data.",
+      "source_text": "A package in which every seeded check passes MUST still report untested requirements, construct-validity gaps, adverse design hypotheses, and the absence of real-user disagreement data. `ARTIFACT_INTEGRITY_PASS` is compatible with `CONSTRUCT_VALIDITY_UNTESTED`.",
+      "test_ids": [
+        "T-EXPERIMENTAL-BOUNDARY"
+      ],
+      "coverage": "PARTIAL_EXECUTABLE",
+      "coverage_disposition": "PARTIAL_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-171",
+      "line": 1431,
+      "section": "23.4 Migration",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Existing spreadsheets and forms MAY be imported as source data, but import MUST preserve provenance, flag ambiguous mappings, and avoid treating cached values as authoritative calculations.",
+      "source_text": "Existing spreadsheets and forms MAY be imported as source data, but import MUST preserve provenance, flag ambiguous mappings, and avoid treating cached values as authoritative calculations.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-172",
+      "line": 1435,
+      "section": "23.5 API boundary",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "Bulk operations MUST preserve per-object provenance.",
+      "source_text": "APIs SHOULD use versioned schemas, idempotent writes where practical, explicit conflict handling, stable identifiers, and authenticated actor/role context. Bulk operations MUST preserve per-object provenance.",
+      "test_ids": [
+        "T-UNIQUE-ID"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-173",
+      "line": 1474,
+      "section": "24.1 Recursive-successor anti-theater patterns",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A conforming implementation MUST detect or surface at least the following patterns when the relevant fields exist:",
+      "source_text": "A conforming implementation MUST detect or surface at least the following patterns when the relevant fields exist:",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-174",
+      "line": 1588,
+      "section": "Appendix B - Generated-view map",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "A generated view MUST indicate stale status when any source object changes after generation.",
+      "source_text": "A generated view MUST indicate stale status when any source object changes after generation.",
+      "test_ids": [
+        "T-VIEW-STALE"
+      ],
+      "coverage": "DIRECT_EXECUTABLE",
+      "coverage_disposition": "DIRECT_EXECUTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    },
+    {
+      "requirement_id": "NORM-175",
+      "line": 1605,
+      "section": "Appendix C - Permission principles",
+      "modal_operator": "MUST",
+      "modal_ordinal_in_line": 1,
+      "atomic_unit": "ONE_UPPERCASE_MODAL_CLAUSE",
+      "clause_text": "- Sensitive-data access MUST follow least privilege and purpose limitation.",
+      "source_text": "- Sensitive-data access MUST follow least privilege and purpose limitation.",
+      "test_ids": [],
+      "coverage": "UNLINKED",
+      "coverage_disposition": "NOT_MACHINE_TESTABLE",
+      "validity_not_established": [
+        "semantic_truth",
+        "empirical_effectiveness",
+        "legal_validity",
+        "domain_validity"
+      ]
+    }
+  ],
+  "boundary": "Coverage measures linkage to declared executable checks. Unlinked-clause dispositions are rule-based release-bookkeeping classifications and require human review before being treated as a research claim. Coverage does not establish evidence truth, complete semantic enforcement, empirical effectiveness, legal validity, domain validity, usability, burden reduction, institutional legitimacy, or construct validity."
+}

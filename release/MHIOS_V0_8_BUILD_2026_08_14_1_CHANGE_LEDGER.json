@@ -1,0 +1,26 @@
+{
+  "release_id": "MHIOS_v0_8+2026.08.14.1",
+  "build_id": "2026.08.14.1",
+  "date": "2026-08-14",
+  "change_class": "recursive_successor_governance_hardening",
+  "accepted_changes": [
+    "non-heritable authority",
+    "SuccessorRequalificationRecord",
+    "candidate lock",
+    "maximum unreviewed generation depth",
+    "evaluation-validity delta",
+    "independent review",
+    "fresh candidate-bound Action Binding",
+    "anti-theater patterns",
+    "positive and negative conformance tests"
+  ],
+  "rejected_changes": [
+    "new MathGov gate",
+    "automatic claim that recursive self-improvement is imminent",
+    "universal scalar adaptation-lag score",
+    "authority transfer through technical lineage"
+  ],
+  "core_semantics_changed": false,
+  "construct_validity": "UNTESTED",
+  "notes": "Changes are operational companion controls only."
+}

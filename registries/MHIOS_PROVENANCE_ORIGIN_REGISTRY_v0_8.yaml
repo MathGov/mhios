@@ -1,0 +1,37 @@
+standard: MHIOS
+version: '0.8'
+origin_statuses:
+- HUMAN_ENTERED
+- IMPORTED_FROM_SOURCE
+- SYSTEM_CALCULATED
+- AI_SUGGESTED
+- AI_EXTRACTED
+- TEMPLATE_DEFAULT
+- MIGRATED_FROM_PRIOR_RUN
+review_statuses:
+- UNREVIEWED
+- HUMAN_REVIEWED
+- HUMAN_MODIFIED
+- REVIEW_DISAGREEMENT
+- CONTESTED
+- AUTHORIZED
+- REJECTED
+- SUPERSEDED
+human_judgment_firewall:
+  ai_may:
+  - summarize evidence
+  - propose claims
+  - suggest stakeholders
+  - suggest scenarios
+  - detect contradictions
+  - draft explanations
+  - identify missing records
+  ai_must_not:
+  - exclude stakeholders
+  - declare evidence credible
+  - determine rights acceptability
+  - approve catastrophic exposure
+  - establish physical admissibility
+  - assign legal authority
+  - authorize emergency action
+  - issue execution approval

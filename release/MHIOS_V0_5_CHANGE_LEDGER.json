@@ -1,0 +1,31 @@
+{
+  "standard": "MHIOS",
+  "version": "0.5",
+  "date": "2026-08-08",
+  "status": "candidate_experimental",
+  "accepted": [
+    "B9",
+    "B10",
+    "B11",
+    "E15",
+    "E16-clarified",
+    "H10"
+  ],
+  "partially_accepted": [
+    "E17"
+  ],
+  "rejected_as_package_scope_errors": [
+    "schemas_absent",
+    "wireframes_absent",
+    "manifest_absent",
+    "hashes_absent",
+    "verifier_absent"
+  ],
+  "rejected_as_factually_false": [
+    "RLSCellRecord_nonmaskable_status_absent"
+  ],
+  "object_count": 45,
+  "mvs_core_object_count": 12,
+  "construct_validity": "UNTESTED",
+  "core_modified": false
+}

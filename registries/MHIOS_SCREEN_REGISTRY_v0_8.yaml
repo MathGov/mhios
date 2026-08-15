@@ -1,0 +1,95 @@
+standard: MHIOS
+version: '0.8'
+screens:
+- id: SCR-01
+  name: Run Library
+  purpose: Create, import, clone, compare, or open a run; show status and blocking
+    issues.
+- id: SCR-02
+  name: New Run Wizard
+  purpose: Capture decision identity, options, configuration, materiality prompts,
+    roles, and recommended tier.
+- id: SCR-03
+  name: Decision Canvas
+  purpose: Show the bounded run, authority, exact configuration, assigned task, deployment
+    domain, consequence interface, and unresolved setup items, including the Computational
+    Context Declaration when material.
+- id: SCR-04
+  name: Claim and Evidence Workspace
+  purpose: Link claims, evidence, counterevidence, assumptions, unknowns, MFDI, source
+    coupling, demonstrated capability, validity domain, and required evidence standard.
+- id: SCR-05
+  name: Stakeholder Discovery
+  purpose: Build the Local Stakeholder Set, scope mappings, rights candidates, omissions,
+    and challenge opportunities.
+- id: SCR-06
+  name: Ground Workspace
+  purpose: Complete reality surface, evidence trace, unknowns, transition, consequences,
+    claim boundary, and triggered profiles.
+- id: SCR-07
+  name: Qualify Overview
+  purpose: Display RG -> RF/NCRC -> TRC -> CSV with statuses, reviewers, missing evidence,
+    and reopen triggers.
+- id: SCR-08
+  name: Rights Floor
+  purpose: Review floor, categorical, severe-hazard, subgroup, and protected-cell
+    channels.
+- id: SCR-09
+  name: Tail-Risk Constraint
+  purpose: Discover scenarios, assign probability bounds, classify severity/irreversibility,
+    calculate CVaR, and review uncertainty.
+- id: SCR-10
+  name: CSV
+  purpose: Review current state, transition, post-state, controls, dependencies, reversibility,
+    monitoring, authority, and UCI/HOI where material.
+- id: SCR-11
+  name: Selectable Set
+  purpose: Show option gate history and separate governing states from audit-only
+    calculations.
+- id: SCR-12
+  name: Rank
+  purpose: Display the 7x7 field, impacts, weights, PLSS, uncertainty, RLS, sensitivity,
+    and decisiveness.
+- id: SCR-13
+  name: Framework Result
+  purpose: Show selectable options, ranking, Gap, decisiveness, framework verdict,
+    and unresolved reviews.
+- id: SCR-14
+  name: Authority Selection
+  purpose: Record authority, mandate, available options, framework result, selected
+    option, basis, conflicts, and departures.
+  required_panels:
+  - successor_lineage_and_candidate_lock
+  required_objects:
+  - SuccessorRequalificationRecord
+- id: SCR-15
+  name: Execution Authorization
+  purpose: Confirm a current Computational Context Declaration, exact configuration
+    binding, current mandate records, controls, preconditions, warrants, evidence
+    currency, monitoring, shutdown, rollback, separate legitimate authority, conflicts,
+    and requalification triggers.
+  required_panels:
+  - successor_lineage_and_candidate_lock
+  required_objects:
+  - SuccessorRequalificationRecord
+- id: SCR-16
+  name: Monitor
+  purpose: Track controls, incidents, evidence expiry, configuration drift, outcomes,
+    and triggered reopening.
+- id: SCR-17
+  name: Review and Challenge
+  purpose: Manage disagreements, appeals, stakeholder challenges, tier disputes, AI
+    fields awaiting review, and theater warnings.
+- id: SCR-18
+  name: Audit View
+  purpose: Provide read-only reconstruction of objects, versions, transitions, calculations,
+    overrides, AI contributions, and hashes.
+- id: SCR-19
+  name: Export
+  purpose: Generate canonical JSON, PCC, gate reports, Computational Context Declaration,
+    authority/execution records, public summary, and validation package.
+- id: SCR-20
+  name: Emergency Rights Comparison
+  purpose: Render the Canon emergency declaration, per-option rights-violation tuples,
+    lexicographic comparison trace, challenger status, remediation, expiry, and return-to-normal
+    conditions without presenting an ordinary pass or RLS selection.

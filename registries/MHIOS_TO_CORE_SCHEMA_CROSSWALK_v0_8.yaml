@@ -1,0 +1,163 @@
+standard: MHIOS
+version: '0.8'
+core_release: MathGov v12.6 / SGP v8.5 build 2026.08.15.3
+status: CONTROLLING_IMPLEMENTATION_CROSSWALK
+precedence: Pinned MathGov Core semantic sources control meaning; MHIOS controls interaction
+  and provenance only.
+mappings:
+- mhios_object: DecisionRun
+  core_surface: Reproducibility and Use Standard / run-record schema
+  notes: Run identity, configuration, tier, claim boundary and lifecycle.
+  required_core_fields:
+  - transition_or_action_boundary
+  - reality_surface
+  - consequence_pathways
+- mhios_object: Claim
+  core_surface: Canon Reality Grounding; MFDI
+  notes: Claim type, authority, validity domain, revision condition.
+  required_core_fields:
+  - claim_type
+  - claim_domain
+  - warrant_domains
+- mhios_object: EvidenceItem
+  core_surface: Canon evidence trace; MFDI; Source Coupling
+  notes: Source evidence does not inherit authority from generator or certification.
+- mhios_object: PhysicalCausalAdmissibilityEvidenceProfile
+  core_surface: PC-AEP v2.3
+  required_noncollapse_fields:
+  - candidate_generation_source
+  - verification_simulation_empirical_test_or_expert_warrant
+  - admissibility_warrant_source
+  notes: All three fields remain distinct.
+- mhios_object: MethodologicalIntegrityRecord
+  core_surface: MFDI v2.3
+  required_noncollapse_fields:
+  - claim_type
+  - claim_domain
+  - warrant_domains
+  - cross_domain_bridges
+  - necessity_or_alternative_check
+  - alternative_explanations
+  notes: Each material warrant domain that differs from the claim domain requires
+    a separate bridge record.
+- mhios_object: CapabilityAuthorityDecompositionRecord
+  core_surface: Canon capability-authority decomposition; Agent System runtime boundary
+  required_noncollapse_fields:
+  - candidate_generation_method
+  - reference_source
+  - constraint_sources
+  - objective_source
+  - objective_change_authority
+  - admissibility_warrant_sources
+  - execution_interface
+  - execution_scope
+  - execution_authority_source
+  - revocation_authority
+  - safe_state_or_shutdown_path
+  - requalification_trigger
+  notes: A scalar autonomy level or combined field cannot replace the split record.
+- mhios_object: SourceCouplingRecord
+  core_surface: Source-Coupling Integrity v2.3
+  notes: Capability, source evidence, conditions and source debt.
+- mhios_object: GateRecord
+  core_surface: Canonical state registry and transition matrix
+  required_noncollapse_fields:
+  - record_role
+  - constraint_reasons
+  notes: RG uses CLAIM_AUTHORITY_PRECONDITION; RF/NCRC, TRC and CSV use OPTION_REJECTING_GATE.
+    CSV_PASS_WITH_CONTROLS carries constitutive_control_ids.
+- mhios_object: DecisionStateRecord
+  core_surface: Canon framework-verdict crosswalk
+  notes: Selectable set, decisiveness and framework result.
+- mhios_object: EmergencyOrderRecord
+  core_surface: Canon Section 7.5 and Appendix C emergency rights priority
+  notes: Preserves the violation tuples and lexicographic trace; it never converts
+    emergency action into ordinary NCRC pass or RLS selection.
+- mhios_object: AuthoritySelectionRecord
+  core_surface: Canon AuthoritySelectionRecord
+  notes: Authority selection is not framework selection.
+- mhios_object: ExecutionMandateRecord
+  core_surface: Canon configuration-bound assurance and Agent System mandate/authority
+    boundary
+  notes: Human-defined mandate source, version, scope, effective interval, revocation,
+    supersession, trust evidence and requalification remain separate from PC-AEP admissibility
+    and from legitimate authority.
+- mhios_object: ExecutionAuthorization
+  core_surface: Canon / Agent System execution boundary
+  notes: Approved execution requires exact action, qualification snapshot, and configuration
+    binding; current mandate records and evidence; verified controls and preconditions;
+    separate named authority; shutdown and rollback; and no unresolved material conflict.
+- mhios_object: SGPEvidenceNarrative
+  core_surface: SGP v8.5 evidence registers
+  notes: Preserve narrative and uncertainty.
+- mhios_object: SGPTypedInterpretation
+  core_surface: SGP v8.5 MPS/FPP/GPR/SPR/ICP/RMCP
+  notes: Protection, participation, capability and authority remain non-collapsed.
+- mhios_object: RLSCellRecord
+  core_surface: Canon RLS and WDBIP v1.6
+  notes: One token, one primary dimension; U7 construct exceptions declared.
+- mhios_object: CalculationRecord
+  core_surface: Canon equations / reference calculator interface
+  notes: Formula version, inputs, engine, precision and hash.
+- mhios_object: GeneratedView
+  core_surface: Reproducibility Standard / PCC / Decision Note
+  notes: Generated documents are views and must track source versions.
+- mhios_object: MaterialObligationRecord
+  core_target: PCC.MaterialObligationRecord
+  status: EXACT_FIELD_PRESERVING
+  noncollapse_rule: Control object alone is insufficient.
+- mhios_object: ConsequenceTempoRecord
+  core_target: ripple.md ConsequenceTempoRecord
+  status: EXACT_MINIMUM_FIELD_PRESERVING
+- mhios_object: ResponsibilityContinuityRecord
+  core_target: ripple.md ResponsibilityContinuityRecord
+  status: EXACT_MINIMUM_FIELD_PRESERVING
+- mhios_object: HumanCompensationLoadRecord
+  core_target: PCC.HumanCompensationLoadRecord
+  status: EXACT_FIELD_PRESERVING
+- mhios_object: ProjectionPreRegistrationRecord
+  core_target: ProjectionPreRegistration
+  status: EXACT_MINIMUM_FIELD_PRESERVING
+- mhios_object: RefusalRecord
+  core_target: PCC.RefusalRecord
+  status: EXACT_MINIMUM_FIELD_PRESERVING
+- mhios_object: ComputationalClosureRecord
+  core_target: PCC.ComputationalClosure
+  status: EXACT_FIELD_PRESERVING
+- mhios_object: CoreRecordAttachment
+  core_target: triggered Core or companion record
+  status: VALIDATED_REFERENCE_ONLY
+  noncollapse_rule: Does not redefine attached record semantics.
+- mhios_object: SuccessorRequalificationRecord
+  core_surface: MHIOS v0.8 / RippleLogic Agent System v12.5 companion control
+  mapping_status: COMPANION_ONLY_NO_NEW_CORE_GATE
+  notes: Operationalizes material-change requalification and Action Binding without
+    altering the Core cascade.
+- mhios_view: ComputationalContextDeclarationView
+  implementation_object: GeneratedView
+  core_surface: Canon §2.1C CapabilityAuthorityDecompositionRecord; Agent System Computational
+    Context Preflight; ripple.md B.ab; MHIOS §8.0H
+  status: DERIVED_VIEW_NO_NEW_AUTHORITY
+  source_records:
+  - ConfigurationRecord
+  - CapabilityAuthorityDecompositionRecord
+  - Claim
+  - PhysicalCausalAdmissibilityEvidenceProfile
+  - Option
+  - ExecutionMandateRecord
+  - ExecutionAuthorization
+  - Control
+  - RequalificationTrigger
+  noncollapse_rules:
+  - capability != authority
+  - assigned task != justified task
+  - consequence interface != legitimate authority
+  - authority != physical safety
+  notes: The view references existing record IDs and hashes. It does not independently
+    create capability, admissibility, permission, safety, or authority.
+tested_core_release_id: MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3
+compatibility_review_status: PASS_EXACT_BUILD_INTERFACE_REVIEW
+tested_core_package_name: MathGov_Core_2026_09_v12_6_SGP_v8_5_BUILD_2026_08_15_3_FINAL_PUBLICATION_READY.zip
+tested_core_package_sha256: 475c4e50da133d6eec497d9cf7da7bbf6e7f7d9d79ce27f0d86b03fdbfccd69f
+tested_core_version_manifest_sha256: a11e023c3fb647319b8ac11571d5be684bc2750f6162c661c2d0d42f236b0ed6
+tested_core_run_schema_sha256: dc55a36a53203677a1d3961287269ff76f6b716ff80e25efda5d5d1b2e1ff6bf

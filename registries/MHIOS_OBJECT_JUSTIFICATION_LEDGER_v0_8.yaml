@@ -1,0 +1,412 @@
+standard: MHIOS
+version: '0.8'
+status: design_justification_not_empirical_validation
+objects:
+  DecisionRun:
+    implementation_class: MVS_CORE
+    intended_error_prevented: Unbounded or ambiguous decision question and authority
+      scope.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  Option:
+    implementation_class: MVS_CORE
+    intended_error_prevented: Missing baseline, delay, redesign, or alternative pathways.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  ConfigurationRecord:
+    implementation_class: MVS_CORE
+    intended_error_prevented: Claims transferred across materially different system
+      configurations.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  TierAssessmentRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Tier selection used as a paperwork preference rather
+      than materiality result.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  Claim:
+    implementation_class: MVS_CORE
+    intended_error_prevented: Evidence attached without an explicit proposition or
+      claim boundary.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  EvidenceItem:
+    implementation_class: MVS_CORE
+    intended_error_prevented: Unsupported, stale, or untraceable claims.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  Assumption:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Hidden premises that alter downstream gates or calculations.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  MaterialUnknown:
+    implementation_class: MVS_CORE
+    intended_error_prevented: Unknowns silently converted to zero, safe, or not material.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  CategoryGroundingRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Category and terminology choices laundering authority.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  StakeholderInstance:
+    implementation_class: MVS_CORE
+    intended_error_prevented: Affected people or systems omitted from evaluation.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  ScopeMapping:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Silent duplication or disappearance of cross-scope effects.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  RightsExposure:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Rights harm hidden inside aggregate welfare scoring.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  Scenario:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Tail pathways or probability bounds omitted from TRC.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  Control:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Monitoring or policy mislabeled as prevention or recovery.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  Dependency:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: External or internal failure paths treated as self-sufficient
+      capability.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  PhysicalCausalAdmissibilityEvidenceProfile:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Governance permission substituted for physical or causal
+      admissibility.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  MethodologicalIntegrityRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Plausibility or coherence substituted for testable support.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  SourceCouplingRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Output performance substituted for enabling-condition
+      evidence.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  SGPEvidenceNarrative:
+    implementation_class: ADVANCED_RESEARCH
+    intended_error_prevented: Qualitative evidence lost during typed classification.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  SGPTypedInterpretation:
+    implementation_class: ADVANCED_RESEARCH
+    intended_error_prevented: Sentience, protection, participation, role, and authority
+      collapsed.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  GateRecord:
+    implementation_class: MVS_CORE
+    intended_error_prevented: RG is reified as an ethical option gate, or gate results
+      become unreconstructable or inconsistent across views.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  RLSCellRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Residual welfare score cannot be traced to impact evidence.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  WeightRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Weights changed or tuned without authority and sensitivity
+      review.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  CalculationRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Displayed results diverge from formulas or inputs.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  ReviewerJudgment:
+    implementation_class: MVS_CORE
+    intended_error_prevented: Interpretive decisions lack accountable human rationale.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  Challenge:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Dissent and stakeholder objections disappear from the
+      run.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  DecisionStateRecord:
+    implementation_class: MVS_CORE
+    intended_error_prevented: Selection, non-decision, authority, and execution states
+      collapse.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  EmergencyOrderRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: The highest-stakes RF/NCRC emergency pathway is omitted,
+      collapsed into ordinary ranking, or rendered without its rights-priority comparison
+      trace.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  AuthoritySelectionRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Judgment selection lacks lawful or institutional mandate.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  ExecutionMandateRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Execution relies on an unversioned, expired, revoked,
+      superseded, conflicted, unverified, scope-inapplicable, or untraceable human-defined
+      permission.
+    current_evidence_status: STRUCTURAL_AND_TEMPORAL_TESTS_ONLY
+    retention_rule: Retain as a separate conditional object only if execution authorization
+      is in scope and permission provenance or currency is load-bearing.
+    demotion_rule: Keep outside the default MVS interaction surface; combine presentation
+      with authorization only when the exported record remains separately typed and
+      replayable.
+  ExecutionAuthorization:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Selection is treated as execution permission without
+      current mandate, exact configuration binding, current evidence, verified controls,
+      satisfied preconditions, or named stop and recovery authority.
+    current_evidence_status: STRUCTURAL_AND_TEMPORAL_TESTS_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  MonitoringSignal:
+    implementation_class: ADVANCED_RESEARCH
+    intended_error_prevented: Incidents, drift, and control failure do not trigger
+      response.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  RequalificationTrigger:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Material change inherits stale qualification.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  OutcomeObservation:
+    implementation_class: ADVANCED_RESEARCH
+    intended_error_prevented: Predictions are never compared with observed consequences.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  GeneratedView:
+    implementation_class: MVS_CORE
+    intended_error_prevented: Reports drift from the shared source and remain falsely
+      current.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  InteractionEvent:
+    implementation_class: MVS_CORE
+    intended_error_prevented: Material edits, overrides, and state transitions are
+      not reconstructable.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  BurdenObservation:
+    implementation_class: ADVANCED_RESEARCH
+    intended_error_prevented: The standard cannot learn which requirements add burden
+      without assurance.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a retrospective or prospective case
+      shows material error prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  CapabilityAuthorityDecompositionRecord:
+    class: CONDITIONAL
+    why_needed: Prevents scalar autonomy or agentic labels from collapsing candidate
+      generation, references, constraints, objectives, admissibility warrants, execution
+      interfaces, authority, revocation, safe state, and requalification.
+    risk_if_absent: Marketing or architecture labels may be mistaken for capability,
+      safety, lawful authority, or execution permission.
+  MaterialObligationRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: A control label or owner can exist while authority,
+      capacity, handoff, escalation, expiry, and effectiveness remain absent.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a case or pilot shows material error
+      prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  ConsequenceTempoRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Nominal stop controls can be slower than consequence
+      propagation or irreversible harm.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a case or pilot shows material error
+      prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  ResponsibilityContinuityRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Multi-party handoffs can convert advice into authority
+      or distribute responsibility into no responsibility.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a case or pilot shows material error
+      prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  HumanCompensationLoadRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Automation or scaling can remove hidden work that was
+      sustaining reliability and recovery.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a case or pilot shows material error
+      prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  ProjectionPreRegistrationRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Outcome-sensitive tuning can make a purported validation
+      run post hoc and non-falsifiable.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a case or pilot shows material error
+      prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  RefusalRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: An underdetermined run can be silently recoded as pass,
+      failure, or ordinary authority choice.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a case or pilot shows material error
+      prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  ComputationalClosureRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Public claims can silently exceed the scopes, horizons,
+      externalities, or propagation paths actually computed.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a case or pilot shows material error
+      prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  CoreRecordAttachment:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: A generic file link can conceal the wrong version, missing
+      schema validation, or a record that does not satisfy the triggered claim surface.
+    current_evidence_status: DESIGN_RATIONALE_ONLY
+    retention_rule: Retain or promote only if a case or pilot shows material error
+      prevention, assurance improvement, or required traceability.
+    demotion_rule: Demote, combine, or remove from the default interaction surface
+      when it adds burden without measurable assurance value.
+  SuccessorRequalificationRecord:
+    implementation_class: CONDITIONAL
+    intended_error_prevented: Technical lineage, retraining, fine-tuning, composition,
+      or self-modification is used to inherit authority or conceal invalidated evidence
+      and controls.
+    current_evidence_status: DESIGN_RATIONALE_AND_STRUCTURAL_TESTS_ONLY
+    retention_rule: Retain only if pilots show improved detection of material configuration
+      drift, authority inheritance, stale evaluation, or recursive-control failure.
+    demotion_rule: Simplify or demote fields that add burden without detecting material
+      successor risk or improving reconstructability.

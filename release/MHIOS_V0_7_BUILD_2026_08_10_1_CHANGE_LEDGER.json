@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.1",
+  "release_id": "MHIOS_v0_7+2026.08.10.1",
+  "version": "0.7",
+  "publication_date": "2026-08-10",
+  "tested_core_release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.10.1",
+  "semantic_version_changed": false,
+  "build_increment_only": true,
+  "status": "CANDIDATE_IMPLEMENTATION_COMPANION",
+  "changes": [
+    {
+      "id": "M-01",
+      "severity": "HIGH",
+      "area": "Core compatibility",
+      "where": [
+        "VERSION.yaml",
+        "MHIOS_TO_CORE_SCHEMA_CROSSWALK_v0_7.yaml",
+        "MHIOS_CORE_RECORD_COVERAGE_v0_7.yaml",
+        "all v0.7 fixtures/examples"
+      ],
+      "what": "Pinned the exact Core build 2026.08.10.1 and corrected MFDI to v2.3, Source-Coupling Integrity to v2.3, and WDBIP to v1.6.",
+      "why": "The original package declared exact Core compatibility while two live crosswalks still named WDBIP v1.5 and related current companion pins were stale.",
+      "downstream": [
+        "schemas",
+        "examples",
+        "vectors",
+        "validator",
+        "manifest"
+      ],
+      "verification": [
+        "exact crosswalk assertions",
+        "4 positive/52 expected-fail replay"
+      ]
+    },
+    {
+      "id": "M-02",
+      "severity": "MEDIUM",
+      "area": "Normative-language integrity",
+      "where": [
+        "governing MHIOS standard"
+      ],
+      "what": "Promoted clearly conformance-intended lowercase “must” statements to uppercase MUST/MUST NOT while leaving descriptive and historical prose unchanged.",
+      "why": "Normative force should not depend on typography ambiguity.",
+      "downstream": [
+        "coverage census",
+        "implementer obligations"
+      ],
+      "verification": [
+        "atomic modal extraction",
+        "manual clause review"
+      ]
+    },
+    {
+      "id": "M-03",
+      "severity": "MEDIUM",
+      "area": "Normative coverage",
+      "where": [
+        "tests/normative_coverage.py",
+        "MHIOS_EXECUTABLE_CHECK_REGISTRY_v0_7.yaml",
+        "NORMATIVE_COVERAGE_REPORT.json"
+      ],
+      "what": "Replaced line-level counting with one record per uppercase modal clause and linked only verified executable evidence paths.",
+      "why": "A line can contain multiple obligations; line counting overstated or understated coverage and obscured untested obligations.",
+      "downstream": [
+        "154-clause census",
+        "65 any-executable",
+        "55 direct-behavioral",
+        "89 explicitly unlinked"
+      ],
+      "verification": [
+        "coverage script replay",
+        "registry path checks",
+        "validity nonclaim on every row"
+      ]
+    },
+    {
+      "id": "M-04",
+      "severity": "MEDIUM",
+      "area": "Professional document system",
+      "where": [
+        "main MHIOS DOCX/PDF"
+      ],
+      "what": "Restored the same restrained light-blue hierarchy, borders, spacing, and repeated table headers used in Core.",
+      "why": "The main standard had the same generic-table regression as Core.",
+      "downstream": [
+        "66-page PDF"
+      ],
+      "verification": [
+        "17-table OOXML inspection",
+        "66-page visual review",
+        "zero blank/boundary defects"
+      ]
+    },
+    {
+      "id": "M-05",
+      "severity": "MEDIUM",
+      "area": "Verifier closure",
+      "where": [
+        "VERIFY_MHIOS_PACKAGE.py"
+      ],
+      "what": "Added exact Core-build/crosswalk checks, office-lock hygiene, clause-level coverage identity, and final DOCX/PDF assertions.",
+      "why": "Original verification did not fail on the compatibility drift or coverage-unit weakness.",
+      "downstream": [
+        "future package gating"
+      ],
+      "verification": [
+        "full package verifier",
+        "40/40 mutation kill"
+      ]
+    },
+    {
+      "id": "M-06",
+      "severity": "LOW",
+      "area": "Claim boundary",
+      "where": [
+        "validation report",
+        "coverage report",
+        "main standard"
+      ],
+      "what": "Made the remaining untested modal obligations and empirical validation program visible rather than treating coverage percentage as a quality score.",
+      "why": "Executable linkage is not semantic truth, legal validity, domain validity, or effectiveness.",
+      "downstream": [
+        "pilot protocol",
+        "public claims"
+      ],
+      "verification": [
+        "report inspection",
+        "per-clause nonclaims"
+      ]
+    }
+  ],
+  "explicit_nonchanges": [
+    "No Core authority",
+    "No sixth gate",
+    "No AI normative or execution authority",
+    "No deletion of human judgment",
+    "No deployment-readiness claim"
+  ],
+  "remaining_open_work": [
+    "No-AI Minimal Vertical Slice pilot",
+    "Inter-rater study",
+    "Burden/usability measurement",
+    "Anti-theater precision and recall",
+    "Institutional and legal validation",
+    "Security threat modeling and penetration testing",
+    "Comparative workflow study"
+  ],
+  "construct_validity": "UNTESTED"
+}

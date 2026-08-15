@@ -1,0 +1,30 @@
+{
+  "release_id": "MHIOS_v0_8+2026.08.15.2",
+  "build_id": "2026.08.15.2",
+  "semantic_version": "0.8",
+  "semantic_version_changed": false,
+  "tested_core_release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.2",
+  "tested_core_package_name": "MathGov_Core_2026_09_v12_6_SGP_v8_5_BUILD_2026_08_15_2_FINAL_PUBLICATION_READY.zip",
+  "tested_core_package_sha256": "31c4cdbce5db42953df91e15526acf98ebd9cb6b7ba3cc638e2ee50b60fe1f0e",
+  "changes": [
+    {
+      "area": "exact-build compatibility",
+      "change": "Repinned MHIOS v0.8 to the final MathGov Core v12.6 publication-ready stabilization build and its exact package/interface hashes."
+    },
+    {
+      "area": "UCI presentation",
+      "change": "Recorded that provisional UCI remains diagnostic under the final Core and cannot alone establish high-stakes CSV pass/fail or deterministic tie resolution."
+    },
+    {
+      "area": "rights-routing token",
+      "change": "Confirmed pass-through compatibility for Core audit token RIGHTS_RELEVANT_EFFECT_UNROUTED via canon_audit_flags; no MHIOS object/schema expansion required."
+    }
+  ],
+  "explicit_nonchanges": [
+    "No change to MHIOS v0.8 semantic version",
+    "No change to 47-object model",
+    "No change to 20-screen registry or 5-screen MVS",
+    "No change to authority, action-binding, computational-context, or successor-integrity semantics",
+    "No change to conformance-vector logic"
+  ]
+}

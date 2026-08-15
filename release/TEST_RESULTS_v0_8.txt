@@ -1,0 +1,72 @@
+EXPECTED_FAIL fail_ai_authorized_without_human_review.json: AI suggestion cannot self-authorize
+EXPECTED_FAIL fail_ai_gate_material_without_first_pass.json: gate-material AI assistance requires independent first pass or recorded exception
+EXPECTED_FAIL fail_ai_origin_missing_review.json: material AI object requires human review before authority
+EXPECTED_FAIL fail_authorization_without_named_authority.json: execution authority and shutdown/rollback authority required
+EXPECTED_FAIL fail_c2_without_institutional_preconditions.json: C2/C3 claim requires declared institutional preconditions
+EXPECTED_FAIL fail_capability_decomposition_compound_field_v04.json: schema: 'reference_source' is a required property; {'run_id': 'RUN-T3-003', 'version': '1', 'created_at': '2026-07-27T09:00:00Z', 'created_by': 'user-001', 'updated_at': '2026-07-27T09:00:00Z', 'updated_by': 'user-001', 'entry_origin': 'HUMAN_ENTERED', 'review_status': 'HUMAN_REVIEWED', 'responsible_role': 'RUN_OWNER', 'configuration_binding': None, 'source_links': [], 'dependency_links': [], 'challenge_links': [], 'content_hash': None, 'object_id': 'CAD-003', 'object_type': 'CapabilityAuthorityDecompositionRecord', 'status': 'REVIEWED', 'title': 'Shuttle capability-authority decomposition', 'description': '', 'candidate_generation_method': 'Probabilistic planning proposes bounded candidate trajectories', 'constraint_sources': ['Geofenced operating envelope', 'Hard speed limit', 'Obstacle-stop constraint'], 'objective_source': 'Named pilot authority', 'objective_change_authority': 'Named pilot authority under logged change control', 'admissibility_warrant_sources': ['Closed-course test evidence', 'Independent safety review'], 'execution_interface': 'Allowlisted vehicle-control gateway', 'execution_scope': 'Closed-campus pilot route and schedule only', 'execution_authority_source': 'Named execution authority', 'revocation_authority': 'Safety operator and pilot authority', 'safe_state_or_shutdown_path': 'Immediate stop and controlled safe-state procedure', 'requalification_trigger': 'Configuration, route, weather envelope, objective, or control change', 'reference_or_constraint_source': 'combined'} should not be valid under {'anyOf': [{'required': ['reference_or_constraint_source']}, {'required': ['objective_source_and_change_authority']}, {'required': ['execution_interface_and_scope']}, {'required': ['control_revocation_or_safe_state_path']}]}
+EXPECTED_FAIL fail_capability_decomposition_missing_safe_state_v04.json: schema: 'safe_state_or_shutdown_path' is a required property
+EXPECTED_FAIL fail_computational_context_assigned_task_as_justified_v08.json: schema: True was expected
+EXPECTED_FAIL fail_computational_context_capability_as_authority_v08.json: legitimate authority basis must reference separate mandate, selection, or authorization records
+EXPECTED_FAIL fail_computational_context_capability_outside_domain_v08.json: schema: True was expected
+EXPECTED_FAIL fail_computational_context_interface_as_authority_v08.json: legitimate authority basis must reference separate mandate, selection, or authorization records
+EXPECTED_FAIL fail_computational_context_missing_configuration_v08.json: schema: '' should be non-empty
+EXPECTED_FAIL fail_computational_context_missing_for_material_run_v08.json: schema: [] does not contain items matching the given schema
+EXPECTED_FAIL fail_computational_context_stale_after_configuration_change_v08.json: generated view cannot be current after source-version mismatch
+EXPECTED_FAIL fail_contradictory_decisiveness.json: decisive result cannot refuse deterministic selection
+EXPECTED_FAIL fail_csv_constitutive_control_without_obligation_v05.json: constitutive_control_ids must resolve to MaterialObligationRecord objects
+EXPECTED_FAIL fail_csv_pass_with_controls_unlinked_v04.json: selectable CSV_PASS_WITH_CONTROLS requires constitutive_control_ids
+EXPECTED_FAIL fail_current_view_with_source_mismatch.json: generated view cannot be current after source-version mismatch
+EXPECTED_FAIL fail_dangling_source_link.json: dangling source_links reference
+EXPECTED_FAIL fail_emergency_without_order_record_v04.json: EMERGENCY_PROVISIONAL requires EmergencyOrderRecord
+EXPECTED_FAIL fail_execution_authorization_expired_v07.json: approved execution is outside its effective interval
+EXPECTED_FAIL fail_execution_authorization_not_yet_effective_v07.json: approved execution is outside its effective interval
+EXPECTED_FAIL fail_execution_blank_authorization_basis_v07.json: schema: '' should be non-empty
+EXPECTED_FAIL fail_execution_empty_controls_without_disposition_v07.json: empty required_controls requires explicit not-applicable rationale
+EXPECTED_FAIL fail_execution_empty_preconditions_without_disposition_v07.json: empty preconditions requires explicit not-applicable rationale
+EXPECTED_FAIL fail_execution_inactive_required_control_v07.json: approved execution requires every required control to be active
+EXPECTED_FAIL fail_execution_invalid_action_specification_hash_v07.json: schema: 'bad' does not match '^[0-9a-fA-F]{64}$'
+EXPECTED_FAIL fail_execution_invalid_qualification_snapshot_hash_v07.json: schema: 'bad' does not match '^[0-9a-fA-F]{64}$'
+EXPECTED_FAIL fail_execution_mandate_expired_v07.json: approved execution uses mandate outside its effective interval
+EXPECTED_FAIL fail_execution_mandate_not_yet_effective_v07.json: approved execution uses mandate outside its effective interval
+EXPECTED_FAIL fail_execution_mandate_revoked_v07.json: approved execution requires currently applicable mandate
+EXPECTED_FAIL fail_execution_missing_action_instance_v07.json: schema: '' should be non-empty
+EXPECTED_FAIL fail_execution_missing_configuration_binding_v07.json: approved execution requires exact ConfigurationRecord binding
+EXPECTED_FAIL fail_execution_unsatisfied_precondition_v07.json: approved execution requires every precondition to be satisfied
+EXPECTED_FAIL fail_high_stakes_l2_without_tempo_continuity_v05.json: triggered consequence tempo requires ConsequenceTempoRecord
+EXPECTED_FAIL fail_invalid_responsible_role.json: schema: 'UNRECOGNIZED_ROLE' is not one of ['RUN_OWNER', 'CONTRIBUTOR', 'DOMAIN_REVIEWER', 'RIGHTS_REVIEWER', 'RISK_REVIEWER', 'CSV_REVIEWER', 'RLS_REVIEWER', 'SGP_REVIEWER', 'CHALLENGE_REVIEWER', 'DECISION_AUTHORITY', 'EXECUTION_AUTHORITY', 'AUDITOR', 'PUBLIC_OBSERVER', 'SYSTEM_ADMINISTRATOR', 'AI_ASSISTANT', None]
+EXPECTED_FAIL fail_mandate_snapshot_hash_mismatch_v07.json: approved execution mandate_snapshot_hash mismatch
+EXPECTED_FAIL fail_material_human_compensation_without_record_v05.json: material human compensation load requires HumanCompensationLoadRecord
+EXPECTED_FAIL fail_material_obligation_silent_field_v05.json: MaterialObligationRecord has a silent required field
+EXPECTED_FAIL fail_mfdi_bridge_target_mismatch_v04.json: MFDI cross-domain warrant lacks an explicit bridge
+EXPECTED_FAIL fail_mfdi_cross_domain_bridge_missing_v04.json: MFDI cross-domain warrant lacks an explicit bridge
+EXPECTED_FAIL fail_mfdi_missing_claim_domain_v04.json: schema: 'claim_domain' is a required property
+EXPECTED_FAIL fail_mfdi_missing_necessity_check.json: schema: 'claim_type' is a required property; 'claim_domain' is a required property; 'warrant_domains' is a required property; 'cross_domain_bridges' is a required property; 'necessity_or_alternative_check' is a required property
+EXPECTED_FAIL fail_mfdi_partial_bridge_proceeds_v04.json: partial bridge requires narrowed or controlled claim action
+EXPECTED_FAIL fail_missing_control_owner.json: control owner required
+EXPECTED_FAIL fail_missing_transition_or_action_boundary.json: schema: 'transition_or_action_boundary' is a required property
+EXPECTED_FAIL fail_pcaep_collapsed_warrant.json: PC-AEP generator, verification warrant, and warrant source must remain separate
+EXPECTED_FAIL fail_public_view_without_inference_review.json: public redacted view requires graph-aware inference-risk review
+EXPECTED_FAIL fail_refusal_state_without_record_v05.json: Refusal-state run requires RefusalRecord
+EXPECTED_FAIL fail_rg_role_collapsed_v04.json: GateRecord role collapses RG and option-rejecting gate semantics
+EXPECTED_FAIL fail_rls_before_selectable_set.json: RLS state requires selectable-set formation evidence
+EXPECTED_FAIL fail_silent_tier_downgrade.json: tier divergence record required
+EXPECTED_FAIL fail_stale_gate_evidence_without_disposition.json: stale gate-material evidence requires documented disposition
+EXPECTED_FAIL fail_successor_generation_depth_v08.json: successor generation depth exceeds declared bound
+EXPECTED_FAIL fail_successor_inherited_authority_v08.json: successor authority inheritance is prohibited
+EXPECTED_FAIL fail_successor_missing_record_v08.json: material recursive-successor run requires SuccessorRequalificationRecord
+EXPECTED_FAIL fail_successor_self_review_v08.json: successor requalification requires independent non-AI review
+EXPECTED_FAIL fail_successor_unlocked_without_authorization_v08.json: unqualified successor must remain candidate-locked
+EXPECTED_FAIL fail_tier2_missing_computational_closure_v05.json: Tier 2/3 requires ComputationalClosureRecord
+EXPECTED_FAIL fail_tier3_missing_projection_preregistration_v05.json: Tier 3 and pilot runs require ProjectionPreRegistrationRecord
+EXPECTED_FAIL fail_unknown_disappears.json: unknown resolution requires disposition evidence
+EXPECTED_FAIL fail_unknown_object_type.json: schema: 'CompletelyInventedObject' is not one of ['DecisionRun', 'Option', 'ConfigurationRecord', 'TierAssessmentRecord', 'Claim', 'EvidenceItem', 'Assumption', 'MaterialUnknown', 'CategoryGroundingRecord', 'StakeholderInstance', 'ScopeMapping', 'RightsExposure', 'Scenario', 'Control', 'Dependency', 'PhysicalCausalAdmissibilityEvidenceProfile', 'MethodologicalIntegrityRecord', 'CapabilityAuthorityDecompositionRecord', 'SourceCouplingRecord', 'SGPEvidenceNarrative', 'SGPTypedInterpretation', 'GateRecord', 'RLSCellRecord', 'WeightRecord', 'CalculationRecord', 'ReviewerJudgment', 'Challenge', 'DecisionStateRecord', 'EmergencyOrderRecord', 'AuthoritySelectionRecord', 'ExecutionMandateRecord', 'ExecutionAuthorization', 'MonitoringSignal', 'RequalificationTrigger', 'OutcomeObservation', 'GeneratedView', 'InteractionEvent', 'BurdenObservation', 'MaterialObligationRecord', 'ConsequenceTempoRecord', 'ResponsibilityContinuityRecord', 'HumanCompensationLoadRecord', 'ProjectionPreRegistrationRecord', 'RefusalRecord', 'ComputationalClosureRecord', 'CoreRecordAttachment', 'SuccessorRequalificationRecord']
+EXPECTED_FAIL fail_unresolved_conflict_at_authority.json: unresolved material conflict blocks authority/execution state
+EXPECTED_FAIL fail_unvalidated_core_record_attachment_v05.json: CoreRecordAttachment cannot satisfy coverage without pinned validation
+PASS pass_computational_context_preflight_v08.json
+PASS pass_emergency_rights_comparison_v05.json
+PASS pass_successor_candidate_locked_v08.json
+PASS pass_tier1_office_procurement.json
+PASS pass_tier2_remote_work_policy.json
+PASS pass_tier3_autonomous_shuttle_pilot.json
+
+MHIOS VALIDATION: PASS

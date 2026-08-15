@@ -1,0 +1,28 @@
+version: '0.8'
+unit: conformance_profile
+claim_boundary: Conformance levels describe reconstructible implementation coverage only. They do not establish evidence truth, construct validity, legal validity, domain safety, or institutional legitimacy.
+levels:
+  C0:
+    meaning: Readable MHIOS-informed artifact; no structured conformance claim.
+    required_object_types: []
+    required_validators: []
+    disqualifying_omissions: []
+  C1:
+    meaning: Structurally recorded bounded run with identity, tier, options, claim/evidence, governing stage records, and decision state.
+    required_object_types: [ConfigurationRecord, TierAssessmentRecord, Option, Claim, EvidenceItem, GateRecord, DecisionStateRecord]
+    required_validators: [schema, validate_mhios]
+    disqualifying_omissions: [unknown_object_type, unresolved_conflict_at_authority]
+  C2:
+    meaning: Reconstructible governance run with institutional preconditions, action/configuration closure where material, controls/obligations where triggered, and authority separation.
+    inherits: C1
+    required_object_types: [ComputationalClosureRecord]
+    required_validators: [schema, validate_mhios, conformance_vectors]
+    conditional_requirements: [institutional_preconditions_when_claimed, constitutive_controls_linked_when_csv_pass_with_controls, authority_selection_separate_from_execution]
+    disqualifying_omissions: [silent_tier_downgrade, rls_before_selectable_set, stale_gate_evidence_without_disposition]
+  C3:
+    meaning: High-assurance/pilot profile with projection preregistration where Tier 3, action-bound mandate/authorization where execution is sought, and complete requalification/replay surfaces.
+    inherits: C2
+    required_object_types: [ProjectionPreRegistrationRecord]
+    required_validators: [schema, validate_mhios, conformance_vectors, mutation_suite, package_verifier]
+    conditional_requirements: [execution_mandate_and_authorization_when_execution_sought, successor_record_when_material_successor, consequence_tempo_when_triggered]
+    disqualifying_omissions: [tier3_missing_projection_preregistration, unbound_execution_configuration, invalid_or_expired_authority]

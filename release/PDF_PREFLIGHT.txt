@@ -1,0 +1,6 @@
+PDF: docs/MATHGOV_HUMAN_INTERFACE_AND_ORCHESTRATION_STANDARD_v0_8.pdf
+Pages: 68
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False

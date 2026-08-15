@@ -1,0 +1,24 @@
+{
+  "release_id": "MHIOS_v0_8+2026.08.14.2",
+  "build_id": "2026.08.14.2",
+  "date": "2026-08-14",
+  "change_class": "successor_and_computational_context_completion",
+  "tested_core_release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.14.2",
+  "genuine_improvements": [
+    "successor identity and non-heritable authority",
+    "fresh candidate-bound authorization",
+    "bounded generation depth and circuit breaker",
+    "non-scalar adaptation-lag profile",
+    "Computational Context Declaration View",
+    "capability/task/interface/authority non-collapse checks"
+  ],
+  "rejected_overreach": [
+    "new MathGov gate",
+    "automatic authority inheritance",
+    "technical interface as authority",
+    "assigned task as justification",
+    "claim that runaway recursive self-improvement is established"
+  ],
+  "core_semantics_changed": false,
+  "construct_validity": "UNTESTED"
+}

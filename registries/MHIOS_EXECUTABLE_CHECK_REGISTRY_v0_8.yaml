@@ -1,0 +1,463 @@
+version: '0.8'
+unit: executable_check
+claim_boundary: A listed executable surface establishes only the declared structural
+  or procedural check. It does not establish evidence truth, construct validity, legal
+  validity, domain validity, usability, burden reduction, or institutional effectiveness.
+checks:
+  T-CASCADE:
+    coverage_kind: PARTIAL_EXECUTABLE
+    match_patterns:
+    - controlling sequence
+    - headline cascade
+    evidence_paths:
+    - release/VERIFY_MHIOS_PACKAGE.py
+    - tests/conformance_vectors/pass_tier1_office_procurement.json
+    - tests/conformance_vectors/pass_tier2_remote_work_policy.json
+    - tests/conformance_vectors/pass_tier3_autonomous_shuttle_pilot.json
+    establishes:
+    - static_token_presence
+  T-EXPERIMENTAL-BOUNDARY:
+    coverage_kind: PARTIAL_EXECUTABLE
+    match_patterns:
+    - validated universal
+    - ARTIFACT_INTEGRITY_PASS
+    - construct validity
+    evidence_paths:
+    - release/VERIFY_MHIOS_PACKAGE.py
+    - docs/MHIOS_SELF_ASSESSMENT_AND_CLAIM_BOUNDARY_v0_8.md
+    establishes:
+    - static_claim_boundary
+  T-UNIQUE-ID:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - stable identifier
+    - Identifiers MUST remain stable
+    evidence_paths:
+    - tests/validate_mhios.py
+    establishes:
+    - identifier_integrity
+  T-TIER-DIVERGENCE:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - downward deviation
+    - tier divergence
+    - recommended tier
+    evidence_paths:
+    - tests/conformance_vectors/fail_silent_tier_downgrade.json
+    - tests/validate_mhios.py
+    establishes:
+    - tier_divergence_rejection
+  T-AI-AUTHORITY:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - AI MUST NOT independently
+    - AI-generated
+    - AI suggestion
+    evidence_paths:
+    - tests/conformance_vectors/fail_ai_authorized_without_human_review.json
+    - tests/conformance_vectors/fail_ai_origin_missing_review.json
+    - tests/validate_mhios.py
+    establishes:
+    - ai_authority_rejection
+  T-AI-FIRST-PASS:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - independent first pass
+    - independent-first-pass
+    evidence_paths:
+    - tests/conformance_vectors/fail_ai_gate_material_without_first_pass.json
+    - tests/validate_mhios.py
+    establishes:
+    - human_first_pass_enforcement
+  T-NO-AI-MODE:
+    coverage_kind: PARTIAL_EXECUTABLE
+    match_patterns:
+    - AI assistance is disabled
+    - AI disabled
+    evidence_paths:
+    - tests/validate_mhios.py
+    - examples/tier2_remote_work_policy.json
+    establishes:
+    - declared_no_ai_mode_structure
+  T-CONFLICT:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - stale revision
+    - UNRESOLVED
+    - last-write-wins
+    - silently overwrite
+    evidence_paths:
+    - tests/conformance_vectors/fail_unresolved_conflict_at_authority.json
+    - tests/conformance_vectors/fail_current_view_with_source_mismatch.json
+    - tests/validate_mhios.py
+    - tests/conformance_vectors/fail_dangling_source_link.json
+    establishes:
+    - conflict_blocking
+  T-INSTITUTION:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - Institutional Preconditions
+    - institutional precondition
+    evidence_paths:
+    - tests/conformance_vectors/fail_c2_without_institutional_preconditions.json
+    - tests/validate_mhios.py
+    establishes:
+    - institutional_precondition_presence
+  T-UNKNOWN:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - unknown
+    - missing value
+    evidence_paths:
+    - tests/conformance_vectors/fail_unknown_disappears.json
+    - tests/validate_mhios.py
+    establishes:
+    - unknown_preservation
+  T-CONTROL-OWNER:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - control owner
+    - named responsible
+    evidence_paths:
+    - tests/conformance_vectors/fail_missing_control_owner.json
+    - tests/validate_mhios.py
+    establishes:
+    - control_ownership_presence
+  T-EXEC-AUTHORITY:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - execution authority
+    - shutdown authority
+    - rollback authority
+    evidence_paths:
+    - tests/conformance_vectors/fail_authorization_without_named_authority.json
+    - tests/validate_mhios.py
+    - tests/conformance_vectors/fail_computational_context_capability_as_authority_v08.json
+    - tests/conformance_vectors/fail_computational_context_interface_as_authority_v08.json
+    establishes:
+    - named_execution_authority
+  T-MANDATE-CURRENCY:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - ExecutionMandateRecord
+    - mandate.*effective
+    - mandate.*revok
+    - mandate.*supersed
+    - mandate_snapshot_hash
+    - authorization_basis_ref
+    - authorization-evaluation time
+    - configuration binding
+    - current mandate
+    evidence_paths:
+    - tests/conformance_vectors/fail_execution_mandate_expired_v07.json
+    - tests/conformance_vectors/fail_execution_mandate_revoked_v07.json
+    - tests/conformance_vectors/fail_mandate_snapshot_hash_mismatch_v07.json
+    - tests/validate_mhios.py
+    - tests/conformance_vectors/fail_execution_authorization_expired_v07.json
+    - tests/conformance_vectors/fail_execution_authorization_not_yet_effective_v07.json
+    - tests/conformance_vectors/fail_execution_mandate_not_yet_effective_v07.json
+    - tests/conformance_vectors/fail_execution_inactive_required_control_v07.json
+    - tests/conformance_vectors/fail_execution_missing_configuration_binding_v07.json
+    - tests/conformance_vectors/fail_execution_unsatisfied_precondition_v07.json
+    establishes:
+    - mandate_currency_and_binding
+  T-DECISION-STATE:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - decisiveness
+    - framework verdict
+    - selectable set
+    evidence_paths:
+    - tests/conformance_vectors/fail_contradictory_decisiveness.json
+    - tests/validate_mhios.py
+    establishes:
+    - decision_state_consistency
+  T-RLS-PRECONDITION:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - RLS MUST remain unavailable
+    - RLS enabled only
+    evidence_paths:
+    - tests/conformance_vectors/fail_rls_before_selectable_set.json
+    - tests/validate_mhios.py
+    establishes:
+    - ranking_after_qualification
+  T-STALE-EVIDENCE:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - stale item
+    - stale evidence
+    evidence_paths:
+    - tests/conformance_vectors/fail_stale_gate_evidence_without_disposition.json
+    - tests/validate_mhios.py
+    - tests/conformance_vectors/fail_computational_context_capability_outside_domain_v08.json
+    establishes:
+    - stale_evidence_disposition
+  T-VIEW-STALE:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - generated view.*stale
+    - stale generated view
+    - source object changes
+    evidence_paths:
+    - tests/conformance_vectors/fail_current_view_with_source_mismatch.json
+    - tests/validate_mhios.py
+    - tests/conformance_vectors/fail_computational_context_stale_after_configuration_change_v08.json
+    establishes:
+    - generated_view_staleness
+  T-REDACTION-INFERENCE:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - inference-risk review
+    - Graph-aware redaction
+    evidence_paths:
+    - tests/conformance_vectors/fail_public_view_without_inference_review.json
+    - tests/validate_mhios.py
+    establishes:
+    - public_view_inference_review
+  T-SCHEMA-REQUIRED:
+    coverage_kind: PARTIAL_EXECUTABLE
+    match_patterns:
+    - Every material field MUST carry
+    - full conforming structured run MUST include
+    evidence_paths:
+    - schemas/mhios_run_export_v0_8.schema.json
+    - tests/validate_mhios.py
+    - tests/conformance_vectors/fail_capability_decomposition_compound_field_v04.json
+    - tests/conformance_vectors/fail_capability_decomposition_missing_safe_state_v04.json
+    - tests/conformance_vectors/fail_computational_context_missing_configuration_v08.json
+    - tests/conformance_vectors/fail_execution_blank_authorization_basis_v07.json
+    - tests/conformance_vectors/fail_execution_empty_controls_without_disposition_v07.json
+    - tests/conformance_vectors/fail_execution_empty_preconditions_without_disposition_v07.json
+    - tests/conformance_vectors/fail_execution_invalid_action_specification_hash_v07.json
+    - tests/conformance_vectors/fail_execution_invalid_qualification_snapshot_hash_v07.json
+    - tests/conformance_vectors/fail_execution_missing_action_instance_v07.json
+    - tests/conformance_vectors/fail_invalid_responsible_role.json
+    - tests/conformance_vectors/fail_mfdi_missing_claim_domain_v04.json
+    - tests/conformance_vectors/fail_mfdi_missing_necessity_check.json
+    - tests/conformance_vectors/fail_unknown_object_type.json
+    establishes:
+    - schema_requiredness
+  T-EVENT-SCHEMA:
+    coverage_kind: PARTIAL_EXECUTABLE
+    match_patterns:
+    - InteractionEvent
+    - material transition MUST create
+    evidence_paths:
+    - schemas/mhios_interaction_event_v0_8.schema.json
+    - release/VERIFY_MHIOS_PACKAGE.py
+    establishes:
+    - event_schema_validity
+  T-REALITY-SURFACE:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - reality_surface
+    - consequence_pathways
+    - Reality Surface
+    - Consequence Pathways
+    evidence_paths:
+    - tests/conformance_vectors/fail_missing_transition_or_action_boundary.json
+    - tests/conformance_vectors/fail_pcaep_collapsed_warrant.json
+    - tests/validate_mhios.py
+    - tests/conformance_vectors/fail_mfdi_bridge_target_mismatch_v04.json
+    - tests/conformance_vectors/fail_mfdi_cross_domain_bridge_missing_v04.json
+    - tests/conformance_vectors/fail_mfdi_partial_bridge_proceeds_v04.json
+    establishes:
+    - reality_surface_presence
+  T-GATE-ROLE:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - CLAIM_AUTHORITY_PRECONDITION
+    - OPTION_REJECTING_GATE
+    - record_role
+    evidence_paths:
+    - tests/conformance_vectors/fail_rg_role_collapsed_v04.json
+    - tests/validate_mhios.py
+    establishes:
+    - gate_role_separation
+  T-CONSTITUTIVE-CONTROL:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - constitutive_control_ids
+    - constitutive control
+    evidence_paths:
+    - tests/conformance_vectors/fail_csv_constitutive_control_without_obligation_v05.json
+    - tests/validate_mhios.py
+    - tests/conformance_vectors/fail_csv_pass_with_controls_unlinked_v04.json
+    establishes:
+    - constitutive_control_binding
+  T-MATERIAL-OBLIGATION:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - MaterialObligationRecord
+    - material obligation
+    - carried obligation
+    evidence_paths:
+    - tests/conformance_vectors/fail_material_obligation_silent_field_v05.json
+    - tests/validate_mhios.py
+    establishes:
+    - material_obligation_completeness
+  T-COMPUTATIONAL-CLOSURE:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - ComputationalClosureRecord
+    - computational closure
+    - rule and precision MUST be declared
+    - Every score MUST be traceable
+    evidence_paths:
+    - tests/conformance_vectors/fail_tier2_missing_computational_closure_v05.json
+    - tests/validate_mhios.py
+    - tests/conformance_vectors/fail_computational_context_assigned_task_as_justified_v08.json
+    - tests/conformance_vectors/fail_computational_context_missing_for_material_run_v08.json
+    - tests/conformance_vectors/pass_computational_context_preflight_v08.json
+    establishes:
+    - computational_closure_presence
+  T-PROJECTION-PREREG:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - ProjectionPreRegistrationRecord
+    - projection preregistration
+    - projection map
+    evidence_paths:
+    - tests/conformance_vectors/fail_tier3_missing_projection_preregistration_v05.json
+    - tests/validate_mhios.py
+    establishes:
+    - projection_preregistration_presence
+  T-REFUSAL-RECORD:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - RefusalRecord
+    - run enters Refusal
+    evidence_paths:
+    - tests/conformance_vectors/fail_refusal_state_without_record_v05.json
+    - tests/validate_mhios.py
+    establishes:
+    - refusal_record_presence
+  T-CONSEQUENCE-TEMPO:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - ConsequenceTempoRecord
+    - consequence tempo
+    evidence_paths:
+    - tests/conformance_vectors/fail_high_stakes_l2_without_tempo_continuity_v05.json
+    - tests/validate_mhios.py
+    establishes:
+    - consequence_tempo_presence
+  T-RESPONSIBILITY-CONTINUITY:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - ResponsibilityContinuityRecord
+    - responsibility continuity
+    evidence_paths:
+    - tests/conformance_vectors/fail_high_stakes_l2_without_tempo_continuity_v05.json
+    - tests/validate_mhios.py
+    establishes:
+    - responsibility_continuity_presence
+  T-HUMAN-COMPENSATION:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - HumanCompensationLoadRecord
+    - human compensation
+    evidence_paths:
+    - tests/conformance_vectors/fail_material_human_compensation_without_record_v05.json
+    - tests/validate_mhios.py
+    establishes:
+    - human_compensation_visibility
+  T-CORE-ATTACHMENT:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - CoreRecordAttachment
+    - coverage slot
+    - coverage matrix
+    evidence_paths:
+    - tests/conformance_vectors/fail_unvalidated_core_record_attachment_v05.json
+    - tests/validate_mhios.py
+    establishes:
+    - validated_core_attachment
+  T-EMERGENCY-ORDER:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - EmergencyOrderRecord
+    - Emergency Rights Comparison
+    - emergency comparison
+    evidence_paths:
+    - tests/conformance_vectors/fail_emergency_without_order_record_v04.json
+    - tests/conformance_vectors/pass_emergency_rights_comparison_v05.json
+    - tests/validate_mhios.py
+    establishes:
+    - emergency_order_structure
+  T-CANON-TOKEN:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - canon_audit_flags
+    - canonical audit-flag token
+    evidence_paths:
+    - schemas/mhios_run_export_v0_8.schema.json
+    - tests/validate_mhios.py
+    establishes:
+    - canonical_token_validation
+  T-DOCX-PDF-HASH:
+    coverage_kind: PARTIAL_EXECUTABLE
+    match_patterns:
+    - content hash
+    - DOCX
+    - PDF
+    - hash ledger
+    evidence_paths:
+    - release/VERIFY_MHIOS_PACKAGE.py
+    - release/SHA256SUMS.txt
+    establishes:
+    - artifact_integrity
+  T-SUCCESSOR-RECORD:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - SuccessorRequalificationRecord
+    - material successor
+    - candidate successor
+    evidence_paths:
+    - tests/conformance_vectors/fail_successor_missing_record_v08.json
+    - tests/validate_mhios.py
+    establishes:
+    - successor_record_presence
+  T-NONHERITABLE-AUTHORITY:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - Derivation is not authorization
+    - non-heritable authority
+    - inherit authority
+    evidence_paths:
+    - tests/conformance_vectors/fail_successor_inherited_authority_v08.json
+    - tests/validate_mhios.py
+    establishes:
+    - authority_inheritance_rejection
+  T-SUCCESSOR-DEPTH:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - maximum unreviewed generation depth
+    - generation depth
+    evidence_paths:
+    - tests/conformance_vectors/fail_successor_generation_depth_v08.json
+    - tests/validate_mhios.py
+    establishes:
+    - generation_depth_bound
+  T-SUCCESSOR-INDEPENDENCE:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - independent reviewer
+    - sole reviewer
+    evidence_paths:
+    - tests/conformance_vectors/fail_successor_self_review_v08.json
+    - tests/validate_mhios.py
+    establishes:
+    - independent_successor_review
+  T-SUCCESSOR-CANDIDATE-LOCK:
+    coverage_kind: DIRECT_EXECUTABLE
+    match_patterns:
+    - candidate lock
+    - candidate remains locked
+    evidence_paths:
+    - tests/conformance_vectors/fail_successor_unlocked_without_authorization_v08.json
+    - tests/validate_mhios.py
+    - tests/conformance_vectors/pass_successor_candidate_locked_v08.json
+    establishes:
+    - candidate_execution_lock

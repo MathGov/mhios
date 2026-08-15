@@ -1,0 +1,51 @@
+{
+  "version": "0.3",
+  "date": "2026-08-06",
+  "tested_core_release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.09.1",
+  "changes": [
+    {
+      "id": "MHIOS03-BOUNDARY",
+      "surface": "DecisionRun/schema/examples",
+      "change": "transition_or_action_boundary required",
+      "reason": "Preserve exact evaluated transition and match Core run-record contract"
+    },
+    {
+      "id": "MHIOS03-DOMAINS",
+      "surface": "Claim/MFDI/object model/schema",
+      "change": "claim_type, claim_domain, plural warrant_domains",
+      "reason": "Prevent claim-type and warrant-domain collapse"
+    },
+    {
+      "id": "MHIOS03-BRIDGES",
+      "surface": "MFDI/schema/validator/vectors",
+      "change": "structured one-per-relationship cross_domain_bridges",
+      "reason": "Make cross-domain inference explicit, bounded, challengeable, and testable"
+    },
+    {
+      "id": "MHIOS03-LEGAL",
+      "surface": "MFDI legal_regulatory_context",
+      "change": "jurisdiction and authority context preserved",
+      "reason": "Separate legal applicability from empirical or engineering warrant"
+    },
+    {
+      "id": "MHIOS03-CAPABILITY",
+      "surface": "CapabilityAuthorityDecompositionRecord",
+      "change": "split 12 capability/authority fields",
+      "reason": "Prevent autonomy labels from collapsing generation, warrant, control, and authority"
+    },
+    {
+      "id": "MHIOS03-MACHINE",
+      "surface": "schemas/validators/tests",
+      "change": "26 adversarial vectors and exact Core-build binding",
+      "reason": "Convert key prose rules into executable rejection conditions"
+    }
+  ],
+  "unchanged": [
+    "MathGov five-stage cascade",
+    "Core authority hierarchy",
+    "MHIOS candidate status",
+    "12-object MVS",
+    "human-judgment firewall",
+    "construct-validity boundary"
+  ]
+}

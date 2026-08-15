@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "release_id": "MHIOS_v0_7",
+  "version": "0.7",
+  "publication_date": "2026-08-09",
+  "tested_core_release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.09.1",
+  "status": "CANDIDATE_IMPLEMENTATION_COMPANION",
+  "independence": {
+    "imported_comparison_content": false,
+    "method": "User-designated copyrighted comparison materials were excluded from the active source tree; current terms, schemas, examples, and tests are MathGov-native."
+  },
+  "changes": [
+    {
+      "from": "inherited permission-oriented execution record",
+      "to": "ExecutionMandateRecord",
+      "where": ["docs/", "registries/", "schemas/", "examples/", "tests/"],
+      "reason": "Make mandate source, scope, currency, conflict, revocation, and supersession explicit in MathGov-native terms."
+    },
+    {
+      "from": "option/configuration authorization only",
+      "to": "exact action-instance and qualification-snapshot binding",
+      "where": ["ExecutionAuthorization", "mhios_run_export_v0_7.schema.json", "validate_mhios.py"],
+      "reason": "Reject execution when the real action differs from the qualified action."
+    },
+    {
+      "from": "static authorization record",
+      "to": "ordered execution-readiness and outcome-requalification contract",
+      "where": ["main standard section 8.0F", "conformance vectors", "mutation tests"],
+      "reason": "Ensure authority, controls, preconditions, evidence, and qualification remain current through execution and observation."
+    }
+  ],
+  "validation": {
+    "positive_vectors": 4,
+    "expected_failure_vectors": 52,
+    "mutations_killed": 40,
+    "mutations_total": 40,
+    "normative_statements": 94,
+    "any_executable_coverage": 40,
+    "direct_behavioral_coverage": 31,
+    "pdf_pages": 69,
+    "construct_validity": "UNTESTED"
+  },
+  "nonclaims": [
+    "not a Core component",
+    "not a legal determination",
+    "not a physical-safety proof",
+    "not empirical validation",
+    "not deployment certification"
+  ]
+}

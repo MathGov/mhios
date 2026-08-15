@@ -1,0 +1,57 @@
+{
+  "version": "0.4",
+  "date": "2026-08-08",
+  "tested_core_release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.09.1",
+  "changes": [
+    {
+      "id": "MHIOS04-RG-OUTPUTS",
+      "surface": "DecisionRun/schema/examples/validator",
+      "change": "Required reality_surface and consequence_pathways",
+      "reason": "Preserve the two explicit Reality Grounding outputs used by the pinned Core build"
+    },
+    {
+      "id": "MHIOS04-GATE-ROLES",
+      "surface": "GateRecord/object model/schema/validator",
+      "change": "Required CLAIM_AUTHORITY_PRECONDITION for RG and OPTION_REJECTING_GATE for RF/NCRC, TRC, and CSV",
+      "reason": "Prevent the claim-authority precondition from being misrepresented as an ethical option-rejecting gate"
+    },
+    {
+      "id": "MHIOS04-CONTROLS",
+      "surface": "GateRecord/schema/validator/vectors",
+      "change": "Required constitutive_control_ids for selectable CSV_PASS_WITH_CONTROLS options",
+      "reason": "Prevent controls from being displayed as optional decorations after they have become part of option viability"
+    },
+    {
+      "id": "MHIOS04-EMERGENCY",
+      "surface": "EmergencyOrderRecord/SCR-20/schema/validator/vectors/wireframe",
+      "change": "Added an exact emergency-rights comparison trace",
+      "reason": "Represent the Canon's controlled failure protocol without ordinary-pass or RLS-selection semantics"
+    },
+    {
+      "id": "MHIOS04-TOKENS",
+      "surface": "GateRecord/interface rules/validator",
+      "change": "Separated canonical audit flags from local screen findings",
+      "reason": "Preserve exact Core token identity across generated views"
+    },
+    {
+      "id": "MHIOS04-NUMERIC",
+      "surface": "human-facing rendering rules",
+      "change": "Defaulted ordinary human-facing surfaces to at most three decimal places while retaining full machine precision",
+      "reason": "Reduce false precision without changing calculations"
+    }
+  ],
+  "unchanged": [
+    "MathGov five-stage cascade",
+    "Core authority hierarchy",
+    "MHIOS candidate status",
+    "12-object Minimal Vertical Slice",
+    "human-judgment firewall",
+    "construct-validity boundary"
+  ],
+  "deferred": [
+    "Empirical construct validation",
+    "Reviewer agreement thresholds",
+    "Burden-reduction claims",
+    "Operational deployment certification"
+  ]
+}

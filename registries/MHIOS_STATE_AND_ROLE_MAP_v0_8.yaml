@@ -1,0 +1,132 @@
+standard: MHIOS
+version: '0.8'
+roles:
+  RUN_OWNER:
+    label: Run Owner
+    purpose: Creates and maintains the run; coordinates completion without automatically
+      receiving review or authorization power.
+  CONTRIBUTOR:
+    label: Contributor
+    purpose: Supplies evidence, analysis, scenarios, controls, stakeholder information,
+      or domain observations.
+  DOMAIN_REVIEWER:
+    label: Domain Reviewer
+    purpose: Reviews domain-specific evidence, claims, methods, validity domains,
+      and warrants.
+  RIGHTS_REVIEWER:
+    label: Rights Reviewer
+    purpose: Reviews protected stakeholders, floor/categorical/severe-hazard channels,
+      subgroups, and non-compensability.
+  RISK_REVIEWER:
+    label: Risk Reviewer
+    purpose: Reviews scenario discovery, probabilities, severity, dependence, uncertainty,
+      and TRC calculation.
+  CSV_REVIEWER:
+    label: CSV Reviewer
+    purpose: Reviews containment, controls, dependencies, reversibility, monitoring,
+      execution viability, and post-state integrity.
+  RLS_REVIEWER:
+    label: RLS Reviewer
+    purpose: Reviews impact construction, weights, uncertainty, PLSS, welfare cells,
+      and decisiveness.
+  SGP_REVIEWER:
+    label: SGP Reviewer
+    purpose: Reviews SGP evidence narratives and typed interpretations without collapsing
+      protection into authority.
+  CHALLENGE_REVIEWER:
+    label: Challenge Reviewer
+    purpose: Adjudicates formal challenges and appeals independently of the initial
+      judgment where feasible.
+  DECISION_AUTHORITY:
+    label: Decision Authority
+    purpose: Selects among legally or institutionally available options where authority
+      judgment remains necessary.
+  EXECUTION_AUTHORITY:
+    label: Execution Authority
+    purpose: Approves execution only after required preconditions, controls, and authority
+      conditions are satisfied.
+  AUDITOR:
+    label: Auditor
+    purpose: Inspects complete provenance, state transitions, calculations, challenges,
+      and generated views without altering the run.
+  PUBLIC_OBSERVER:
+    label: Public Observer
+    purpose: Views an appropriately redacted transparency surface.
+  SYSTEM_ADMINISTRATOR:
+    label: System Administrator
+    purpose: Maintains technical infrastructure but receives no substantive decision
+      authority merely through technical access.
+  AI_ASSISTANT:
+    label: AI Assistant
+    purpose: Provides non-authoritative assistance subject to the Human-Judgment Firewall.
+origin_statuses:
+- HUMAN_ENTERED
+- IMPORTED_FROM_SOURCE
+- SYSTEM_CALCULATED
+- AI_SUGGESTED
+- AI_EXTRACTED
+- TEMPLATE_DEFAULT
+- MIGRATED_FROM_PRIOR_RUN
+review_statuses:
+- UNREVIEWED
+- HUMAN_REVIEWED
+- HUMAN_MODIFIED
+- REVIEW_DISAGREEMENT
+- CONTESTED
+- AUTHORIZED
+- REJECTED
+- SUPERSEDED
+run_states:
+- DRAFT
+- SCOPING
+- TIER_ASSESSMENT
+- EVIDENCE_COLLECTION
+- RG_REVIEW
+- RF_REVIEW
+- TRC_REVIEW
+- CSV_REVIEW
+- SELECTABLE_SET_FORMED
+- RLS_REVIEW
+- FRAMEWORK_RESULT
+- AUTHORITY_REVIEW
+- EXECUTION_AUTHORIZATION
+- ACTIVE_MONITORING
+- CLOSED
+- NARROWED
+- DELAYED
+- REDESIGN_REQUIRED
+- ESCALATED
+- REFUSED
+- NO_SELECTABLE_OPTION
+- EMERGENCY_PROVISIONAL
+- REQUALIFICATION_REQUIRED
+- REOPENED
+- SUPERSEDED
+primary_lifecycle:
+- DRAFT
+- SCOPING
+- TIER_ASSESSMENT
+- EVIDENCE_COLLECTION
+- RG_REVIEW
+- RF_REVIEW
+- TRC_REVIEW
+- CSV_REVIEW
+- SELECTABLE_SET_FORMED
+- RLS_REVIEW
+- FRAMEWORK_RESULT
+- AUTHORITY_REVIEW
+- EXECUTION_AUTHORIZATION
+- ACTIVE_MONITORING
+- CLOSED
+state_rules:
+- id: SR-01
+  rule: RLS may be governing only after SELECTABLE_SET_FORMED.
+- id: SR-02
+  rule: A failed prior option-rejecting gate routes later governing stages to NOT_EVALUATED_AFTER_PRIOR_FAILURE.
+- id: SR-03
+  rule: Authority selection and execution authorization require named responsible
+    roles and mandates.
+- id: SR-04
+  rule: Material change activates requalification and reopens dependent stages.
+- id: SR-05
+  rule: AI-generated interpretations remain advisory until human review.

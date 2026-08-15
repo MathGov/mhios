@@ -1,0 +1,151 @@
+standard: MHIOS
+version: '0.8'
+tested_core_release_id: MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3
+rule: A triggered record slot is satisfied only by the declared native object or by
+  a CoreRecordAttachment validated against the pinned governing record contract. A
+  pointer alone is insufficient.
+records:
+- record: MaterialObligationRecord
+  source: Canon 4.10A
+  trigger: material obligation supports selectability, execution, review, monitoring,
+    repair, or requalification
+  representation: NATIVE
+  object_type: MaterialObligationRecord
+- record: ConsequenceTempoRecord
+  source: Canon 4.10; ripple.md AB
+  trigger: tempo material or high-stakes L2/L3
+  representation: NATIVE
+  object_type: ConsequenceTempoRecord
+- record: ResponsibilityContinuityRecord
+  source: Canon 4.10; ripple.md AB
+  trigger: claim-bearing high consequence or high-stakes L2/L3
+  representation: NATIVE
+  object_type: ResponsibilityContinuityRecord
+- record: HumanCompensationLoadRecord
+  source: Canon 4.10B
+  trigger: hidden human compensation is material
+  representation: NATIVE
+  object_type: HumanCompensationLoadRecord
+- record: ProjectionPreRegistration
+  source: Canon 17.5A
+  trigger: all Tier 3; Tier 2 pilots
+  representation: NATIVE
+  object_type: ProjectionPreRegistrationRecord
+- record: PCC.RefusalRecord
+  source: Canon 4.9.5/H.0.1
+  trigger: run enters Refusal
+  representation: NATIVE
+  object_type: RefusalRecord
+- record: PCC.ComputationalClosure
+  source: Canon 14.8/H.0.2
+  trigger: all Tier 2 and Tier 3
+  representation: NATIVE
+  object_type: ComputationalClosureRecord
+- record: ReferenceStructureRecord
+  source: Canon H.1A/AB.4; ripple.md U
+  trigger: Tier 3 public conformance; recommended high-stakes Tier 2
+  representation: VALIDATED_ATTACHMENT
+  object_type: CoreRecordAttachment
+- record: PCC.EKRegistry
+  source: Canon 5.2/H
+  trigger: non-default e_k or Tier-2 named-instrument exception
+  representation: VALIDATED_ATTACHMENT
+  object_type: CoreRecordAttachment
+- record: PCC.NormativeInputRegister
+  source: Canon 3.1D/H
+  trigger: material normative input affects gate, precaution, selection, or tie-break
+  representation: VALIDATED_ATTACHMENT
+  object_type: CoreRecordAttachment
+- record: ScopeCoverageDeclaration and SCI
+  source: Canon 5.0.1/H
+  trigger: tier-appropriate coverage declaration
+  representation: NATIVE_PLUS_ATTACHMENT
+  object_type: StakeholderInstance/ScopeMapping/CoreRecordAttachment
+- record: InstanceMap and SDP record
+  source: Canon 2.2A
+  trigger: Tier 2+ and any SDP trigger
+  representation: NATIVE_PLUS_ATTACHMENT
+  object_type: StakeholderInstance/ScopeMapping/CoreRecordAttachment
+- record: BaselineDualExceptionBlock
+  source: Canon 5.0A/H
+  trigger: welfare baseline differs from gate baseline
+  representation: VALIDATED_ATTACHMENT
+  object_type: CoreRecordAttachment
+- record: ReachBasis
+  source: Canon 5.2.1
+  trigger: each Tier 2+ reach term
+  representation: VALIDATED_ATTACHMENT
+  object_type: CoreRecordAttachment
+- record: PeakHarmReview
+  source: Canon 5.3A
+  trigger: brief severe adverse instance threshold
+  representation: VALIDATED_ATTACHMENT
+  object_type: CoreRecordAttachment
+- record: RejectedScenarioLog
+  source: Canon 8.3.1
+  trigger: candidate scenario rejected
+  representation: NATIVE
+  object_type: Scenario
+- record: DistributionalCompanionRecord
+  source: Canon 2.4
+  trigger: material distributional heterogeneity
+  representation: VALIDATED_ATTACHMENT
+  object_type: CoreRecordAttachment
+- record: ActionQualificationRecord
+  source: Canon T; ripple.md M
+  trigger: Tier 2/3 consequence-bearing execution claim
+  representation: VALIDATED_ATTACHMENT
+  object_type: CoreRecordAttachment
+- record: OutcomeObservationRecord
+  source: Canon U; ripple.md O
+  trigger: high-stakes Tier 3; recommended Tier 2/3 consequence-bearing execution
+  representation: VALIDATED_ATTACHMENT
+  object_type: CoreRecordAttachment
+- record: PrimitiveTraceRecord
+  source: Canon/Agent; ripple.md N
+  trigger: triggered claim or execution surface
+  representation: VALIDATED_ATTACHMENT
+  object_type: CoreRecordAttachment
+- record: FalsificationPlan
+  source: Canon/Agent; ripple.md N
+  trigger: triggered claim or execution surface
+  representation: VALIDATED_ATTACHMENT
+  object_type: CoreRecordAttachment
+- record: ObservableConsequenceRegister
+  source: Canon/Agent; ripple.md N
+  trigger: triggered claim or execution surface
+  representation: VALIDATED_ATTACHMENT
+  object_type: CoreRecordAttachment
+- record: WDBIP record
+  source: WDBIP v1.6
+  trigger: boundary or interaction protocol invoked
+  representation: VALIDATED_ATTACHMENT
+  object_type: CoreRecordAttachment
+- record: IdentityContinuityRecord
+  source: SGP v8.5 C.4
+  trigger: digital continuity or destructive operation material
+  representation: VALIDATED_ATTACHMENT
+  object_type: CoreRecordAttachment
+- record: RMCPRecord
+  source: SGP v8.5 C.5
+  trigger: RMCP claim made
+  representation: VALIDATED_ATTACHMENT
+  object_type: CoreRecordAttachment
+- view_type: COMPUTATIONAL_CONTEXT_DECLARATION
+  coverage_status: DERIVED_VIEW
+  implementation_object: GeneratedView
+  trigger: computational_system_material=true at authority or execution review
+  source_records:
+  - ConfigurationRecord
+  - CapabilityAuthorityDecompositionRecord
+  - Claim
+  - PhysicalCausalAdmissibilityEvidenceProfile
+  - Option
+  - ExecutionMandateRecord
+  - ExecutionAuthorization
+  - Control
+  - RequalificationTrigger
+  claim_boundary: The view does not create or alter Core meaning, capability, admissibility,
+    permission, safety, or authority.
+boundary: Coverage mapping is specification evidence, not proof that a supplied record
+  is true, complete, legally valid, usable, or effective in practice.

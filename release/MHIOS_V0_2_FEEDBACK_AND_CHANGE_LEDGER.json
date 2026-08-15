@@ -1,0 +1,55 @@
+{
+  "standard": "MHIOS",
+  "version": "0.2",
+  "date": "2026-07-30",
+  "core_version": "12.5",
+  "core_inclusion": false,
+  "construct_validity": "UNTESTED",
+  "accepted_changes": [
+    {
+      "id": "D11-PC-AEP",
+      "status": "INTEGRATED",
+      "change": "Preserve candidate generation, verification/test/expert warrant, and admissibility-warrant source as separate fields."
+    },
+    {
+      "id": "D11-MFDI",
+      "status": "INTEGRATED",
+      "change": "Preserve necessity_or_alternative_check separately from alternative_explanations."
+    },
+    {
+      "id": "CORE-CROSSWALK",
+      "status": "INTEGRATED",
+      "change": "Add human and machine Core integration crosswalks."
+    },
+    {
+      "id": "SCHEMA-OBJECT-TYPE",
+      "status": "INTEGRATED",
+      "change": "Enumerate 35 object types and canonical roles."
+    },
+    {
+      "id": "REFERENTIAL-INTEGRITY",
+      "status": "INTEGRATED",
+      "change": "Reject dangling object and generated-view references."
+    }
+  ],
+  "retained_hardening": [
+    "12-object five-screen MVS",
+    "institutional preconditions",
+    "automation-bias controls",
+    "Goodhart and anti-theater evaluation",
+    "concurrency and branching",
+    "evidence freshness",
+    "graph-aware redaction",
+    "legal handling",
+    "IRR and burden protocols"
+  ],
+  "verification": {
+    "positive_vectors": 3,
+    "negative_vectors": 19,
+    "mutations_killed": 14,
+    "mutations_total": 14,
+    "normative_statements": 81,
+    "any_executable_coverage": 31,
+    "direct_behavioral_coverage": 22
+  }
+}

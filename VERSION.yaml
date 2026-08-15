@@ -1,0 +1,29 @@
+artifact: MathGov Human Interface and Orchestration Standard
+short_id: MHIOS
+version: '0.8'
+status: CANDIDATE_EXPERIMENTAL_IMPLEMENTATION_STANDARD
+date: '2026-08-15'
+core_inclusion: false
+governing_architecture: RG -> RF/NCRC -> TRC -> CSV -> RLS
+claim_boundary: Candidate implementation companion with native orchestration for carried
+  obligations, consequence tempo, responsibility continuity, Tier-3 preregistration,
+  refusal, computational closure, and time-bound execution-mandate records and action-bound
+  authorization; construct validity, burden reduction, reviewer reliability, anti-theater
+  effectiveness, legal validity, and operational superiority remain untested.
+construct_validity: UNTESTED
+artifact_integrity: VERIFIABLE
+release_id: MHIOS_v0_8+2026.08.15.3
+tested_core_release_id: MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3
+core_compatibility: Exact interface compatibility reviewed against MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3;
+  later or different Core builds require explicit compatibility review.
+build_id: 2026.08.15.3
+package_name: MathGov_Human_Interface_and_Orchestration_Standard_v0_8_BUILD_2026_08_15_3_FINAL_PUBLICATION_READY
+change_summary: Final exact-build compatibility synchronization to MathGov Core +2026.08.15.3
+  plus conformance-traceability and empirical-method hardening; MHIOS v0.8 object
+  model, cascade placement, authority boundaries, Computational Context, and successor
+  semantics remain unchanged.
+compatibility_review_status: PASS_EXACT_BUILD_INTERFACE_REVIEW
+tested_core_package_name: MathGov_Core_2026_09_v12_6_SGP_v8_5_BUILD_2026_08_15_3_FINAL_PUBLICATION_READY.zip
+tested_core_package_sha256: 475c4e50da133d6eec497d9cf7da7bbf6e7f7d9d79ce27f0d86b03fdbfccd69f
+tested_core_version_manifest_sha256: a11e023c3fb647319b8ac11571d5be684bc2750f6162c661c2d0d42f236b0ed6
+tested_core_run_schema_sha256: dc55a36a53203677a1d3961287269ff76f6b716ff80e25efda5d5d1b2e1ff6bf

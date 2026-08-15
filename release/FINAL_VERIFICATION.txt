@@ -1,0 +1,7 @@
+MHIOS ARTIFACT VERIFICATION: PASS
+CONSTRUCT VALIDITY: UNTESTED
+release=MHIOS_v0_8+2026.08.15.3
+tested_core=MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3
+objects=47 roles=15 screens=20 mvs_screens=5 vectors=6 pass/64 expected fail vector_registry=70/70 mutation=45/45 modal_clauses=175 executable_linkage=72 direct_behavioral=63 partial_executable=9 non_executable_dispositioned=103 pdf_pages=68 tables=19
+claim_boundary=Artifact and encoded-conformance verification only; construct validity, legal validity, physical safety, burden reduction, reviewer reliability, anti-theater effectiveness, operational superiority, and domain deployment assurance remain untested.
+clean_extraction=Verified separately after final ZIP creation; see external clean-extraction verification log distributed with the release.

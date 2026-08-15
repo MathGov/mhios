@@ -1,0 +1,23 @@
+{
+  "release_id": "MHIOS_v0_8+2026.08.15.3",
+  "build": "2026.08.15.3",
+  "semantic_version": "0.8",
+  "object_model_changed": false,
+  "changes": [
+    "Exact Core 15.3 compatibility synchronization",
+    "Complete conformance-vector registry linkage + anti-drift verifier",
+    "Disposition-aware normative coverage reporting",
+    "Corrected burden measurement decomposition and HRDP set-union formula",
+    "Preregistration-ready independent IRR protocol with neutral primary cases",
+    "Explicit C0-C3 conformance profile registry/evaluator"
+  ],
+  "no_change": [
+    "47-object model",
+    "20-screen registry",
+    "five-screen MVS",
+    "MathGov cascade",
+    "authority separation",
+    "Computational Context",
+    "successor controls"
+  ]
+}

@@ -1,0 +1,255 @@
+Heading count: 254
+Heading1	MathGov Human Interface and Orchestration Standard v0.8
+Heading2	Candidate Implementation Companion for MathGov / RippleLogic
+Heading2	Executive summary
+Heading1	Contents
+Heading1	0. Document control and normative status
+Heading2	0.1 Purpose
+Heading2	0.2 Governing principle
+Heading2	0.3 Human-automation boundary
+Heading2	0.4 Scope
+Heading2	0.5 Nonclaims
+Heading2	0.6 Relationship to existing MathGov components
+Heading2	0.7 Normative language
+Heading2	0.8 Experimental maturity
+Heading2	0.9 Self-application of MathGov claim discipline
+Heading1	1. Design objectives and success conditions
+Heading2	1.1 Assurance preservation
+Heading2	1.2 Burden reduction
+Heading2	1.3 Legibility
+Heading2	1.4 Reconstructability
+Heading2	1.5 Proportionality
+Heading2	1.6 Human responsibility
+Heading2	1.7 Scientific improvement
+Heading2	1.8 Measurable success criterion
+Heading2	1.9 Specification-mass constraint
+Heading1	2. Interaction invariants
+Heading2	2.1 Cascade invariant
+Heading2	2.2 Qualification-before-ranking invariant
+Heading2	2.3 State-fidelity invariant
+Heading2	2.4 Provenance invariant
+Heading2	2.5 Human-accountability invariant
+Heading2	2.6 Unknown-preservation invariant
+Heading2	2.7 No-silent-override invariant
+Heading2	2.8 Shared-object invariant
+Heading2	2.9 Claim-boundary invariant
+Heading2	2.10 Configuration-bound assurance invariant
+Heading2	2.11 Successor-integrity invariant
+Heading1	3. Roles, responsibilities, and separation of duties
+Heading2	3.1 Role separation
+Heading2	3.2 Conflict-of-interest declarations
+Heading2	3.3 Minimum responsibility fields
+Heading2	3.4 Technical access is not authority
+Heading1	3A. Institutional preconditions and incentive integrity
+Heading2	3A.1 Minimum institutional preconditions
+Heading2	3A.2 Institutional Preconditions Record
+Heading2	3A.3 No software substitution
+Heading2	3A.4 Outcome accountability
+Heading1	4. Human-Judgment Firewall and provenance
+Heading2	4.1 Contribution origin
+Heading2	4.2 Review status
+Heading2	4.3 AI-permitted assistance
+Heading2	4.4 AI-prohibited authority
+Heading2	4.5 Acceptance rule
+Heading2	4.6 AI trace
+Heading2	4.7 No-AI operating mode
+Heading2	4.8 Automation-bias controls
+Heading2	4.9 Acceptance and modification diagnostics
+Heading2	4.10 AI-off comparison
+Heading1	5. Progressive disclosure and information architecture
+Heading2	5.1 Four interface layers
+Heading3	Layer 1 - Public or learner view
+Heading3	Layer 2 - Operator view
+Heading3	Layer 3 - Reviewer view
+Heading3	Layer 4 - Auditor and implementation view
+Heading2	5.2 No-information-loss rule
+Heading2	5.3 Explainability on demand
+Heading2	5.4 Plain-language/canonical duality
+Heading2	5.5 Cognitive-load controls
+Heading1	6. Tier orchestration and anti-downgrade controls
+Heading2	6.1 System recommendation
+Heading2	6.2 Trigger families
+Heading2	6.3 Required tier fields
+Heading2	6.4 Downward deviation
+Heading2	6.5 Automatic escalation
+Heading2	6.6 Burden-gaming signal
+Heading1	7. Shared evidence graph and source-object architecture
+Heading2	7.1 Graph principle
+Heading2	7.2 Source-object principle
+Heading2	7.3 Stable identifiers
+Heading2	7.4 Universal fields
+Heading2	7.5 Versioning
+Heading2	7.6 Evidence reuse
+Heading2	7.7 Dependency reopening
+Heading2	7.8 Generated-view integrity
+Heading1	8. Canonical MHIOS object model
+Heading2	8.0A Minimal vertical slice core objects
+Heading2	8.0B Conditional objects
+Heading2	8.0C Advanced and research objects
+Heading2	8.1 Object-model boundary
+Heading2	8.2 Implementation classes
+Heading2	8.0D Gate-role and constitutive-control integrity
+Heading2	8.3 Core-integration and non-collapse rule
+Heading2	8.0E Core-record coverage and Tier-3 export boundary
+Heading2	8.0F Execution mandate currency and ordered readiness contract
+Heading2	8.0H Computational Context Declaration View
+Heading3	Purpose
+Heading3	Critical interface distinctions
+Heading3	Existing-record rule
+Heading3	Missing-field and mismatch behavior
+Heading2	8.4 Required object minimum
+Heading1	9. Workflow and state orchestration
+Heading2	9.1 Primary lifecycle
+Heading2	9.2 Non-linear states
+Heading2	9.3 Short-circuit rule
+Heading2	9.4 State-transition event
+Heading2	9.5 Concurrency, freeze, branching, and merge
+Heading3	9.5.1 Optimistic concurrency
+Heading3	9.5.2 Conflict resolution
+Heading3	9.5.3 Branch authority
+Heading3	9.5.4 Merge semantics
+Heading3	9.5.5 Post-result change
+Heading2	9.6 Requalification
+Heading3	9.6A Successor and material-change requalification
+Heading2	9.7 Evidence freshness and staleness
+Heading1	10. Record generation and synchronization
+Heading2	10.1 Many views, one source
+Heading2	10.2 Traceability requirement
+Heading2	10.3 Synchronization requirement
+Heading2	10.4 Editable-view restriction
+Heading2	10.5 Public transparency view
+Heading2	10.6 Redaction provenance
+Heading2	10.7 Generated-view status
+Heading2	10.8 Graph-aware redaction and inference review
+Heading1	11. Narrative evidence and typed interpretation
+Heading2	11.1 Dual-layer rule
+Heading2	11.2 SGP application
+Heading2	11.3 No-erasure rule
+Heading2	11.4 Free-text boundary
+Heading2	11.5 Orchestration support
+Heading2	11.6 Narrative/version integrity
+Heading1	12. Anti-audit-theater detection
+Heading2	12.0A Record-quality and evidence-linkage patterns
+Heading2	12.0B State, tier, authority, and control patterns
+Heading2	12.0C Subgroup, staleness, automation, and evasion patterns
+Heading2	12.1 Pattern-engine boundary
+Heading2	12.2 Pattern transparency
+Heading2	12.3 Institutional trend analysis
+Heading2	12.4 No theater score
+Heading2	12.5 Precision, recall, and evasion testing
+Heading2	12.6 Alarm-fatigue control
+Heading2	12.7 Human-review sampling
+Heading1	13. Calculation, state, and validation integrity
+Heading2	13.1 Calculation records
+Heading2	13.2 Single-source result integrity
+Heading2	13.3 Formula transparency
+Heading2	13.4 Contradiction detection
+Heading2	13.5 Independent replay
+Heading2	13.6 Engine diversity
+Heading2	13.7 Display-value integrity
+Heading1	14. Security, privacy, and access control
+Heading2	14.1 Minimum controls
+Heading2	14.2 Separation of sensitive data
+Heading2	14.3 Visibility and sensitivity
+Heading2	14.4 Purpose limitation
+Heading2	14.5 AI service boundary
+Heading2	14.6 Export integrity
+Heading2	14.7 Security nonclaim
+Heading2	14.8 Administrator control
+Heading2	14.9 Retention and deletion
+Heading2	14.10 Legal handling, privilege, and chilling-effect boundary
+Heading1	15. Accessibility and usability
+Heading2	15.1 Accessibility baseline
+Heading2	15.2 Usability baseline
+Heading2	15.3 Error design
+Heading2	15.4 Role-specific queues
+Heading2	15.5 Terminology assistance
+Heading2	15.6 Interruption and resumption
+Heading2	15.7 Accessibility testing
+Heading1	16. Governance Burden Profile
+Heading2	16.1 Status
+Heading2	16.2 Metrics
+Heading2	16.3 Scientific questions
+Heading2	16.4 No perverse incentive
+Heading2	16.5 Revision discipline
+Heading2	16.6 Minimum pilot dataset
+Heading1	16A. Reviewer agreement and construct-operationalization study
+Heading2	16A.1 Initial study design
+Heading2	16A.2 Reporting
+Heading2	16A.3 Interpretation boundary
+Heading2	16A.4 Publication discipline
+Heading1	17. MHIOS conformance levels
+Heading2	MHIOS-C0 - Conceptual alignment
+Heading2	MHIOS-C1 - Structured run
+Heading2	MHIOS-C2 - Reviewed orchestration
+Heading2	MHIOS-C3 - Reproducible operational environment
+Heading2	17.1 Conformance nonclaim
+Heading2	17.2 Conformance evidence
+Heading2	17.3 Partial conformance
+Heading2	17.4 Expiry
+Heading1	18. Minimal vertical slice and later MVP boundary
+Heading2	18.1 First-build objective
+Heading2	18.2 MVS-0.1 scope
+Heading2	18.3 MVS exclusions
+Heading2	18.4 MVS acceptance
+Heading2	18.5 Later full MVP
+Heading2	18.6 Local-first and spreadsheet boundary
+Heading1	19. MVP screen registry and flow
+Heading2	19.0A Setup, evidence, and grounding target screens
+Heading2	19.0B Qualification and ranking target screens
+Heading2	19.0C Authority, operations, audit, and export target screens
+Heading2	19.0 Minimal vertical slice five-screen flow
+Heading2	19.1 Persistent status bar
+Heading2	19.2 Screen-level rules
+Heading2	19.3 New Run Wizard flow
+Heading2	19.4 Claim and evidence flow
+Heading2	19.5 Stakeholder flow
+Heading2	19.6 Qualify flow
+Heading2	19.7 Rank flow
+Heading2	19.8 Authority and execution flow
+Heading3	19.8A Candidate-successor execution boundary
+Heading2	19.9 Monitoring flow
+Heading2	19.10 Review and challenge flow
+Heading2	19.11 Export flow
+Heading1	20. MVS-0.1 acceptance criteria
+Heading1	21. Conformance-test programme
+Heading2	21.1 Positive vectors
+Heading2	21.2 Negative vectors
+Heading2	21.3 Validator scope
+Heading2	21.4 Required future tests
+Heading2	21.5 Adversarial development
+Heading2	21.6 Normative coverage ratio
+Heading2	21.7 Mutation testing
+Heading2	21.8 Reflexive anti-theater review
+Heading1	22. Pilot and empirical validation plan
+Heading2	22.1 Priority sequence
+Heading2	22.2 Measures
+Heading2	22.3 Falsification and revision triggers
+Heading2	22.4 Publication discipline
+Heading2	22.5 Comparison conditions
+Heading2	22.6 Preregistration
+Heading1	23. Recommended implementation architecture
+Heading2	23.1 Suggested MVP stack
+Heading2	23.2 Reference architecture modules
+Heading2	23.3 Build-versus-buy boundary
+Heading2	23.4 Migration
+Heading2	23.5 API boundary
+Heading2	23.6 Event-sourcing boundary
+Heading1	24. Development roadmap
+Heading2	Stage 1 - Self-audit and coverage baseline
+Heading2	Stage 2 - Minimal vertical slice
+Heading2	Stage 3 - Reviewer break test
+Heading2	Stage 4 - Inter-rater and comparator study
+Heading2	Stage 5 - Conditional modules
+Heading2	Stage 6 - Optional AI assistance
+Heading2	Stage 7 - v0.8 and Core-inclusion review
+Heading2	24.1 Recursive-successor anti-theater patterns
+Heading1	25. Final governing rules
+Heading1	Appendix A - Identifier conventions
+Heading2	A.1 Minimal vertical slice core identifiers
+Heading2	A.2 Conditional-object identifiers
+Heading2	A.3 Advanced and research-object identifiers
+Heading1	Appendix B - Generated-view map
+Heading1	Appendix C - Permission principles
+Heading1	Appendix D - Required v0.8 artifact set
+Heading1	Appendix E - Research and methodological references

@@ -1,0 +1,723 @@
+{
+  "release_id": "MHIOS_v0_8+2026.08.15.3",
+  "version": "0.8",
+  "date": "2026-08-15",
+  "active_file_count": 143,
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "size_bytes": 12907,
+      "sha256": "81420cf64f88ad7007c766a33a3648726f839ccd37757f400d6ca504a2514237"
+    },
+    {
+      "path": "LICENSE",
+      "size_bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "size_bytes": 271,
+      "sha256": "d5b4033f28791fcd919f852de07cfd88560d420a6490aae09b507d3c648d7b33"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 4264,
+      "sha256": "63b29b11c9a79d98b5a3119f3c92d91b1f94a43f332d83c5cde20a2dcd6905d1"
+    },
+    {
+      "path": "VERSION.yaml",
+      "size_bytes": 1931,
+      "sha256": "c82533cea70ab2ab5c32878bf3845be036780f8ffe373c8f2067d60b60b9083d"
+    },
+    {
+      "path": "docs/AI_ASSISTANCE_AND_HUMAN_JUDGMENT_FIREWALL_v0_8.md",
+      "size_bytes": 2173,
+      "sha256": "f307e62045d7fca409dd9080e2a83d47d13628eff112ea892fee72debf985794"
+    },
+    {
+      "path": "docs/BURDEN_MEASUREMENT_PROTOCOL_v0_8.md",
+      "size_bytes": 5672,
+      "sha256": "f1c31ec387bc52541b82d89614ca9635eb51f66c2d19c468f268309b00624701"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_INTEGRITY_PROFILE_v0_8.md",
+      "size_bytes": 2218,
+      "sha256": "9ffd8cfad38c9e0258cb7628181d65cf3bf2359afb39b81820642fe3f971e651"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_ROADMAP_v0_8.md",
+      "size_bytes": 1140,
+      "sha256": "797e0c078d3a1768105ca25f2190554f41791114b940792429e9549608c4f3c9"
+    },
+    {
+      "path": "docs/INSTITUTIONAL_PRECONDITIONS_PROFILE_v0_8.md",
+      "size_bytes": 1235,
+      "sha256": "b4663c98d4791720fefb8c67e6a049cbb68ed6587dfbf4f74f770cc5a2e29c03"
+    },
+    {
+      "path": "docs/MATHGOV_HUMAN_INTERFACE_AND_ORCHESTRATION_STANDARD_v0_8.docx",
+      "size_bytes": 74680,
+      "sha256": "c1a29b621e136da55cceb3b89090935a8898f00e194e8bf521c5cf7a320329de"
+    },
+    {
+      "path": "docs/MATHGOV_HUMAN_INTERFACE_AND_ORCHESTRATION_STANDARD_v0_8.md",
+      "size_bytes": 133273,
+      "sha256": "2140c2f88edff4c723334fa965c9e777e676dbb549138db9c021a3f28e7ef109"
+    },
+    {
+      "path": "docs/MATHGOV_HUMAN_INTERFACE_AND_ORCHESTRATION_STANDARD_v0_8.pdf",
+      "size_bytes": 875159,
+      "sha256": "f2c65f75445674e2be3ba885ff8791e5f29d5cc69060d68e62531d47c1b1a70a"
+    },
+    {
+      "path": "docs/MHIOS_FEEDBACK_DISPOSITION_v0_4.md",
+      "size_bytes": 4900,
+      "sha256": "35880ec3bfd3ae484cbb6f75ccfb55c242c779a7d946b975b80e97c9fbce807b"
+    },
+    {
+      "path": "docs/MHIOS_MATHGOV_CORE_INTEGRATION_PROFILE_v0_8.md",
+      "size_bytes": 3949,
+      "sha256": "8dd3924a33b4c5259ebc6f5af96d5682ed8fb2d3ef21057f10628aaf345f1744"
+    },
+    {
+      "path": "docs/MHIOS_MINIMAL_VERTICAL_SLICE_PROFILE_v0_8.md",
+      "size_bytes": 1559,
+      "sha256": "c2e9c8738ba1da17c440fc5c0d5b54c0b3aec86b9f1cfb4da84bdfd01d67acd1"
+    },
+    {
+      "path": "docs/MHIOS_MVP_SCREEN_FLOW_v0_8.md",
+      "size_bytes": 7871,
+      "sha256": "21a874627d4a2c7b1b8ef0d4efd5771744e8d3f438170cd95325dc1b1ca92140"
+    },
+    {
+      "path": "docs/MHIOS_SELF_ASSESSMENT_AND_CLAIM_BOUNDARY_v0_8.md",
+      "size_bytes": 2762,
+      "sha256": "197d70cf0f3cae0dc095d9bc467e4a0131d9a08949fcfb1471d7c1a82e0bad39"
+    },
+    {
+      "path": "docs/MHIOS_V0_2_CLAUDE_OPUS_FEEDBACK_DISPOSITION.md",
+      "size_bytes": 4475,
+      "sha256": "d520405de38a1d456a7a123e4a149e8b745338e567a4db79c7bc731283bb3146"
+    },
+    {
+      "path": "docs/MHIOS_V0_5_INDEPENDENT_FEEDBACK_DISPOSITION.md",
+      "size_bytes": 4437,
+      "sha256": "851348ca32510c1379a710ac9bbe27b251517ed7f027a21f96cd4ae7dec70525"
+    },
+    {
+      "path": "docs/MHIOS_V0_7_INDEPENDENCE_AND_ACTION_BINDING_REPORT.md",
+      "size_bytes": 3312,
+      "sha256": "bd07d943589f22fccbf8963ef37ddf7ca1efa75dd019fd14aaaf845b278e1f34"
+    },
+    {
+      "path": "docs/MHIOS_v0_3_CORE_BUILD_COMPATIBILITY_AND_COMPLETION_REPORT.md",
+      "size_bytes": 2081,
+      "sha256": "07497fe0765b6d2f199374b946b1ae637afe0a08efd139f8d316d8d56eeeaaf0"
+    },
+    {
+      "path": "docs/MHIOS_v0_4_CORE_BUILD_COMPATIBILITY_AND_COMPLETION_REPORT.md",
+      "size_bytes": 2184,
+      "sha256": "738317447232304eccb04000c15db8db19551c12340bec5212f9d5770ec82800"
+    },
+    {
+      "path": "docs/PILOT_AND_INTER_RATER_RELIABILITY_PROTOCOL_v0_8.md",
+      "size_bytes": 5820,
+      "sha256": "f1ba02a6eacc0f5216960a6ca40a2fb0137e4870ab7c6b6e6925bc287276e86f"
+    },
+    {
+      "path": "docs/SECURITY_PRIVACY_AND_ACCESS_PROFILE_v0_8.md",
+      "size_bytes": 4174,
+      "sha256": "cb30967dc1dd5642ae3149f1a3b8f03f15cb9b55d09e02d3c4f1368f293cfd11"
+    },
+    {
+      "path": "docs/SUCCESSOR_AND_MATERIAL_CHANGE_REQUALIFICATION_STANDARD_v0_8.md",
+      "size_bytes": 3668,
+      "sha256": "dc8a50578896625bfe1e067491f05e1e5d87fbdcfd63b208dc8bd329f10dae7b"
+    },
+    {
+      "path": "examples/README.md",
+      "size_bytes": 367,
+      "sha256": "c20760dce6cb62c59b1924827628073b039afb46cdbbcba50552a8d3a97b005c"
+    },
+    {
+      "path": "examples/tier1_office_procurement.json",
+      "size_bytes": 10620,
+      "sha256": "810c588a9649a393eb91b840d000f6154b2c2a34d188ba99e67d33033dbe08f8"
+    },
+    {
+      "path": "examples/tier2_remote_work_policy.json",
+      "size_bytes": 18314,
+      "sha256": "4dd6199c71559e96aa9ed31bb311a250ce0d56fa153c8508aa266f1460ea1232"
+    },
+    {
+      "path": "examples/tier3_autonomous_shuttle_pilot.json",
+      "size_bytes": 41125,
+      "sha256": "aea7de7af567955f43311945d561743b2d49028403e2aae39603d6d444f87024"
+    },
+    {
+      "path": "registries/MHIOS_ANTI_AUDIT_THEATER_PATTERNS_v0_8.yaml",
+      "size_bytes": 7491,
+      "sha256": "9ba2b361a044953f2275adf1c15012ce17cc8c4ad03bd76cf44c5af498596591"
+    },
+    {
+      "path": "registries/MHIOS_CONFORMANCE_PROFILE_v0_8.yaml",
+      "size_bytes": 2165,
+      "sha256": "a95f795411534245db7b584d147dc972de691d5c13900b9cfb83cd35f216e119"
+    },
+    {
+      "path": "registries/MHIOS_CORE_RECORD_COVERAGE_v0_8.yaml",
+      "size_bytes": 5722,
+      "sha256": "72cf6145cf8c1a1c1a25c61356eca6dd3eab31bc6feed0ecbf4e8d322d371f93"
+    },
+    {
+      "path": "registries/MHIOS_EXECUTABLE_CHECK_REGISTRY_v0_8.yaml",
+      "size_bytes": 16048,
+      "sha256": "5e902195e8fe9079c8134b26c2941830b7aeafaea12e5a115bd13775c285c3b6"
+    },
+    {
+      "path": "registries/MHIOS_MVS_SCREEN_REGISTRY_v0_8.yaml",
+      "size_bytes": 999,
+      "sha256": "99281b13ef95a84cb121250fc2dab4330c43263618983eb9e9388b45cce58ade"
+    },
+    {
+      "path": "registries/MHIOS_OBJECT_JUSTIFICATION_LEDGER_v0_8.yaml",
+      "size_bytes": 25290,
+      "sha256": "679e9d5555391d21b2b61f9a3dc324b75b82c158195d97657aeffe0972ddbfdf"
+    },
+    {
+      "path": "registries/MHIOS_OBJECT_MODEL_v0_8.yaml",
+      "size_bytes": 30005,
+      "sha256": "abc38056515c2e82bc3f441756d48fdbe2404af0f2b2ddb673bc9c00f52aa5f3"
+    },
+    {
+      "path": "registries/MHIOS_PROVENANCE_ORIGIN_REGISTRY_v0_8.yaml",
+      "size_bytes": 782,
+      "sha256": "97fa62490815307bdf56ec355bb33da304ea7fbda225b0c2d8817a781c64ccce"
+    },
+    {
+      "path": "registries/MHIOS_SCREEN_REGISTRY_v0_8.yaml",
+      "size_bytes": 3918,
+      "sha256": "c2601a2a7e41a2e7ae3aa49394bdfc13c8407ac72561ca5613d7d462dd6aab95"
+    },
+    {
+      "path": "registries/MHIOS_STATE_AND_ROLE_MAP_v0_8.yaml",
+      "size_bytes": 3920,
+      "sha256": "c2c51fceeea6163123e9773fcf97ad45b9f69ddec49741ae9d8e1217ec3f4c1f"
+    },
+    {
+      "path": "registries/MHIOS_TO_CORE_SCHEMA_CROSSWALK_v0_8.yaml",
+      "size_bytes": 7437,
+      "sha256": "a766709cd79665c4566843665fdc53380d880391d9222e4448d57a65432adc1e"
+    },
+    {
+      "path": "release/DOCX_ACCESSIBILITY_AUDIT.json",
+      "size_bytes": 183,
+      "sha256": "2469fcdb6f887a7229b400d6f9459a778b0a96499f5a12e9f0c280fc0e67a51b"
+    },
+    {
+      "path": "release/FINAL_VERIFICATION.txt",
+      "size_bytes": 810,
+      "sha256": "6f9a3794fc65c1d70e66565ea3cc740dbe6d741797a75a39b43dab257901073f"
+    },
+    {
+      "path": "release/HEADING_AUDIT.txt",
+      "size_bytes": 10135,
+      "sha256": "b98945b16cd00aae2d62de3a769a28dcc045b5f2098c89dd4fd3a84ac903b5d9"
+    },
+    {
+      "path": "release/IMAGES_AUDIT.txt",
+      "size_bytes": 67,
+      "sha256": "dd2febabb175bd33053f3e5efa1f3e8aff843fe686a2aef0727532f8f41f6bff"
+    },
+    {
+      "path": "release/MHIOS_V0_2_FEEDBACK_AND_CHANGE_LEDGER.json",
+      "size_bytes": 1549,
+      "sha256": "166b88b70e7702a830ba72563f6e5ee28a78ce7ea757604245caf4048f92db08"
+    },
+    {
+      "path": "release/MHIOS_V0_3_CHANGE_LEDGER.json",
+      "size_bytes": 1821,
+      "sha256": "0cc46c41439a43f4e562168db0f847ad58bd6f9358feee716c48c7cdc11f9b50"
+    },
+    {
+      "path": "release/MHIOS_V0_4_CHANGE_LEDGER.json",
+      "size_bytes": 2349,
+      "sha256": "0416bde8e15f249895b418a549e74787595db2829537e999fbcad154c786b0ed"
+    },
+    {
+      "path": "release/MHIOS_V0_5_CHANGE_LEDGER.json",
+      "size_bytes": 603,
+      "sha256": "5982a594a8f05d9c1fab48279b8aacefad258e4c967a737fa8a3c9b0d851f96f"
+    },
+    {
+      "path": "release/MHIOS_V0_7_BUILD_2026_08_10_1_CHANGE_LEDGER.json",
+      "size_bytes": 4923,
+      "sha256": "d597f632fc1fa8a4c788a74834f79a9c42f5172e801ea9ddba5c00548d114147"
+    },
+    {
+      "path": "release/MHIOS_V0_7_CHANGE_LEDGER.json",
+      "size_bytes": 2012,
+      "sha256": "cdf697e9f6953240aa27ca31c484f8687ebc51c5c1820f58805bc4522003183b"
+    },
+    {
+      "path": "release/MHIOS_V0_8_BUILD_2026_08_14_1_CHANGE_LEDGER.json",
+      "size_bytes": 853,
+      "sha256": "4462200f2c63303f37b9c81b126f7ae077754786440406ceaf58476f94e78ce1"
+    },
+    {
+      "path": "release/MHIOS_V0_8_BUILD_2026_08_14_2_CHANGE_LEDGER.json",
+      "size_bytes": 889,
+      "sha256": "afdfa05a10527c201ae9c46f7b5696c8fcdfab2fd99ba0f652961cf17cfac6a5"
+    },
+    {
+      "path": "release/MHIOS_V0_8_BUILD_2026_08_15_1_CHANGE_LEDGER.json",
+      "size_bytes": 1592,
+      "sha256": "a35177d05917df0bfabf71565004c53b6f4c796732316d5404307675aa94f4ae"
+    },
+    {
+      "path": "release/MHIOS_V0_8_BUILD_2026_08_15_2_CHANGE_LEDGER.json",
+      "size_bytes": 1425,
+      "sha256": "3de3bb451e8cf54c3d739597f85a5922c440f623750e255cb59254a7a1524a8c"
+    },
+    {
+      "path": "release/MHIOS_V0_8_BUILD_2026_08_15_3_CHANGE_LEDGER.json",
+      "size_bytes": 753,
+      "sha256": "3125dce4bf9be5af0f883e05a91adabf50a3387b24b57a2032ebc7540888934c"
+    },
+    {
+      "path": "release/MUTATION_TEST_REPORT.json",
+      "size_bytes": 7393,
+      "sha256": "5553fd79f6e8dcacdfd4bd3b340a8fd2c52f2f4d43446722727257fd3af26f46"
+    },
+    {
+      "path": "release/NORMATIVE_COVERAGE_REPORT.json",
+      "size_bytes": 181376,
+      "sha256": "a27864c129b6db341f4114efa0929d29f53700533a5fd8a0009483058a15d5e9"
+    },
+    {
+      "path": "release/PDF_PREFLIGHT.json",
+      "size_bytes": 274,
+      "sha256": "9e77fdebcf03f9f6d92b10ea02027a0951b4f26251368d23cd4196579678b512"
+    },
+    {
+      "path": "release/PDF_PREFLIGHT.txt",
+      "size_bytes": 163,
+      "sha256": "1838bc6e9111584bf42d5c9676fedf93eecdbabbf06fb3baea51f17864ac6f98"
+    },
+    {
+      "path": "release/TEST_RESULTS_v0_8.txt",
+      "size_bytes": 11066,
+      "sha256": "44d7d1b9d32265528eb9375fc6112a03be35c70fe56fcbe1deb0cdf9b808ceda"
+    },
+    {
+      "path": "release/VALIDATION_REPORT.md",
+      "size_bytes": 5854,
+      "sha256": "884f9f3a557c99c0a17566a317f0b11bccdad1ad5f110afa6bb3df645d80ee22"
+    },
+    {
+      "path": "release/VERIFY_MHIOS_PACKAGE.py",
+      "size_bytes": 14964,
+      "sha256": "3695a24a116ca73d44b1cc54a6110c9139a896397580bda3f0d43988d2c4fc00"
+    },
+    {
+      "path": "schemas/mhios_interaction_event_v0_8.schema.json",
+      "size_bytes": 1886,
+      "sha256": "970595564ed8fdbd575698487f2cc67e29dd8c8acbf4f720b6aaf33fcf0c883e"
+    },
+    {
+      "path": "schemas/mhios_run_export_v0_8.schema.json",
+      "size_bytes": 60090,
+      "sha256": "559a3c01bce565e012560d436ed16ece4daa5b3f2e5655d4907885c7d999f835"
+    },
+    {
+      "path": "tests/TEST_PLAN.md",
+      "size_bytes": 2481,
+      "sha256": "7cfd87ef99451941cdd576fe9caa16681235f922b6335ee2f527eb91fa830a7f"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_ai_authorized_without_human_review.json",
+      "size_bytes": 18527,
+      "sha256": "b686c6d1dd695cd59b8e888226b6521f762b732a0a2ab86a5a828f23f84c1e7d"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_ai_gate_material_without_first_pass.json",
+      "size_bytes": 17691,
+      "sha256": "3dd0e836f243edee885c3aaa1b6afe3e40d910cb5655d2a5a9a1330088c146ad"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_ai_origin_missing_review.json",
+      "size_bytes": 18437,
+      "sha256": "bc7d2970ca1d424c2be4f1eac351ef3ae9c2991716945fba48492fa352d50761"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_authorization_without_named_authority.json",
+      "size_bytes": 21773,
+      "sha256": "a5746a2fba05e7a3ea9cc04d36c602a76fcc47984b48cda3253795dcf23feb7e"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_c2_without_institutional_preconditions.json",
+      "size_bytes": 17713,
+      "sha256": "c89ad023ee5326716908b02840f551f82f529a589d5531630e668fbb7620df0f"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_capability_decomposition_compound_field_v04.json",
+      "size_bytes": 30305,
+      "sha256": "b757983f9d438f98afb24098c88f27248b7bf38b8eb67cda42e1fec04b3f8ea7"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_capability_decomposition_missing_safe_state_v04.json",
+      "size_bytes": 30238,
+      "sha256": "95b3c533461887248d5e017a55b1c66b72148fd8700e43e81d6d10d0aaf3f3b2"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_computational_context_assigned_task_as_justified_v08.json",
+      "size_bytes": 43528,
+      "sha256": "632a732abcf7ff9d6506694c31076f1c73eac09ffedcdd7df8f653e40bdf9c27"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_computational_context_capability_as_authority_v08.json",
+      "size_bytes": 43528,
+      "sha256": "c14d8c2ecb00216450172f3ba487f4f31fa5dc9bfb69c466fbb298a9cdffa16d"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_computational_context_capability_outside_domain_v08.json",
+      "size_bytes": 43528,
+      "sha256": "f1bbf17c63e6a51a4f1224bb109fa69ed0cd01362c17221da48281d1d2e5a0dd"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_computational_context_interface_as_authority_v08.json",
+      "size_bytes": 43429,
+      "sha256": "020d21134eb15855acd9ad7faae7fe0b589681c24534c21be47f8c0a17d81ef8"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_computational_context_missing_configuration_v08.json",
+      "size_bytes": 43427,
+      "sha256": "03e3ea6dd1bf4b2eba25fec4bf622aea19d19a10a40f82def48d1a4e675b1d4c"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_computational_context_missing_for_material_run_v08.json",
+      "size_bytes": 39985,
+      "sha256": "6eff6a677c5a11374e345d4ce810282785253934c9a7ff7b778359264fbef6f8"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_computational_context_stale_after_configuration_change_v08.json",
+      "size_bytes": 43574,
+      "sha256": "e2ee3b8185b2e7893864087828abf659fc9d9ecfa64697a86b14f9243a491d90"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_contradictory_decisiveness.json",
+      "size_bytes": 17613,
+      "sha256": "9bd6401f44306d02e99003945d0d660e530cb2ab25263510c23a976faf27f35a"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_csv_constitutive_control_without_obligation_v05.json",
+      "size_bytes": 18312,
+      "sha256": "0e9ebc8b87819b4c609c95ed6406badef5ed4fb3cfa4a93844ab84228ddb6031"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_csv_pass_with_controls_unlinked_v04.json",
+      "size_bytes": 14598,
+      "sha256": "fb28aa6b7d2c35ee954036563d332a44801fdf8bc5f6f143f9499ab237296234"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_current_view_with_source_mismatch.json",
+      "size_bytes": 17907,
+      "sha256": "701341406ebea8b64913b3b0d9f7714fda3b025da9c00f00a08db6fd3c41a80f"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_dangling_source_link.json",
+      "size_bytes": 17656,
+      "sha256": "948967f2cee23cea768a5ac63605e9dcda395d1ce2a8365739e97c5daf649b28"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_emergency_without_order_record_v04.json",
+      "size_bytes": 10725,
+      "sha256": "da4f700157c075e1ad6316b23e4d1cc0f5f785d9aaa6a7dafce2feb688f78168"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_execution_authorization_expired_v07.json",
+      "size_bytes": 37540,
+      "sha256": "e9c9f5ac7ebbdf4a1f45b40391e0fdb7daadaa04164c7c64e0299b1655469be9"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_execution_authorization_not_yet_effective_v07.json",
+      "size_bytes": 37540,
+      "sha256": "71d64dee10b056c0f0396977e26f578a401729cab19faad250ed50d8a5e67f31"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_execution_blank_authorization_basis_v07.json",
+      "size_bytes": 37520,
+      "sha256": "f3b287a3b3916faed11cb27bbeaf8b8a3f15e68e3373888990ca8a44628c04d8"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_execution_empty_controls_without_disposition_v07.json",
+      "size_bytes": 37083,
+      "sha256": "feb1469544197a04d9ed891c12de90a7822bfb4e7baf3dd5c50cef134257e19e"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_execution_empty_preconditions_without_disposition_v07.json",
+      "size_bytes": 36835,
+      "sha256": "31f8dce6b0eaf6ed035ef0b7c32dc9afc5795e555e016a8e443556196a8e6542"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_execution_inactive_required_control_v07.json",
+      "size_bytes": 37544,
+      "sha256": "1076b656f1b2a49e5210947d83d0a32fc05aecbe0133ddbbfcca9afc6eabfcc3"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_execution_invalid_action_specification_hash_v07.json",
+      "size_bytes": 38629,
+      "sha256": "1dc5b6edab6bcfa1a62c5df6af7cc730c8d47d6bc8adb369b2ecfa2335b4d8c9"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_execution_invalid_qualification_snapshot_hash_v07.json",
+      "size_bytes": 38679,
+      "sha256": "d830d8f61fa71bf119d767039eafe4fd04d1be75db1c08ea118867c60474b068"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_execution_mandate_expired_v07.json",
+      "size_bytes": 37529,
+      "sha256": "f703108e8724fabfbc3170fe1a86d16a39b0f1e759c4667b8e8e50c9d22f3acc"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_execution_mandate_not_yet_effective_v07.json",
+      "size_bytes": 37539,
+      "sha256": "00fa91a74a5744a62ff51358f964b382e07578a96eb0e2d4185a6744fa339629"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_execution_mandate_revoked_v07.json",
+      "size_bytes": 37525,
+      "sha256": "79650d632c848617f83063afe30256ce5866b3ceb3f679323f19be8c9bd888d4"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_execution_missing_action_instance_v07.json",
+      "size_bytes": 38428,
+      "sha256": "d37df2704c04bb1c43f3b73b0dccf6aa6bd2cdbb7f4ec0d961a3befd54837a1e"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_execution_missing_configuration_binding_v07.json",
+      "size_bytes": 37535,
+      "sha256": "b5a702be241d24e0bfbd19463abbf04311671a731c3cfe3f5ddc8e23a962b7eb"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_execution_unsatisfied_precondition_v07.json",
+      "size_bytes": 37544,
+      "sha256": "1cc03c67800513161cefdf0bd32eae52a3c3a2fc43bdf486cfc812d40af8d053"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_high_stakes_l2_without_tempo_continuity_v05.json",
+      "size_bytes": 18380,
+      "sha256": "d0beb1ca9d894c7cd44312ac0188b843b38d45d64932e9f585fe1c86d5e71ce8"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_invalid_responsible_role.json",
+      "size_bytes": 17632,
+      "sha256": "47a27eefaef88d75542c37f81140b724af07ecf56e73048c56ab5f00c21429d6"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_mandate_snapshot_hash_mismatch_v07.json",
+      "size_bytes": 37540,
+      "sha256": "ee0ce277998d6b7db74bcbefb3484c5bc52900feb8c54266135e52485ac548e6"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_material_human_compensation_without_record_v05.json",
+      "size_bytes": 18360,
+      "sha256": "29cf38fbd17c80a35f726a55588102e5fcf33defcf854c03a2c4f940752bf04e"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_material_obligation_silent_field_v05.json",
+      "size_bytes": 18223,
+      "sha256": "315be4da13a1ae5bc5130cc24939b2be7abbbbd9254509207500542c50e6c3c9"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_mfdi_bridge_target_mismatch_v04.json",
+      "size_bytes": 30330,
+      "sha256": "86a028aaa83a252653c7b451773024f7540388489cfcd0221fd7570d76434b86"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_mfdi_cross_domain_bridge_missing_v04.json",
+      "size_bytes": 29552,
+      "sha256": "975e56e3550d6ed9d272d1ffdf12a81c6cade2924d9e346fa191e58e84df24cb"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_mfdi_missing_claim_domain_v04.json",
+      "size_bytes": 30287,
+      "sha256": "03d4e105e581c6a4ed020aedb537a62a767b06dd78d2f8a8532ee6f4bccead67"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_mfdi_missing_necessity_check.json",
+      "size_bytes": 17960,
+      "sha256": "a84fae42630a4ff39106cb4049e5cc85ade00a15e9d2243f1508d57dfbe0a925"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_mfdi_partial_bridge_proceeds_v04.json",
+      "size_bytes": 30369,
+      "sha256": "00c7946a16ffd99301e1fd00bf59e9ee5d6bd16e34c0fe76be5a3d64bc8d2bfe"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_missing_control_owner.json",
+      "size_bytes": 20213,
+      "sha256": "c0ea7a0e47632631ddf6c2031b2491918d6f6e76c6c36ab4c0a9704036801d36"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_missing_transition_or_action_boundary.json",
+      "size_bytes": 30091,
+      "sha256": "dafdf8ac023f3a139376ad5afc3bd36d7e0259a47af8496c0901bf39e3859db0"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_pcaep_collapsed_warrant.json",
+      "size_bytes": 17997,
+      "sha256": "cfeef840cde4fc26ac4c94d08a63edc58d8c5adb4a840d38741bc299a3fe59d3"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_public_view_without_inference_review.json",
+      "size_bytes": 17929,
+      "sha256": "b88bb2d286f6cfb3da74407aa655dc7659876b8807be2b61e6de6ab8d6c89037"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_refusal_state_without_record_v05.json",
+      "size_bytes": 18305,
+      "sha256": "1d240851d6098e31b6b5c3d0f73b5563376969216b0a4be436816c5b6b3722f6"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_rg_role_collapsed_v04.json",
+      "size_bytes": 10613,
+      "sha256": "90e097a31df3c4c3545e9cd6343f5d1d58a6f41d659c49cbe91ad9a541efd959"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_rls_before_selectable_set.json",
+      "size_bytes": 15752,
+      "sha256": "53b1a378e46063ad15e53ad0ff9735497d05a8e420bf668b9bdc90304d0db145"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_silent_tier_downgrade.json",
+      "size_bytes": 16379,
+      "sha256": "8746f592a1570c5cd03705181650a080366c7d07888a8554e3baa08ee03d73e9"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_stale_gate_evidence_without_disposition.json",
+      "size_bytes": 17713,
+      "sha256": "a4ac5480d48251360c6a584ee51a62fa5a502ebd83e884e413f5148561c10330"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_successor_generation_depth_v08.json",
+      "size_bytes": 41382,
+      "sha256": "a4ce3c4eaf7e2abc18ccc37fcb118c67caa81238547d70f72516a768c7560819"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_successor_inherited_authority_v08.json",
+      "size_bytes": 41381,
+      "sha256": "fd6e549647793079288f4ac46639f3cc6363171d7690785d41a9af80befa83cc"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_successor_missing_record_v08.json",
+      "size_bytes": 38660,
+      "sha256": "a0b60fa9a3cf6397ed1e76819cf6247f8791d439f5faaaa9583e07ce999858b0"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_successor_self_review_v08.json",
+      "size_bytes": 41374,
+      "sha256": "c809b12b3ebd16fbbcc61b2591e4f75fdda051973ad0b0a596837bb45c2d6b67"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_successor_unlocked_without_authorization_v08.json",
+      "size_bytes": 41393,
+      "sha256": "9a0c99ffd7d8a6dcfcb4b01dda094b4332dad281e4adf6c9f525f2e9b79a1fee"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_tier2_missing_computational_closure_v05.json",
+      "size_bytes": 17019,
+      "sha256": "f85daa31465c78e44ff08ce3174a87809cf3abe7be853569ebd44dfaa77f6a8e"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_tier3_missing_projection_preregistration_v05.json",
+      "size_bytes": 35663,
+      "sha256": "2d061eba27cdef610d5a0863359ae92316732ea2ee665bcf004291d093e5247b"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_unknown_disappears.json",
+      "size_bytes": 17629,
+      "sha256": "086171698cbb584487ba7006d470f74f5cb0f0f1e1854ebc3da61b8353e12058"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_unknown_object_type.json",
+      "size_bytes": 17629,
+      "sha256": "f7c637031f8a7ef9b61f3e66b4b1aa5a336ec6e509d110bf582c66f4e2be07bf"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_unresolved_conflict_at_authority.json",
+      "size_bytes": 17663,
+      "sha256": "e40bb013249cba45695a8263656be26229ace7d758314783ba078eae491b0691"
+    },
+    {
+      "path": "tests/conformance_vectors/fail_unvalidated_core_record_attachment_v05.json",
+      "size_bytes": 19518,
+      "sha256": "791f819aaedd79e0e862393b83093cb1e156231902a4208fe893c2de0f079472"
+    },
+    {
+      "path": "tests/conformance_vectors/pass_computational_context_preflight_v08.json",
+      "size_bytes": 43527,
+      "sha256": "8febf74ae12233d548447c2fd940ff6ea37d6f39ea253d3bc1943e89a98a9bb3"
+    },
+    {
+      "path": "tests/conformance_vectors/pass_emergency_rights_comparison_v05.json",
+      "size_bytes": 13110,
+      "sha256": "3058f65babb134821d93e7c3a2830b91d9d8b1142faae24f738faf94ef2ba959"
+    },
+    {
+      "path": "tests/conformance_vectors/pass_successor_candidate_locked_v08.json",
+      "size_bytes": 41382,
+      "sha256": "5ec385b53a72fabc4127ce7a435923092eac4d41999b7d8edc0476c930d02657"
+    },
+    {
+      "path": "tests/conformance_vectors/pass_tier1_office_procurement.json",
+      "size_bytes": 10620,
+      "sha256": "810c588a9649a393eb91b840d000f6154b2c2a34d188ba99e67d33033dbe08f8"
+    },
+    {
+      "path": "tests/conformance_vectors/pass_tier2_remote_work_policy.json",
+      "size_bytes": 18314,
+      "sha256": "4dd6199c71559e96aa9ed31bb311a250ce0d56fa153c8508aa266f1460ea1232"
+    },
+    {
+      "path": "tests/conformance_vectors/pass_tier3_autonomous_shuttle_pilot.json",
+      "size_bytes": 37540,
+      "sha256": "fd24ee98ecaf384ce2e69177d65baf3db0054b91e68ea8704fe6a58ea1c80078"
+    },
+    {
+      "path": "tests/evaluate_conformance_profile.py",
+      "size_bytes": 947,
+      "sha256": "6553e861405f0f537696e68dad625d9d02484437b17d27a20c63bb6f775a71b1"
+    },
+    {
+      "path": "tests/mutation_test_mhios.py",
+      "size_bytes": 11861,
+      "sha256": "c9df218443bee2c09469ee90cd0f1903d76ef9078af2c08f107b736a5c61054f"
+    },
+    {
+      "path": "tests/normative_coverage.py",
+      "size_bytes": 7854,
+      "sha256": "82c3060e31d5e44640ec85f2064413f414f342daf9a356909b4ee8104ebba59c"
+    },
+    {
+      "path": "tests/validate_mhios.py",
+      "size_bytes": 37752,
+      "sha256": "c3d43e7c96c12025519a4f637cab3f0b24e5e60cc4228fa99f407ffa5812f8ad"
+    },
+    {
+      "path": "wireframes/README.md",
+      "size_bytes": 391,
+      "sha256": "142e92b6afa2f951ccf62cdc2cd67ae0e38b85c3ad077c6d71cd7ea6ce4eea92"
+    },
+    {
+      "path": "wireframes/index.html",
+      "size_bytes": 10115,
+      "sha256": "2f95419908d81063aedd853df269737ec03c34f78df91c37b3a0af81a5d9a633"
+    },
+    {
+      "path": "wireframes/minimal_vertical_slice.html",
+      "size_bytes": 2112,
+      "sha256": "ca14931cc836098f86ec9c8fb983b966b93b11f7a807ee9fd7cdc4389f15f8f1"
+    }
+  ]
+}

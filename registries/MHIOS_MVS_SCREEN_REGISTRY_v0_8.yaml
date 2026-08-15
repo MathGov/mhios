@@ -1,0 +1,27 @@
+standard: MHIOS
+version: '0.8'
+profile: MVS-0.1
+status: candidate_empirical_vertical_slice
+screens:
+- id: MVS-01
+  name: Run Setup
+  purpose: Define the decision, options, configuration, tier, reviewers, institutional
+    preconditions, and frozen branch.
+- id: MVS-02
+  name: Claims and Evidence
+  purpose: Capture claims, evidence, assumptions, unknowns, freshness, and independent
+    reviewer first pass.
+- id: MVS-03
+  name: Stakeholders and Grounding
+  purpose: Discover stakeholders, define the reality surface and claim boundary, and
+    assign the RG state.
+- id: MVS-04
+  name: Qualify and Rank
+  purpose: Apply RF/NCRC, TRC, CSV, short-circuiting, selectable-set formation, and
+    one transparent RLS path.
+- id: MVS-05
+  name: Review Export and Replay
+  purpose: Record judgment and challenge, issue the framework result, export synchronized
+    views, and replay independently.
+claim_boundary: The five-screen profile is an empirical build target, not a validated
+  optimal interface.
