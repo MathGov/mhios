@@ -1,0 +1,54 @@
+{
+  "engine": "artifact_tool",
+  "tests": [
+    {
+      "case": "untouched",
+      "expected": "UNASSESSED",
+      "actual": "UNASSESSED",
+      "pass": true
+    },
+    {
+      "case": "incomplete",
+      "expected": "INCOMPLETE",
+      "actual": "INCOMPLETE",
+      "pass": true
+    },
+    {
+      "case": "valid declared tokens",
+      "expected": "TOKENS_QUALIFY",
+      "actual": "TOKENS_QUALIFY",
+      "pass": true
+    },
+    {
+      "case": "rights failure",
+      "expected": "NOT_QUALIFIED",
+      "actual": "NOT_QUALIFIED",
+      "pass": true
+    },
+    {
+      "case": "unknown rights",
+      "expected": "NOT_QUALIFIED",
+      "actual": "NOT_QUALIFIED",
+      "pass": true
+    },
+    {
+      "case": "emergency not ordinary",
+      "expected": "NOT_QUALIFIED",
+      "actual": "NOT_QUALIFIED",
+      "pass": true
+    },
+    {
+      "case": "garbage token",
+      "expected": "INVALID_STATUS",
+      "actual": "INVALID_STATUS",
+      "pass": true
+    },
+    {
+      "case": "missing record",
+      "expected": "INCOMPLETE",
+      "actual": "INCOMPLETE",
+      "pass": true
+    }
+  ],
+  "all_unassessed_after_restore": true
+}

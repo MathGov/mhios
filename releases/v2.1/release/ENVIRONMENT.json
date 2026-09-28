@@ -1,0 +1,16 @@
+{
+  "python_packages": {
+    "jsonschema": "4.26.0",
+    "pytest": "9.0.2",
+    "PyYAML": "6.0.3",
+    "python-docx": "1.2.0",
+    "PyMuPDF": "1.26.7",
+    "lxml": "6.1.1"
+  },
+  "spreadsheet_engine": "artifact_tool; distribution version unavailable",
+  "spreadsheet_scope": "MHIOS preparation workbook only; Core workbook untouched",
+  "docx_rendering": "LibreOffice 25.2.3.2 520(Build:2) via render_docx.py (Writer only)",
+  "native_spreadsheet_recalculation": "NOT_EXECUTED",
+  "pdf_rendering": "PyMuPDF 1.26.7; main page PNGs from render_docx.py",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+}

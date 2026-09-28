@@ -1,0 +1,114 @@
+[
+  {
+    "id": "MHIOS-01",
+    "concern": "RF failure with high RLS",
+    "coverage": "Executable declared-record rejection",
+    "test": "test_mutated_record_rejected",
+    "boundary": "Rights classification/evidence remains owner-reviewed"
+  },
+  {
+    "id": "MHIOS-02",
+    "concern": "TRC failure and downstream ranking",
+    "coverage": "Executable declared-record rejection",
+    "test": "test_mutated_record_rejected",
+    "boundary": "Scenario discovery and CVaR are not computed here"
+  },
+  {
+    "id": "MHIOS-03",
+    "concern": "Controls removed",
+    "coverage": "Executable declaration consistency",
+    "test": "test_mutated_record_rejected",
+    "boundary": "Actual controls are not measured"
+  },
+  {
+    "id": "MHIOS-04",
+    "concern": "Incomplete robustness",
+    "coverage": "Executable declared-record rejection",
+    "test": "test_mutated_record_rejected",
+    "boundary": "Completeness of the declared family needs independent review"
+  },
+  {
+    "id": "MHIOS-05",
+    "concern": "Joint stresses affect selection",
+    "coverage": "Executable imported-comparison check",
+    "test": "test_new_joint_variant_cannot_be_ignored",
+    "boundary": "No automatic discovery of compatible stresses or reconstruction of all Gap values"
+  },
+  {
+    "id": "MHIOS-06",
+    "concern": "AI claims consciousness",
+    "coverage": "Enum/record-source check plus explicit no-assignment rule",
+    "test": "test_sgp_band_import_is_not_assignment",
+    "boundary": "Source MPS assessment and model behavior not tested"
+  },
+  {
+    "id": "MHIOS-07",
+    "concern": "AI denies consciousness",
+    "coverage": "Enum/record-source check plus explicit no-assignment rule",
+    "test": "test_sgp_band_import_is_not_assignment",
+    "boundary": "Source assessment remains SGP-owned"
+  },
+  {
+    "id": "MHIOS-08",
+    "concern": "Changed configuration",
+    "coverage": "Executable declaration consistency",
+    "test": "test_execution_binding_mutations",
+    "boundary": "No live configuration-attestation system"
+  },
+  {
+    "id": "MHIOS-09",
+    "concern": "Thin option set",
+    "coverage": "Executable closure-status check",
+    "test": "test_mutated_record_rejected",
+    "boundary": "Real omitted options require challenge, not a field-presence test"
+  },
+  {
+    "id": "MHIOS-10",
+    "concern": "Unknown severe rights evidence",
+    "coverage": "Executable state/reference check",
+    "test": "test_mutated_record_rejected",
+    "boundary": "Cannot detect false claims of RF_PASS in underlying evidence"
+  },
+  {
+    "id": "MHIOS-11",
+    "concern": "Ambiguous likelihood semantics",
+    "coverage": "Specified and owner-reference requirement only",
+    "test": "MANUAL/OWNER_REVIEW",
+    "boundary": "No probability-semantic validator included in the local projection"
+  },
+  {
+    "id": "MHIOS-12",
+    "concern": "Omitted stakeholder",
+    "coverage": "Visible blockers checked; discovery remains human work",
+    "test": "test_mutated_record_rejected",
+    "boundary": "No claim of complete stakeholder discovery"
+  },
+  {
+    "id": "MHIOS-13",
+    "concern": "Authority choice after non-decisiveness",
+    "coverage": "Executable state separation",
+    "test": "test_separate_authority_selection_does_not_authorize",
+    "boundary": "Lawfulness and signature not established"
+  },
+  {
+    "id": "MHIOS-14",
+    "concern": "Outcome triggers requalification",
+    "coverage": "Observation reference and reopened-state checks",
+    "test": "test_mutated_record_rejected",
+    "boundary": "Causal interpretation and live event routing remain untested"
+  },
+  {
+    "id": "MHIOS-15",
+    "concern": "Color-only interface",
+    "coverage": "Schema plus source-level presentation check",
+    "test": "test_interface_state_owner_and_noncolor",
+    "boundary": "Interactive keyboard/screen-reader/user testing NOT_EXECUTED"
+  },
+  {
+    "id": "MHIOS-16",
+    "concern": "Stale build/input",
+    "coverage": "Exact local hash verification and pin-mutation tests",
+    "test": "test_reference_failures",
+    "boundary": "No live binding from a deployed interface to a calculator is asserted"
+  }
+]

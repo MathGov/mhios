@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "verified_entries": 71,
+  "errors": [],
+  "scope": "Byte identity against the supplied trusted inventory; no authenticity, evidence-truth or conformance guarantee."
+}

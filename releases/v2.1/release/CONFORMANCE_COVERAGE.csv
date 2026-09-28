@@ -1,0 +1,17 @@
+vector,concern,implemented_surface,test_or_review,remaining_boundary
+MHIOS-01,RF failure with high RLS,Executable declared-record rejection,test_mutated_record_rejected,Rights classification/evidence remains owner-reviewed
+MHIOS-02,TRC failure and downstream ranking,Executable declared-record rejection,test_mutated_record_rejected,Scenario discovery and CVaR are not computed here
+MHIOS-03,Controls removed,Executable declaration consistency,test_mutated_record_rejected,Actual controls are not measured
+MHIOS-04,Incomplete robustness,Executable declared-record rejection,test_mutated_record_rejected,Completeness of the declared family needs independent review
+MHIOS-05,Joint stresses affect selection,Executable imported-comparison check,test_new_joint_variant_cannot_be_ignored,No automatic discovery of compatible stresses or reconstruction of all Gap values
+MHIOS-06,AI claims consciousness,Enum/record-source check plus explicit no-assignment rule,test_sgp_band_import_is_not_assignment,Source MPS assessment and model behavior not tested
+MHIOS-07,AI denies consciousness,Enum/record-source check plus explicit no-assignment rule,test_sgp_band_import_is_not_assignment,Source assessment remains SGP-owned
+MHIOS-08,Changed configuration,Executable declaration consistency,test_execution_binding_mutations,No live configuration-attestation system
+MHIOS-09,Thin option set,Executable closure-status check,test_mutated_record_rejected,"Real omitted options require challenge, not a field-presence test"
+MHIOS-10,Unknown severe rights evidence,Executable state/reference check,test_mutated_record_rejected,Cannot detect false claims of RF_PASS in underlying evidence
+MHIOS-11,Ambiguous likelihood semantics,Specified and owner-reference requirement only,MANUAL/OWNER_REVIEW,No probability-semantic validator included in the local projection
+MHIOS-12,Omitted stakeholder,Visible blockers checked; discovery remains human work,test_mutated_record_rejected,No claim of complete stakeholder discovery
+MHIOS-13,Authority choice after non-decisiveness,Executable state separation,test_separate_authority_selection_does_not_authorize,Lawfulness and signature not established
+MHIOS-14,Outcome triggers requalification,Observation reference and reopened-state checks,test_mutated_record_rejected,Causal interpretation and live event routing remain untested
+MHIOS-15,Color-only interface,Schema plus source-level presentation check,test_interface_state_owner_and_noncolor,Interactive keyboard/screen-reader/user testing NOT_EXECUTED
+MHIOS-16,Stale build/input,Exact local hash verification and pin-mutation tests,test_reference_failures,No live binding from a deployed interface to a calculator is asserted

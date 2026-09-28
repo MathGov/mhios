@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "executed_at_utc": "2026-09-27T20:38:15.852181+00:00",
+  "build": "MG-MHIOS-2.1-20260928-CORE13.0",
+  "tests": [
+    {
+      "name": "checksums",
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 0.203
+    },
+    {
+      "name": "artifact_and_Core_identity",
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 14.313
+    },
+    {
+      "name": "unit_tests",
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 13.015
+    },
+    {
+      "name": "static_reading_links",
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 1.75
+    },
+    {
+      "name": "example_decisive_synthetic",
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 0.282
+    },
+    {
+      "name": "example_nondecisive_authority",
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 0.312
+    },
+    {
+      "name": "example_rights_blocked",
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 0.344
+    },
+    {
+      "name": "example_quick_unassessed",
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 0.281
+    },
+    {
+      "name": "example_recovery_mode_zero",
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 0.266
+    },
+    {
+      "name": "example_scoped_authorization_simulation",
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 0.297
+    }
+  ],
+  "release_files_unchanged_after_tests": true,
+  "inventory_files": 86,
+  "changed_paths": [],
+  "scope": "Supplied local reference checks and immutable-file verification. No execution authority, empirical validation, full Core replay or native spreadsheet roundtrip."
+}

@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "executed_at_utc": "2026-09-27T20:18:47.137276+00:00",
+  "build": "MG-MHIOS-2.1-20260928-CORE13.0",
+  "tests": [
+    {
+      "name": "checksums",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "verify_release.py",
+        "--output",
+        "/mnt/data/mhios_update_work/execution_accepted/checksums.json"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 1.474
+    },
+    {
+      "name": "artifact_and_Core_identity",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-m",
+        "reference.check_artifacts",
+        "--output",
+        "/mnt/data/mhios_update_work/execution_accepted/artifacts.json"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 15.517
+    },
+    {
+      "name": "unit_tests",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--disable-warnings",
+        "tests"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 17.543
+    },
+    {
+      "name": "static_reading_links",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-m",
+        "reference.check_web",
+        "--output",
+        "/mnt/data/mhios_update_work/execution_accepted/reading_links.json"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 3.38
+    },
+    {
+      "name": "example_decisive_synthetic",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-m",
+        "reference.validate",
+        "examples/decisive_synthetic.json",
+        "--at",
+        "2026-09-28T12:00:00Z",
+        "--verify-local-references"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 2.982
+    },
+    {
+      "name": "example_nondecisive_authority",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-m",
+        "reference.validate",
+        "examples/nondecisive_authority.json",
+        "--at",
+        "2026-09-28T12:00:00Z",
+        "--verify-local-references"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 3.331
+    },
+    {
+      "name": "example_rights_blocked",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-m",
+        "reference.validate",
+        "examples/rights_blocked.json",
+        "--at",
+        "2026-09-28T12:00:00Z",
+        "--verify-local-references"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 3.178
+    },
+    {
+      "name": "example_quick_unassessed",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-m",
+        "reference.validate",
+        "examples/quick_unassessed.json",
+        "--at",
+        "2026-09-28T12:00:00Z",
+        "--verify-local-references"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 3.487
+    },
+    {
+      "name": "example_recovery_mode_zero",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-m",
+        "reference.validate",
+        "examples/recovery_mode_zero.json",
+        "--at",
+        "2026-09-28T12:00:00Z",
+        "--verify-local-references"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 3.278
+    },
+    {
+      "name": "example_scoped_authorization_simulation",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-m",
+        "reference.validate",
+        "examples/scoped_authorization_simulation.json",
+        "--at",
+        "2026-09-28T12:00:00Z",
+        "--verify-local-references"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 3.078
+    }
+  ],
+  "release_files_unchanged_after_tests": true,
+  "inventory_files": 72,
+  "changed_paths": [],
+  "scope": "Supplied local reference checks and immutable-file verification. No execution authority, empirical validation, full Core replay or native spreadsheet roundtrip."
+}

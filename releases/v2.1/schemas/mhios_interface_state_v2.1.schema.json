@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:mathgov:mhios:2.1:interface-state",
+  "title": "MHIOS interface state (namespace-aware display)",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "owner": {
+      "enum": [
+        "CANON_STAGE",
+        "CANON_FRAMEWORK",
+        "RUN_DECISION",
+        "RUN_EXECUTION",
+        "AGENT_RUNTIME",
+        "SGP",
+        "MHIOS_LOCAL"
+      ]
+    },
+    "status_token": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "plain_language": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "presentation_severity": {
+      "enum": [
+        "INFO",
+        "PASS",
+        "CONTROLLED",
+        "REVIEW",
+        "ESCALATE",
+        "BLOCK",
+        "UNKNOWN",
+        "NON_DECISIVE"
+      ]
+    },
+    "next_action": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "source_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "basis": {
+          "enum": [
+            "SYNTHETIC",
+            "SUPPLIED_RECORD",
+            "EXTERNAL_UNVERIFIED"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "locator",
+        "sha256",
+        "basis"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "color_is_redundant": {
+      "const": true
+    },
+    "claim_boundary": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "icon_or_shape": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    }
+  },
+  "required": [
+    "owner",
+    "status_token",
+    "plain_language",
+    "presentation_severity",
+    "next_action",
+    "source_ref",
+    "timestamp",
+    "color_is_redundant",
+    "claim_boundary",
+    "icon_or_shape"
+  ]
+}

@@ -1,0 +1,960 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "Exactly fifteen pinned Core sources",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core hash: CSV",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core OOXML opens: CSV",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core hash: Public Introduction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core OOXML opens: Public Introduction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core hash: Reproducibility",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core OOXML opens: Reproducibility",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core hash: MFDI",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core OOXML opens: MFDI",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core hash: PC-AEP",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core OOXML opens: PC-AEP",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core hash: ripple.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core OOXML opens: ripple.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core hash: Agent System",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core OOXML opens: Agent System",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core hash: Aligners Sheet",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core hash: Cascade",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core OOXML opens: Cascade",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core hash: Primer",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core OOXML opens: Primer",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core hash: RLS Validation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core OOXML opens: RLS Validation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core hash: Canon",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core OOXML opens: Canon",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core hash: SGP",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core OOXML opens: SGP",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core hash: Source-Coupling",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core OOXML opens: Source-Coupling",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core hash: WDBIP",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Core OOXML opens: WDBIP",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "MHIOS DOCX ZIP CRC",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Unique bookmark names",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "115 resolved contents targets",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "No stale running identity: word/header1.xml",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "No stale running identity: word/footer1.xml",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "No live PAGEREF",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Five independent list restarts at one",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Capability examples use real italic runs, not literal asterisks",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Stored MHIOS page count matches rendered PDF",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Complete Markdown/DOCX body-and-table token parity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "All rendered contents links land on matching headings",
+      "pass": true,
+      "detail": {
+        "count": 115,
+        "failed": []
+      }
+    },
+    {
+      "check": "PDF has no blank pages or out-of-page text blocks",
+      "pass": true,
+      "detail": {
+        "pages": 41,
+        "issues": []
+      }
+    },
+    {
+      "check": "Preparation workbook ZIP CRC",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Preparation workbook has fourteen retained sheets",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Twenty preparation formulas",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "No cached preparation formula errors",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Untouched preparation rows remain UNASSESSED",
+      "pass": true,
+      "detail": [
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED",
+        "UNASSESSED"
+      ]
+    }
+  ],
+  "contents_links": [
+    {
+      "source_page": 2,
+      "target_page": 5,
+      "label": "Source hierarchy and claim boundary",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 18,
+      "label": "9. Tail-Risk Constraint interface",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 17,
+      "label": "8.3 Conflict and emergency display",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 17,
+      "label": "8.2 Rights-effect identity",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 17,
+      "label": "8.1 Non-compensatory presentation",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 17,
+      "label": "8. Rights Floor / NCRC interface",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 17,
+      "label": "7.2 Category and term integrity",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 16,
+      "label": "7.1 Required display",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 16,
+      "label": "7. Reality Grounding interface",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 16,
+      "label": "6.3 Physical and causal execution",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 15,
+      "label": "6.2 Evidence authority",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 15,
+      "label": "6.1 Claim classes",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 15,
+      "label": "6. Evidence, claims, and source coupling",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 14,
+      "label": "5.4 Option-closure record",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 14,
+      "label": "5.3 Pareto and incomparability posture",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 14,
+      "label": "5.2 Mandatory option families",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 13,
+      "label": "5.1 Better-option search",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 13,
+      "label": "5. Option generation, Unioning, and closure",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 13,
+      "label": "4.3 Unknown stakeholders",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 13,
+      "label": "4.2 Discovery methods",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 12,
+      "label": "4.1 Active discovery requirement",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 12,
+      "label": "4. Stakeholder discovery and representation",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 12,
+      "label": "3.2 Tool-role and capability language",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 11,
+      "label": "3.1 Minimum preflight",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 11,
+      "label": "3. Session preflight and exact configuration",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 11,
+      "label": "2.2 Responsibility continuity",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 10,
+      "label": "2.1 Required role model",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 10,
+      "label": "2. Human roles and separation of duties",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 9,
+      "label": "1.4 Three use profiles",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 9,
+      "label": "1.3 Short-circuit behavior",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 8,
+      "label": "1.2 State separation",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 7,
+      "label": "1.1 The orchestration path",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 7,
+      "label": "1. Architecture and orchestration model",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 7,
+      "label": "Non-goals and anti-bloat rule",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 6,
+      "label": "Design objectives",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 6,
+      "label": "Normative keywords",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 6,
+      "label": "Plain-language operating rule",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 5,
+      "label": "Abstract",
+      "pass": true
+    },
+    {
+      "source_page": 2,
+      "target_page": 5,
+      "label": "Claim boundary",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 28,
+      "label": "17.1 Reference, do not duplicate",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 28,
+      "label": "17. Records and schema ownership",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 27,
+      "label": "16.3 Link and navigation integrity",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 27,
+      "label": "16.2 Tables and charts",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 27,
+      "label": "16.1 Equation integrity",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 27,
+      "label": "16. Mathematical and visual presentation",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 27,
+      "label": "15.6 Localization and cultural legitimacy",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 26,
+      "label": "15.5 Anti-manipulation and dark-pattern prohibition",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 26,
+      "label": "15.4 Cognitive load and comprehension",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 26,
+      "label": "15.3 Accessibility and inclusion",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 25,
+      "label": "15.2 Status presentation",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 25,
+      "label": "15.1 Progressive disclosure",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 25,
+      "label": "15. Human-interface requirements",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 25,
+      "label": "14.6 SGP-sensitive suspension and decommissioning",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 25,
+      "label": "14.5 Successor and cumulative-change integrity",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 24,
+      "label": "14.4 Advanced threat interface",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 24,
+      "label": "14.3 External hard controls",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 24,
+      "label": "14.2 Runtime state ladder",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 23,
+      "label": "14.1 Model assistance boundary",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 23,
+      "label": "14. Agent and AI-supported orchestration",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 23,
+      "label": "13.3 Outcome observation",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 22,
+      "label": "13.2 Execution authorization",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 22,
+      "label": "13.1 Framework verdict versus authority selection",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 22,
+      "label": "13. Authority, execution, and outcomes",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 22,
+      "label": "12.4 Two connected governance streams",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 21,
+      "label": "12.3 Artificial systems and self-report",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 21,
+      "label": "12.2 Human protection",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 21,
+      "label": "12.1 Typed outputs",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 21,
+      "label": "12. SGP and possible-welfare interface",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 21,
+      "label": "11.4 Uncertainty and Gap",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 20,
+      "label": "11.3 Robustness and refusal",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 20,
+      "label": "11.2 Mathematical display rule",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 20,
+      "label": "11.1 Profile before number",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 20,
+      "label": "11. RLS interface",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 19,
+      "label": "10.3 Consequence tempo",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 19,
+      "label": "10.2 Controls are constitutive",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 19,
+      "label": "10.1 Structural viability view",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 19,
+      "label": "10. CSV interface",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 18,
+      "label": "9.3 Risk-regime disclosure",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 18,
+      "label": "9.2 Probability semantics",
+      "pass": true
+    },
+    {
+      "source_page": 3,
+      "target_page": 18,
+      "label": "9.1 Scenario surface",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 40,
+      "label": "Appendix RELEASE. Edition, bindings and delivery status",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 39,
+      "label": "E.5 References, security and coverage",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 39,
+      "label": "E.4 Authority, time, emergency and recovery",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 39,
+      "label": "E.3 Robustness and decision projection",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 38,
+      "label": "E.2 Required record groups",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 38,
+      "label": "E.1 Scope and state ownership",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 38,
+      "label": "Appendix E. Local serialization and reference-checker contract",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 38,
+      "label": "D.1 Status",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 38,
+      "label": "Appendix D. Final completion statement",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 37,
+      "label": "C.1 Expected interface outcomes",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 37,
+      "label": "Appendix C. Deterministic conformance vectors",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 36,
+      "label": "B.1 Prohibited patterns",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 36,
+      "label": "Appendix B. Interface anti-patterns",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 35,
+      "label": "A.1 Session fields",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 35,
+      "label": "Appendix A. Minimum field registry",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 35,
+      "label": "24.1 Normative and informative source classes",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 35,
+      "label": "24. References and external standards",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 34,
+      "label": "23.2 Compatibility",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 34,
+      "label": "23.1 Major-version rationale",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 34,
+      "label": "23. Migration and compatibility",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 33,
+      "label": "22.1 Interface ownership map",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 33,
+      "label": "22. Core 15 synchronization crosswalk",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 33,
+      "label": "21.2 Compact decision card",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 32,
+      "label": "21.1 Recommended screen sequence",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 32,
+      "label": "21. Implementation patterns",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 32,
+      "label": "20.3 Falsification conditions",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 31,
+      "label": "20.2 Highest-information pilot",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 31,
+      "label": "20.1 Validation dimensions",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 31,
+      "label": "20. Validation and falsification programme",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 30,
+      "label": "19.1 Interface and orchestration threats",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 30,
+      "label": "19. Threat model",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 30,
+      "label": "18.2 Required conformance tests",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 29,
+      "label": "18.1 Levels",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 29,
+      "label": "18. Conformance levels",
+      "pass": true
+    },
+    {
+      "source_page": 4,
+      "target_page": 28,
+      "label": "17.2 MHIOSSessionRecord",
+      "pass": true
+    }
+  ],
+  "scope": "Artifact structure and supplied-source identity, not empirical or operational conformance."
+}

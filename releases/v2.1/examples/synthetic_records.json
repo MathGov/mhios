@@ -1,0 +1,297 @@
+{
+  "claim_boundary": "Authored test data only, not empirical or domain evidence.",
+  "records": {
+    "A-rg": {
+      "record_id": "A-rg",
+      "record_type": "rg",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option": "A",
+        "description": "Synthetic stipulated review; not a clinical, engineering, legal or empirical warrant."
+      }
+    },
+    "A-rf_ncrc": {
+      "record_id": "A-rf_ncrc",
+      "record_type": "rf_ncrc",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option": "A",
+        "description": "Synthetic stipulated review; not a clinical, engineering, legal or empirical warrant."
+      }
+    },
+    "A-trc": {
+      "record_id": "A-trc",
+      "record_type": "trc",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option": "A",
+        "description": "Synthetic stipulated review; not a clinical, engineering, legal or empirical warrant."
+      }
+    },
+    "A-trc_trigger": {
+      "record_id": "A-trc_trigger",
+      "record_type": "trc_trigger",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option": "A",
+        "description": "Synthetic stipulated review; not a clinical, engineering, legal or empirical warrant."
+      }
+    },
+    "A-csv": {
+      "record_id": "A-csv",
+      "record_type": "csv",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option": "A",
+        "description": "Synthetic stipulated review; not a clinical, engineering, legal or empirical warrant."
+      }
+    },
+    "A-controls": {
+      "record_id": "A-controls",
+      "record_type": "controls",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option": "A",
+        "description": "Synthetic stipulated review; not a clinical, engineering, legal or empirical warrant."
+      }
+    },
+    "A-rls": {
+      "record_id": "A-rls",
+      "record_type": "rls",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option": "A",
+        "description": "Synthetic stipulated review; not a clinical, engineering, legal or empirical warrant."
+      }
+    },
+    "B-rg": {
+      "record_id": "B-rg",
+      "record_type": "rg",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option": "B",
+        "description": "Synthetic stipulated review; not a clinical, engineering, legal or empirical warrant."
+      }
+    },
+    "B-rf_ncrc": {
+      "record_id": "B-rf_ncrc",
+      "record_type": "rf_ncrc",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option": "B",
+        "description": "Synthetic stipulated review; not a clinical, engineering, legal or empirical warrant."
+      }
+    },
+    "B-trc": {
+      "record_id": "B-trc",
+      "record_type": "trc",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option": "B",
+        "description": "Synthetic stipulated review; not a clinical, engineering, legal or empirical warrant."
+      }
+    },
+    "B-trc_trigger": {
+      "record_id": "B-trc_trigger",
+      "record_type": "trc_trigger",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option": "B",
+        "description": "Synthetic stipulated review; not a clinical, engineering, legal or empirical warrant."
+      }
+    },
+    "B-csv": {
+      "record_id": "B-csv",
+      "record_type": "csv",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option": "B",
+        "description": "Synthetic stipulated review; not a clinical, engineering, legal or empirical warrant."
+      }
+    },
+    "B-controls": {
+      "record_id": "B-controls",
+      "record_type": "controls",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option": "B",
+        "description": "Synthetic stipulated review; not a clinical, engineering, legal or empirical warrant."
+      }
+    },
+    "B-rls": {
+      "record_id": "B-rls",
+      "record_type": "rls",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option": "B",
+        "description": "Synthetic stipulated review; not a clinical, engineering, legal or empirical warrant."
+      }
+    },
+    "closure": {
+      "record_id": "closure",
+      "record_type": "OptionClosureRecord",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "families": "continuation, no-action, delay, staged alternatives considered in this tiny synthetic decision domain"
+      }
+    },
+    "robust": {
+      "record_id": "robust",
+      "record_type": "RLSRobustnessRecord",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "variants": [
+          "nominal",
+          "sigma_times_two"
+        ],
+        "joint": "Synthetic independent option errors; no additional covariance stress triggered in this constructed fixture. Other potentially material modules must be independently reviewed for real decisions."
+      }
+    },
+    "authority": {
+      "record_id": "authority",
+      "record_type": "AuthoritySelectionRecord",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "choice": "A",
+        "basis": "fictional named authority for simulation only; no real mandate"
+      }
+    },
+    "authorization": {
+      "record_id": "authorization",
+      "record_type": "ExecutionAuthorization",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "action": "SIMULATED-ACTION-1",
+        "config": "CONFIG-DEMO-1",
+        "simulation_only": true
+      }
+    },
+    "plan": {
+      "record_id": "plan",
+      "record_type": "MonitoringPlan",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "owner": "Synthetic monitor",
+        "stop": "explicit simulation stop; no connected tool or actuator"
+      }
+    },
+    "event": {
+      "record_id": "event",
+      "record_type": "ExecutionEvent",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "simulation_only": true
+      }
+    },
+    "appeal": {
+      "record_id": "appeal",
+      "record_type": "AppealRecord",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "route": "fictional independent reviewer"
+      }
+    },
+    "reentry": {
+      "record_id": "reentry",
+      "record_type": "AuthenticatedReentryRecord",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "simulation_only": true,
+        "signature_verified": false
+      }
+    },
+    "successor": {
+      "record_id": "successor",
+      "record_type": "QualificationContinuityRecord",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "simulation_only": true
+      }
+    },
+    "sole": {
+      "record_id": "sole",
+      "record_type": "SoleSurvivorReview",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "simulation_only": true,
+        "no_gap_fabricated": true
+      }
+    },
+    "mps": {
+      "record_id": "mps",
+      "record_type": "SGPRecord",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "version": "8.8",
+        "band": "MPS-NE",
+        "simulated": true,
+        "no_consciousness_claim": true
+      }
+    },
+    "emergency": {
+      "record_id": "emergency",
+      "record_type": "EmergencyRecord",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "simulation_only": true,
+        "external_prerequisites_unverified": true
+      }
+    },
+    "comparison-nominal": {
+      "record_id": "comparison-nominal",
+      "record_type": "GapSensitivityRecord",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option_A_RLS": 0.04,
+        "option_B_RLS": 0,
+        "sigma_A": 0.005,
+        "sigma_B": 0.005,
+        "epsilon": 1e-06,
+        "signed_gap": 5.601120336112039,
+        "synthetic_only": true
+      }
+    },
+    "comparison-sigma_times_two": {
+      "record_id": "comparison-sigma_times_two",
+      "record_type": "GapSensitivityRecord",
+      "fixture_only": true,
+      "not_independent_evidence": true,
+      "details": {
+        "option_A_RLS": 0.04,
+        "option_B_RLS": 0,
+        "sigma_A": 0.01,
+        "sigma_B": 0.01,
+        "epsilon": 1e-06,
+        "signed_gap": 2.8213824634343934,
+        "synthetic_only": true
+      }
+    }
+  }
+}

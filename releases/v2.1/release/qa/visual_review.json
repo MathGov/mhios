@@ -1,0 +1,10 @@
+{
+  "main_standard_pages": 41,
+  "main_visual_review": "All page pairs inspected; final changes on pages 12,20,25,30,32 re-rendered and inspected individually.",
+  "audit_report_pages": 5,
+  "audit_visual_review": "All five pages inspected.",
+  "verification_report_pages": 2,
+  "verification_visual_review": "Both pages inspected.",
+  "spreadsheet_preview": "START_HERE before/after and final key ranges inspected; no claim of native Office rendering.",
+  "not_reperformed": "Unmodified Core document visual reviews and native Core workbook recalculation."
+}

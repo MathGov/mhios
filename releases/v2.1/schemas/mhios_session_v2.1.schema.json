@@ -1,0 +1,1234 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:mathgov:mhios:2.1:session",
+  "title": "MHIOS session projection, pinned Core 13.0 / SGP 8.8",
+  "description": "MHIOS-owned projection only. Not the Canon run-record v4.1 schema. Null stage means locally not evaluated, never a canonical PASS. Positive record checks do not authorize execution.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "mhios_version": {
+      "const": "2.1"
+    },
+    "core_release_id": {
+      "const": "MG-RL-13.0-20260926-RELEASE-I"
+    },
+    "core_pin_manifest_sha256": {
+      "const": "b8ec26e3cac39c73ea513eee6ffa8737cb88a4efde44fda2bb3e0d1ae55a2357"
+    },
+    "session_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "revision_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "record_mode": {
+      "enum": [
+        "SYNTHETIC",
+        "OBSERVED"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "evidence_cutoff": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "decision_question": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "tier": {
+      "enum": [
+        1,
+        2,
+        3
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "configuration_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "configuration_hash": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "evaluated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "operating_envelope": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "model_or_software_versions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 1
+        },
+        "tools_permissions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0
+        },
+        "active_controls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0
+        },
+        "material_change_since_qualification": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "configuration_id",
+        "configuration_hash",
+        "evaluated_at",
+        "operating_envelope",
+        "model_or_software_versions",
+        "tools_permissions",
+        "active_controls",
+        "material_change_since_qualification"
+      ]
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "role": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "holder": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "authority_scope": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "conflict": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "role",
+          "holder",
+          "authority_scope",
+          "conflict"
+        ]
+      },
+      "minItems": 1
+    },
+    "stakeholder_discovery": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "methods": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 1
+        },
+        "identified": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 1
+        },
+        "unknowns": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0
+        },
+        "representation_gaps": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "methods",
+        "identified",
+        "unknowns",
+        "representation_gaps"
+      ]
+    },
+    "option_closure": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "methods": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 1
+        },
+        "mandatory_families_disposition": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "status": {
+          "enum": [
+            "COMPLETE",
+            "ASSUMPTION_BOUND",
+            "OPTION_SET_THIN",
+            "UNRESOLVED"
+          ]
+        },
+        "record_ref": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/record_ref"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "methods",
+        "mandatory_families_disposition",
+        "status",
+        "record_ref"
+      ]
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "option_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "states": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "rg": {
+                "enum": [
+                  "RG_SUPPORTED",
+                  "RG_NARROWED",
+                  "RG_REFUSED",
+                  null
+                ]
+              },
+              "rf_ncrc": {
+                "enum": [
+                  "RF_PASS",
+                  "RF_FAIL",
+                  "RF_ESCALATE",
+                  "NCRC_UNKNOWN",
+                  null
+                ]
+              },
+              "trc": {
+                "enum": [
+                  "TRC_PASS",
+                  "TRC_NOT_TRIGGERED",
+                  "TRC_FAIL",
+                  "TRC_ESCALATE",
+                  null
+                ]
+              },
+              "csv": {
+                "enum": [
+                  "CSV_PASS",
+                  "CSV_PASS_WITH_CONTROLS",
+                  "CSV_NOT_MATERIAL",
+                  "CSV_FAIL",
+                  "CSV_REDESIGN_REQUIRED",
+                  "CSV_ESCALATE",
+                  "CSV_EMERGENCY_PROVISIONAL",
+                  null
+                ]
+              },
+              "rls": {
+                "enum": [
+                  "NOT_EVALUATED",
+                  "RLS_RANKED"
+                ]
+              }
+            },
+            "required": [
+              "rg",
+              "rf_ncrc",
+              "trc",
+              "csv",
+              "rls"
+            ]
+          },
+          "record_refs": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "rg": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/record_ref"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "rf_ncrc": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/record_ref"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "trc": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/record_ref"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "trc_trigger": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/record_ref"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "csv": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/record_ref"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "controls": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/record_ref"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "rls": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/record_ref"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "rg",
+              "rf_ncrc",
+              "trc",
+              "trc_trigger",
+              "csv",
+              "controls",
+              "rls"
+            ]
+          },
+          "material_unresolved": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "minItems": 0
+          },
+          "requalification_required": {
+            "type": "boolean"
+          },
+          "controls_available": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "rls_score": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": -1,
+            "maximum": 1
+          },
+          "sigma_rls": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          }
+        },
+        "required": [
+          "option_id",
+          "label",
+          "states",
+          "record_refs",
+          "material_unresolved",
+          "requalification_required",
+          "controls_available",
+          "rls_score",
+          "sigma_rls"
+        ]
+      },
+      "minItems": 1
+    },
+    "robustness": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "COMPLETE",
+            "INCOMPLETE",
+            "SENSITIVE",
+            "NOT_TRIGGERED_WITH_RATIONALE"
+          ]
+        },
+        "record_ref": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/record_ref"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "required_variants": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "comparisons": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "variant_id": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "candidate_id": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "contender_id": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "signed_gap": {
+                "type": "number"
+              },
+              "record_ref": {
+                "$ref": "#/$defs/record_ref"
+              }
+            },
+            "required": [
+              "variant_id",
+              "candidate_id",
+              "contender_id",
+              "signed_gap",
+              "record_ref"
+            ]
+          },
+          "minItems": 0
+        },
+        "joint_stress_disposition": {
+          "enum": [
+            "EVALUATED",
+            "NOT_TRIGGERED_WITH_RATIONALE",
+            "UNRESOLVED"
+          ]
+        },
+        "joint_stress_rationale": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "joint_record_ref": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/record_ref"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence_basis": {
+          "enum": [
+            "ACCEPTED_FOR_DECLARED_CLAIM",
+            "SYNTHETIC_STIPULATION",
+            "PROVISIONAL_DEMONSTRATION",
+            "UNASSESSED"
+          ]
+        },
+        "delta": {
+          "const": 2
+        },
+        "sole_survivor_record_ref": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/record_ref"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "record_ref",
+        "required_variants",
+        "comparisons",
+        "joint_stress_disposition",
+        "joint_stress_rationale",
+        "joint_record_ref",
+        "evidence_basis",
+        "delta",
+        "sole_survivor_record_ref"
+      ]
+    },
+    "framework_verdict": {
+      "enum": [
+        "BLOCK",
+        "REFUSE_DETERMINISTIC_SELECTION",
+        "ALLOW_FRAMEWORK_SELECTION",
+        "ESCALATE",
+        null
+      ]
+    },
+    "decision_state": {
+      "enum": [
+        "SELECTED_DECISIVE",
+        "SELECTED_BY_AUTHORITY_NON_DECISIVE",
+        "PROVISIONAL_WITH_CONTROLS",
+        "DELAY",
+        "REDESIGN",
+        "ESCALATE",
+        "REFUSE",
+        "NO_SELECTABLE_OPTION",
+        "EMERGENCY_PROVISIONAL",
+        null
+      ]
+    },
+    "framework_selected_option_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "authority_selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "option_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "record_ref": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/record_ref"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "option_id",
+        "record_ref"
+      ]
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "state": {
+          "enum": [
+            "NOT_AUTHORIZED",
+            "AUTHORIZED_WITHIN_SCOPE",
+            "EXECUTION_BLOCKED",
+            "EXECUTED_UNDER_MONITORING"
+          ]
+        },
+        "option_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "action_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "authorization_ref": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/record_ref"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bound_configuration_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "authorized_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "expires_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "controls_ref": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/record_ref"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "execution_event_ref": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/record_ref"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "state",
+        "option_id",
+        "action_id",
+        "authorization_ref",
+        "bound_configuration_id",
+        "authorized_at",
+        "expires_at",
+        "controls_ref",
+        "execution_event_ref"
+      ]
+    },
+    "runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "agent_present": {
+          "type": "boolean"
+        },
+        "mode": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "connectivity": {
+          "enum": [
+            "CONNECTED",
+            "RECOVERING",
+            "ISOLATED"
+          ]
+        },
+        "reentry_required": {
+          "type": "boolean"
+        },
+        "reconciled": {
+          "type": "boolean"
+        },
+        "authenticated_reentry_ref": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/record_ref"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "material_successor": {
+          "type": "boolean"
+        },
+        "successor_requalification_ref": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/record_ref"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tool_execution_requested": {
+          "type": "boolean",
+          "description": "Consequence-bearing tool execution only; permitted read-only retrieval is not represented by this flag."
+        }
+      },
+      "required": [
+        "agent_present",
+        "mode",
+        "connectivity",
+        "reentry_required",
+        "reconciled",
+        "authenticated_reentry_ref",
+        "material_successor",
+        "successor_requalification_ref",
+        "tool_execution_requested"
+      ]
+    },
+    "emergency": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "pathway": {
+              "enum": [
+                "RIGHTS_EMERGENCY",
+                "TAIL_EMERGENCY",
+                "CSV_EMERGENCY_PROVISIONAL",
+                "PROVISIONAL_UNDER_REFUSAL"
+              ]
+            },
+            "record_ref": {
+              "$ref": "#/$defs/record_ref"
+            },
+            "authority_ref": {
+              "$ref": "#/$defs/record_ref"
+            },
+            "expires_at": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "scope_and_exit": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "required": [
+            "pathway",
+            "record_ref",
+            "authority_ref",
+            "expires_at",
+            "scope_and_exit"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "sgp_links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "target_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "sgp_version": {
+            "const": "8.8"
+          },
+          "mps": {
+            "enum": [
+              "NOT_EVALUATED",
+              "MPS-NE",
+              "MPS-0",
+              "MPS-1",
+              "MPS-2",
+              "MPS-3",
+              "MPS-4"
+            ]
+          },
+          "mps_record_ref": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/record_ref"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "fpp_record_ref": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/record_ref"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "gpr_record_ref": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/record_ref"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "spr_record_ref": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/record_ref"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "icp_record_ref": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/record_ref"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "rmcp_record_ref": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/record_ref"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "target_id",
+          "sgp_version",
+          "mps",
+          "mps_record_ref",
+          "fpp_record_ref",
+          "gpr_record_ref",
+          "spr_record_ref",
+          "icp_record_ref",
+          "rmcp_record_ref"
+        ]
+      },
+      "minItems": 0
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "next_action": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "owner": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "reason",
+          "next_action",
+          "owner"
+        ]
+      },
+      "minItems": 0
+    },
+    "monitoring_and_outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "plan_ref": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/record_ref"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observation_ref": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/record_ref"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "state": {
+          "enum": [
+            "NOT_STARTED",
+            "MONITORING",
+            "OBSERVED",
+            "UNKNOWN_OUTCOME"
+          ]
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "reopen_triggers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 1
+        },
+        "reopened_stages": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "rg",
+              "rf_ncrc",
+              "trc",
+              "csv"
+            ]
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "plan_ref",
+        "observation_ref",
+        "state",
+        "owner",
+        "reopen_triggers",
+        "reopened_stages"
+      ]
+    },
+    "challenge_appeal": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "AVAILABLE",
+            "PENDING",
+            "RESOLVED",
+            "NOT_ESTABLISHED"
+          ]
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "route": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "record_ref": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/record_ref"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "owner",
+        "route",
+        "record_ref"
+      ]
+    },
+    "conformance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "target_level": {
+          "enum": [
+            "M0",
+            "M1",
+            "M2",
+            "M3"
+          ]
+        },
+        "assessment": {
+          "enum": [
+            "NOT_ASSESSED",
+            "PARTIAL",
+            "EXTERNAL_ASSESSMENT_RECORDED"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record_ref"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "target_level",
+        "assessment",
+        "evidence_refs"
+      ]
+    },
+    "claim_boundary": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "provisional_choice": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "option_id",
+            "record_ref",
+            "controls_ref"
+          ],
+          "properties": {
+            "option_id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "record_ref": {
+              "$ref": "#/$defs/record_ref"
+            },
+            "controls_ref": {
+              "$ref": "#/$defs/record_ref"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "required": [
+    "mhios_version",
+    "core_release_id",
+    "core_pin_manifest_sha256",
+    "session_id",
+    "revision_id",
+    "record_mode",
+    "created_at",
+    "evidence_cutoff",
+    "decision_question",
+    "tier",
+    "configuration",
+    "roles",
+    "stakeholder_discovery",
+    "option_closure",
+    "options",
+    "robustness",
+    "framework_verdict",
+    "decision_state",
+    "framework_selected_option_id",
+    "authority_selection",
+    "execution",
+    "runtime",
+    "emergency",
+    "sgp_links",
+    "blockers",
+    "monitoring_and_outcome",
+    "challenge_appeal",
+    "conformance",
+    "claim_boundary",
+    "provisional_choice"
+  ],
+  "$defs": {
+    "record_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "basis": {
+          "enum": [
+            "SYNTHETIC",
+            "SUPPLIED_RECORD",
+            "EXTERNAL_UNVERIFIED"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "locator",
+        "sha256",
+        "basis"
+      ]
+    }
+  }
+}
