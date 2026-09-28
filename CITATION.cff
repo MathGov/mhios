@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Cite the exact MHIOS release and identify any modifications."
+title: "MathGov Human Interface and Orchestration Standard (MHIOS)"
+type: software
+authors:
+  - family-names: McGaughran
+    given-names: James
+version: "2.1"
+date-released: "2026-09-28"
+license: Apache-2.0
+repository-code: "https://github.com/MathGov/mhios"
+url: "https://mathgov.github.io/mhios/"
+abstract: "A research-and-teaching companion specification, preparation workbook and bounded record-consistency implementation, pinned to MathGov / RippleLogic Core v13.0 Release I."

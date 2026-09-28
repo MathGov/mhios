@@ -1,0 +1,603 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: unique IDs",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: ../web/reading.css",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #mathgov-human-interface-and-orchestration-standard",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #source-hierarchy-and-claim-boundary",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #claim-boundary",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #abstract",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #plain-language-operating-rule",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #normative-keywords",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #design-objectives",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #non-goals-and-anti-bloat-rule",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #architecture-and-orchestration-model",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #the-orchestration-path",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #state-separation",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #short-circuit-behavior",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #three-use-profiles",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #human-roles-and-separation-of-duties",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #required-role-model",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #responsibility-continuity",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #session-preflight-and-exact-configuration",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #minimum-preflight",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #tool-role-and-capability-language",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #stakeholder-discovery-and-representation",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #active-discovery-requirement",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #discovery-methods",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #unknown-stakeholders",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #option-generation-unioning-and-closure",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #better-option-search",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #mandatory-option-families",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #pareto-and-incomparability-posture",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #option-closure-record",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #evidence-claims-and-source-coupling",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #claim-classes",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #evidence-authority",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #physical-and-causal-execution",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #reality-grounding-interface",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #required-display",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #category-and-term-integrity",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #rights-floor-ncrc-interface",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #non-compensatory-presentation",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #rights-effect-identity",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #conflict-and-emergency-display",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #tail-risk-constraint-interface",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #scenario-surface",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #probability-semantics",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #risk-regime-disclosure",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #csv-interface",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #structural-viability-view",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #controls-are-constitutive",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #consequence-tempo",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #rls-interface",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #profile-before-number",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #mathematical-display-rule",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #robustness-and-refusal",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #uncertainty-and-gap",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #sgp-and-possible-welfare-interface",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #typed-outputs",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #human-protection",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #artificial-systems-and-self-report",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #two-connected-governance-streams",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #authority-execution-and-outcomes",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #framework-verdict-versus-authority-selection",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #execution-authorization",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #outcome-observation",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #agent-and-ai-supported-orchestration",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #model-assistance-boundary",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #runtime-state-ladder",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #external-hard-controls",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #advanced-threat-interface",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #successor-and-cumulative-change-integrity",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #sgp-sensitive-suspension-and-decommissioning",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #human-interface-requirements",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #progressive-disclosure",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #status-presentation",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #accessibility-and-inclusion",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #cognitive-load-and-comprehension",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #anti-manipulation-and-dark-pattern-prohibition",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #localization-and-cultural-legitimacy",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #mathematical-and-visual-presentation",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #equation-integrity",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #tables-and-charts",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #link-and-navigation-integrity",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #records-and-schema-ownership",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #reference-do-not-duplicate",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #mhiossessionrecord",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #conformance-levels",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #levels",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #required-conformance-tests",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #threat-model",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #interface-and-orchestration-threats",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #validation-and-falsification-programme",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #validation-dimensions",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #highest-information-pilot",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #falsification-conditions",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #implementation-patterns",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #recommended-screen-sequence",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #compact-decision-card",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #core-15-synchronization-crosswalk",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #interface-ownership-map",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #migration-and-compatibility",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #major-version-rationale",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #compatibility",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #references-and-external-standards",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #normative-and-informative-source-classes",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #appendix-a.-minimum-field-registry",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #a.1-session-fields",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #appendix-b.-interface-anti-patterns",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #b.1-prohibited-patterns",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #appendix-c.-deterministic-conformance-vectors",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #c.1-expected-interface-outcomes",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #appendix-d.-final-completion-statement",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #d.1-status",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #appendix-e.-local-serialization-and-reference-checker-contract",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #e.1-scope-and-state-ownership",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #e.2-required-record-groups",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #e.3-robustness-and-decision-projection",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #e.4-authority-time-emergency-and-recovery",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #e.5-references-security-and-coverage",
+      "pass": true
+    },
+    {
+      "check": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html: #appendix-release.-edition-bindings-and-delivery-status",
+      "pass": true
+    },
+    {
+      "check": "index.html: unique IDs",
+      "pass": true
+    },
+    {
+      "check": "index.html: web/reading.css",
+      "pass": true
+    },
+    {
+      "check": "index.html: #main",
+      "pass": true
+    },
+    {
+      "check": "index.html: docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.html",
+      "pass": true
+    },
+    {
+      "check": "index.html: docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.pdf",
+      "pass": true
+    },
+    {
+      "check": "index.html: docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.docx",
+      "pass": true
+    },
+    {
+      "check": "index.html: docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.md",
+      "pass": true
+    },
+    {
+      "check": "index.html: README.md",
+      "pass": true
+    },
+    {
+      "check": "index.html: release/AUDIT_AND_IMPROVEMENTS.pdf",
+      "pass": true
+    },
+    {
+      "check": "index.html: release/VERIFICATION_REPORT.md",
+      "pass": true
+    },
+    {
+      "check": "index.html: release/CONFORMANCE_COVERAGE.csv",
+      "pass": true
+    },
+    {
+      "check": "index.html: templates/MHIOS_v2.1_Implementation_Workbook.xlsx",
+      "pass": true
+    },
+    {
+      "check": "index.html: release/MIGRATION_GUIDE.md",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/Core_15/CSV_Gate_Standard_v2.7.docx",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/Core_15/MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/Core_15/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/Core_15/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/Core_15/Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/Core_15/ripple_md_Standard_v5.8.docx",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/Core_15/RippleLogic_Agent_System_v13.0.docx",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/Core_15/RippleLogic_Aligners_Sheet_v5.9.xlsx",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/Core_15/RippleLogic_Cascade_Standard_v2.9.docx",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/Core_15/RippleLogic_Foundations_Primer_v4.7.docx",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/Core_15/RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/Core_15/RippleLogic_v13.0_Canon.docx",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/Core_15/SGP_v8.8.docx",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/Core_15/Source_Coupling_Integrity_Standard_v2.6.docx",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/Core_15/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+      "pass": true
+    },
+    {
+      "check": "index.html: references/CORE_PIN_MANIFEST.json",
+      "pass": true
+    },
+    {
+      "check": "index.html: release/SHA256SUMS.txt",
+      "pass": true
+    },
+    {
+      "check": "index.html: LICENSE.txt",
+      "pass": true
+    }
+  ],
+  "external_links_not_verified_in_this_check": [],
+  "scope": "Static local files and HTML anchors only, not browser accessibility or deployed-host conformance."
+}

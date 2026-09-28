@@ -1,69 +1,44 @@
-# MathGov Human Interface and Orchestration Standard v0.8
+# MHIOS — Human Interface and Orchestration Standard
 
-**Release:** `MHIOS_v0_8+2026.08.15.3`  
-**Status:** Candidate experimental implementation companion  
-**Exact tested Core:** `MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3`  
-**Exact tested Core ZIP:** `MathGov_Core_2026_09_v12_6_SGP_v8_5_BUILD_2026_08_15_3_FINAL_PUBLICATION_READY.zip`  
-**Core ZIP SHA-256:** `475c4e50da133d6eec497d9cf7da7bbf6e7f7d9d79ce27f0d86b03fdbfccd69f`  
-**Construct validity:** `UNTESTED`  
+**Version 2.1 · Core v13.0 Release I · SGP v8.8 · Apache-2.0**
 
-MHIOS translates the frozen MathGov decision architecture into auditable human, institutional, and machine interaction records. Version 0.8 adds recursive-successor governance controls without adding a MathGov gate, altering the five-stage cascade, creating a new authority source, or modifying any Union Scope or Welfare Dimension.
+MHIOS helps people inspect decision evidence, qualification, uncertainty, responsibility and handoffs. It keeps a framework verdict, an accountable choice, execution authorization and observed outcomes distinct. It is a companion to MathGov / RippleLogic, not a sixteenth Core document or an authorization service.
 
-## v0.8 governing addition
+**[Read online](https://mathgov.github.io/mhios/)** · **[Download the complete publication](https://github.com/MathGov/mhios/releases/tag/v2.1-core13.0)** · [Standard PDF](releases/v2.1/docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.pdf) · [Editable Word](releases/v2.1/docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.docx) · [Semantic Markdown source](releases/v2.1/docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.md)
 
-> **Derivation is not authorization. Intelligence may create a candidate successor; it may not create the successor's authority.**
+## What is included
 
-Version 0.8 adds and consolidates:
+- Complete 41-page standard in Markdown, HTML, PDF and DOCX.
+- Fourteen-sheet preparation workbook; schemas, an intentionally incomplete draft and six completed synthetic examples.
+- Bounded, read-only record-consistency checker and 133 automated tests.
+- All fifteen unchanged Core source files, pinned individually by SHA-256.
+- [Audit and improvements](releases/v2.1/release/AUDIT_AND_IMPROVEMENTS.md), [verification scope](releases/v2.1/release/VERIFICATION_REPORT.md), [coverage register](releases/v2.1/release/CONFORMANCE_COVERAGE.csv), and [migration guide](releases/v2.1/release/MIGRATION_GUIDE.md).
 
-- `SuccessorRequalificationRecord` as the 47th object type;
-- parent/candidate lineage and material-change deltas;
-- default denial of authority inheritance;
-- exact candidate configuration binding;
-- candidate locks before fresh qualification and authorization;
-- maximum unreviewed generation-depth controls;
-- independent non-AI review of material successor changes;
-- evaluation-validity expiry and fresh evidence requirements;
-- five expected-failure successor vectors, one positive vector, and four successor-specific seeded mutations;
-- a dedicated Successor and Material-Change Requalification Standard.
-- registry traceability for all 70 active conformance vectors, with release failure on unmapped active vectors;
-- explicit C0-C3 conformance profiles and a structural profile evaluator;
-- non-confounded burden measures and a preregistration-ready, anti-priming inter-rater reliability protocol.
+The Markdown standard owns MHIOS semantic text. Its Word, PDF and HTML files are reading projections. Core semantics remain owned by the pinned Core sources. The preparation workbook checks declared tokens and reference presence; it does not calculate Canon scores or decide whether evidence is true.
 
-## Reading order
+## Exact edition and verification
 
-1. `docs/MATHGOV_HUMAN_INTERFACE_AND_ORCHESTRATION_STANDARD_v0_8.pdf` - full reading copy.
-2. `docs/MATHGOV_HUMAN_INTERFACE_AND_ORCHESTRATION_STANDARD_v0_8.docx` - editable reading mirror.
-3. `docs/MATHGOV_HUMAN_INTERFACE_AND_ORCHESTRATION_STANDARD_v0_8.md` - governing semantic source for this package.
-4. `docs/SUCCESSOR_AND_MATERIAL_CHANGE_REQUALIFICATION_STANDARD_v0_8.md` - focused recursive-successor specification.
-5. `registries/MHIOS_OBJECT_MODEL_v0_8.yaml` - 47-object catalogue.
-6. `schemas/mhios_run_export_v0_8.schema.json` - structural run-export schema.
-7. `tests/validate_mhios.py` - schema and semantic validator.
-8. `tests/conformance_vectors/` - 6 positive and 64 expected-failure vectors.
-9. `tests/mutation_test_mhios.py` - 45 seeded mutations.
-10. `docs/BURDEN_MEASUREMENT_PROTOCOL_v0_8.md` - empirical burden and hollow-run measurement protocol.
-11. `docs/PILOT_AND_INTER_RATER_RELIABILITY_PROTOCOL_v0_8.md` - preregistration-ready reviewer-reliability protocol.
-12. `registries/MHIOS_CONFORMANCE_PROFILE_v0_8.yaml` - explicit C0-C3 structural conformance profiles.
-13. `release/VALIDATION_REPORT.md` - artifact and claim-boundary report.
+Build: `MG-MHIOS-2.1-20260928-CORE13.0`. Core: `MG-RL-13.0-20260926-RELEASE-I`. The supplied 86-file publication is preserved without edits under `releases/v2.1/`; repository navigation and hosting records are separate.
 
-## Core compatibility and precedence
+Use Python 3.10 or newer in an isolated environment. On Windows, set `PYTHONUTF8=1` before running the supplied tools (PowerShell: `$env:PYTHONUTF8='1'`).
 
-The exact tested Core build controls all MathGov semantics. MHIOS controls only the implementation, interaction, provenance, audit, and runtime-orchestration surfaces declared in this package. A later or different Core build requires an explicit compatibility review; version numbering alone does not establish compatibility.
+```sh
+python -m pip install -r requirements.txt
+python -B releases/v2.1/verify_all.py --output-dir verification-output
+```
 
-## Claim boundary
+The recommended publication-edition ZIP includes the required date-time dependency and a top-level README. Use that README; the preserved original package requirements omit `rfc3339-validator==0.1.4`. For an original ZIP checkout, add that dependency explicitly. Verification output must be outside the frozen package. `--at 2026-09-28T12:00:00Z` replays synthetic fixtures; it never revives real permission. The checker success label is `RECORD_CONSISTENT_WITHIN_SCOPED_CHECKS`, never authorization.
 
-Passing the included validators establishes package consistency against the encoded checks. It does not establish legal authority, physical safety, construct validity, empirical effectiveness, burden reduction, reviewer agreement, or deployment readiness in a particular domain.
+See [publication audit](PUBLICATION.md) and [CI results](https://github.com/MathGov/mhios/actions). The tests cover only their declared scope. No empirical effectiveness, production readiness, M2/M3 deployed-interface conformance, complete external Canon schemas/registries, native Excel interoperability or real authority is established.
 
-## License
+## Version lineage and history
 
-See `LICENSE` and `NOTICE`.
+GitHub previously published v0.8. The supplied v2.1 package identifies a privately retained v2.0 source baseline; its internal v2.0 migration guide is not an automatic migration path from v0.8. The v0.8 repository snapshot is preserved in [archive/v0.8](archive/v0.8), and its [original fixed release](https://github.com/MathGov/mhios/releases/tag/v0.8) remains available. Do not relabel or silently migrate old records.
 
-## Computational Context Declaration
+This release uses a new M0–M3 interface-conformance vocabulary and bounded implementation. Historical v0.8 test counts, object inventories and C0–C3 claims do not transfer to v2.1. Private provenance was not supplied in this publication ZIP and is not published here.
 
-For material computational systems, MHIOS v0.8 presents a compact derived view of the computational problem/object, exact architecture and configuration, demonstrated capability, assigned task, deployment domain, required evidence standard, consequence interface, and separate legitimate authority basis. **Consequence Interface is not Legitimate Authority.** The view does not create a new gate or new authority source.
-## Related MathGov Repositories
+## Reuse, citation and contribution
 
-- **MathGov / RippleLogic Core**  
-  The canonical ethical decision architecture that MHIOS operationalizes around.  
-  https://github.com/MathGov/ripple-logic
+The supplied edition is Apache-2.0; see [LICENSE](LICENSE), [NOTICE](NOTICE.md) and [citation metadata](CITATION.cff). Retain notices and identify modifications. External informative standards keep their own rights and are not incorporated or certified by linking them.
 
-MHIOS preserves the MathGov Core decision architecture and does not redefine its gates, rights floor, tail-risk constraints, CSV semantics, RippleLogic scoring, Union Scopes, or Welfare Dimensions.
+[Report a reproducible issue](https://github.com/MathGov/mhios/issues) · [Contribute](CONTRIBUTING.md) · [Security scope](SECURITY.md) · [MathGov directory](https://github.com/MathGov) · [Core v13](https://github.com/MathGov/ripple-logic) · [RippleLogic](https://ripplelogic.org/) · [MathGov foundation](https://mathgov.org/) · [Contact James](mailto:james@ripplelogic.org)

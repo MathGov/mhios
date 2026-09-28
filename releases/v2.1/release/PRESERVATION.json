@@ -1,0 +1,14 @@
+{
+  "inherited_tables": 10,
+  "preserved_table_structures": 10,
+  "new_tables": 0,
+  "toc_links": 115,
+  "source": "MathGov_Human_Interface_and_Orchestration_Standard_v2.0.docx",
+  "core_files_changed": 0,
+  "target_version": "2.1",
+  "edited_operations": 85,
+  "added_cantSplit_row_flags": 124,
+  "table_preservation_scope": "All inherited content/column/cell/style definitions retained except logged cell text edits; keep-row-together flags added to prevent split-row reading defects.",
+  "final_typography_list_repairs": 6,
+  "numbering_scope": "Original abstract numbering definitions retained; five list-instance IDs added for independent restart-at-one sequences."
+}

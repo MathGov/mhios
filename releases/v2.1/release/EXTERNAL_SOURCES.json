@@ -1,0 +1,40 @@
+{
+  "checked_sources": [
+    {
+      "source": "JSON Schema Draft 2020-12 validation",
+      "url": "https://json-schema.org/draft/2020-12/json-schema-validation",
+      "use": "Shape/semantic-format distinction; explicitly enabled date-time checker"
+    },
+    {
+      "source": "WCAG 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "use": "Accessibility target, not completed conformance"
+    },
+    {
+      "source": "ISO 9241-210:2019",
+      "url": "https://www.iso.org/standard/77520.html",
+      "use": "Public scope/identity only; full paid normative content not audited"
+    },
+    {
+      "source": "ISO/IEC 42001:2023",
+      "url": "https://www.iso.org/standard/81230.html",
+      "use": "Public scope/identity only; not incorporated certification"
+    },
+    {
+      "source": "ISO/IEC 23894:2023",
+      "url": "https://www.iso.org/standard/77304.html",
+      "use": "Public scope/identity only"
+    },
+    {
+      "source": "RFC 8174",
+      "url": "https://www.rfc-editor.org/info/rfc8174/",
+      "use": "Uppercase requirement keywords"
+    },
+    {
+      "source": "NIST AI RMF",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "use": "Informative family reference"
+    }
+  ],
+  "note": "These checks do not assert every outgoing URL in inherited prose is permanently live."
+}

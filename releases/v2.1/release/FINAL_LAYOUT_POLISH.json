@@ -1,0 +1,40 @@
+{
+  "repairs": [
+    {
+      "location": "3.2",
+      "change": "Render two Markdown emphasis spans as Word italics; remove literal asterisks.",
+      "words_changed": false
+    },
+    {
+      "location": "Independent numbered sequence beginning qualification status of each option;",
+      "change": "Restart numbering at one rather than continuing the previous section.",
+      "item_count": 8,
+      "numId": 10
+    },
+    {
+      "location": "Independent numbered sequence beginning decision and current state;",
+      "change": "Restart numbering at one rather than continuing the previous section.",
+      "item_count": 7,
+      "numId": 11
+    },
+    {
+      "location": "Independent numbered sequence beginning failed RF/NCRC cannot be hidden by RLS;",
+      "change": "Restart numbering at one rather than continuing the previous section.",
+      "item_count": 15,
+      "numId": 12
+    },
+    {
+      "location": "Independent numbered sequence beginning unstructured expert judgment;",
+      "change": "Restart numbering at one rather than continuing the previous section.",
+      "item_count": 4,
+      "numId": 13
+    },
+    {
+      "location": "Independent numbered sequence beginning Start / claim boundary",
+      "change": "Restart numbering at one rather than continuing the previous section.",
+      "item_count": 11,
+      "numId": 14
+    }
+  ],
+  "normative_words_changed": false
+}

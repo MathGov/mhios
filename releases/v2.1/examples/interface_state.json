@@ -1,0 +1,17 @@
+{
+  "owner": "CANON_FRAMEWORK",
+  "status_token": "REFUSE_DETERMINISTIC_SELECTION",
+  "plain_language": "The framework does not identify a unique winner.",
+  "presentation_severity": "NON_DECISIVE",
+  "next_action": "Review uncertainty or record a separate lawful authority choice.",
+  "source_ref": {
+    "id": "robust",
+    "locator": "examples/synthetic_records.json#robust",
+    "sha256": "77f18abb2a212c3823f4723a7bafb52032f319cfd0958134cd11a7d83a4e0751",
+    "basis": "SYNTHETIC"
+  },
+  "timestamp": "2026-09-28T08:00:00Z",
+  "color_is_redundant": true,
+  "claim_boundary": "Presentation of a synthetic record, not execution permission.",
+  "icon_or_shape": null
+}

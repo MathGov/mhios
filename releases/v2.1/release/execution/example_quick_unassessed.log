@@ -1,0 +1,17 @@
+{
+  "status": "RECORD_CONSISTENT_WITHIN_SCOPED_CHECKS",
+  "errors": [],
+  "declared_qualified_option_ids": [],
+  "emergency_requires_external_review": false,
+  "execution_authorized_by_this_validator": false,
+  "claim_boundary": "Local shape and declared-record consistency only; evidence truth, complete Canon conformance, cryptographic validation, legal authority and deployment safety are not established.",
+  "references": {
+    "verified_local_locators": [
+      "examples/synthetic_records.json#appeal",
+      "examples/synthetic_records.json#closure",
+      "examples/synthetic_records.json#plan"
+    ],
+    "unverified_locators": [],
+    "errors": []
+  }
+}

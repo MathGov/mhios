@@ -1,2 +1,3 @@
-# Auto detect text files and perform LF normalization
 * text=auto
+# Preserve the supplied publication bytes, including its checksum ledger.
+releases/v2.1/** -text

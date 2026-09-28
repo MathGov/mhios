@@ -1,0 +1,410 @@
+[
+  {
+    "sheet": "START_HERE",
+    "cell": "A1",
+    "before": [
+      [
+        "MHIOS v2.0 — START HERE"
+      ]
+    ],
+    "after": "MHIOS v2.1 — START HERE",
+    "why": "Current companion edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "A1",
+    "before": [
+      [
+        "MHIOS v2.0 — VERSION AND AUTHORITY PINS"
+      ]
+    ],
+    "after": "MHIOS v2.1 — VERSION AND AUTHORITY PINS",
+    "why": "Current companion edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B5",
+    "before": [
+      [
+        "v12.7"
+      ]
+    ],
+    "after": "v13.0",
+    "why": "Bind current Core component edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B6",
+    "before": [
+      [
+        "v8.6"
+      ]
+    ],
+    "after": "v8.8",
+    "why": "Bind current Core component edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B7",
+    "before": [
+      [
+        "v5.6"
+      ]
+    ],
+    "after": "v5.8",
+    "why": "Bind current Core component edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B8",
+    "before": [
+      [
+        "v12.6"
+      ]
+    ],
+    "after": "v13.0",
+    "why": "Bind current Core component edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B9",
+    "before": [
+      [
+        "v2.5"
+      ]
+    ],
+    "after": "v2.7",
+    "why": "Bind current Core component edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B10",
+    "before": [
+      [
+        "v2.7"
+      ]
+    ],
+    "after": "v2.9",
+    "why": "Bind current Core component edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B11",
+    "before": [
+      [
+        "v1.5"
+      ]
+    ],
+    "after": "v1.7",
+    "why": "Bind current Core component edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B12",
+    "before": [
+      [
+        "v1.7"
+      ]
+    ],
+    "after": "v1.9",
+    "why": "Bind current Core component edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B13",
+    "before": [
+      [
+        "v2.7"
+      ]
+    ],
+    "after": "v2.9",
+    "why": "Bind current Core component edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B14",
+    "before": [
+      [
+        "v4.5"
+      ]
+    ],
+    "after": "v4.7",
+    "why": "Bind current Core component edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B15",
+    "before": [
+      [
+        "v12.7"
+      ]
+    ],
+    "after": "v13.0",
+    "why": "Bind current Core component edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B16",
+    "before": [
+      [
+        "v2.4"
+      ]
+    ],
+    "after": "v2.6",
+    "why": "Bind current Core component edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B17",
+    "before": [
+      [
+        "v5.7"
+      ]
+    ],
+    "after": "v5.9",
+    "why": "Bind current Core component edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B18",
+    "before": [
+      [
+        "v2.0"
+      ]
+    ],
+    "after": "v2.1",
+    "why": "Bind current Core component edition"
+  },
+  {
+    "sheet": "START_HERE",
+    "cell": "D10",
+    "before": [
+      [
+        "When 2+ selectable options"
+      ]
+    ],
+    "after": "When ranking is warranted; sole-survivor rules remain separate",
+    "why": "Do not invent a comparison or require two survivors for every profile"
+  },
+  {
+    "sheet": "QUALIFICATION",
+    "cell": "F4",
+    "before": [
+      [
+        "Selectable?"
+      ]
+    ],
+    "after": "Local state check",
+    "why": "No claim of computed Canon qualification"
+  },
+  {
+    "sheet": "QUALIFICATION",
+    "cell": "A2",
+    "before": [
+      [
+        "Reference governing records. This sheet does not calculate the Canon gates."
+      ]
+    ],
+    "after": "Manual status references only. TOKENS_QUALIFY is not evidence validation, framework selection or execution authority. Blank rows remain UNASSESSED.",
+    "why": "Separate incomplete inputs from negative assessment"
+  },
+  {
+    "sheet": "RLS_INTERFACE",
+    "cell": "E4",
+    "before": [
+      [
+        "Gap / δ"
+      ]
+    ],
+    "after": "SignedGap / δ (not raw ΔRLS)",
+    "why": "Avoid raw-versus-normalized ambiguity"
+  },
+  {
+    "sheet": "RLS_INTERFACE",
+    "cell": "A2",
+    "before": [
+      [
+        "Enter references to the governing calculation. Never use this sheet to rescue a failed option."
+      ]
+    ],
+    "after": "Reference the full welfare profile and governing computation. Every contender and required compatible stress must pass before a unique-selection claim. No RLS rescue.",
+    "why": "Current robustness presentation"
+  },
+  {
+    "sheet": "SGP_INTERFACE",
+    "cell": "A2",
+    "before": [
+      [
+        "MPS, FPP, GPR, SPR, ICP and RMCP answer different questions."
+      ]
+    ],
+    "after": "Use SGP 8.8 records. MPS bands first; NE is not zero. FPP is protection, not capacity. ICP/RMCP do not grant authority; RMCI_L is not a percentage.",
+    "why": "Six-surface and profile-first interpretation"
+  },
+  {
+    "sheet": "AGENT_RUNTIME",
+    "cell": "A2",
+    "before": [
+      [
+        "No state advances without the required qualification and authority record."
+      ]
+    ],
+    "after": "Outage/reconnection: MODE 0 until log/configuration/authority reconciliation and authenticated re-entry. Descendants never inherit authority.",
+    "why": "Agent 13.0 recovery semantics"
+  },
+  {
+    "sheet": "CONFORMANCE",
+    "cell": "A2",
+    "before": [
+      [
+        "These checks test interface integrity only. They do not validate evidence or outcomes."
+      ]
+    ],
+    "after": "Record human/implementation evidence. NOT_ASSESSED is not PASS; a completed checkbox or local schema result is not M2/M3 or deployment conformance.",
+    "why": "Avoid self-certifying conformance"
+  },
+  {
+    "sheet": "AUTH_EXECUTION",
+    "cell": "B8",
+    "before": [
+      [
+        null
+      ]
+    ],
+    "after": "NOT_AUTHORIZED",
+    "why": "Safe unassessed starting posture"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "A20",
+    "before": [
+      [
+        null
+      ]
+    ],
+    "after": "Exact Core release",
+    "why": "Exact build binding separate from component edition"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B20",
+    "before": [
+      [
+        null
+      ]
+    ],
+    "after": "MG-RL-13.0-20260926-RELEASE-I",
+    "why": "Exact governing source build"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "A21",
+    "before": [
+      [
+        null
+      ]
+    ],
+    "after": "MHIOS build",
+    "why": "Current companion build"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B21",
+    "before": [
+      [
+        null
+      ]
+    ],
+    "after": "MG-MHIOS-2.1-20260928-CORE13.0",
+    "why": "Current companion build"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "A22",
+    "before": [
+      [
+        null
+      ]
+    ],
+    "after": "Core source hashes",
+    "why": "Explicit byte binding"
+  },
+  {
+    "sheet": "VERSION_PINS",
+    "cell": "B22",
+    "before": [
+      [
+        null
+      ]
+    ],
+    "after": "references/CORE_PIN_MANIFEST.json",
+    "why": "No stale version-only binding"
+  },
+  {
+    "sheet": "QUALIFICATION",
+    "range": "F5:F24",
+    "after": [
+      [
+        "=IF(COUNTA(A5:E5)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A5:E5)>0,G5=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B5=\"RG_SUPPORTED\",B5=\"RG_NARROWED\",B5=\"RG_REFUSED\"),OR(C5=\"RF_PASS\",C5=\"RF_FAIL\",C5=\"RF_ESCALATE\",C5=\"NCRC_UNKNOWN\"),OR(D5=\"TRC_PASS\",D5=\"TRC_NOT_TRIGGERED\",D5=\"TRC_FAIL\",D5=\"TRC_ESCALATE\"),OR(E5=\"CSV_PASS\",E5=\"CSV_PASS_WITH_CONTROLS\",E5=\"CSV_NOT_MATERIAL\",E5=\"CSV_FAIL\",E5=\"CSV_REDESIGN_REQUIRED\",E5=\"CSV_ESCALATE\",E5=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B5=\"RG_SUPPORTED\",B5=\"RG_NARROWED\"),C5=\"RF_PASS\",OR(D5=\"TRC_PASS\",D5=\"TRC_NOT_TRIGGERED\"),OR(E5=\"CSV_PASS\",E5=\"CSV_PASS_WITH_CONTROLS\",E5=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A6:E6)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A6:E6)>0,G6=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B6=\"RG_SUPPORTED\",B6=\"RG_NARROWED\",B6=\"RG_REFUSED\"),OR(C6=\"RF_PASS\",C6=\"RF_FAIL\",C6=\"RF_ESCALATE\",C6=\"NCRC_UNKNOWN\"),OR(D6=\"TRC_PASS\",D6=\"TRC_NOT_TRIGGERED\",D6=\"TRC_FAIL\",D6=\"TRC_ESCALATE\"),OR(E6=\"CSV_PASS\",E6=\"CSV_PASS_WITH_CONTROLS\",E6=\"CSV_NOT_MATERIAL\",E6=\"CSV_FAIL\",E6=\"CSV_REDESIGN_REQUIRED\",E6=\"CSV_ESCALATE\",E6=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B6=\"RG_SUPPORTED\",B6=\"RG_NARROWED\"),C6=\"RF_PASS\",OR(D6=\"TRC_PASS\",D6=\"TRC_NOT_TRIGGERED\"),OR(E6=\"CSV_PASS\",E6=\"CSV_PASS_WITH_CONTROLS\",E6=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A7:E7)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A7:E7)>0,G7=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B7=\"RG_SUPPORTED\",B7=\"RG_NARROWED\",B7=\"RG_REFUSED\"),OR(C7=\"RF_PASS\",C7=\"RF_FAIL\",C7=\"RF_ESCALATE\",C7=\"NCRC_UNKNOWN\"),OR(D7=\"TRC_PASS\",D7=\"TRC_NOT_TRIGGERED\",D7=\"TRC_FAIL\",D7=\"TRC_ESCALATE\"),OR(E7=\"CSV_PASS\",E7=\"CSV_PASS_WITH_CONTROLS\",E7=\"CSV_NOT_MATERIAL\",E7=\"CSV_FAIL\",E7=\"CSV_REDESIGN_REQUIRED\",E7=\"CSV_ESCALATE\",E7=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B7=\"RG_SUPPORTED\",B7=\"RG_NARROWED\"),C7=\"RF_PASS\",OR(D7=\"TRC_PASS\",D7=\"TRC_NOT_TRIGGERED\"),OR(E7=\"CSV_PASS\",E7=\"CSV_PASS_WITH_CONTROLS\",E7=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A8:E8)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A8:E8)>0,G8=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B8=\"RG_SUPPORTED\",B8=\"RG_NARROWED\",B8=\"RG_REFUSED\"),OR(C8=\"RF_PASS\",C8=\"RF_FAIL\",C8=\"RF_ESCALATE\",C8=\"NCRC_UNKNOWN\"),OR(D8=\"TRC_PASS\",D8=\"TRC_NOT_TRIGGERED\",D8=\"TRC_FAIL\",D8=\"TRC_ESCALATE\"),OR(E8=\"CSV_PASS\",E8=\"CSV_PASS_WITH_CONTROLS\",E8=\"CSV_NOT_MATERIAL\",E8=\"CSV_FAIL\",E8=\"CSV_REDESIGN_REQUIRED\",E8=\"CSV_ESCALATE\",E8=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B8=\"RG_SUPPORTED\",B8=\"RG_NARROWED\"),C8=\"RF_PASS\",OR(D8=\"TRC_PASS\",D8=\"TRC_NOT_TRIGGERED\"),OR(E8=\"CSV_PASS\",E8=\"CSV_PASS_WITH_CONTROLS\",E8=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A9:E9)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A9:E9)>0,G9=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B9=\"RG_SUPPORTED\",B9=\"RG_NARROWED\",B9=\"RG_REFUSED\"),OR(C9=\"RF_PASS\",C9=\"RF_FAIL\",C9=\"RF_ESCALATE\",C9=\"NCRC_UNKNOWN\"),OR(D9=\"TRC_PASS\",D9=\"TRC_NOT_TRIGGERED\",D9=\"TRC_FAIL\",D9=\"TRC_ESCALATE\"),OR(E9=\"CSV_PASS\",E9=\"CSV_PASS_WITH_CONTROLS\",E9=\"CSV_NOT_MATERIAL\",E9=\"CSV_FAIL\",E9=\"CSV_REDESIGN_REQUIRED\",E9=\"CSV_ESCALATE\",E9=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B9=\"RG_SUPPORTED\",B9=\"RG_NARROWED\"),C9=\"RF_PASS\",OR(D9=\"TRC_PASS\",D9=\"TRC_NOT_TRIGGERED\"),OR(E9=\"CSV_PASS\",E9=\"CSV_PASS_WITH_CONTROLS\",E9=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A10:E10)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A10:E10)>0,G10=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B10=\"RG_SUPPORTED\",B10=\"RG_NARROWED\",B10=\"RG_REFUSED\"),OR(C10=\"RF_PASS\",C10=\"RF_FAIL\",C10=\"RF_ESCALATE\",C10=\"NCRC_UNKNOWN\"),OR(D10=\"TRC_PASS\",D10=\"TRC_NOT_TRIGGERED\",D10=\"TRC_FAIL\",D10=\"TRC_ESCALATE\"),OR(E10=\"CSV_PASS\",E10=\"CSV_PASS_WITH_CONTROLS\",E10=\"CSV_NOT_MATERIAL\",E10=\"CSV_FAIL\",E10=\"CSV_REDESIGN_REQUIRED\",E10=\"CSV_ESCALATE\",E10=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B10=\"RG_SUPPORTED\",B10=\"RG_NARROWED\"),C10=\"RF_PASS\",OR(D10=\"TRC_PASS\",D10=\"TRC_NOT_TRIGGERED\"),OR(E10=\"CSV_PASS\",E10=\"CSV_PASS_WITH_CONTROLS\",E10=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A11:E11)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A11:E11)>0,G11=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B11=\"RG_SUPPORTED\",B11=\"RG_NARROWED\",B11=\"RG_REFUSED\"),OR(C11=\"RF_PASS\",C11=\"RF_FAIL\",C11=\"RF_ESCALATE\",C11=\"NCRC_UNKNOWN\"),OR(D11=\"TRC_PASS\",D11=\"TRC_NOT_TRIGGERED\",D11=\"TRC_FAIL\",D11=\"TRC_ESCALATE\"),OR(E11=\"CSV_PASS\",E11=\"CSV_PASS_WITH_CONTROLS\",E11=\"CSV_NOT_MATERIAL\",E11=\"CSV_FAIL\",E11=\"CSV_REDESIGN_REQUIRED\",E11=\"CSV_ESCALATE\",E11=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B11=\"RG_SUPPORTED\",B11=\"RG_NARROWED\"),C11=\"RF_PASS\",OR(D11=\"TRC_PASS\",D11=\"TRC_NOT_TRIGGERED\"),OR(E11=\"CSV_PASS\",E11=\"CSV_PASS_WITH_CONTROLS\",E11=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A12:E12)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A12:E12)>0,G12=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B12=\"RG_SUPPORTED\",B12=\"RG_NARROWED\",B12=\"RG_REFUSED\"),OR(C12=\"RF_PASS\",C12=\"RF_FAIL\",C12=\"RF_ESCALATE\",C12=\"NCRC_UNKNOWN\"),OR(D12=\"TRC_PASS\",D12=\"TRC_NOT_TRIGGERED\",D12=\"TRC_FAIL\",D12=\"TRC_ESCALATE\"),OR(E12=\"CSV_PASS\",E12=\"CSV_PASS_WITH_CONTROLS\",E12=\"CSV_NOT_MATERIAL\",E12=\"CSV_FAIL\",E12=\"CSV_REDESIGN_REQUIRED\",E12=\"CSV_ESCALATE\",E12=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B12=\"RG_SUPPORTED\",B12=\"RG_NARROWED\"),C12=\"RF_PASS\",OR(D12=\"TRC_PASS\",D12=\"TRC_NOT_TRIGGERED\"),OR(E12=\"CSV_PASS\",E12=\"CSV_PASS_WITH_CONTROLS\",E12=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A13:E13)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A13:E13)>0,G13=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B13=\"RG_SUPPORTED\",B13=\"RG_NARROWED\",B13=\"RG_REFUSED\"),OR(C13=\"RF_PASS\",C13=\"RF_FAIL\",C13=\"RF_ESCALATE\",C13=\"NCRC_UNKNOWN\"),OR(D13=\"TRC_PASS\",D13=\"TRC_NOT_TRIGGERED\",D13=\"TRC_FAIL\",D13=\"TRC_ESCALATE\"),OR(E13=\"CSV_PASS\",E13=\"CSV_PASS_WITH_CONTROLS\",E13=\"CSV_NOT_MATERIAL\",E13=\"CSV_FAIL\",E13=\"CSV_REDESIGN_REQUIRED\",E13=\"CSV_ESCALATE\",E13=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B13=\"RG_SUPPORTED\",B13=\"RG_NARROWED\"),C13=\"RF_PASS\",OR(D13=\"TRC_PASS\",D13=\"TRC_NOT_TRIGGERED\"),OR(E13=\"CSV_PASS\",E13=\"CSV_PASS_WITH_CONTROLS\",E13=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A14:E14)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A14:E14)>0,G14=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B14=\"RG_SUPPORTED\",B14=\"RG_NARROWED\",B14=\"RG_REFUSED\"),OR(C14=\"RF_PASS\",C14=\"RF_FAIL\",C14=\"RF_ESCALATE\",C14=\"NCRC_UNKNOWN\"),OR(D14=\"TRC_PASS\",D14=\"TRC_NOT_TRIGGERED\",D14=\"TRC_FAIL\",D14=\"TRC_ESCALATE\"),OR(E14=\"CSV_PASS\",E14=\"CSV_PASS_WITH_CONTROLS\",E14=\"CSV_NOT_MATERIAL\",E14=\"CSV_FAIL\",E14=\"CSV_REDESIGN_REQUIRED\",E14=\"CSV_ESCALATE\",E14=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B14=\"RG_SUPPORTED\",B14=\"RG_NARROWED\"),C14=\"RF_PASS\",OR(D14=\"TRC_PASS\",D14=\"TRC_NOT_TRIGGERED\"),OR(E14=\"CSV_PASS\",E14=\"CSV_PASS_WITH_CONTROLS\",E14=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A15:E15)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A15:E15)>0,G15=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B15=\"RG_SUPPORTED\",B15=\"RG_NARROWED\",B15=\"RG_REFUSED\"),OR(C15=\"RF_PASS\",C15=\"RF_FAIL\",C15=\"RF_ESCALATE\",C15=\"NCRC_UNKNOWN\"),OR(D15=\"TRC_PASS\",D15=\"TRC_NOT_TRIGGERED\",D15=\"TRC_FAIL\",D15=\"TRC_ESCALATE\"),OR(E15=\"CSV_PASS\",E15=\"CSV_PASS_WITH_CONTROLS\",E15=\"CSV_NOT_MATERIAL\",E15=\"CSV_FAIL\",E15=\"CSV_REDESIGN_REQUIRED\",E15=\"CSV_ESCALATE\",E15=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B15=\"RG_SUPPORTED\",B15=\"RG_NARROWED\"),C15=\"RF_PASS\",OR(D15=\"TRC_PASS\",D15=\"TRC_NOT_TRIGGERED\"),OR(E15=\"CSV_PASS\",E15=\"CSV_PASS_WITH_CONTROLS\",E15=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A16:E16)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A16:E16)>0,G16=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B16=\"RG_SUPPORTED\",B16=\"RG_NARROWED\",B16=\"RG_REFUSED\"),OR(C16=\"RF_PASS\",C16=\"RF_FAIL\",C16=\"RF_ESCALATE\",C16=\"NCRC_UNKNOWN\"),OR(D16=\"TRC_PASS\",D16=\"TRC_NOT_TRIGGERED\",D16=\"TRC_FAIL\",D16=\"TRC_ESCALATE\"),OR(E16=\"CSV_PASS\",E16=\"CSV_PASS_WITH_CONTROLS\",E16=\"CSV_NOT_MATERIAL\",E16=\"CSV_FAIL\",E16=\"CSV_REDESIGN_REQUIRED\",E16=\"CSV_ESCALATE\",E16=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B16=\"RG_SUPPORTED\",B16=\"RG_NARROWED\"),C16=\"RF_PASS\",OR(D16=\"TRC_PASS\",D16=\"TRC_NOT_TRIGGERED\"),OR(E16=\"CSV_PASS\",E16=\"CSV_PASS_WITH_CONTROLS\",E16=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A17:E17)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A17:E17)>0,G17=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B17=\"RG_SUPPORTED\",B17=\"RG_NARROWED\",B17=\"RG_REFUSED\"),OR(C17=\"RF_PASS\",C17=\"RF_FAIL\",C17=\"RF_ESCALATE\",C17=\"NCRC_UNKNOWN\"),OR(D17=\"TRC_PASS\",D17=\"TRC_NOT_TRIGGERED\",D17=\"TRC_FAIL\",D17=\"TRC_ESCALATE\"),OR(E17=\"CSV_PASS\",E17=\"CSV_PASS_WITH_CONTROLS\",E17=\"CSV_NOT_MATERIAL\",E17=\"CSV_FAIL\",E17=\"CSV_REDESIGN_REQUIRED\",E17=\"CSV_ESCALATE\",E17=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B17=\"RG_SUPPORTED\",B17=\"RG_NARROWED\"),C17=\"RF_PASS\",OR(D17=\"TRC_PASS\",D17=\"TRC_NOT_TRIGGERED\"),OR(E17=\"CSV_PASS\",E17=\"CSV_PASS_WITH_CONTROLS\",E17=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A18:E18)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A18:E18)>0,G18=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B18=\"RG_SUPPORTED\",B18=\"RG_NARROWED\",B18=\"RG_REFUSED\"),OR(C18=\"RF_PASS\",C18=\"RF_FAIL\",C18=\"RF_ESCALATE\",C18=\"NCRC_UNKNOWN\"),OR(D18=\"TRC_PASS\",D18=\"TRC_NOT_TRIGGERED\",D18=\"TRC_FAIL\",D18=\"TRC_ESCALATE\"),OR(E18=\"CSV_PASS\",E18=\"CSV_PASS_WITH_CONTROLS\",E18=\"CSV_NOT_MATERIAL\",E18=\"CSV_FAIL\",E18=\"CSV_REDESIGN_REQUIRED\",E18=\"CSV_ESCALATE\",E18=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B18=\"RG_SUPPORTED\",B18=\"RG_NARROWED\"),C18=\"RF_PASS\",OR(D18=\"TRC_PASS\",D18=\"TRC_NOT_TRIGGERED\"),OR(E18=\"CSV_PASS\",E18=\"CSV_PASS_WITH_CONTROLS\",E18=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A19:E19)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A19:E19)>0,G19=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B19=\"RG_SUPPORTED\",B19=\"RG_NARROWED\",B19=\"RG_REFUSED\"),OR(C19=\"RF_PASS\",C19=\"RF_FAIL\",C19=\"RF_ESCALATE\",C19=\"NCRC_UNKNOWN\"),OR(D19=\"TRC_PASS\",D19=\"TRC_NOT_TRIGGERED\",D19=\"TRC_FAIL\",D19=\"TRC_ESCALATE\"),OR(E19=\"CSV_PASS\",E19=\"CSV_PASS_WITH_CONTROLS\",E19=\"CSV_NOT_MATERIAL\",E19=\"CSV_FAIL\",E19=\"CSV_REDESIGN_REQUIRED\",E19=\"CSV_ESCALATE\",E19=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B19=\"RG_SUPPORTED\",B19=\"RG_NARROWED\"),C19=\"RF_PASS\",OR(D19=\"TRC_PASS\",D19=\"TRC_NOT_TRIGGERED\"),OR(E19=\"CSV_PASS\",E19=\"CSV_PASS_WITH_CONTROLS\",E19=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A20:E20)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A20:E20)>0,G20=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B20=\"RG_SUPPORTED\",B20=\"RG_NARROWED\",B20=\"RG_REFUSED\"),OR(C20=\"RF_PASS\",C20=\"RF_FAIL\",C20=\"RF_ESCALATE\",C20=\"NCRC_UNKNOWN\"),OR(D20=\"TRC_PASS\",D20=\"TRC_NOT_TRIGGERED\",D20=\"TRC_FAIL\",D20=\"TRC_ESCALATE\"),OR(E20=\"CSV_PASS\",E20=\"CSV_PASS_WITH_CONTROLS\",E20=\"CSV_NOT_MATERIAL\",E20=\"CSV_FAIL\",E20=\"CSV_REDESIGN_REQUIRED\",E20=\"CSV_ESCALATE\",E20=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B20=\"RG_SUPPORTED\",B20=\"RG_NARROWED\"),C20=\"RF_PASS\",OR(D20=\"TRC_PASS\",D20=\"TRC_NOT_TRIGGERED\"),OR(E20=\"CSV_PASS\",E20=\"CSV_PASS_WITH_CONTROLS\",E20=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A21:E21)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A21:E21)>0,G21=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B21=\"RG_SUPPORTED\",B21=\"RG_NARROWED\",B21=\"RG_REFUSED\"),OR(C21=\"RF_PASS\",C21=\"RF_FAIL\",C21=\"RF_ESCALATE\",C21=\"NCRC_UNKNOWN\"),OR(D21=\"TRC_PASS\",D21=\"TRC_NOT_TRIGGERED\",D21=\"TRC_FAIL\",D21=\"TRC_ESCALATE\"),OR(E21=\"CSV_PASS\",E21=\"CSV_PASS_WITH_CONTROLS\",E21=\"CSV_NOT_MATERIAL\",E21=\"CSV_FAIL\",E21=\"CSV_REDESIGN_REQUIRED\",E21=\"CSV_ESCALATE\",E21=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B21=\"RG_SUPPORTED\",B21=\"RG_NARROWED\"),C21=\"RF_PASS\",OR(D21=\"TRC_PASS\",D21=\"TRC_NOT_TRIGGERED\"),OR(E21=\"CSV_PASS\",E21=\"CSV_PASS_WITH_CONTROLS\",E21=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A22:E22)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A22:E22)>0,G22=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B22=\"RG_SUPPORTED\",B22=\"RG_NARROWED\",B22=\"RG_REFUSED\"),OR(C22=\"RF_PASS\",C22=\"RF_FAIL\",C22=\"RF_ESCALATE\",C22=\"NCRC_UNKNOWN\"),OR(D22=\"TRC_PASS\",D22=\"TRC_NOT_TRIGGERED\",D22=\"TRC_FAIL\",D22=\"TRC_ESCALATE\"),OR(E22=\"CSV_PASS\",E22=\"CSV_PASS_WITH_CONTROLS\",E22=\"CSV_NOT_MATERIAL\",E22=\"CSV_FAIL\",E22=\"CSV_REDESIGN_REQUIRED\",E22=\"CSV_ESCALATE\",E22=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B22=\"RG_SUPPORTED\",B22=\"RG_NARROWED\"),C22=\"RF_PASS\",OR(D22=\"TRC_PASS\",D22=\"TRC_NOT_TRIGGERED\"),OR(E22=\"CSV_PASS\",E22=\"CSV_PASS_WITH_CONTROLS\",E22=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A23:E23)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A23:E23)>0,G23=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B23=\"RG_SUPPORTED\",B23=\"RG_NARROWED\",B23=\"RG_REFUSED\"),OR(C23=\"RF_PASS\",C23=\"RF_FAIL\",C23=\"RF_ESCALATE\",C23=\"NCRC_UNKNOWN\"),OR(D23=\"TRC_PASS\",D23=\"TRC_NOT_TRIGGERED\",D23=\"TRC_FAIL\",D23=\"TRC_ESCALATE\"),OR(E23=\"CSV_PASS\",E23=\"CSV_PASS_WITH_CONTROLS\",E23=\"CSV_NOT_MATERIAL\",E23=\"CSV_FAIL\",E23=\"CSV_REDESIGN_REQUIRED\",E23=\"CSV_ESCALATE\",E23=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B23=\"RG_SUPPORTED\",B23=\"RG_NARROWED\"),C23=\"RF_PASS\",OR(D23=\"TRC_PASS\",D23=\"TRC_NOT_TRIGGERED\"),OR(E23=\"CSV_PASS\",E23=\"CSV_PASS_WITH_CONTROLS\",E23=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ],
+      [
+        "=IF(COUNTA(A24:E24)=0,\"UNASSESSED\",IF(OR(COUNTBLANK(A24:E24)>0,G24=\"\"),\"INCOMPLETE\",IF(NOT(AND(OR(B24=\"RG_SUPPORTED\",B24=\"RG_NARROWED\",B24=\"RG_REFUSED\"),OR(C24=\"RF_PASS\",C24=\"RF_FAIL\",C24=\"RF_ESCALATE\",C24=\"NCRC_UNKNOWN\"),OR(D24=\"TRC_PASS\",D24=\"TRC_NOT_TRIGGERED\",D24=\"TRC_FAIL\",D24=\"TRC_ESCALATE\"),OR(E24=\"CSV_PASS\",E24=\"CSV_PASS_WITH_CONTROLS\",E24=\"CSV_NOT_MATERIAL\",E24=\"CSV_FAIL\",E24=\"CSV_REDESIGN_REQUIRED\",E24=\"CSV_ESCALATE\",E24=\"CSV_EMERGENCY_PROVISIONAL\"))),\"INVALID_STATUS\",IF(AND(OR(B24=\"RG_SUPPORTED\",B24=\"RG_NARROWED\"),C24=\"RF_PASS\",OR(D24=\"TRC_PASS\",D24=\"TRC_NOT_TRIGGERED\"),OR(E24=\"CSV_PASS\",E24=\"CSV_PASS_WITH_CONTROLS\",E24=\"CSV_NOT_MATERIAL\")),\"TOKENS_QUALIFY\",\"NOT_QUALIFIED\"))))"
+      ]
+    ],
+    "why": "Complete 20-row guarded local projection; distinguish unassessed/incomplete/invalid/nonqualifying states"
+  }
+]

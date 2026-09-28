@@ -1,0 +1,92 @@
+[
+  {
+    "component": "CSV",
+    "sha256": "1528fea2965e0fd4643412828f1c8bfaf83518cf801e7191bebe1313fc824df8",
+    "matches_prior_live_download": true,
+    "live_url": "https://mathgov.github.io/ripple-logic/Core_15/CSV_Gate_Standard_v2.7.docx"
+  },
+  {
+    "component": "Public Introduction",
+    "sha256": "091962bcbbdd49d29407b8fc305dcd5a988e851c35e8fac25d4307c06884ba87",
+    "matches_prior_live_download": true,
+    "live_url": "https://mathgov.github.io/ripple-logic/Core_15/MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx"
+  },
+  {
+    "component": "Reproducibility",
+    "sha256": "813ee630db3d96589a87854fe250a4edd7e09d950bc831b145e447d222fcd776",
+    "matches_prior_live_download": true,
+    "live_url": "https://mathgov.github.io/ripple-logic/Core_15/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx"
+  },
+  {
+    "component": "MFDI",
+    "sha256": "12ef950fa8cae4cc769ccaa3f2e13c650f098d2c79c2957c9a85d2d54ce3a49e",
+    "matches_prior_live_download": true,
+    "live_url": "https://mathgov.github.io/ripple-logic/Core_15/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx"
+  },
+  {
+    "component": "PC-AEP",
+    "sha256": "21228e927180d78dc9bd6b5898c96e23f585fcc0a1b597ae75ff3c30a031c493",
+    "matches_prior_live_download": true,
+    "live_url": "https://mathgov.github.io/ripple-logic/Core_15/Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx"
+  },
+  {
+    "component": "ripple.md",
+    "sha256": "c14744884baddd01e7836c7cb0890ee0c082bca7e7c2af086f8d436bf8e11dd1",
+    "matches_prior_live_download": true,
+    "live_url": "https://mathgov.github.io/ripple-logic/Core_15/ripple_md_Standard_v5.8.docx"
+  },
+  {
+    "component": "Agent System",
+    "sha256": "ffa5b98c0020d1073c1443692fe6478f1b2ecd3a8111a9ff3eeb4c9c5ae4b896",
+    "matches_prior_live_download": true,
+    "live_url": "https://mathgov.github.io/ripple-logic/Core_15/RippleLogic_Agent_System_v13.0.docx"
+  },
+  {
+    "component": "Aligners Sheet",
+    "sha256": "49d9d8fbeb762cb6cddb3ebab402ded25529639f222b665059db297f33b5282c",
+    "matches_prior_live_download": true,
+    "live_url": "https://mathgov.github.io/ripple-logic/Core_15/RippleLogic_Aligners_Sheet_v5.9.xlsx"
+  },
+  {
+    "component": "Cascade",
+    "sha256": "300c48139aad28415bc760eb11a93b6c1982078b8b7a48083385c5be62846506",
+    "matches_prior_live_download": true,
+    "live_url": "https://mathgov.github.io/ripple-logic/Core_15/RippleLogic_Cascade_Standard_v2.9.docx"
+  },
+  {
+    "component": "Primer",
+    "sha256": "82d26566f892d08b08681ef191b02509b6d72cecbf29845ac66d122e8c68ac22",
+    "matches_prior_live_download": true,
+    "live_url": "https://mathgov.github.io/ripple-logic/Core_15/RippleLogic_Foundations_Primer_v4.7.docx"
+  },
+  {
+    "component": "RLS Validation",
+    "sha256": "26d882cfd80def9c20fdcb07fcd63949e30280f6ea48dbf9654168ecc39274c5",
+    "matches_prior_live_download": true,
+    "live_url": "https://mathgov.github.io/ripple-logic/Core_15/RippleLogic_RLS_Validation_Protocol_v2.9.docx"
+  },
+  {
+    "component": "Canon",
+    "sha256": "b730ddeec4c15e0c7cb8393651f38f347e683b6b9a2670e224951dfd3f01857b",
+    "matches_prior_live_download": true,
+    "live_url": "https://mathgov.github.io/ripple-logic/Core_15/RippleLogic_v13.0_Canon.docx"
+  },
+  {
+    "component": "SGP",
+    "sha256": "b0485246bb35fff9313bc47a5e7a3295a648de168714618b76ba9fb8cfe54c6f",
+    "matches_prior_live_download": true,
+    "live_url": "https://mathgov.github.io/ripple-logic/Core_15/SGP_v8.8.docx"
+  },
+  {
+    "component": "Source-Coupling",
+    "sha256": "bd5b1eb7f4b358fa5b97d93b80fb51e86b6fddcf0a5b3c9158c7b2121a7383ce",
+    "matches_prior_live_download": true,
+    "live_url": "https://mathgov.github.io/ripple-logic/Core_15/Source_Coupling_Integrity_Standard_v2.6.docx"
+  },
+  {
+    "component": "WDBIP",
+    "sha256": "8cbb044ffaeeece7118cf88a8203cd60c9790de6ff6ba529bf683f6d7284e12c",
+    "matches_prior_live_download": true,
+    "live_url": "https://mathgov.github.io/ripple-logic/Core_15/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx"
+  }
+]

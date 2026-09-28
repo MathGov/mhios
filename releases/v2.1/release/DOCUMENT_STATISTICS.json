@@ -1,0 +1,42 @@
+[
+  {
+    "file": "docs/MathGov_Human_Interface_and_Orchestration_Standard_v2.1.docx",
+    "before": {
+      "Pages": "1",
+      "Words": "0",
+      "Characters": "0",
+      "CharactersWithSpaces": "0",
+      "Paragraphs": "0",
+      "Application": "Microsoft Macintosh Word"
+    },
+    "after": {
+      "Pages": "41",
+      "Words": "10273",
+      "Characters": "67888",
+      "CharactersWithSpaces": "76217",
+      "Paragraphs": "1177",
+      "Application": "MathGov companion document assembly"
+    },
+    "method": "Page count from supplied render; Unicode word-token count from body/table paragraph text, not native Microsoft Word statistics."
+  },
+  {
+    "file": "release/AUDIT_AND_IMPROVEMENTS.docx",
+    "before": {
+      "Pages": "1",
+      "Words": "0",
+      "Characters": "0",
+      "CharactersWithSpaces": "0",
+      "Paragraphs": "0",
+      "Application": "Microsoft Macintosh Word"
+    },
+    "after": {
+      "Pages": "5",
+      "Words": "2119",
+      "Characters": "12916",
+      "CharactersWithSpaces": "14813",
+      "Paragraphs": "67",
+      "Application": "MathGov companion document assembly"
+    },
+    "method": "Page count from supplied render; Unicode word-token count from body/table paragraph text, not native Microsoft Word statistics."
+  }
+]

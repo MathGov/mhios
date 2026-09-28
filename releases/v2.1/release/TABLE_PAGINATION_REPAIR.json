@@ -1,0 +1,5 @@
+{
+  "rows": 124,
+  "change": "Add w:cantSplit to inherited table rows; widths, shading, borders and cell text unchanged by this repair.",
+  "reason": "Rendering reproduced isolated row fragments across pages, including ALLOW and Audit/Tier 3 rows."
+}

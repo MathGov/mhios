@@ -1,0 +1,239 @@
+{
+  "mhios_version": "2.1",
+  "core_release_id": "MG-RL-13.0-20260926-RELEASE-I",
+  "core_pin_manifest_sha256": "b8ec26e3cac39c73ea513eee6ffa8737cb88a4efde44fda2bb3e0d1ae55a2357",
+  "session_id": "MHIOS-SYNTHETIC-003",
+  "revision_id": "r1",
+  "record_mode": "SYNTHETIC",
+  "created_at": "2026-09-28T08:00:00Z",
+  "evidence_cutoff": "2026-09-28T07:00:00Z",
+  "decision_question": "Compare two stipulated teaching alternatives; no real deployment or affected persons.",
+  "tier": 2,
+  "configuration": {
+    "configuration_id": "CONFIG-DEMO-1",
+    "configuration_hash": null,
+    "evaluated_at": "2026-09-28T07:30:00Z",
+    "operating_envelope": "Offline synthetic fixture; no tools or actuators connected.",
+    "model_or_software_versions": [
+      "MHIOS synthetic record fixture 2.1"
+    ],
+    "tools_permissions": [],
+    "active_controls": [
+      "No real execution"
+    ],
+    "material_change_since_qualification": false
+  },
+  "roles": [
+    {
+      "role": "decision_owner",
+      "holder": "Synthetic reviewer",
+      "authority_scope": "simulation only",
+      "conflict": null
+    },
+    {
+      "role": "challenger",
+      "holder": "Synthetic independent challenger",
+      "authority_scope": "fixture review only",
+      "conflict": null
+    }
+  ],
+  "stakeholder_discovery": {
+    "methods": [
+      "stipulated bounded case construction"
+    ],
+    "identified": [
+      "fictional teaching stakeholder"
+    ],
+    "unknowns": [],
+    "representation_gaps": []
+  },
+  "option_closure": {
+    "methods": [
+      "enumerated two-choice synthetic domain"
+    ],
+    "mandatory_families_disposition": "The fixture defines continuation and a bounded alternative; other families are out of this test scope, not assumed absent in real decisions.",
+    "status": "COMPLETE",
+    "record_ref": {
+      "id": "closure",
+      "locator": "examples/synthetic_records.json#closure",
+      "sha256": "77f18abb2a212c3823f4723a7bafb52032f319cfd0958134cd11a7d83a4e0751",
+      "basis": "SYNTHETIC"
+    }
+  },
+  "options": [
+    {
+      "option_id": "A",
+      "label": "Synthetic alternative A",
+      "states": {
+        "rg": "RG_NARROWED",
+        "rf_ncrc": "RF_FAIL",
+        "trc": null,
+        "csv": null,
+        "rls": "NOT_EVALUATED"
+      },
+      "record_refs": {
+        "rg": {
+          "id": "A-rg",
+          "locator": "examples/synthetic_records.json#A-rg",
+          "sha256": "77f18abb2a212c3823f4723a7bafb52032f319cfd0958134cd11a7d83a4e0751",
+          "basis": "SYNTHETIC"
+        },
+        "rf_ncrc": {
+          "id": "A-rf_ncrc",
+          "locator": "examples/synthetic_records.json#A-rf_ncrc",
+          "sha256": "77f18abb2a212c3823f4723a7bafb52032f319cfd0958134cd11a7d83a4e0751",
+          "basis": "SYNTHETIC"
+        },
+        "trc": null,
+        "trc_trigger": null,
+        "csv": null,
+        "controls": null,
+        "rls": null
+      },
+      "material_unresolved": [],
+      "requalification_required": false,
+      "controls_available": true,
+      "rls_score": null,
+      "sigma_rls": null
+    },
+    {
+      "option_id": "B",
+      "label": "Synthetic alternative B",
+      "states": {
+        "rg": "RG_NARROWED",
+        "rf_ncrc": "RF_FAIL",
+        "trc": null,
+        "csv": null,
+        "rls": "NOT_EVALUATED"
+      },
+      "record_refs": {
+        "rg": {
+          "id": "B-rg",
+          "locator": "examples/synthetic_records.json#B-rg",
+          "sha256": "77f18abb2a212c3823f4723a7bafb52032f319cfd0958134cd11a7d83a4e0751",
+          "basis": "SYNTHETIC"
+        },
+        "rf_ncrc": {
+          "id": "B-rf_ncrc",
+          "locator": "examples/synthetic_records.json#B-rf_ncrc",
+          "sha256": "77f18abb2a212c3823f4723a7bafb52032f319cfd0958134cd11a7d83a4e0751",
+          "basis": "SYNTHETIC"
+        },
+        "trc": null,
+        "trc_trigger": null,
+        "csv": null,
+        "controls": null,
+        "rls": null
+      },
+      "material_unresolved": [],
+      "requalification_required": false,
+      "controls_available": true,
+      "rls_score": null,
+      "sigma_rls": null
+    }
+  ],
+  "robustness": {
+    "status": "INCOMPLETE",
+    "record_ref": {
+      "id": "robust",
+      "locator": "examples/synthetic_records.json#robust",
+      "sha256": "77f18abb2a212c3823f4723a7bafb52032f319cfd0958134cd11a7d83a4e0751",
+      "basis": "SYNTHETIC"
+    },
+    "required_variants": [
+      "nominal",
+      "sigma_times_two"
+    ],
+    "comparisons": [],
+    "joint_stress_disposition": "NOT_TRIGGERED_WITH_RATIONALE",
+    "joint_stress_rationale": "The constructed fixture stipulates independent option error generators. It does not infer independence from absent empirical covariance data.",
+    "joint_record_ref": null,
+    "evidence_basis": "SYNTHETIC_STIPULATION",
+    "delta": 2,
+    "sole_survivor_record_ref": null
+  },
+  "framework_verdict": "BLOCK",
+  "decision_state": "NO_SELECTABLE_OPTION",
+  "framework_selected_option_id": null,
+  "authority_selection": {
+    "option_id": null,
+    "record_ref": null
+  },
+  "execution": {
+    "state": "NOT_AUTHORIZED",
+    "option_id": null,
+    "action_id": null,
+    "authorization_ref": null,
+    "bound_configuration_id": null,
+    "authorized_at": null,
+    "expires_at": null,
+    "controls_ref": null,
+    "execution_event_ref": null
+  },
+  "runtime": {
+    "agent_present": true,
+    "mode": 0,
+    "connectivity": "CONNECTED",
+    "reentry_required": false,
+    "reconciled": true,
+    "authenticated_reentry_ref": null,
+    "material_successor": false,
+    "successor_requalification_ref": null,
+    "tool_execution_requested": false
+  },
+  "emergency": null,
+  "sgp_links": [
+    {
+      "target_id": "fictional digital target",
+      "sgp_version": "8.8",
+      "mps": "NOT_EVALUATED",
+      "mps_record_ref": null,
+      "fpp_record_ref": null,
+      "gpr_record_ref": null,
+      "spr_record_ref": null,
+      "icp_record_ref": null,
+      "rmcp_record_ref": null
+    }
+  ],
+  "blockers": [
+    {
+      "reason": "Synthetic rights failures",
+      "next_action": "redesign; do not score failed options",
+      "owner": "Synthetic reviewer"
+    }
+  ],
+  "monitoring_and_outcome": {
+    "plan_ref": {
+      "id": "plan",
+      "locator": "examples/synthetic_records.json#plan",
+      "sha256": "77f18abb2a212c3823f4723a7bafb52032f319cfd0958134cd11a7d83a4e0751",
+      "basis": "SYNTHETIC"
+    },
+    "observation_ref": null,
+    "state": "NOT_STARTED",
+    "owner": "Synthetic monitor",
+    "reopen_triggers": [
+      "material change",
+      "unexpected harm"
+    ],
+    "reopened_stages": []
+  },
+  "challenge_appeal": {
+    "status": "AVAILABLE",
+    "owner": "Synthetic independent reviewer",
+    "route": "offline fixture review",
+    "record_ref": {
+      "id": "appeal",
+      "locator": "examples/synthetic_records.json#appeal",
+      "sha256": "77f18abb2a212c3823f4723a7bafb52032f319cfd0958134cd11a7d83a4e0751",
+      "basis": "SYNTHETIC"
+    }
+  },
+  "conformance": {
+    "target_level": "M1",
+    "assessment": "NOT_ASSESSED",
+    "evidence_refs": []
+  },
+  "claim_boundary": "Synthetic record consistency exercise only; not empirical validation, real authorization, cryptographic assurance, deployment approval or M2/M3 conformance.",
+  "provisional_choice": null
+}

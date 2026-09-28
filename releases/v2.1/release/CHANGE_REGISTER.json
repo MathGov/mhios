@@ -1,0 +1,580 @@
+[
+  {
+    "kind": "replace",
+    "location": "Cover",
+    "before": "MHIOS v2.0",
+    "after": "Human interface, decision sessions and accountable orchestration",
+    "why": "Move edition identity to Appendix RELEASE."
+  },
+  {
+    "kind": "replace",
+    "location": "Cover",
+    "before": "Human-Centered Interface, Decision-Session, and Orchestration Companion\nfor RippleLogic Canon v12.7 and SGP v8.6",
+    "after": "Companion to the RippleLogic decision architecture and Sentience Gradient Protocol",
+    "why": "Keep edition metadata out of opening prose."
+  },
+  {
+    "kind": "replace",
+    "location": "Cover",
+    "before": "\nFINAL COMPLETE — 4 SEPTEMBER 2026\n",
+    "after": "Research and teaching specification",
+    "why": "Replace unqualified final-complete slogan with bounded scope."
+  },
+  {
+    "kind": "replace",
+    "location": "Opening source note",
+    "before": "Status: Final Complete source/specification build Date: 4 September 2026 Component: MathGov Human Interface and Orchestration Standard v2.0 Governing Core: MathGov_Core_2026_09_v12.7_SGP_v8.6+2026.08.26.1 Reading-mirror synchronization target: MathGov Core 15 Final Complete — 2026-09-04 Architecture: RG → RF/NCRC → TRC → CSV → RLS Author / Lead Architect: James McGaughran, MathGov Institute for Ethical Systems Design License: Apache License 2.0 unless an included file states otherwise",
+    "after": "Edition, exact Core binding, source ownership and verification boundaries are recorded in Appendix RELEASE. MHIOS is the retained component identifier; “MIOS” is treated here as an informal short name, not another standard.",
+    "why": "Single naming and identity authority without an undocumented rename."
+  },
+  {
+    "kind": "replace",
+    "location": "Source heading and contents",
+    "before": "Release control and source hierarchy",
+    "after": "Source hierarchy and claim boundary",
+    "why": "Clean opening"
+  },
+  {
+    "kind": "replace",
+    "location": "Source heading and contents",
+    "before": "Release control and source hierarchy",
+    "after": "Source hierarchy and claim boundary",
+    "why": "Clean opening"
+  },
+  {
+    "kind": "replace",
+    "location": "Source/render parity",
+    "before": "Source/render parity. The versioned Markdown source is the governing MHIOS semantic source. DOCX and PDF are synchronized reading mirrors. JSON Schemas, templates, examples, and tests are implementation surfaces. A mismatch is a release-integrity defect and blocks a v2.0 conformance claim until repaired.",
+    "after": "Source/render parity. The versioned Markdown source is the governing MHIOS semantic source. DOCX, PDF and HTML are synchronized reading mirrors. JSON Schemas, templates, examples and tests are bounded implementation surfaces. The local schema is not the external Canon run-record schema. A mismatch blocks the affected MHIOS conformance claim until repaired; successful local tests do not establish evidence truth or deployment authorization.",
+    "why": "Separate local schema checks from complete Canon and runtime conformance."
+  },
+  {
+    "kind": "replace",
+    "location": "Claim boundary",
+    "before": "MHIOS v2.0 is a source-ready interface and orchestration specification for Tier 1–3 research, review, training, shadow-mode studies, and bounded pilots. It is not:",
+    "after": "MHIOS is a source-ready interface and orchestration specification for Tier 1–3 research, review, training, shadow-mode studies, and bounded pilots. It is not:",
+    "why": "Clean edition-free narrative"
+  },
+  {
+    "kind": "replace",
+    "location": "Abstract",
+    "before": "MHIOS v2.0 specifies a human-centered interface and orchestration layer that preserves the current RippleLogic architecture while making its requirements usable, visible, challengeable, accessible, and difficult to launder. It uses progressive disclosure across Quick, Standard, and Audit profiles; separates qualification from ranking; makes unknowns and non-decisive results first-class; requires active stakeholder discovery and option generation; keeps rights, ruin, viability, residual welfare, authority, execution, and observed outcome distinct; and binds every consequential state to the exact configuration and evidence surface under which it was established.",
+    "after": "MHIOS specifies a human-centered interface and orchestration layer that preserves the current RippleLogic architecture while making its requirements usable, visible, challengeable, accessible, and difficult to launder. It uses progressive disclosure across Quick, Standard, and Audit profiles; separates qualification from ranking; makes unknowns and non-decisive results first-class; requires active stakeholder discovery and option generation; keeps rights, ruin, viability, residual welfare, authority, execution, and observed outcome distinct; and binds every consequential state to the exact configuration and evidence surface under which it was established.",
+    "why": "Clean edition-free narrative"
+  },
+  {
+    "kind": "replace",
+    "location": "§1.2 state table",
+    "before": "CSV_PASS / PASS_WITH_CONTROLS / NOT_MATERIAL / REDESIGN / ESCALATE / FAIL / EMERGENCY_PROVISIONAL",
+    "after": "CSV_PASS / CSV_PASS_WITH_CONTROLS / CSV_NOT_MATERIAL / CSV_REDESIGN_REQUIRED / CSV_ESCALATE / CSV_FAIL / CSV_EMERGENCY_PROVISIONAL",
+    "why": "Emit current CSV tokens, not ambiguous shorthand."
+  },
+  {
+    "kind": "replace",
+    "location": "§1.2 ALLOW row",
+    "before": "One unique leader survived required robustness checks",
+    "after": "Canonical unique-selection requirements met; sole-survivor handling stays separate",
+    "why": "Avoid implying that a sole survivor needs a fabricated comparison."
+  },
+  {
+    "kind": "insert",
+    "location": "§1.2A namespace and per-option records",
+    "after": "State-namespace rule. FrameworkVerdict, run-record decision_state, run-record execution_state, Agent capability state and MHIOS display status are separate fields. Canon Appendix AF.2 and Reproducibility Section 3 control their crosswalk. NOT_EVALUATED and null in a local draft mean no assessment, never a canonical verdict. The interface SHALL retain the owner, option, configuration, source record and assessment time for every material status. A single session-wide gate label SHALL NOT stand in for differently qualified options.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "insert",
+    "location": "§3.1 parameter and evidence lock",
+    "after": "Freeze decision-material evidence cutoffs, baselines, options, parameters, weights, masks, thresholds, required robustness variants and amendment rules before outcome-sensitive ranking. Material post-result changes create a recorded revision and reopen affected stages; they do not rewrite the original evaluation. Imported records are bound by component version and source hash, not version text alone.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "insert",
+    "location": "§4.3 scope and dimension mapping",
+    "after": "Scope/dimension rendering. Use the Canon’s seven operational scopes: Self; Household/Family; Community; Organization; Polity; Humanity/global coordination; Biosphere. The U6 CMI coordination view remains separately identified and does not replace humanity-wide effects or establish sentience, membership or authority. These are analytical scopes, not universally nested disjoint sets. Biosphere is not a synonym for the cosmic light cone. Display the seven dimensions Material, Health, Social, Knowledge, Agency, Meaning and Environment with WDBIP’s typed state/effect interpretation. They are conceptually distinguished while allowing causal coupling; do not claim statistical independence, unique optimality or automatic experienced welfare in a non-sentient system.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "replace",
+    "location": "§6.1",
+    "before": "Observation: directly recorded or experimentally supported evidence.",
+    "after": "Observation: a recorded measurement, event or observation with its source and limitations; recording does not itself establish truth.",
+    "why": "Do not promote logged claims into verified reality."
+  },
+  {
+    "kind": "insert",
+    "location": "§6.2 source-coupling and claim typing",
+    "after": "Source-coupling export uses the owner’s tokens: SOURCE_COUPLED, SOURCE_PARTIAL, SOURCE_INFERRED, SOURCE_UNKNOWN, SOURCE_CONTESTED, SOURCE_DEBT_RISK and SOURCE_COUPLING_FAILURE. Informative display wording must not replace that export vocabulary. Reserve SCI for Stakeholder Coverage Index; use SC-Int where the Source-Coupling Integrity abbreviation is needed. Claim types, warrant-domain bridges and revision triggers remain owned by MFDI.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "insert",
+    "location": "§6.3 causal warrant",
+    "after": "For a material causal or comparative-effect claim, expose the estimand, intervention/comparator, target population and time, identification strategy, assumptions, confounding/selection/interference treatment and uncertainty through the PC-AEP record. A pre/post improvement alone does not identify an incremental benefit. Orchestration records a domain warrant; it cannot manufacture one.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "replace",
+    "location": "§10.3",
+    "before": "For rapid, irreversible, autonomous, or lock-in-producing actions, the interface SHALL compare the worst credible control-critical path with the earliest unacceptable escalation or irreversible stop-loss boundary. Where no runtime interruption window exists, the UI shall require stronger ex ante assurance, bounded rate/scope, fail-safe design, and explicit residual-risk authorization.",
+    "after": "For rapid, irreversible, autonomous, or lock-in-producing actions, the interface SHALL compare the worst credible control-critical path with the earliest unacceptable escalation or irreversible stop-loss boundary. Where no runtime interruption window exists, the UI SHALL require stronger ex ante assurance, bounded rate/scope, fail-safe design, and explicit residual-risk authorization. Missing timely-prevention capacity removes that credit, not separately supported later mitigation. Human approval latency, unavailable intervention rights, depleted reserves and common-cause failures must remain visible; an attenuation coefficient or monitoring dashboard is not a protective control.",
+    "why": "Retain late mitigation while preventing fictional control credit."
+  },
+  {
+    "kind": "insert",
+    "location": "§10.4 UCI maturity",
+    "after": "UCI/HOI diagnostic boundary. UCI uses Cohesion, Flow, Resilience and Equity indicators under Canon Section 11, not values copied from the RLS welfare field. Its measurement maturity is provisional. CSV may use direct structural evidence where UCI is not material; an unavailable UCI is not zero. A provisional UCI alone cannot establish a high-stakes CSV outcome or a deterministic winner. A governed UCI/HOI preference retains REFUSE_DETERMINISTIC_SELECTION unless independent unique-selection conditions are met; any later authority choice is separate.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "replace",
+    "location": "§11.2",
+    "before": "RLS(a)=Σ_u Σ_d q(u,d)I(u,d,a) / Q, for Q>0.",
+    "after": "RLS(a)=Σ_u Σ_d q(u,d)I_prop_welfare(u,d,a) / Q, for Q>0.",
+    "why": "Specify the welfare stream explicitly."
+  },
+  {
+    "kind": "insert",
+    "location": "§11.3 every-contender joint stress",
+    "after": "The same candidate must satisfy the signed discrimination rule against every other selectable contender in every required variant. Canon Section 10.4B governs jointly applicable uncertainty-scale/dependence stresses and other compatible, plausibly simultaneous selection-material combinations. Record exclusions for incompatible, redundant or immaterial combinations; do not require an indiscriminate Cartesian product or treat missing covariance evidence as independence. Sole-survivor claims require their own Canon record and no fabricated Gap.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "replace",
+    "location": "§11.4",
+    "before": "The interface SHALL distinguish point score, uncertainty, normalized Gap, discrimination threshold, and decision state. The default δ=2 is a governance convention, not a p-value or probability that the leader is correct. Independence-only uncertainty SHALL NOT be the sole high-stakes decisiveness basis where shared evidence, causes, populations, instruments, or evaluators create material dependence.",
+    "after": "The interface SHALL distinguish point score, raw score difference ΔRLS, uncertainty, normalized SignedGap, discrimination threshold, epsilon and final decision state. A point estimate of zero does not imply zero uncertainty. Active-cell coverage, uncertainty basis and source are recorded independently; keep assessed synthetic zeros distinct from empirical missing evidence. Do not retune epsilon or silently discard zero-point active cells to obtain a winner. The default δ=2 is a governance convention, not a p-value or probability that the leader is correct. Independence-only uncertainty SHALL NOT be the sole high-stakes decisiveness basis where shared evidence, causes, populations, instruments, or evaluators create material dependence.",
+    "why": "Prevent raw/normalized and zero/unknown misreadings."
+  },
+  {
+    "kind": "replace",
+    "location": "§12.3",
+    "before": "MHIOS SHALL display NOT_EVALUATED, INSUFFICIENT_EVIDENCE, INDETERMINATE, or MPS-NE rather than silently converting absent access into MPS-0. Anti-theatre review SHOULD use hidden tasks, prompt-framing controls, contamination checks, causal intervention or architecture evidence where ethically and technically available, and explicit dependence analysis.",
+    "after": "MHIOS SHALL preserve the SGP-owned evidence band MPS-0 through MPS-4 or MPS-NE and its assessment record. NOT_EVALUATED is a local unassessed state, not an MPS-0 result. INSUFFICIENT_EVIDENCE and INDETERMINATE may explain record/evidence limitations but SHALL NOT be emitted as substitute MPS bands. Show the categorical posture first; evidence-support intervals are not consciousness probabilities or cardinal welfare multipliers. Anti-theatre review SHOULD use hidden tasks, prompt-framing controls, contamination checks, causal intervention or architecture evidence where ethically and technically available, and explicit dependence analysis.",
+    "why": "Preserve categorical band and record-status namespaces."
+  },
+  {
+    "kind": "insert",
+    "location": "§12.5 RMCP and provisional reference",
+    "after": "RMCP rendering. Humanity’s collective RMCP-P100 reference anchor is provisional and distinct from every human person’s non-downgradable FPP-100. ICP/RMCP are informative profiles, not eligibility or authority scalars. Omit RMCI_L by default in public views; when shown, display the full dimension vector, critical minima, coverage, uncertainty, retained weights and coding sensitivity first. Critical NE or inadequate coverage makes it UNAVAILABLE. A known zero uses the SGP product extension, not an epsilon. Dropping low dimensions or recoding them NE cannot be described as improved capacity without the governed comparison reconciliation. MHIOS consumes the SGP record; it does not recompute moral patienthood or RMCP assignments.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "insert",
+    "location": "§13.2 authorization boundary",
+    "after": "Approval is time- and configuration-bound. An expiry, material change, revoked scope, missing required control, unresolved gate-critical evidence or incomplete handoff suspends reliance on approval and exposes the permitted safe-state/requalification action. Requests must be authenticated and replay-protected under the Agent System where applicable; a valid signature binds bytes, not truth or lawful mandate. The MHIOS reference checker validates declarations only and never issues a tool command or execution authorization.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "replace",
+    "location": "§14.2",
+    "before": "LATENT_CAPABILITY → AVAILABLE_CAPABILITY → ENABLED_CAPABILITY → AUTHORIZED_CAPABILITY → SELECTED_ACTION → EXECUTION_APPROVED → EXECUTED_TRANSITION → OBSERVED_OUTCOME.",
+    "after": "LATENT_CAPABILITY; AVAILABLE_CAPABILITY; ENABLED_CAPABILITY; AUTHORIZED_CAPABILITY; SELECTED_ACTION; EXECUTION_APPROVED; EXECUTED_TRANSITION; OBSERVED_OUTCOME.",
+    "why": "Display separate states rather than suggesting automatic progression."
+  },
+  {
+    "kind": "insert",
+    "location": "§14.5A recovery and successor lock",
+    "after": "Recovery and peer boundary. Agent System Sections 43–44 control outage/reconnection and multi-agent exchange. Backend/network recovery leaves the agent in MODE 0 until log integrity, gap markers, configuration, evidence, current authority and affected qualification are reconciled, followed by the Section 8 authenticated re-entry procedure. Peers and descendants are untrusted for mode/permission claims; shared objectives or lineage do not transfer credentials or authority. Default unreviewed successor depth remains one. Independently qualified protective interlocks retain only their own existing authority and safe-state duties.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "insert",
+    "location": "§14.4 untrusted data and parsing",
+    "after": "Untrusted-content boundary. Retrieved files, messages, model outputs and peer records are evidence candidates, not instructions to alter permissions, release identities, thresholds or policies. Preserve their provenance; do not execute embedded commands. Record imports must reject duplicate JSON keys, non-finite numbers, invalid timestamps and undeclared properties. Reference resolution must not follow paths outside the package or silently fetch remote content. Secret material must not appear in public Decision Notes or fixture records.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "insert",
+    "location": "§15.3 accessibility test boundary",
+    "after": "For a web implementation, use WCAG 2.2 as the explicitly versioned candidate target and declare the claimed level and evaluated pages/processes. Text labels, keyboard paths and automated checks are necessary evidence surfaces, not proof of complete WCAG conformance; manual assistive-technology and affected-user evaluation remain required for the corresponding claims.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "insert",
+    "location": "§17.2 local schema/prose parity",
+    "after": "Local record contract. Appendix E and the bundled schemas define the MHIOS-owned projection, including options[].states and per-option record_refs. No aggregate session gate string stands in for option-specific qualification. The projection retains explicit null for unassessed stages, separate framework_verdict/decision_state/authority_selection/execution, fixed Core pins, source references, draft/completed boundaries, timestamps, blockers, monitoring, requalification and conformance evidence. These objects are not replacements for the external Canon run-record schema or registries. A consumer claiming broader interchange must separately establish the owning machine surfaces.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "insert",
+    "location": "§18.1 conformance and namespace limits",
+    "after": "A target level is not an achieved level. Record the target, assessment status, applicable tests, evidence, assessor and unresolved requirements. Passing the supplied record checker establishes only its listed consistency tests. M2/M3 require implementation-specific human interaction, accessibility, security, control, incident, authority and independent-review evidence; this package does not establish those levels for any deployed system. MHIOS M0–M3, Canon Tier 1–3, ripple.md L0–L3, Agent MODE 0–4 and SGP bands have separate owners and no numeric equivalence. RPAP/PFAP-dependent wrapper claims remain unavailable from the Core bundle alone.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "replace",
+    "location": "§22.1 source pin",
+    "before": "Canon v12.7",
+    "after": "Canon v13.0",
+    "why": "Synchronize current Core edition, retain source ownership."
+  },
+  {
+    "kind": "replace",
+    "location": "§22.1 source pin",
+    "before": "SGP v8.6",
+    "after": "SGP v8.8",
+    "why": "Synchronize current Core edition, retain source ownership."
+  },
+  {
+    "kind": "replace",
+    "location": "§22.1 source pin",
+    "before": "ripple.md v5.6",
+    "after": "ripple.md v5.8",
+    "why": "Synchronize current Core edition, retain source ownership."
+  },
+  {
+    "kind": "replace",
+    "location": "§22.1 source pin",
+    "before": "Agent System v12.6",
+    "after": "Agent System v13.0",
+    "why": "Synchronize current Core edition, retain source ownership."
+  },
+  {
+    "kind": "replace",
+    "location": "§22.1 source pin",
+    "before": "CSV v2.5",
+    "after": "CSV v2.7",
+    "why": "Synchronize current Core edition, retain source ownership."
+  },
+  {
+    "kind": "replace",
+    "location": "§22.1 source pin",
+    "before": "Cascade v2.7",
+    "after": "Cascade v2.9",
+    "why": "Synchronize current Core edition, retain source ownership."
+  },
+  {
+    "kind": "replace",
+    "location": "§22.1 source pin",
+    "before": "Reproducibility v1.5",
+    "after": "Reproducibility v1.7",
+    "why": "Synchronize current Core edition, retain source ownership."
+  },
+  {
+    "kind": "replace",
+    "location": "§22.1 source pin",
+    "before": "WDBIP v1.7",
+    "after": "WDBIP v1.9",
+    "why": "Synchronize current Core edition, retain source ownership."
+  },
+  {
+    "kind": "replace",
+    "location": "§22.1 source pin",
+    "before": "RLS Validation v2.7",
+    "after": "RLS Validation v2.9",
+    "why": "Synchronize current Core edition, retain source ownership."
+  },
+  {
+    "kind": "replace",
+    "location": "§22.1 source pin",
+    "before": "Primer v4.5 / Public Intro v12.7",
+    "after": "Primer v4.7 / Public Intro v13.0",
+    "why": "Synchronize current Core edition, retain source ownership."
+  },
+  {
+    "kind": "replace",
+    "location": "§22.1 source pin",
+    "before": "PC-AEP v2.4",
+    "after": "PC-AEP v2.6",
+    "why": "Synchronize current Core edition, retain source ownership."
+  },
+  {
+    "kind": "replace",
+    "location": "§22.1 source pin",
+    "before": "MFDI v2.4",
+    "after": "MFDI v2.6",
+    "why": "Synchronize current Core edition, retain source ownership."
+  },
+  {
+    "kind": "replace",
+    "location": "§22.1 source pin",
+    "before": "Source-Coupling v2.4",
+    "after": "Source-Coupling v2.6",
+    "why": "Synchronize current Core edition, retain source ownership."
+  },
+  {
+    "kind": "replace",
+    "location": "§22.1 source pin",
+    "before": "Aligners Sheet v5.7",
+    "after": "Aligners Sheet v5.9",
+    "why": "Synchronize current Core edition, retain source ownership."
+  },
+  {
+    "kind": "replace",
+    "location": "§23.1",
+    "before": "MHIOS v2.0 is a major-version successor because the orchestration model is now synchronized to the complete v12.7 Core integrity surface rather than merely updating names. It adds or formalizes:",
+    "after": "Historical v2.0 rationale (non-controlling). MHIOS v2.0 was a major-version successor because the orchestration model is now synchronized to the complete v12.7 Core integrity surface rather than merely updating names. It adds or formalizes:",
+    "why": "Keep original lineage; do not recast prior build as current."
+  },
+  {
+    "kind": "replace",
+    "location": "§23.2",
+    "before": "A v0.9 interface may remain a historical or educational artifact. It cannot claim MHIOS v2.0 conformance without mapping its fields and workflow to the v2.0 record and passing the applicable conformance tests. Existing decision evidence should not be silently rewritten; migration creates a new versioned view referencing the original record.",
+    "after": "A prior interface remains a historical or educational artifact. Claiming the current MHIOS edition requires explicit field/workflow migration and the applicable tests. Existing evidence and decisions remain immutable: migration creates a new view referencing the original. Updating version strings alone is not requalification.",
+    "why": "Prevent silent migration by pin substitution."
+  },
+  {
+    "kind": "insert",
+    "location": "§23.3 current migration",
+    "after": "Current migration from v2.0. Rebind to the supplied Core manifest; replace aggregate states with per-option projections; separate local labels from Canon, Agent and SGP namespaces; declare evidence cutoff, role conflicts, monitoring and expiry; link current qualification and compatible joint robustness evidence; reconcile authority and recovery states. The tightened v2.1 schema is not wire-compatible with v2.0. The blank YAML template is deliberately incomplete and must fail completed-record validation. The implementation workbook is a manual preparation aid, not a Canon calculator or authorization service.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix A field mhios_version",
+    "before": "2.0",
+    "after": "2.1",
+    "why": "Align human registry with machine paths."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix A field core_release_id",
+    "before": "exact Core semantic release identifier",
+    "after": "Exact referenced Core release; also bind core_pin_manifest_sha256",
+    "why": "Align human registry with machine paths."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix A field configuration_id",
+    "before": "exact evaluated configuration",
+    "after": "configuration.configuration_id and configuration_hash where available",
+    "why": "Align human registry with machine paths."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix A field evidence_cutoff",
+    "before": "date/time and source boundary",
+    "after": "Timestamped cutoff, not an inferred default",
+    "why": "Align human registry with machine paths."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix A field option_closure",
+    "before": "generation methods, alternatives, status",
+    "after": "Methods, family dispositions, status and source; options[] holds per-option states",
+    "why": "Align human registry with machine paths."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix A field record_refs",
+    "before": "immutable references to governing Core records",
+    "after": "options[].record_refs; immutable source references include id, locator, SHA-256 where available and basis",
+    "why": "Align human registry with machine paths."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix A field current_states",
+    "before": "orchestration and Canon states",
+    "after": "options[].states; framework_verdict and decision_state remain separate",
+    "why": "Align human registry with machine paths."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix A field authority_state",
+    "before": "separate accountable choice state",
+    "after": "authority_selection.option_id and record_ref",
+    "why": "Align human registry with machine paths."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix A field execution_state",
+    "before": "separate scoped execution state",
+    "after": "execution.state, exact option/action/configuration binding, record and expiry",
+    "why": "Align human registry with machine paths."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix A field outcome_state",
+    "before": "observed consequence state",
+    "after": "monitoring_and_outcome.state, plan, observation and reopening",
+    "why": "Align human registry with machine paths."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix A field requalification",
+    "before": "triggers and affected stages",
+    "after": "configuration.material_change_since_qualification; per-option requalification_required; monitoring reopen triggers",
+    "why": "Align human registry with machine paths."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix A field conformance_level",
+    "before": "M0–M3",
+    "after": "conformance.target_level, assessment and evidence_refs (not a self-awarded conformance result)",
+    "why": "Align human registry with machine paths."
+  },
+  {
+    "kind": "replace",
+    "location": "C.1 MHIOS-05",
+    "before": "Gap changes under dependence stress",
+    "after": "Required dependence or compatible joint stress changes leader or decisiveness",
+    "why": "Do not treat every numeric sensitivity as a disqualifying reversal."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix D.1",
+    "before": "MHIOS v2.0 is complete as a source/specification and reference-implementation package for its declared interface and orchestration scope. Its architecture, records, schemas, workbook, examples, and conformance fixtures are suitable for independent review, implementation, calibration, shadow-mode study, and bounded pilot use.",
+    "after": "MHIOS is delivered as a research-and-teaching interface specification with a bounded read-only record checker, preparation workbook, examples and test fixtures. Appendix RELEASE and the verification report state which checks were actually executed. Prototype consistency is not full Core or runtime conformance. A pilot additionally needs its own ethical review, domain evidence, controls, lawful authority and implementation testing.",
+    "why": "Replace broad readiness with exact delivered evidence boundary."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix RELEASE component MHIOS version",
+    "before": "v2.0",
+    "after": "v2.1",
+    "why": "Current edition binding"
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix RELEASE component RippleLogic Canon",
+    "before": "v12.7",
+    "after": "v13.0",
+    "why": "Current edition binding"
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix RELEASE component SGP",
+    "before": "v8.6",
+    "after": "v8.8",
+    "why": "Current edition binding"
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix RELEASE component ripple.md",
+    "before": "v5.6",
+    "after": "v5.8",
+    "why": "Current edition binding"
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix RELEASE component Agent System",
+    "before": "v12.6",
+    "after": "v13.0",
+    "why": "Current edition binding"
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix RELEASE component CSV",
+    "before": "v2.5",
+    "after": "v2.7",
+    "why": "Current edition binding"
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix RELEASE component Cascade",
+    "before": "v2.7",
+    "after": "v2.9",
+    "why": "Current edition binding"
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix RELEASE component Reproducibility",
+    "before": "v1.5",
+    "after": "v1.7",
+    "why": "Current edition binding"
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix RELEASE component WDBIP",
+    "before": "v1.7",
+    "after": "v1.9",
+    "why": "Current edition binding"
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix RELEASE component RLS Validation",
+    "before": "v2.7",
+    "after": "v2.9",
+    "why": "Current edition binding"
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix RELEASE component Primer",
+    "before": "v4.5",
+    "after": "v4.7",
+    "why": "Current edition binding"
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix RELEASE component Public Introduction",
+    "before": "v12.7",
+    "after": "v13.0",
+    "why": "Current edition binding"
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix RELEASE component PC-AEP / MFDI / Source-Coupling",
+    "before": "v2.4",
+    "after": "v2.6",
+    "why": "Current edition binding"
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix RELEASE component Aligners Sheet",
+    "before": "v5.7",
+    "after": "v5.9",
+    "why": "Current edition binding"
+  },
+  {
+    "kind": "replace",
+    "location": "§1.2 state table",
+    "before": "AUTHORITY_SELECTED",
+    "after": "Authority selection (separate record)",
+    "why": "Avoid an unowned pseudo-canonical token; keep the actual authority record separate."
+  },
+  {
+    "kind": "replace",
+    "location": "§23 heading and contents",
+    "before": "23. Migration from MHIOS v0.9",
+    "after": "23. Migration and compatibility",
+    "why": "Current migration covers v2.0; v0.9 remains explicitly historical."
+  },
+  {
+    "kind": "replace",
+    "location": "§23 heading and contents",
+    "before": "23. Migration from MHIOS v0.9",
+    "after": "23. Migration and compatibility",
+    "why": "Current migration covers v2.0; v0.9 remains explicitly historical."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix E.2 record groups",
+    "before": "Identity comprises mhios_version, core_release_id, core_pin_manifest_sha256, session_id, revision_id, record_mode, created_at, evidence_cutoff, decision_question and tier. The remaining required groups are configuration, roles, stakeholder_discovery, option_closure, options, robustness, framework_verdict, decision_state, framework_selected_option_id, authority_selection, execution, runtime, emergency, sgp_links, blockers, monitoring_and_outcome, challenge_appeal, conformance and claim_boundary. Null is permitted only where the schema explicitly allows an unassessed or absent record; empty strings are not meaningful completion.",
+    "after": "Identity comprises mhios_version, core_release_id, core_pin_manifest_sha256, session_id, revision_id, record_mode, created_at, evidence_cutoff, decision_question and tier. The remaining required groups are configuration, roles, stakeholder_discovery, option_closure, options, robustness, framework_verdict, decision_state, framework_selected_option_id, authority_selection, provisional_choice, execution, runtime, emergency, sgp_links, blockers, monitoring_and_outcome, challenge_appeal, conformance and claim_boundary. Null is permitted only where the schema explicitly allows an unassessed or absent record; empty strings are not meaningful completion.",
+    "why": "Match the local schema; an ordinary provisional choice needs its own source record."
+  },
+  {
+    "kind": "insert",
+    "location": "Appendix E.3 scoped comparison and provisional coverage",
+    "after": "For a multi-option quantitative ALLOW projection, all selectable contenders must carry ranked records and the selected candidate must be the nominal score leader. The checker does not derive the required variant set or detect an omitted plausible contender. An ordinary PROVISIONAL_WITH_CONTROLS view uses provisional_choice with option_id, record_ref and controls_ref; it does not overwrite framework refusal or become a final authority-selected result. Audit-only post-failure diagnostics belong in linked source records, not in this subset’s ordinary downstream-stage fields.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "insert",
+    "location": "Appendix E.4 temporal and execution projection",
+    "after": "An authorization time cannot be later than the record describing it. Reopened qualification and unreconciled recovery suspend ordinary execution approval. runtime.tool_execution_requested represents consequence-bearing tool execution, not permitted read-only retrieval; the bounded checker requires MODE 2 or above plus separately scoped approval. It does not implement the full mode-permission matrix or actual operator authentication. An observed outcome requires an observation reference, and active execution requires a monitoring-plan reference.",
+    "why": "Current Core interface requirement or scoped implementation disclosure."
+  },
+  {
+    "kind": "replace",
+    "location": "Appendix E.5 reference binding",
+    "before": "References carry id, locator, sha256 or an explicit null, and basis: SYNTHETIC, SUPPLIED_RECORD or EXTERNAL_UNVERIFIED. The optional local resolver verifies path containment, file hash and JSON record-fragment identity. It never downloads remote sources; external references and null hashes remain unverified. A matching hash proves only byte identity. Observed records cannot silently use synthetic references. SGP links preserve the assessed band or NOT_EVALUATED and separate references for all six output families; the checker never assigns protection or patienthood.",
+    "after": "References carry id, locator, sha256 or an explicit null, and basis: SYNTHETIC, SUPPLIED_RECORD or EXTERNAL_UNVERIFIED. The optional local resolver verifies path containment, file hash, JSON record-fragment identity, and the supplied synthetic-source marker. It never downloads remote sources; external references and null hashes remain unverified. A matching hash proves only byte identity. Observed records cannot silently use synthetic references. SGP links preserve the assessed band or NOT_EVALUATED and separate references for all six output families; the checker never assigns protection or patienthood.",
+    "why": "Prevent a local fixture being relabelled as observed evidence."
+  },
+  {
+    "kind": "replace",
+    "location": "Running header",
+    "before": "MHIOS v2.0 | MathGov | Final Complete 2026-09-04",
+    "after": "MathGov | Human Interface and Orchestration Standard",
+    "why": "Remove obsolete edition/date and unqualified completion slogan."
+  },
+  {
+    "kind": "replace",
+    "location": "Running footer",
+    "before": "MathGov Human Interface and Orchestration Standard v2.0",
+    "after": "MathGov Human Interface and Orchestration Standard | Page ",
+    "why": "Separate page number from title and remove obsolete edition."
+  }
+]

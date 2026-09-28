@@ -1,0 +1,162 @@
+# DRAFT: intentionally fails completed-record validation until filled and reviewed.
+mhios_version: '2.1'
+core_release_id: MG-RL-13.0-20260926-RELEASE-I
+core_pin_manifest_sha256: b8ec26e3cac39c73ea513eee6ffa8737cb88a4efde44fda2bb3e0d1ae55a2357
+session_id: ''
+revision_id: ''
+record_mode: SYNTHETIC
+created_at: ''
+evidence_cutoff: ''
+decision_question: ''
+tier: 1
+configuration:
+  configuration_id: ''
+  configuration_hash: null
+  evaluated_at: ''
+  operating_envelope: Offline synthetic fixture; no tools or actuators connected.
+  model_or_software_versions:
+  - MHIOS synthetic record fixture 2.1
+  tools_permissions: []
+  active_controls:
+  - No real execution
+  material_change_since_qualification: false
+roles: []
+stakeholder_discovery:
+  methods: []
+  identified:
+  - fictional teaching stakeholder
+  unknowns: []
+  representation_gaps: []
+option_closure:
+  methods:
+  - enumerated two-choice synthetic domain
+  mandatory_families_disposition: The fixture defines continuation and a bounded alternative;
+    other families are out of this test scope, not assumed absent in real decisions.
+  status: UNRESOLVED
+  record_ref:
+    id: closure
+    locator: examples/synthetic_records.json#closure
+    sha256: 77f18abb2a212c3823f4723a7bafb52032f319cfd0958134cd11a7d83a4e0751
+    basis: SYNTHETIC
+options:
+- option_id: A
+  label: Synthetic alternative A
+  states:
+    rg: null
+    rf_ncrc: null
+    trc: null
+    csv: null
+    rls: NOT_EVALUATED
+  record_refs:
+    rg: null
+    rf_ncrc: null
+    trc: null
+    trc_trigger: null
+    csv: null
+    controls: null
+    rls: null
+  material_unresolved: []
+  requalification_required: false
+  controls_available: null
+  rls_score: null
+  sigma_rls: null
+- option_id: B
+  label: Synthetic alternative B
+  states:
+    rg: null
+    rf_ncrc: null
+    trc: null
+    csv: null
+    rls: NOT_EVALUATED
+  record_refs:
+    rg: null
+    rf_ncrc: null
+    trc: null
+    trc_trigger: null
+    csv: null
+    controls: null
+    rls: null
+  material_unresolved: []
+  requalification_required: false
+  controls_available: null
+  rls_score: null
+  sigma_rls: null
+robustness:
+  status: INCOMPLETE
+  record_ref: null
+  required_variants: []
+  comparisons: []
+  joint_stress_disposition: UNRESOLVED
+  joint_stress_rationale: The constructed fixture stipulates independent option error
+    generators. It does not infer independence from absent empirical covariance data.
+  joint_record_ref: null
+  evidence_basis: UNASSESSED
+  delta: 2
+  sole_survivor_record_ref: null
+framework_verdict: null
+decision_state: null
+framework_selected_option_id: null
+authority_selection:
+  option_id: null
+  record_ref: null
+execution:
+  state: NOT_AUTHORIZED
+  option_id: null
+  action_id: null
+  authorization_ref: null
+  bound_configuration_id: null
+  authorized_at: null
+  expires_at: null
+  controls_ref: null
+  execution_event_ref: null
+runtime:
+  agent_present: true
+  mode: 0
+  connectivity: CONNECTED
+  reentry_required: false
+  reconciled: true
+  authenticated_reentry_ref: null
+  material_successor: false
+  successor_requalification_ref: null
+  tool_execution_requested: false
+emergency: null
+sgp_links:
+- target_id: fictional digital target
+  sgp_version: '8.8'
+  mps: NOT_EVALUATED
+  mps_record_ref: null
+  fpp_record_ref: null
+  gpr_record_ref: null
+  spr_record_ref: null
+  icp_record_ref: null
+  rmcp_record_ref: null
+blockers: []
+monitoring_and_outcome:
+  plan_ref:
+    id: plan
+    locator: examples/synthetic_records.json#plan
+    sha256: 77f18abb2a212c3823f4723a7bafb52032f319cfd0958134cd11a7d83a4e0751
+    basis: SYNTHETIC
+  observation_ref: null
+  state: NOT_STARTED
+  owner: Synthetic monitor
+  reopen_triggers:
+  - material change
+  - unexpected harm
+  reopened_stages: []
+challenge_appeal:
+  status: AVAILABLE
+  owner: Synthetic independent reviewer
+  route: offline fixture review
+  record_ref:
+    id: appeal
+    locator: examples/synthetic_records.json#appeal
+    sha256: 77f18abb2a212c3823f4723a7bafb52032f319cfd0958134cd11a7d83a4e0751
+    basis: SYNTHETIC
+conformance:
+  target_level: M1
+  assessment: NOT_ASSESSED
+  evidence_refs: []
+claim_boundary: Synthetic record consistency exercise only; not empirical validation,
+  real authorization, cryptographic assurance, deployment approval or M2/M3 conformance.
+provisional_choice: null
