@@ -26,3 +26,9 @@ The internal reports' statements that hosting/CI were not yet performed are prep
 ## Limits
 
 Passing the suite demonstrates the listed checks, not exhaustive semantic correctness or complete conformance. Full external Canon schemas/registries, applicable RPAP/PFAP, actual authority/cryptographic acceptance, human-interface implementation tests, empirical validation and domain safety remain separate. Sixteen listed interface vectors have mixed executable/manual/document-level coverage; 133 tests do not mean 133 independent empirical findings. MHIOS v2.1 is not automatically compatible with v0.8 or v2.0 records.
+
+## Clean-environment and browser findings repaired
+
+The initial clean Linux CI run passed 131 tests but failed two malformed-date tests because the supplied requirements omit jsonschema’s optional RFC3339 date-time dependency. The local environment already contained it. Root `requirements.txt` now explicitly pins `rfc3339-validator==0.1.4`; all checks are rerun in hosted CI. No failing test was skipped or weakened. The recommended publication-edition download includes these installation requirements and preserves the original package under `releases/v2.1/`.
+
+The supplied HTML reader has an empty language attribute and narrow-screen overflow. The hosted `/read/` projection sets English, adds keyboard-focusable scrolling tables, a main landmark, a collapsible contents list and publication navigation. The builder asserts that its complete standard-body text is unchanged. The original HTML remains in the frozen package.

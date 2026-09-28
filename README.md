@@ -23,11 +23,11 @@ Build: `MG-MHIOS-2.1-20260928-CORE13.0`. Core: `MG-RL-13.0-20260926-RELEASE-I`. 
 Use Python 3.10 or newer in an isolated environment. On Windows, set `PYTHONUTF8=1` before running the supplied tools (PowerShell: `$env:PYTHONUTF8='1'`).
 
 ```sh
-python -m pip install -r releases/v2.1/requirements.txt
+python -m pip install -r requirements.txt
 python -B releases/v2.1/verify_all.py --output-dir verification-output
 ```
 
-For the release ZIP, extract it and run the commands in its package README. Verification output must be outside the frozen package. `--at 2026-09-28T12:00:00Z` replays synthetic fixtures; it never revives real permission. The checker success label is `RECORD_CONSISTENT_WITHIN_SCOPED_CHECKS`, never authorization.
+The recommended publication-edition ZIP includes the required date-time dependency and a top-level README. Use that README; the preserved original package requirements omit `rfc3339-validator==0.1.4`. For an original ZIP checkout, add that dependency explicitly. Verification output must be outside the frozen package. `--at 2026-09-28T12:00:00Z` replays synthetic fixtures; it never revives real permission. The checker success label is `RECORD_CONSISTENT_WITHIN_SCOPED_CHECKS`, never authorization.
 
 See [publication audit](PUBLICATION.md) and [CI results](https://github.com/MathGov/mhios/actions). The tests cover only their declared scope. No empirical effectiveness, production readiness, M2/M3 deployed-interface conformance, complete external Canon schemas/registries, native Excel interoperability or real authority is established.
 

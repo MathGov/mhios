@@ -1,0 +1,3 @@
+-r releases/v2.1/requirements.txt
+# Required by jsonschema's optional date-time FormatChecker support.
+rfc3339-validator==0.1.4
